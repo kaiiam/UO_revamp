@@ -1,0 +1,4 @@
+﻿ontology ID,label,SubClass Of,definition,definition cross reference,exact synonym,UCUM base
+UO:0000011,ampere,base unit|electric current unit,"An electric current unit which is equal to the constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 m apart in vacuum, would produce between these conductors a force equal to 2 x 10^[-7] newton per meter of length.",BIPM:BIPM|NIST:NIST,A,A
+UO:0000013,mole,base unit|substance unit,A substance unit which is equal to the amount of substance of a molecular system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12.,BIPM:BIPM|NIST:NIST,mol,mol
+UO:0000008,meter,base unit|length unit,A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second.,BIPM:BIPM|NIST:NIST,m|metre,m

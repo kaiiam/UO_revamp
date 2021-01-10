@@ -1,0 +1,21 @@
+﻿ontology ID,label,SubClass Of,definition,exact synonym,related synonym,prefix_num,prefix_symbol
+UO:0000286,yotta,prefix,A prefix in the metric system denoting a factor of ten to the power of 24.,10^[24]|Y,,10^[24],Y
+UO:0000288,zetta,prefix,A prefix in the metric system denoting a factor of ten to the power of 21.,10^[21]|Z,,10^[21],Z
+UO:0000289,exa,prefix,A prefix in the metric system denoting a factor of ten to the power of 18.,10^[18]|E,,10^[18],E
+UO:0000290,peta,prefix,A prefix in the metric system denoting a factor of ten to the power of 15.,10^[15]|P,,10^[15],P
+UO:0000291,tera,prefix,A prefix in the metric system denoting a factor of ten to the power of 12.,T,10^[12],10^[12],T
+UO:0000292,giga,prefix,A prefix in the metric system denoting a factor of ten to the power of 9.,10^[9]|G,,10^[9],G
+UO:0000293,mega,prefix,A prefix in the metric system denoting a factor of million.,10^[6]|M,,10^[6],M
+UO:0000294,kilo,prefix,A prefix in the metric system denoting a factor of one thousand.,10^[3]|k,,10^[3],k
+UO:0000287,hecto,prefix,A prefix in the metric system denoting a factor of one hundred.,10^[2]|h,,10^[2],h
+UO:0000295,deca,prefix,A prefix in the metric system denoting a factor of ten.,10^[1]|da,,10^[1],da
+UO:0000296,deci,prefix,A prefix in the metric system denoting a factor of one tenth.,10^[-1]|d,,10^[-1],d
+UO:0000298,centi,prefix,A prefix in the metric system denoting a factor of one hundred.,10^[-2]|c,,10^[-2],c
+UO:0000297,milli,prefix,A prefix in the metric system denoting a factor of one thousand.,10^[-3]|m,,10^[-3],m
+UO:0000299,micro,prefix,A prefix in the metric system denoting a factor of 10 to the power of -6.,10^[-6],,10^[-6],μ
+UO:0000300,nano,prefix,A prefix in the metric system denoting a factor of 10 to the power of -9.,10^[-9]|n,,10^[-9],n
+UO:0000302,pico,prefix,A prefix in the metric system denoting a factor of 10 to the power of -12.,10^[-12]|n,,10^[-12],p
+UO:0000303,femto,prefix,A prefix in the metric system denoting a factor of 10 to the power of -15.,10^[-15]|f,,10^[-15],f
+UO:0000304,atto,prefix,A prefix in the metric system denoting a factor of 10 to the power of -18.,a,10^[-18],10^[-18],a
+UO:0000305,zepto,prefix,A prefix in the metric system denoting a factor of 10 to the power of -21.,z,10^[-21],10^[-21],z
+UO:0000306,yocto,prefix,A prefix in the metric system denoting a factor of 10 to the power of -24.,y,10^[-24],10^[-24],y

@@ -1,0 +1,16 @@
+﻿From Wiki,ontology ID,label,SubClass Of,definition,definition cross reference,exact synonym
+astronomical unit,,,,,,
+bel,,,,,,
+dalton,UO:0000221,dalton,mass unit,"An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state.",Wikipedia:Wikipedia,Da|amu|u|unified atomic mass unit
+day,UO:0000033,day,time unit,A time unit which is equal to 24 hours.,Wikipedia:Wikipedia,
+decibel,UO:0000259,decibel,UO:0000190,A ratio unit which is an indicator of sound power per unit area.,techtarget:techtarget,dB
+degree,UO:0000185,degree,plane angle unit,A plane angle unit which is equal to 1/360 of a full rotation or 1.7453310^[-2] rad.,Wikipedia:Wikipedia,
+electronvolt,UO:0000266,electronvolt,energy unit,A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J.,Wikipedia:Wikipedia,eV|electron volt
+hectare,UO:0010010,hectare,area unit,"An area unit which is equal to an area of 10,000 square meters. Equivalent to 2.471 acres.",Wikipedia:Wikipedia,HA
+hour,UO:0000032,hour,time unit,A time unit which is equal to 3600 seconds or 60 minutes.,Wikipedia:Wikipedia,h
+litre,UO:0000099,liter,volume unit,"A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.",NIST:NIST,L|l|litre
+minute (time),UO:0000031,minute,time unit,A time unit which is equal to 60 seconds.,Wikipedia:Wikipedia,min
+minute (plane angle),,,,,,
+neper,,,,,,
+second ( plane angle),,,,,,
+tonne,UO:0010038,ton,mass unit,"An imperial mass unit which is equivalent to 1,016.046,9088 kilograms, or 2,240 pounds.",Wikipedia:Wikipedia,t
