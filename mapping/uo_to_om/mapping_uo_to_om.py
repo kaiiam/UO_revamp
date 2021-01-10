@@ -6,7 +6,7 @@ Purpose: Automate mapping between units ontologies UO against OM and QUDT
 
 Run with OM:
 
-./mapping_uo_to_om.py -b ../../uo_template/uo_template.csv -t ../../ontologies/om_export_xlsx.csv -o output_UO_to_OM_mapping.csv -m unmapped_UO_to_OM.csv -n unmapped_OM_to_UO.csv -s suggestions_UO_to_OM.csv
+./mapping_uo_to_om.py -b ../../uo_template/uo_template.csv -t ../../ontologies/om_export_xlsx.csv -o output_uo_to_om_mapping.csv -m unmapped_uo_to_om.csv -n unmapped_om_to_uo.csv -s suggestions_uo_to_om.csv
 
 OLD ~~~Test UO-> OM ./mapping.py -b test_inputs/test_uo.csv -t ../ontologies/om_export_xlsx.csv -o output_mapping_test.csv -m missing_test.csv
 
