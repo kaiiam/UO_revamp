@@ -71,9 +71,19 @@ Notes:
 robot export --input VOCAB_QUDT-UNITS-ALL-v2.1.ttl \
   --prefix "rdfs:http://www.w3.org/2000/01/rdf-schema#" \
   --prefix "qudt:http://qudt.org/schema/qudt/" \
-  --header "ID|LABEL|Type|ucumCode" \
-  --export qudt_export.csv
+  --header "ID|LABEL|Type|ucumCode|description|expression|isDefinedBy|information reference|dbpedia match|latex definition|normative reference (ISO)|todo" \
+  --export qudt_export.xlsx
 ```
+
+Use this simpler one:
+
+```
+robot export --input VOCAB_QUDT-UNITS-ALL-v2.1.ttl \
+  --header "ID|LABEL|Type|ucumCode|description|expression|isDefinedBy" \
+  --export qudt_export.xlsx
+```
+
+
 
 --prefix "qudt:http://qudt.org/schema/qudt/"
 
