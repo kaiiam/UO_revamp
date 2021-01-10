@@ -1,0 +1,211 @@
+﻿UO ID,UO label,OM label,OM ID
+UO:0000000,unit,unit,http://www.ontology-of-units-of-measure.org/resource/om-2/Unit
+UO:0000001,length unit,length unit,http://www.ontology-of-units-of-measure.org/resource/om-2/LengthUnit
+UO:0000002,mass unit,mass unit,http://www.ontology-of-units-of-measure.org/resource/om-2/MassUnit
+UO:0000003,time unit,time unit,http://www.ontology-of-units-of-measure.org/resource/om-2/TimeUnit
+UO:0000004,electric current unit,electric current unit,http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricCurrentUnit
+UO:0000005,temperature unit,temperature unit,http://www.ontology-of-units-of-measure.org/resource/om-2/TemperatureUnit
+UO:0000007,luminous intensity unit,luminous intensity unit,http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousIntensityUnit
+UO:0000008,meter,metre,http://www.ontology-of-units-of-measure.org/resource/om-2/metre
+UO:0000009,kilogram,kilogram,http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
+UO:0000010,second,second,http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time
+UO:0000011,ampere,ampere,http://www.ontology-of-units-of-measure.org/resource/om-2/ampere
+UO:0000012,kelvin,kelvin,http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin
+UO:0000013,mole,mole,http://www.ontology-of-units-of-measure.org/resource/om-2/mole
+UO:0000014,candela,candela,http://www.ontology-of-units-of-measure.org/resource/om-2/candela
+UO:0000015,centimeter,centimetre,http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre
+UO:0000016,millimeter,micrometre,http://www.ontology-of-units-of-measure.org/resource/om-2/micrometre
+UO:0000017,micrometer,micrometre,http://www.ontology-of-units-of-measure.org/resource/om-2/micrometre
+UO:0000017,micrometer,micron,http://www.ontology-of-units-of-measure.org/resource/om-2/micron
+UO:0000018,nanometer,nanometre,http://www.ontology-of-units-of-measure.org/resource/om-2/nanometre
+UO:0000019,angstrom,ångström,http://www.ontology-of-units-of-measure.org/resource/om-2/angstrom
+UO:0000020,picometer,picometre,http://www.ontology-of-units-of-measure.org/resource/om-2/picometre
+UO:0000021,gram,gram,http://www.ontology-of-units-of-measure.org/resource/om-2/gram
+UO:0000022,milligram,milligram,http://www.ontology-of-units-of-measure.org/resource/om-2/milligram
+UO:0000023,microgram,microgram,http://www.ontology-of-units-of-measure.org/resource/om-2/microgram
+UO:0000024,nanogram,nanogram,http://www.ontology-of-units-of-measure.org/resource/om-2/nanogram
+UO:0000025,picogram,picogram,http://www.ontology-of-units-of-measure.org/resource/om-2/picogram
+UO:0000026,femtogram,femtogram,http://www.ontology-of-units-of-measure.org/resource/om-2/femtogram
+UO:0000027,degree Celsius,degree Celsius,http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius
+UO:0000028,millisecond,millisecond,http://www.ontology-of-units-of-measure.org/resource/om-2/millisecond-Time
+UO:0000029,microsecond,microsecond,http://www.ontology-of-units-of-measure.org/resource/om-2/microsecond-Time
+UO:0000030,picosecond,picosecond,http://www.ontology-of-units-of-measure.org/resource/om-2/picosecond-Time
+UO:0000031,minute,minute,http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Time
+UO:0000032,hour,hour,http://www.ontology-of-units-of-measure.org/resource/om-2/hour
+UO:0000033,day,day,http://www.ontology-of-units-of-measure.org/resource/om-2/day
+UO:0000034,week,week,http://www.ontology-of-units-of-measure.org/resource/om-2/week
+UO:0000035,month,month,http://www.ontology-of-units-of-measure.org/resource/om-2/month
+UO:0000036,year,year,http://www.ontology-of-units-of-measure.org/resource/om-2/year
+UO:0000037,milliampere,milliampere,http://www.ontology-of-units-of-measure.org/resource/om-2/milliampere
+UO:0000038,microampere,microampere,http://www.ontology-of-units-of-measure.org/resource/om-2/microampere
+UO:0000039,micromole,micromole,http://www.ontology-of-units-of-measure.org/resource/om-2/micromole
+UO:0000040,millimole,millimole,http://www.ontology-of-units-of-measure.org/resource/om-2/millimole
+UO:0000041,nanomole,nanomole,http://www.ontology-of-units-of-measure.org/resource/om-2/nanomole
+UO:0000042,picomole,picomole,http://www.ontology-of-units-of-measure.org/resource/om-2/picomole
+UO:0000043,femtomole,femtomole,http://www.ontology-of-units-of-measure.org/resource/om-2/femtomole
+UO:0000044,attomole,attomole,http://www.ontology-of-units-of-measure.org/resource/om-2/attomole
+UO:0000046,prefix,prefix,http://www.ontology-of-units-of-measure.org/resource/om-2/Prefix
+UO:0000047,area unit,area unit,http://www.ontology-of-units-of-measure.org/resource/om-2/AreaUnit
+UO:0000048,acceleration unit,acceleration unit,http://www.ontology-of-units-of-measure.org/resource/om-2/AccelerationUnit
+UO:0000050,angular acceleration unit,angular acceleration unit,http://www.ontology-of-units-of-measure.org/resource/om-2/AngularAccelerationUnit
+UO:0000053,luminance unit,luminance unit,http://www.ontology-of-units-of-measure.org/resource/om-2/LuminanceUnit
+UO:0000054,area density unit,area density unit,http://www.ontology-of-units-of-measure.org/resource/om-2/AreaDensityUnit
+UO:0000055,molar mass unit,molar mass unit,http://www.ontology-of-units-of-measure.org/resource/om-2/MolarMassUnit
+UO:0000056,molar volume unit,molar volume unit,http://www.ontology-of-units-of-measure.org/resource/om-2/MolarVolumeUnit
+UO:0000057,momentum unit,momentum unit,http://www.ontology-of-units-of-measure.org/resource/om-2/MomentumUnit
+UO:0000059,specific volume unit,specific volume unit,http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificVolumeUnit
+UO:0000079,radian per second,radian per second,http://www.ontology-of-units-of-measure.org/resource/om-2/radianPerSecond-Time
+UO:0000080,square meter,square metre,http://www.ontology-of-units-of-measure.org/resource/om-2/squareMetre
+UO:0000081,square centimeter,square centimetre,http://www.ontology-of-units-of-measure.org/resource/om-2/squareCentimetre
+UO:0000082,square millimeter,square millimetre,http://www.ontology-of-units-of-measure.org/resource/om-2/squareMillimetre
+UO:0000083,kilogram per cubic meter,kilogram per cubic metre,http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre
+UO:0000084,gram per cubic centimeter,gram per cubic centimetre,http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerCubicCentimetre
+UO:0000085,candela per square meter,candela per square metre,http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre
+UO:0000086,kilogram per square meter,kilogram per square metre,http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerSquareMetre
+UO:0000087,kilogram per mole,kilogram per mole,http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerMole
+UO:0000089,cubic meter per mole,cubic metre per mole,http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetrePerMole
+UO:0000093,cubic meter per kilogram,cubic metre per kilogram,http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetrePerKilogram
+UO:0000094,meter per second,metre per second,http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time
+UO:0000095,volume unit,volume unit,http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeUnit
+UO:0000096,cubic meter,cubic metre,http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
+UO:0000097,cubic centimeter,cubic centimetre,http://www.ontology-of-units-of-measure.org/resource/om-2/cubicCentimetre
+UO:0000098,milliliter,millilitre,http://www.ontology-of-units-of-measure.org/resource/om-2/millilitre
+UO:0000099,liter,litre,http://www.ontology-of-units-of-measure.org/resource/om-2/litre
+UO:0000100,cubic decimeter,cubic decimetre,http://www.ontology-of-units-of-measure.org/resource/om-2/cubicDecimetre
+UO:0000101,microliter,microlitre,http://www.ontology-of-units-of-measure.org/resource/om-2/microlitre
+UO:0000102,nanoliter,nanolitre,http://www.ontology-of-units-of-measure.org/resource/om-2/nanolitre
+UO:0000103,picoliter,picolitre,http://www.ontology-of-units-of-measure.org/resource/om-2/picolitre
+UO:0000104,femtoliter,femtolitre,http://www.ontology-of-units-of-measure.org/resource/om-2/femtolitre
+UO:0000105,frequency unit,frequency unit,http://www.ontology-of-units-of-measure.org/resource/om-2/FrequencyUnit
+UO:0000106,hertz,hertz,http://www.ontology-of-units-of-measure.org/resource/om-2/hertz
+UO:0000107,force unit,force unit,http://www.ontology-of-units-of-measure.org/resource/om-2/ForceUnit
+UO:0000108,newton,newton,http://www.ontology-of-units-of-measure.org/resource/om-2/newton
+UO:0000109,pressure unit,pressure unit,http://www.ontology-of-units-of-measure.org/resource/om-2/PressureUnit
+UO:0000110,pascal,pascal,http://www.ontology-of-units-of-measure.org/resource/om-2/pascal
+UO:0000111,energy unit,energy unit,http://www.ontology-of-units-of-measure.org/resource/om-2/EnergyUnit
+UO:0000112,joule,joule,http://www.ontology-of-units-of-measure.org/resource/om-2/joule
+UO:0000113,power unit,power unit,http://www.ontology-of-units-of-measure.org/resource/om-2/PowerUnit
+UO:0000114,watt,watt,http://www.ontology-of-units-of-measure.org/resource/om-2/watt
+UO:0000115,illuminance unit,illuminance unit,http://www.ontology-of-units-of-measure.org/resource/om-2/IlluminanceUnit
+UO:0000116,lux,lux,http://www.ontology-of-units-of-measure.org/resource/om-2/lux
+UO:0000117,luminous flux unit,luminous flux unit,http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousFluxUnit
+UO:0000118,lumen,lumen,http://www.ontology-of-units-of-measure.org/resource/om-2/lumen
+UO:0000119,catalytic activity unit,catalytic activity unit,http://www.ontology-of-units-of-measure.org/resource/om-2/CatalyticActivityUnit
+UO:0000120,katal,katal,http://www.ontology-of-units-of-measure.org/resource/om-2/katal
+UO:0000121,angle unit,angle unit,http://www.ontology-of-units-of-measure.org/resource/om-2/AngleUnit
+UO:0000123,radian,rad,http://www.ontology-of-units-of-measure.org/resource/om-2/rad
+UO:0000123,radian,radian,http://www.ontology-of-units-of-measure.org/resource/om-2/radian
+UO:0000124,solid angle unit,solid angle unit,http://www.ontology-of-units-of-measure.org/resource/om-2/SolidAngleUnit
+UO:0000125,steradian,steradian,http://www.ontology-of-units-of-measure.org/resource/om-2/steradian
+UO:0000129,absorbed dose unit,absorbed dose unit,http://www.ontology-of-units-of-measure.org/resource/om-2/AbsorbedDoseUnit
+UO:0000130,dose equivalent unit,dose equivalent unit,http://www.ontology-of-units-of-measure.org/resource/om-2/DoseEquivalentUnit
+UO:0000131,exposure unit,exposure unit,http://www.ontology-of-units-of-measure.org/resource/om-2/ExposureUnit
+UO:0000132,becquerel,becquerel,http://www.ontology-of-units-of-measure.org/resource/om-2/becquerel
+UO:0000133,curie,curie,http://www.ontology-of-units-of-measure.org/resource/om-2/curie
+UO:0000134,gray,gray,http://www.ontology-of-units-of-measure.org/resource/om-2/gray
+UO:0000135,rad,rad,http://www.ontology-of-units-of-measure.org/resource/om-2/rad
+UO:0000137,sievert,sievert,http://www.ontology-of-units-of-measure.org/resource/om-2/sievert
+UO:0000138,millisievert,millisievert,http://www.ontology-of-units-of-measure.org/resource/om-2/millisievert
+UO:0000139,microsievert,microsievert,http://www.ontology-of-units-of-measure.org/resource/om-2/microsievert
+UO:0000140,Roentgen equivalent man,rem,http://www.ontology-of-units-of-measure.org/resource/om-2/rem
+UO:0000141,microgray,microgray,http://www.ontology-of-units-of-measure.org/resource/om-2/microgray
+UO:0000142,milligray,milligray,http://www.ontology-of-units-of-measure.org/resource/om-2/milligray
+UO:0000143,nanogray,nanogray,http://www.ontology-of-units-of-measure.org/resource/om-2/nanogray
+UO:0000144,nanosievert,nanosievert,http://www.ontology-of-units-of-measure.org/resource/om-2/nanosievert
+UO:0000150,nanosecond,nanosecond,http://www.ontology-of-units-of-measure.org/resource/om-2/nanosecond-Time
+UO:0000155,watt per square meter,watt per square metre,http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSquareMetre
+UO:0000159,radiant intensity unit,radiant intensity unit,http://www.ontology-of-units-of-measure.org/resource/om-2/RadiantIntensityUnit
+UO:0000161,radiance unit,radiance unit,http://www.ontology-of-units-of-measure.org/resource/om-2/RadianceUnit
+UO:0000162,watt per steradian,watt per steradian,http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSteradian
+UO:0000169,parts per million,parts per million,http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion
+UO:0000173,gram per milliliter,gram per millilitre,http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerMillilitre
+UO:0000174,kilogram per liter,kilogram per litre,http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerLitre
+UO:0000175,gram per liter,gram per litre,http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerLitre
+UO:0000182,density unit,density unit,http://www.ontology-of-units-of-measure.org/resource/om-2/DensityUnit
+UO:0000185,degree,degree,http://www.ontology-of-units-of-measure.org/resource/om-2/degree
+UO:0000187,percent,percent,http://www.ontology-of-units-of-measure.org/resource/om-2/percent
+UO:0000189,count unit,count,http://www.ontology-of-units-of-measure.org/resource/om-2/count
+UO:0000190,ratio,ratio,http://www.ontology-of-units-of-measure.org/resource/om-2/Ratio
+UO:0000190,ratio,ratio,http://www.ontology-of-units-of-measure.org/resource/om-2/Ratio
+UO:0000195,degree Fahrenheit,degree Fahrenheit,http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit
+UO:0000203,katal per cubic meter,katal per cubic metre,http://www.ontology-of-units-of-measure.org/resource/om-2/katalPerCubicmetre
+UO:0000208,gram per deciliter,gram per decilitre,http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerDecilitre
+UO:0000209,deciliter,decilitre,http://www.ontology-of-units-of-measure.org/resource/om-2/decilitre
+UO:0000210,colony forming unit,colony forming unit,http://www.ontology-of-units-of-measure.org/resource/om-2/colonyFormingUnit
+UO:0000213,colony forming unit per milliliter,colony forming unit per millilitre,http://www.ontology-of-units-of-measure.org/resource/om-2/colonyFormingUnitPerMillilitre
+UO:0000218,volt,volt,http://www.ontology-of-units-of-measure.org/resource/om-2/volt
+UO:0000219,electric charge,electric charge,http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricCharge
+UO:0000219,electric charge,electric charge,http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricCharge
+UO:0000220,coulomb,coulomb,http://www.ontology-of-units-of-measure.org/resource/om-2/coulomb
+UO:0000221,dalton,unified atomic mass unit,http://www.ontology-of-units-of-measure.org/resource/om-2/unifiedAtomicMassUnit
+UO:0000225,magnetic flux unit,magnetic flux unit,http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticFluxUnit
+UO:0000226,weber,weber,http://www.ontology-of-units-of-measure.org/resource/om-2/weber
+UO:0000227,magnetic flux density unit,magnetic flux density unit,http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticFluxDensityUnit
+UO:0000228,tesla,tesla,http://www.ontology-of-units-of-measure.org/resource/om-2/tesla
+UO:0000232,bit,bit,http://www.ontology-of-units-of-measure.org/resource/om-2/bit
+UO:0000233,byte,byte,http://www.ontology-of-units-of-measure.org/resource/om-2/byte
+UO:0000234,kilobyte,kilobyte,http://www.ontology-of-units-of-measure.org/resource/om-2/kilobyte
+UO:0000235,megabyte,megabyte,http://www.ontology-of-units-of-measure.org/resource/om-2/megabyte
+UO:0000238,dynamic range unit,dynamic range unit,http://www.ontology-of-units-of-measure.org/resource/om-2/DynamicRangeUnit
+UO:0000245,kibibyte,kibibyte,http://www.ontology-of-units-of-measure.org/resource/om-2/kibibyte
+UO:0000246,mebibyte,mebibyte,http://www.ontology-of-units-of-measure.org/resource/om-2/mebibyte
+UO:0000247,millivolt,millivolt,http://www.ontology-of-units-of-measure.org/resource/om-2/millivolt
+UO:0000248,kilovolt,kilovolt,http://www.ontology-of-units-of-measure.org/resource/om-2/kilovolt
+UO:0000249,microvolt,microvolt,http://www.ontology-of-units-of-measure.org/resource/om-2/microvolt
+UO:0000250,nanovolt,nanovolt,http://www.ontology-of-units-of-measure.org/resource/om-2/nanovolt
+UO:0000251,picovolt,picovolt,http://www.ontology-of-units-of-measure.org/resource/om-2/picovolt
+UO:0000252,megavolt,megavolt,http://www.ontology-of-units-of-measure.org/resource/om-2/megavolt
+UO:0000253,surface tension unit,surface tension unit,http://www.ontology-of-units-of-measure.org/resource/om-2/SurfaceTensionUnit
+UO:0000254,newton per meter,newton per metre,http://www.ontology-of-units-of-measure.org/resource/om-2/newtonPerMetre
+UO:0000257,pascal second,pascal second,http://www.ontology-of-units-of-measure.org/resource/om-2/pascalSecond-Time
+UO:0000258,poise,poise,http://www.ontology-of-units-of-measure.org/resource/om-2/poise
+UO:0000259,decibel,decibel,http://www.ontology-of-units-of-measure.org/resource/om-2/decibel
+UO:0000264,siemens,mho,http://www.ontology-of-units-of-measure.org/resource/om-2/mho
+UO:0000264,siemens,siemens,http://www.ontology-of-units-of-measure.org/resource/om-2/siemens
+UO:0000265,watt per meter kelvin,watt per metre kelvin,http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin
+UO:0000266,electronvolt,electronvolt,http://www.ontology-of-units-of-measure.org/resource/om-2/electronvolt
+UO:0000268,volt per meter,volt per metre,http://www.ontology-of-units-of-measure.org/resource/om-2/voltPerMetre
+UO:0000270,volumetric flow rate unit,volumetric flow rate unit,http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricFlowRateUnit
+UO:0000273,milligram per liter,milligram per litre,http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerLitre
+UO:0000283,kilogram per hectare,kilogram per hectare,http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerHectare
+UO:0000286,yotta,yotta,http://www.ontology-of-units-of-measure.org/resource/om-2/yotta
+UO:0000287,hecto,hecto,http://www.ontology-of-units-of-measure.org/resource/om-2/hecto
+UO:0000288,zetta,zetta,http://www.ontology-of-units-of-measure.org/resource/om-2/zetta
+UO:0000289,exa,exa,http://www.ontology-of-units-of-measure.org/resource/om-2/exa
+UO:0000290,peta,peta,http://www.ontology-of-units-of-measure.org/resource/om-2/peta
+UO:0000291,tera,tera,http://www.ontology-of-units-of-measure.org/resource/om-2/tera
+UO:0000292,giga,giga,http://www.ontology-of-units-of-measure.org/resource/om-2/giga
+UO:0000293,mega,mega,http://www.ontology-of-units-of-measure.org/resource/om-2/mega
+UO:0000294,kilo,kilo,http://www.ontology-of-units-of-measure.org/resource/om-2/kilo
+UO:0000295,deca,deca,http://www.ontology-of-units-of-measure.org/resource/om-2/deca
+UO:0000296,deci,deci,http://www.ontology-of-units-of-measure.org/resource/om-2/deci
+UO:0000297,milli,milli,http://www.ontology-of-units-of-measure.org/resource/om-2/milli
+UO:0000298,centi,centi,http://www.ontology-of-units-of-measure.org/resource/om-2/centi
+UO:0000299,micro,micro,http://www.ontology-of-units-of-measure.org/resource/om-2/micro
+UO:0000300,nano,nano,http://www.ontology-of-units-of-measure.org/resource/om-2/nano
+UO:0000301,microgram per liter,microgram per litre,http://www.ontology-of-units-of-measure.org/resource/om-2/microgramPerLitre
+UO:0000302,pico,pico,http://www.ontology-of-units-of-measure.org/resource/om-2/pico
+UO:0000303,femto,femto,http://www.ontology-of-units-of-measure.org/resource/om-2/femto
+UO:0000304,atto,atto,http://www.ontology-of-units-of-measure.org/resource/om-2/atto
+UO:0000305,zepto,zepto,http://www.ontology-of-units-of-measure.org/resource/om-2/zepto
+UO:0000306,yocto,yocto,http://www.ontology-of-units-of-measure.org/resource/om-2/yocto
+UO:0000308,milligram per kilogram,milligram per kilogram,http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerKilogram
+UO:0000325,megaHertz,megahertz,http://www.ontology-of-units-of-measure.org/resource/om-2/megahertz
+UO:0000331,gigabyte,gigabyte,http://www.ontology-of-units-of-measure.org/resource/om-2/gigabyte
+UO:0000332,terabyte,terabyte,http://www.ontology-of-units-of-measure.org/resource/om-2/terabyte
+UO:0010001,square micrometer,square micrometre,http://www.ontology-of-units-of-measure.org/resource/om-2/squareMicrometre
+UO:0010002,millisiemens,millisiemens,http://www.ontology-of-units-of-measure.org/resource/om-2/millisiemens
+UO:0010003,micromole per litre,micromole per litre,http://www.ontology-of-units-of-measure.org/resource/om-2/micromolePerLitre
+UO:0010006,ratio,ratio,http://www.ontology-of-units-of-measure.org/resource/om-2/Ratio
+UO:0010006,ratio,ratio,http://www.ontology-of-units-of-measure.org/resource/om-2/Ratio
+UO:0010008,kilometer per hour,kilometre per hour,http://www.ontology-of-units-of-measure.org/resource/om-2/kilometrePerHour
+UO:0010009,milli,milli,http://www.ontology-of-units-of-measure.org/resource/om-2/milli
+UO:0010010,hectare,hectare,http://www.ontology-of-units-of-measure.org/resource/om-2/hectare
+UO:0010012,thou,mil (length),http://www.ontology-of-units-of-measure.org/resource/om-2/mil-Length
+UO:0010015,chain,chain,http://www.ontology-of-units-of-measure.org/resource/om-2/chain
+UO:0010030,gallon,gal,http://www.ontology-of-units-of-measure.org/resource/om-2/gal
+UO:0010031,grain,grain,http://www.ontology-of-units-of-measure.org/resource/om-2/grain
+UO:0010039,slug,slug,http://www.ontology-of-units-of-measure.org/resource/om-2/slug
+UO:0010048,micromole,micromole,http://www.ontology-of-units-of-measure.org/resource/om-2/micromole
+UO:0010049,gram per square meter,gram per square metre,http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerSquareMetre
+UO:0010054,picoampere,picoampere,http://www.ontology-of-units-of-measure.org/resource/om-2/picoampere

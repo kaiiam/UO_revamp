@@ -1,0 +1,44 @@
+﻿Hamm dist,UO ID,UO label,OM label,OM ID
+2,UO:0000062,molar,molair,http://www.ontology-of-units-of-measure.org/resource/om-2/molair
+2,UO:0000063,millimolar,millimolair,http://www.ontology-of-units-of-measure.org/resource/om-2/millimolair
+2,UO:0000064,micromolar,micromolair,http://www.ontology-of-units-of-measure.org/resource/om-2/micromolair
+2,UO:0000065,nanomolar,nanomolair,http://www.ontology-of-units-of-measure.org/resource/om-2/nanomolair
+2,UO:0000066,picomolar,picomolair,http://www.ontology-of-units-of-measure.org/resource/om-2/picomolair
+2,UO:0000068,molal,molair,http://www.ontology-of-units-of-measure.org/resource/om-2/molair
+2,UO:0000069,millimolal,millimolair,http://www.ontology-of-units-of-measure.org/resource/om-2/millimolair
+2,UO:0000070,micromolal,micromolair,http://www.ontology-of-units-of-measure.org/resource/om-2/micromolair
+2,UO:0000071,nanomolal,nanomolair,http://www.ontology-of-units-of-measure.org/resource/om-2/nanomolair
+2,UO:0000072,picomolal,picomolair,http://www.ontology-of-units-of-measure.org/resource/om-2/picomolair
+2,UO:0000073,femtomolar,femtomolair,http://www.ontology-of-units-of-measure.org/resource/om-2/femtomolair
+1,UO:0000152,half life,half-life,http://www.ontology-of-units-of-measure.org/resource/om-2/Half-Life
+1,UO:0000152,half life,half-life,http://www.ontology-of-units-of-measure.org/resource/om-2/Half-Life
+2,UO:0000188,pi,kip,http://www.ontology-of-units-of-measure.org/resource/om-2/kip
+1,UO:0000191,fraction,friction,http://www.ontology-of-units-of-measure.org/resource/om-2/Friction
+1,UO:0000191,fraction,friction,http://www.ontology-of-units-of-measure.org/resource/om-2/Friction
+2,UO:0000191,fraction,function,http://www.ontology-of-units-of-measure.org/resource/om-2/Function
+1,UO:0000223,watt-hour,watt hour,http://www.ontology-of-units-of-measure.org/resource/om-2/wattHour
+1,UO:0000224,kilowatt-hour,kilowatt hour,http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour
+2,UO:0010013,foot,cost,http://www.ontology-of-units-of-measure.org/resource/om-2/Cost
+2,UO:0010013,foot,cost,http://www.ontology-of-units-of-measure.org/resource/om-2/Cost
+2,UO:0010013,foot,biot,http://www.ontology-of-units-of-measure.org/resource/om-2/biot
+2,UO:0010013,foot,phot,http://www.ontology-of-units-of-measure.org/resource/om-2/phot
+2,UO:0010014,yard,bar,http://www.ontology-of-units-of-measure.org/resource/om-2/bar
+2,UO:0010014,yard,barn,http://www.ontology-of-units-of-measure.org/resource/om-2/barn
+2,UO:0010014,yard,baud,http://www.ontology-of-units-of-measure.org/resource/om-2/baud
+2,UO:0010014,yard,cord,http://www.ontology-of-units-of-measure.org/resource/om-2/cord
+2,UO:0010017,mile,time,http://www.ontology-of-units-of-measure.org/resource/om-2/Time
+2,UO:0010017,mile,time,http://www.ontology-of-units-of-measure.org/resource/om-2/Time
+2,UO:0010023,perch,pinch,http://www.ontology-of-units-of-measure.org/resource/om-2/pinch
+2,UO:0010024,rood,cord,http://www.ontology-of-units-of-measure.org/resource/om-2/cord
+2,UO:0010027,gill,gibi,http://www.ontology-of-units-of-measure.org/resource/om-2/gibi
+2,UO:0010028,pint,biot,http://www.ontology-of-units-of-measure.org/resource/om-2/biot
+2,UO:0010028,pint,phot,http://www.ontology-of-units-of-measure.org/resource/om-2/phot
+2,UO:0010028,pint,pinch,http://www.ontology-of-units-of-measure.org/resource/om-2/pinch
+2,UO:0010029,quart,quad,http://www.ontology-of-units-of-measure.org/resource/om-2/quad
+2,UO:0010034,pound,point,http://www.ontology-of-units-of-measure.org/resource/om-2/Point
+2,UO:0010034,pound,poundal,http://www.ontology-of-units-of-measure.org/resource/om-2/poundal
+2,UO:0010035,stone,stere,http://www.ontology-of-units-of-measure.org/resource/om-2/stere
+2,UO:0010035,stone,stokes,http://www.ontology-of-units-of-measure.org/resource/om-2/stokes
+1,UO:0010038,ton,gon,http://www.ontology-of-units-of-measure.org/resource/om-2/gon
+2,UO:0010038,ton,tonne,http://www.ontology-of-units-of-measure.org/resource/om-2/tonne
+2,UO:0010038,ton,torr,http://www.ontology-of-units-of-measure.org/resource/om-2/torr
