@@ -1,0 +1,1 @@
+QUDT seems to have pulled in OM iris e.g. http://www.ontology-of-units-of-measure.org/resource/om-2/slug but in this case there are no AP's DP's OP's or anything not even a label maybe robot export missed that this was mapped somehow? But same when viewed in protege the ttl file doesn't have it, perhaps in another qudt file?
