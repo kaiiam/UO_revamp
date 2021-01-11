@@ -10,11 +10,19 @@ radian,steradian,hertz,newton,pascal,joule,watt,coulomb,volt,farad,ohm,siemens,w
 
 For prefixes, note kibi gibi etc are recommended for powers of 2.
 
+Cross these with `byte` and `bit` to get classes like `exbibit` `exbibyte` etc.
+
 
 
 page `167` for Derived units appendix
 
 page `172` for Resolution 6 appendix
+
+
+# OM unique units:
+
+
+Have it down to 233 base unique units in OM, 202 suggestions for unit crossings.
 
 
 
