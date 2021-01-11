@@ -84,11 +84,17 @@ robot export --input VOCAB_QUDT-UNITS-ALL-v2.1.ttl \
 ```
 
 
+# OBOE
 
---prefix "qudt:http://qudt.org/schema/qudt/"
+```
+robot export --input oboe.owl \
+  --header "ID|LABEL" \
+  --export oboe_export.csv
+```
+
+Doesn't work for some reason ... not sure why not
 
 
-rdfs:isDefinedBy
 
 ### old:
 
