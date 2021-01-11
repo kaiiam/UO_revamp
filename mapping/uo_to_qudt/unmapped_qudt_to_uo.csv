@@ -1,0 +1,2284 @@
+﻿QUDT label,QUDT ID
+,http://www.ontology-of-units-of-measure.org/resource/om-2/gray
+,http://www.ontology-of-units-of-measure.org/resource/om-2/franklin
+,http://www.ontology-of-units-of-measure.org/resource/om-2/stokes
+,http://www.ontology-of-units-of-measure.org/resource/om-2/SouthAfricanRand
+,http://www.ontology-of-units-of-measure.org/resource/om-2/unitPole
+,http://www.ontology-of-units-of-measure.org/resource/om-2/rad
+,http://www.ontology-of-units-of-measure.org/resource/om-2/sievert
+,http://qudt.org/vocab/dimensionvector/A1E0L-2I0M0H0T-1D0
+,http://www.linkedmodel.org/schema/vaem#CatalogEntry
+,http://www.ontology-of-units-of-measure.org/resource/om-2/lux
+,http://www.ontology-of-units-of-measure.org/resource/om-2/shannon
+,http://www.ontology-of-units-of-measure.org/resource/om-2/chain
+,http://www.ontology-of-units-of-measure.org/resource/om-2/debye
+,http://www.ontology-of-units-of-measure.org/resource/om-2/kelvin
+,http://www.ontology-of-units-of-measure.org/resource/om-2/day
+,http://www.ontology-of-units-of-measure.org/resource/om-2/curie
+,http://www.ontology-of-units-of-measure.org/resource/om-2/bit
+,http://www.ontology-of-units-of-measure.org/resource/om-2/hartley
+,http://www.ontology-of-units-of-measure.org/resource/om-2/becquerel
+,http://www.ontology-of-units-of-measure.org/resource/om-2/tesla
+,http://www.ontology-of-units-of-measure.org/resource/om-2/ohm
+,http://www.ontology-of-units-of-measure.org/resource/om-2/kip
+,http://www.ontology-of-units-of-measure.org/resource/om-2/poise
+,http://www.ontology-of-units-of-measure.org/resource/om-2/hertz
+,http://www.ontology-of-units-of-measure.org/resource/om-2/NewZealandDollar
+,http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius
+,http://www.ontology-of-units-of-measure.org/resource/om-2/biot
+,http://www.ontology-of-units-of-measure.org/resource/om-2/statohm
+,http://www.ontology-of-units-of-measure.org/resource/om-2/radian
+,http://qudt.org/vocab/dimensionvector/A1E0L-3I0M0H0T-1D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/degreeRankine
+,http://www.ontology-of-units-of-measure.org/resource/om-2/weber
+,http://www.ontology-of-units-of-measure.org/resource/om-2/abcoulomb
+,http://qudt.org/vocab/unit/DeciTONNE
+,http://www.ontology-of-units-of-measure.org/resource/om-2/NorwegianKrone
+,http://qudt.org/vocab/quantitykind/Permeability
+,http://www.ontology-of-units-of-measure.org/resource/om-2/HongKongDollar
+,http://qudt.org/vocab/dimensionvector/A0E0L4I0M0H0T-1D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/dyne
+,http://qudt.org/vocab/dimensionvector/A1E0L-2I0M0H0T0D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/abfarad
+,http://www.ontology-of-units-of-measure.org/resource/om-2/grain
+,http://www.ontology-of-units-of-measure.org/resource/om-2/maxwell
+,http://www.ontology-of-units-of-measure.org/resource/om-2/SwedishKrona
+,http://www.ontology-of-units-of-measure.org/resource/om-2/lumen
+,http://www.ontology-of-units-of-measure.org/resource/om-2/poundal
+,http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-3D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/newton
+,http://qudt.org/vocab/dimensionvector/A1E0L-3I0M-1H0T2D0
+,http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H1T-1D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit
+,http://www.ontology-of-units-of-measure.org/resource/om-2/SouthKoreanWon
+,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T-4D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/SwissFranc
+,http://qudt.org/vocab/dimensionvector/A0E0L1I0M-1H0T1D0
+,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M2H0T-6D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/stere
+,http://www.ontology-of-units-of-measure.org/resource/om-2/parsec
+,http://www.ontology-of-units-of-measure.org/resource/om-2/candela
+,http://www.ontology-of-units-of-measure.org/resource/om-2/kayser
+,http://www.ontology-of-units-of-measure.org/resource/om-2/siemens
+,http://www.ontology-of-units-of-measure.org/resource/om-2/abampere
+,http://www.ontology-of-units-of-measure.org/resource/om-2/faraday
+,http://www.ontology-of-units-of-measure.org/resource/om-2/barn
+,http://qudt.org/vocab/dimensionvector/A0E0L2I0M-1H1T-1D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/fermi
+,http://www.ontology-of-units-of-measure.org/resource/om-2/slug
+,http://www.ontology-of-units-of-measure.org/resource/om-2/poundSterling
+,http://qudt.org/vocab/dimensionvector/A0E2L-4I0M-1H0T3D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/CanadianDollar
+,http://www.ontology-of-units-of-measure.org/resource/om-2/oersted
+,http://www.ontology-of-units-of-measure.org/resource/om-2/SingaporeDollar
+,http://www.ontology-of-units-of-measure.org/resource/om-2/statampere
+,http://www.ontology-of-units-of-measure.org/resource/om-2/torr
+,http://www.ontology-of-units-of-measure.org/resource/om-2/IndianRupee
+,http://www.ontology-of-units-of-measure.org/resource/om-2/stilb
+,http://www.ontology-of-units-of-measure.org/resource/om-2/acreFoot
+,http://www.ontology-of-units-of-measure.org/resource/om-2/statfarad
+,http://www.ontology-of-units-of-measure.org/resource/om-2/InternationalUnit
+,http://www.ontology-of-units-of-measure.org/resource/om-2/degree
+,http://www.ontology-of-units-of-measure.org/resource/om-2/metre
+,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H0T-4D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/AustralianDollar
+,http://www.linkedmodel.org/schema/vaem#QUDT.org
+,http://www.ontology-of-units-of-measure.org/resource/om-2/cord
+,http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T-3D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/year
+,http://www.ontology-of-units-of-measure.org/resource/om-2/percent
+,http://www.ontology-of-units-of-measure.org/resource/om-2/quad
+,http://www.ontology-of-units-of-measure.org/resource/om-2/euro
+,http://www.ontology-of-units-of-measure.org/resource/om-2/farad
+,http://www.ontology-of-units-of-measure.org/resource/om-2/abhenry
+,http://www.ontology-of-units-of-measure.org/resource/om-2/BrazilianReal
+,http://www.ontology-of-units-of-measure.org/resource/om-2/mole
+,http://qudt.org/vocab/dimensionvector/A0E0L-3I0M1H0T-1D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/abohm
+,http://www.ontology-of-units-of-measure.org/resource/om-2/revolution
+,http://www.ontology-of-units-of-measure.org/resource/om-2/ampere
+,http://www.ontology-of-units-of-measure.org/resource/om-2/gon
+,http://www.ontology-of-units-of-measure.org/resource/om-2/JapaneseYen
+,http://www.ontology-of-units-of-measure.org/resource/om-2/shake
+,http://www.ontology-of-units-of-measure.org/resource/om-2/week
+,http://www.ontology-of-units-of-measure.org/resource/om-2/steradian
+,http://qudt.org/vocab/dimensionvector/A0E0L2I0M-1H0T0D0
+,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M0H1T0D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/mho
+,http://qudt.org/schema/qudt/ValueForElectronVolt
+,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H1T-3D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion
+,http://www.ontology-of-units-of-measure.org/resource/om-2/abvolt
+,http://www.ontology-of-units-of-measure.org/resource/om-2/circularMil
+,http://qudt.org/vocab/unit/KiloTONNE
+,http://www.ontology-of-units-of-measure.org/resource/om-2/hour
+,http://www.ontology-of-units-of-measure.org/resource/om-2/stathenry
+,http://qudt.org/vocab/dimensionvector/A0E0L0I0M2H0T-2D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/solarMass
+,http://www.ontology-of-units-of-measure.org/resource/om-2/bar
+,http://www.ontology-of-units-of-measure.org/resource/om-2/lambert
+,http://www.ontology-of-units-of-measure.org/resource/om-2/second-Time
+,http://www.ontology-of-units-of-measure.org/resource/om-2/volt
+,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M1H1T0D0
+,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T2D0
+,http://qudt.org/vocab/dimensionvector/A0E0L-3I0M1H0T-3D0
+,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H2T0D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/phot
+,http://www.ontology-of-units-of-measure.org/resource/om-2/are
+,http://www.ontology-of-units-of-measure.org/resource/om-2/month
+,http://www.ontology-of-units-of-measure.org/resource/om-2/katal
+,http://www.ontology-of-units-of-measure.org/resource/om-2/bushel-US
+,http://www.ontology-of-units-of-measure.org/resource/om-2/statmho
+,http://www.ontology-of-units-of-measure.org/resource/om-2/colonyFormingUnit
+,http://www.ontology-of-units-of-measure.org/resource/om-2/erg
+,http://qudt.org/vocab/dimensionvector/A1E0L0I0M-1H0T-1D0
+,http://qudt.org/vocab/dimensionvector/A0E0L0I0M-1H0T-1D0
+,http://qudt.org/vocab/dimensionvector/A0E0L0I0M-1H0T0D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/statcoulomb
+,http://qudt.org/vocab/quantitykind/AngularMeasurement
+,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M0H0T0D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/MexicanPeso
+,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M0H0T-1D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/rem
+,http://www.ontology-of-units-of-measure.org/resource/om-2/pascal
+,http://www.ontology-of-units-of-measure.org/resource/om-2/coulomb
+,http://www.ontology-of-units-of-measure.org/resource/om-2/gal
+,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H2T-1D0
+,http://qudt.org/vocab/dimensionvector/A-1E0L-3I0M0H0T0D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/unifiedAtomicMassUnit
+,http://www.ontology-of-units-of-measure.org/resource/om-2/joule
+,http://www.ontology-of-units-of-measure.org/resource/om-2/watt
+,http://www.ontology-of-units-of-measure.org/resource/om-2/gram
+,http://www.ontology-of-units-of-measure.org/resource/om-2/tonOfRefrigeration
+,http://www.ontology-of-units-of-measure.org/resource/om-2/gilbert
+,http://www.ontology-of-units-of-measure.org/resource/om-2/litre
+,http://www.ontology-of-units-of-measure.org/resource/om-2/henry
+,http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Time
+,http://www.ontology-of-units-of-measure.org/resource/om-2/lightYear
+,http://qudt.org/vocab/dimensionvector/A-1E1L-3I0M0H0T0D0
+,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M0H0T-2D0
+,http://www.ontology-of-units-of-measure.org/resource/om-2/barye
+,http://www.ontology-of-units-of-measure.org/resource/om-2/byte
+,http://www.ontology-of-units-of-measure.org/resource/om-2/footPoundal
+,http://www.ontology-of-units-of-measure.org/resource/om-2/statvolt
+,http://www.ontology-of-units-of-measure.org/resource/om-2/gamma
+A-1E0L0I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A-1E0L0I0M0H0T0D0
+A-1E0L0I0M1H0T0D0,http://qudt.org/vocab/dimensionvector/A-1E0L0I0M1H0T0D0
+A-1E0L2I0M1H-1T-2D0,http://qudt.org/vocab/dimensionvector/A-1E0L2I0M1H-1T-2D0
+A-1E0L2I0M1H0T-1D0,http://qudt.org/vocab/dimensionvector/A-1E0L2I0M1H0T-1D0
+A-1E0L2I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A-1E0L2I0M1H0T-2D0
+A-1E0L3I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A-1E0L3I0M0H0T0D0
+A-1E0L3I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A-1E0L3I0M1H0T-2D0
+A-1E1L0I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A-1E1L0I0M0H0T1D0
+A0E-1L0I0M1H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E-1L0I0M1H0T-1D0
+A0E-1L0I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E-1L0I0M1H0T-2D0
+A0E-1L0I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E-1L0I0M1H0T-3D0
+A0E-1L1I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E-1L1I0M1H0T-2D0
+A0E-1L1I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E-1L1I0M1H0T-3D0
+A0E-1L2I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E-1L2I0M1H0T-2D0
+A0E-1L2I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E-1L2I0M1H0T-3D0
+A0E-1L2I0M1H0T-4D0,http://qudt.org/vocab/dimensionvector/A0E-1L2I0M1H0T-4D0
+A0E-1L3I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E-1L3I0M1H0T-3D0
+A0E-2L2I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E-2L2I0M1H0T-2D0
+A0E-2L2I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E-2L2I0M1H0T-3D0
+A0E-2L3I0M1H0T-4D0,http://qudt.org/vocab/dimensionvector/A0E-2L3I0M1H0T-4D0
+A0E0L-1I0M-1H1T3D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M-1H1T3D0
+A0E0L-1I0M0H-1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M0H-1T0D0
+A0E0L-1I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M0H0T0D0
+A0E0L-1I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M0H0T1D0
+A0E0L-1I0M1H-1T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H-1T-2D0
+A0E0L-1I0M1H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H0T-1D0
+A0E0L-1I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H0T-2D0
+A0E0L-1I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H0T-3D0
+A0E0L-1I0M1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H0T0D0
+A0E0L-2I0M-1H0T2D0,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M-1H0T2D0
+A0E0L-2I0M-1H1T3D0,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M-1H1T3D0
+A0E0L-2I0M0H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M0H0T-1D0
+A0E0L-2I0M1H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M1H0T-1D0
+A0E0L-2I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M1H0T-2D0
+A0E0L-2I0M1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L-2I0M1H0T0D0
+A0E0L-2I1M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L-2I1M0H0T0D0
+A0E0L-3I0M0H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L-3I0M0H0T-1D0
+A0E0L-3I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L-3I0M0H0T0D0
+A0E0L-3I0M1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L-3I0M1H0T0D0
+A0E0L-4I0M-2H0T4D0,http://qudt.org/vocab/dimensionvector/A0E0L-4I0M-2H0T4D0
+A0E0L0I0M-1H1T3D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M-1H1T3D0
+A0E0L0I0M-2H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M-2H0T0D0
+A0E0L0I0M0H-1T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H-1T-1D0
+A0E0L0I0M0H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T-1D0
+A0E0L0I0M0H0T-1D1,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T-1D1
+A0E0L0I0M0H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T-2D0
+A0E0L0I0M0H0T0D1,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D1
+A0E0L0I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T1D0
+A0E0L0I0M0H0T2D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T2D0
+A0E0L0I0M0H1T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H1T-1D0
+A0E0L0I0M0H1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H1T0D0
+A0E0L0I0M0H1T1D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H1T1D0
+A0E0L0I0M1H-1T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H-1T-3D0
+A0E0L0I0M1H-4T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H-4T-3D0
+A0E0L0I0M1H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H0T-1D0
+A0E0L0I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H0T-2D0
+A0E0L0I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H0T-3D0
+A0E0L0I0M1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H0T0D0
+A0E0L0I0M1H1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H1T0D0
+A0E0L0I1M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L0I1M0H0T0D0
+A0E0L1I0M-1H0T2D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M-1H0T2D0
+A0E0L1I0M0H-1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H-1T0D0
+A0E0L1I0M0H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T-1D0
+A0E0L1I0M0H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T-2D0
+A0E0L1I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0
+A0E0L1I0M0H1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H1T0D0
+A0E0L1I0M1H-1T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H-1T-3D0
+A0E0L1I0M1H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-1D0
+A0E0L1I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-2D0
+A0E0L1I0M1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T0D0
+A0E0L2I0M0H-1T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H-1T-2D0
+A0E0L2I0M0H-1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H-1T0D0
+A0E0L2I0M0H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T-1D0
+A0E0L2I0M0H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T-2D0
+A0E0L2I0M0H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T-3D0
+A0E0L2I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T0D0
+A0E0L2I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T1D0
+A0E0L2I0M0H1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H1T0D0
+A0E0L2I0M0H1T1D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H1T1D0
+A0E0L2I0M1H-1T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H-1T-2D0
+A0E0L2I0M1H-1T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H-1T-3D0
+A0E0L2I0M1H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-1D0
+A0E0L2I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-2D0
+A0E0L2I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-3D0
+A0E0L2I0M1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T0D0
+A0E0L3I0M-1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L3I0M-1H0T-2D0
+A0E0L3I0M-1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L3I0M-1H0T0D0
+A0E0L3I0M0H-1T0D0,http://qudt.org/vocab/dimensionvector/A0E0L3I0M0H-1T0D0
+A0E0L3I0M0H0T-1D0,http://qudt.org/vocab/dimensionvector/A0E0L3I0M0H0T-1D0
+A0E0L3I0M0H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L3I0M0H0T-2D0
+A0E0L3I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L3I0M0H0T0D0
+A0E0L3I0M1H0T-2D0,http://qudt.org/vocab/dimensionvector/A0E0L3I0M1H0T-2D0
+A0E0L4I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E0L4I0M0H0T0D0
+A0E0L4I0M1H0T-3D0,http://qudt.org/vocab/dimensionvector/A0E0L4I0M1H0T-3D0
+A0E1L-1I0M-1H0T2D0,http://qudt.org/vocab/dimensionvector/A0E1L-1I0M-1H0T2D0
+A0E1L-1I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E1L-1I0M0H0T0D0
+A0E1L-1I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E1L-1I0M0H0T1D0
+A0E1L-2I0M-1H0T2D0,http://qudt.org/vocab/dimensionvector/A0E1L-2I0M-1H0T2D0
+A0E1L-2I0M-1H0T3D0,http://qudt.org/vocab/dimensionvector/A0E1L-2I0M-1H0T3D0
+A0E1L-2I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E1L-2I0M0H0T0D0
+A0E1L-2I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E1L-2I0M0H0T1D0
+A0E1L-3I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E1L-3I0M0H0T1D0
+A0E1L0I0M-1H0T0D0,http://qudt.org/vocab/dimensionvector/A0E1L0I0M-1H0T0D0
+A0E1L0I0M-1H0T1D0,http://qudt.org/vocab/dimensionvector/A0E1L0I0M-1H0T1D0
+A0E1L0I0M-1H1T2D0,http://qudt.org/vocab/dimensionvector/A0E1L0I0M-1H1T2D0
+A0E1L0I0M0H-1T0D0,http://qudt.org/vocab/dimensionvector/A0E1L0I0M0H-1T0D0
+A0E1L0I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E1L0I0M0H0T0D0
+A0E1L0I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E1L0I0M0H0T1D0
+A0E1L1I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E1L1I0M0H0T1D0
+A0E1L2I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A0E1L2I0M0H0T0D0
+A0E1L2I0M0H0T1D0,http://qudt.org/vocab/dimensionvector/A0E1L2I0M0H0T1D0
+A0E2L-2I0M-1H0T3D0,http://qudt.org/vocab/dimensionvector/A0E2L-2I0M-1H0T3D0
+A0E2L-2I0M-1H0T4D0,http://qudt.org/vocab/dimensionvector/A0E2L-2I0M-1H0T4D0
+A0E2L-3I0M-1H0T3D0,http://qudt.org/vocab/dimensionvector/A0E2L-3I0M-1H0T3D0
+A0E2L-3I0M-1H0T4D0,http://qudt.org/vocab/dimensionvector/A0E2L-3I0M-1H0T4D0
+A0E2L0I0M-1H0T4D0,http://qudt.org/vocab/dimensionvector/A0E2L0I0M-1H0T4D0
+A0E2L2I0M-1H0T2D0,http://qudt.org/vocab/dimensionvector/A0E2L2I0M-1H0T2D0
+A0E3L-1I0M-2H0T7D0,http://qudt.org/vocab/dimensionvector/A0E3L-1I0M-2H0T7D0
+A0E4L-2I0M-3H0T10D0,http://qudt.org/vocab/dimensionvector/A0E4L-2I0M-3H0T10D0
+A1E0L-3I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A1E0L-3I0M0H0T0D0
+A1E0L0I0M-1H0T0D0,http://qudt.org/vocab/dimensionvector/A1E0L0I0M-1H0T0D0
+A1E0L0I0M0H0T-1D0,http://qudt.org/vocab/dimensionvector/A1E0L0I0M0H0T-1D0
+A1E0L0I0M0H0T0D0,http://qudt.org/vocab/dimensionvector/A1E0L0I0M0H0T0D0
+A1E0L0I0M0H1T0D0,http://qudt.org/vocab/dimensionvector/A1E0L0I0M0H1T0D0
+API Gravity,http://qudt.org/vocab/quantitykind/Gravity_API
+Abampere,http://qudt.org/vocab/unit/A_Ab
+Abampere Square centimeter,http://qudt.org/vocab/unit/A_Ab-CentiM2
+Abampere per Square Centimeter,http://qudt.org/vocab/unit/A_Ab-PER-CentiM2
+Abcoulomb,http://qudt.org/vocab/unit/C_Ab
+Abcoulomb per Square Centimetre,http://qudt.org/vocab/unit/C_Ab-PER-CentiM2
+Abfarad,http://qudt.org/vocab/unit/FARAD_Ab
+Abfarad per Centimetre,http://qudt.org/vocab/unit/FARAD_Ab-PER-CentiM
+Abhenry,http://qudt.org/vocab/unit/H_Ab
+Abohm,http://qudt.org/vocab/unit/OHM_Ab
+Absiemen,http://qudt.org/vocab/unit/S_Ab
+Absolute Activity,http://qudt.org/vocab/quantitykind/AbsoluteActivity
+Absorbed Dose,http://qudt.org/vocab/quantitykind/AbsorbedDose
+Absorbed Dose Rate,http://qudt.org/vocab/quantitykind/AbsorbedDoseRate
+Absorptance,http://qudt.org/vocab/quantitykind/Absorptance
+Abtesla,http://qudt.org/vocab/unit/T_Ab
+Abvolt,http://qudt.org/vocab/unit/V_Ab
+Abvolt Second,http://qudt.org/vocab/unit/V_Ab-SEC
+Abvolt per centimetre,http://qudt.org/vocab/unit/V_Ab-PER-CentiM
+Acceleration,http://qudt.org/vocab/quantitykind/Acceleration
+Acidity,http://qudt.org/vocab/unit/PH
+Acoustic Impediance,http://qudt.org/vocab/quantitykind/AcousticImpedance
+Acre Foot,http://qudt.org/vocab/unit/AC-FT
+Action,http://qudt.org/vocab/quantitykind/Action
+Activity,http://qudt.org/vocab/quantitykind/Activity
+Activity Coefficient,http://qudt.org/vocab/quantitykind/ActivityCoefficient
+Activity Concentration,http://qudt.org/vocab/quantitykind/ActivityConcentration
+Admittance,http://qudt.org/vocab/quantitykind/Admittance
+Afghani,http://qudt.org/vocab/unit/AFN
+Algerian Dinar,http://qudt.org/vocab/unit/DZD
+All Units Ontology Version 2.1.2,http://www.linkedmodel.org/schema/vaem#GMD_QUDT-UNITS-ALL
+Amount of Substance,http://qudt.org/vocab/quantitykind/AmountOfSubstance
+Amount of Substance of Concentration of B,http://qudt.org/vocab/quantitykind/AmountOfSubstanceConcentrationOfB
+Amount of Substance of Fraction of B,http://qudt.org/vocab/quantitykind/AmountOfSubstanceFractionOfB
+Amount of Substance per Unit Mass,http://qudt.org/vocab/quantitykind/AmountOfSubstancePerUnitMass
+Amount of Substance per Unit Volume,http://qudt.org/vocab/quantitykind/AmountOfSubstancePerUnitVolume
+Ampere Hour,http://qudt.org/vocab/unit/A-HR
+Ampere Per Centimeter,http://qudt.org/vocab/unit/A-PER-CentiM
+Ampere Per Millimeter,http://qudt.org/vocab/unit/A-PER-MilliM
+Ampere Per Square Centimeter,http://qudt.org/vocab/unit/A-PER-CentiM2
+Ampere Per Square Millimetre,http://qudt.org/vocab/unit/A-PER-MilliM2
+Ampere Second,http://qudt.org/vocab/unit/A-SEC
+Ampere Square Meter,http://qudt.org/vocab/unit/A-M2
+Ampere Square Metre Per Joule Second,http://qudt.org/vocab/unit/A-M2-PER-J-SEC
+Ampere Turn,http://qudt.org/vocab/unit/AT
+Ampere Turn per Inch,http://qudt.org/vocab/unit/AT-PER-IN
+Ampere Turn per Meter,http://qudt.org/vocab/unit/AT-PER-M
+Ampere per Degree Celsius,http://qudt.org/vocab/unit/A-PER-DEG_C
+Ampere per Joule,http://qudt.org/vocab/unit/A-PER-J
+Ampere per Metre,http://qudt.org/vocab/unit/A-PER-M
+Ampere per Radian,http://qudt.org/vocab/unit/A-PER-RAD
+Ampere per Square Metre,http://qudt.org/vocab/unit/A-PER-M2
+Ampere per Square Metre Square Kelvin,http://qudt.org/vocab/unit/A-PER-M2-K2
+Angle,http://qudt.org/vocab/quantitykind/Angle
+Angular Acceleration,http://qudt.org/vocab/quantitykind/AngularAcceleration
+Angular Cross-section,http://qudt.org/vocab/quantitykind/AngularCrossSection
+Angular Impulse,http://qudt.org/vocab/quantitykind/AngularImpulse
+Angular Momentum,http://qudt.org/vocab/quantitykind/AngularMomentum
+Angular Velocity,http://qudt.org/vocab/quantitykind/AngularVelocity
+Angular Wavenumber,http://qudt.org/vocab/quantitykind/AngularWavenumber
+ArcMinute,http://qudt.org/vocab/unit/ARCMIN
+ArcSecond,http://qudt.org/vocab/unit/ARCSEC
+Area,http://qudt.org/vocab/quantitykind/Area
+Area Angle,http://qudt.org/vocab/quantitykind/AreaAngle
+Area Ratio,http://qudt.org/vocab/quantitykind/AreaRatio
+Area Temperature,http://qudt.org/vocab/quantitykind/AreaTemperature
+Area Thermal Expansion,http://qudt.org/vocab/quantitykind/AreaThermalExpansion
+Area Time,http://qudt.org/vocab/quantitykind/AreaTime
+Area Time Temperature,http://qudt.org/vocab/quantitykind/AreaTimeTemperature
+Area per Time,http://qudt.org/vocab/quantitykind/AreaPerTime
+Argentine Peso,http://qudt.org/vocab/unit/ARS
+Armenian Dram,http://qudt.org/vocab/unit/AMD
+Aruban Guilder,http://qudt.org/vocab/unit/AWG
+Assay Ton,http://qudt.org/vocab/unit/TON_Assay
+Atom Scattering Factor,http://qudt.org/vocab/quantitykind/AtomScatteringFactor
+Atomic mass unit,http://qudt.org/vocab/unit/AMU
+Attenuation Coefficient,http://qudt.org/vocab/quantitykind/AttenuationCoefficient
+AttoCoulomb,http://qudt.org/vocab/unit/AttoC
+Attofarad,http://qudt.org/vocab/unit/AttoFARAD
+Attojoule,http://qudt.org/vocab/unit/AttoJ
+Attojoule Second,http://qudt.org/vocab/unit/AttoJ-SEC
+Australian Dollar,http://qudt.org/vocab/unit/AUD
+Average Logarithmic Energy Decrement,http://qudt.org/vocab/quantitykind/AverageLogarithmicEnergyDecrement
+Azerbaijanian Manat,http://qudt.org/vocab/unit/AZN
+BTU (IT) Foot per Square Foot Hour Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-FT-PER-FT2-HR-DEG_F
+BTU (IT) Inch per Square Foot Second Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-IN-PER-FT2-SEC-DEG_F
+BTU (IT) per Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-PER-DEG_F
+BTU (TH) Foot per Square Foot Hour Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_TH-FT-PER-FT2-HR-DEG_F
+BTU (TH) Inch per Square Foot Hour Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_TH-IN-PER-FT2-HR-DEG_F
+BTU (TH) Inch per Square Foot Second Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_TH-IN-PER-FT2-SEC-DEG_F
+BTU Foot,http://qudt.org/vocab/unit/BTU_IT-FT
+BTU Inch,http://qudt.org/vocab/unit/BTU_IT-IN
+BTU per Degree Rankine,http://qudt.org/vocab/unit/BTU_IT-PER-DEG_R
+BTU per Hour,http://qudt.org/vocab/unit/BTU_IT-PER-HR
+BTU per Hour Square Foot,http://qudt.org/vocab/unit/BTU_IT-PER-HR-FT2
+BTU per Pound Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-PER-LB-DEG_F
+BTU per Pound Degree Rankine,http://qudt.org/vocab/unit/BTU_IT-PER-LB-DEG_R
+BTU per Pound Mole,http://qudt.org/vocab/unit/BTU_IT-PER-LB-MOL
+BTU per Pound Mole Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-PER-MOL-DEG_F
+BTU per Second,http://qudt.org/vocab/unit/BTU_IT-PER-SEC
+BTU per Second Square Foot,http://qudt.org/vocab/unit/BTU_IT-PER-SEC-FT2
+BTU per Square Foot,http://qudt.org/vocab/unit/BTU_IT-PER-FT2
+BTU per Square Foot Hour Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-PER-FT2-HR-DEG_F
+BTU per Square Foot Second Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-PER-FT2-SEC-DEG_F
+BTU-IT-PER-lb,http://qudt.org/vocab/unit/BTU_IT-PER-LB
+Bahamian Dollar,http://qudt.org/vocab/unit/BSD
+Bahraini Dinar,http://qudt.org/vocab/unit/BHD
+Baht,http://qudt.org/vocab/unit/THB
+Balboa,http://qudt.org/vocab/unit/PAB
+Ban,http://qudt.org/vocab/unit/BAN
+Bangladeshi Taka,http://qudt.org/vocab/unit/BDT
+Bar,http://qudt.org/vocab/unit/BAR
+Bar Cubic Metre Per Second,http://qudt.org/vocab/unit/BAR-M3-PER-SEC
+Bar Litre Per Second,http://qudt.org/vocab/unit/BAR-L-PER-SEC
+Bar Per Bar,http://qudt.org/vocab/unit/BAR-PER-BAR
+Bar Per Kelvin,http://qudt.org/vocab/unit/BAR-PER-K
+Barad,http://qudt.org/vocab/unit/BARAD
+Barbados Dollar,http://qudt.org/vocab/unit/BBD
+Barn,http://qudt.org/vocab/unit/BARN
+Barrel,http://qudt.org/vocab/unit/BBL
+Barrel (UK Petroleum),http://qudt.org/vocab/unit/BBL_UK_PET
+Barrel (UK Petroleum) Per Day,http://qudt.org/vocab/unit/BBL_UK_PET-PER-DAY
+Barrel (UK Petroleum) Per Hour,http://qudt.org/vocab/unit/BBL_UK_PET-PER-HR
+Barrel (UK Petroleum) Per Minute,http://qudt.org/vocab/unit/BBL_UK_PET-PER-MIN
+Barrel (UK Petroleum) Per Second,http://qudt.org/vocab/unit/BBL_UK_PET-PER-SEC
+Barrel (US Petroleum) Per Hour,http://qudt.org/vocab/unit/BBL_US_PET-PER-HR
+Barrel (US Petroleum) Per Second,http://qudt.org/vocab/unit/BBL_US_PET-PER-SEC
+Barrel (US),http://qudt.org/vocab/unit/BBL_US
+Barrel (US) Per Day,http://qudt.org/vocab/unit/BBL_US-PER-DAY
+Barrel (US) Per Minute,http://qudt.org/vocab/unit/BBL_US-PER-MIN
+Barye,http://qudt.org/vocab/unit/BARYE
+Beaufort,http://qudt.org/vocab/unit/BFT
+Becquerel per Cubic Meter,http://qudt.org/vocab/unit/BQ-PER-M3
+Becquerel per Kilogram,http://qudt.org/vocab/unit/BQ-PER-KiloGM
+Becquerel per Square Meter,http://qudt.org/vocab/unit/BQ-PER-M2
+Becquerels per litre,http://qudt.org/vocab/unit/BQ-PER-L
+Becquerels second per cubic metre,http://qudt.org/vocab/unit/BQ-SEC-PER-M3
+Bel,http://qudt.org/vocab/unit/B
+Belarussian Ruble,http://qudt.org/vocab/unit/BYR
+Belize Dollar,http://qudt.org/vocab/unit/BelizeDollar
+Bermuda Dollar,http://qudt.org/vocab/unit/BermudaDollar
+Binding Fraction,http://qudt.org/vocab/quantitykind/BindingFraction
+Biot,http://qudt.org/vocab/unit/BIOT
+Bit per Second,http://qudt.org/vocab/unit/BIT-PER-SEC
+Blood Glucose Level,http://qudt.org/vocab/quantitykind/BloodGlucoseLevel
+Board Foot,http://qudt.org/vocab/unit/FBM
+Body Mass Index,http://qudt.org/vocab/quantitykind/BodyMassIndex
+Boiler Horsepower,http://qudt.org/vocab/unit/HP_Boiler
+Bolivian Mvdol (Funds code),http://qudt.org/vocab/unit/BolivianMvdol
+Boliviano,http://qudt.org/vocab/unit/Boliviano
+Brazilian Real,http://qudt.org/vocab/unit/BrazilianReal
+Breath per Minute,http://qudt.org/vocab/unit/BREATH-PER-MIN
+British Thermal Unit (IT) Per Cubic Foot,http://qudt.org/vocab/unit/BTU_IT-PER-FT3
+British Thermal Unit (International Definition),http://qudt.org/vocab/unit/BTU_IT
+British Thermal Unit (TH) Per Cubic Foot,http://qudt.org/vocab/unit/BTU_TH-PER-FT3
+British Thermal Unit (TH) Per Pound,http://qudt.org/vocab/unit/BTU_TH-PER-LB
+British Thermal Unit (Thermochemical Definition),http://qudt.org/vocab/unit/BTU_TH
+British Thermal Unit (international Table) Inch Per Hour Square Foot Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-IN-PER-FT2-HR-DEG_F
+British Thermal Unit (international Table) Inch Per Hour Square Foot degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-IN-PER-HR-FT2-DEG_F
+British Thermal Unit (international Table) Inch Per Second Square Foot degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-IN-PER-SEC-FT2-DEG_F
+British Thermal Unit (international Table) Per Hour Square Foot degree Rankine,http://qudt.org/vocab/unit/BTU_IT-PER-HR-FT2-DEG_R
+British Thermal Unit (international Table) Per Minute,http://qudt.org/vocab/unit/BTU_IT-PER-MIN
+British Thermal Unit (international Table) Per Pound,http://qudt.org/vocab/unit/BTU_IT-PER-LB_F
+British Thermal Unit (international Table) Per Pound Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_IT-PER-LB_F-DEG_F
+British Thermal Unit (international Table) Per Pound Degree Rankine,http://qudt.org/vocab/unit/BTU_IT-PER-LB_F-DEG_R
+British Thermal Unit (international Table) Per Second Foot Degree Rankine,http://qudt.org/vocab/unit/BTU_IT-PER-SEC-FT-DEG_R
+British Thermal Unit (international Table) Per Second Square Foot degree Rankine,http://qudt.org/vocab/unit/BTU_IT-PER-SEC-FT2-DEG_R
+British Thermal Unit (mean),http://qudt.org/vocab/unit/BTU_MEAN
+British Thermal Unit (thermochemical) Foot Per Hour Square Foot degree Fahrenheit,http://qudt.org/vocab/unit/BTU_TH-FT-PER-HR-FT2-DEG_F
+British Thermal Unit (thermochemical) Per Hour,http://qudt.org/vocab/unit/BTU_TH-PER-HR
+British Thermal Unit (thermochemical) Per Minute,http://qudt.org/vocab/unit/BTU_TH-PER-MIN
+British Thermal Unit (thermochemical) Per Pound Degree Fahrenheit,http://qudt.org/vocab/unit/BTU_TH-PER-LB-DEG_F
+British Thermal Unit (thermochemical) Per Second,http://qudt.org/vocab/unit/BTU_TH-PER-SEC
+Brunei Dollar,http://qudt.org/vocab/unit/BruneiDollar
+Bulgarian Lev,http://qudt.org/vocab/unit/BulgarianLev
+Bulk Modulus,http://qudt.org/vocab/quantitykind/BulkModulus
+Burundian Franc,http://qudt.org/vocab/unit/BurundianFranc
+Bushel (UK) Per Day,http://qudt.org/vocab/unit/BU_UK-PER-DAY
+Bushel (UK) Per Hour,http://qudt.org/vocab/unit/BU_UK-PER-HR
+Bushel (UK) Per Minute,http://qudt.org/vocab/unit/BU_UK-PER-MIN
+Bushel (UK) Per Second,http://qudt.org/vocab/unit/BU_UK-PER-SEC
+Bushel (US Dry) Per Day,http://qudt.org/vocab/unit/BU_US_DRY-PER-DAY
+Bushel (US Dry) Per Hour,http://qudt.org/vocab/unit/BU_US_DRY-PER-HR
+Bushel (US Dry) Per Minute,http://qudt.org/vocab/unit/BU_US_DRY-PER-MIN
+Bushel (US Dry) Per Second,http://qudt.org/vocab/unit/BU_US_DRY-PER-SEC
+CFA Franc BCEAO,http://qudt.org/vocab/unit/XOF
+CFA Franc BEAC,http://qudt.org/vocab/unit/XAF
+CFP franc,http://qudt.org/vocab/unit/XPF
+CGS System of Units,http://qudt.org/vocab/sou/SOU_CGS
+CGS System of Units - EMU,http://qudt.org/vocab/sou/SOU_CGS-EMU
+CGS System of Units - Gaussian,http://qudt.org/vocab/sou/SOU_CGS-GAUSS
+CGS System of Units ESU,http://qudt.org/vocab/sou/SOU_CGS-ESU
+Calorie (15 Degrees C),http://qudt.org/vocab/unit/CAL_15_DEG_C
+Calorie (international Table) Per Gram,http://qudt.org/vocab/unit/CAL_IT-PER-GM
+Calorie (international Table) Per Gram Degree Celsius,http://qudt.org/vocab/unit/CAL_IT-PER-GM-DEG_C
+Calorie (international Table) Per Gram Kelvin,http://qudt.org/vocab/unit/CAL_IT-PER-GM-K
+Calorie (international Table) Per Second Centimeter Kelvin,http://qudt.org/vocab/unit/CAL_IT-PER-SEC-CentiM-K
+Calorie (international Table) Per Second Square Centimetre kelvin,http://qudt.org/vocab/unit/CAL_IT-PER-SEC-CentiM2-K
+Calorie (mean),http://qudt.org/vocab/unit/CAL_MEAN
+Calorie (thermochemical) Per Centimetre Second Degree Celsius,http://qudt.org/vocab/unit/CAL_TH-PER-CentiM-SEC-DEG_C
+Calorie (thermochemical) Per Gram,http://qudt.org/vocab/unit/CAL_TH-PER-GM
+Calorie (thermochemical) Per Gram Degree Celsius,http://qudt.org/vocab/unit/CAL_TH-PER-GM-DEG_C
+Calorie (thermochemical) Per Gram Kelvin,http://qudt.org/vocab/unit/CAL_TH-PER-GM-K
+Calorie (thermochemical) Per Minute,http://qudt.org/vocab/unit/CAL_TH-PER-MIN
+Calorie (thermochemical) Per Second,http://qudt.org/vocab/unit/CAL_TH-PER-SEC
+Calorie (thermochemical) Per Second Centimetre Kelvin,http://qudt.org/vocab/unit/CAL_TH-PER-SEC-CentiM-K
+Calorie (thermochemical) Per Second Square Centimeter kelvin,http://qudt.org/vocab/unit/CAL_TH-PER-SEC-CentiM2-K
+Calorie per Gram Degree Celsius,http://qudt.org/vocab/unit/KiloCAL-PER-GM-DEG_C
+Canadian Dollar,http://qudt.org/vocab/unit/CAD
+Candela per Square Inch,http://qudt.org/vocab/unit/CD-PER-IN2
+Candlepower,http://qudt.org/vocab/unit/CP
+Canonical Partition Function,http://qudt.org/vocab/quantitykind/CanonicalPartitionFunction
+Capacitance,http://qudt.org/vocab/quantitykind/Capacitance
+Cape Verde Escudo,http://qudt.org/vocab/unit/CapeVerdeEscudo
+Carat,http://qudt.org/vocab/unit/CARAT
+Cases per 1000 individuals per year,http://qudt.org/vocab/unit/CASES-PER-1000I-YR
+Catalytic Activity,http://qudt.org/vocab/quantitykind/CatalyticActivity
+Cayman Islands Dollar,http://qudt.org/vocab/unit/CaymanIslandsDollar
+Cedi,http://qudt.org/vocab/unit/Cedi
+Celsius temperature,http://qudt.org/vocab/quantitykind/CelsiusTemperature
+CentiCoulomb,http://qudt.org/vocab/unit/CentiC
+Centibar,http://qudt.org/vocab/unit/CentiBAR
+Centigram,http://qudt.org/vocab/unit/CentiGM
+Centilitre,http://qudt.org/vocab/unit/CentiL
+Centimeter Of Mercury,http://qudt.org/vocab/unit/CentiM_HG
+Centimeter Per Hour,http://qudt.org/vocab/unit/CentiM-PER-HR
+Centimeter Per Kelvin,http://qudt.org/vocab/unit/CentiM-PER-K
+Centimeter of Water,http://qudt.org/vocab/unit/CM_H2O
+Centimeter per Square Second,http://qudt.org/vocab/unit/CentiM-PER-SEC2
+Centimetre Second Degree Celsius,http://qudt.org/vocab/unit/CentiM-SEC-DEG_C
+Centimetres per thousand years,http://qudt.org/vocab/unit/CentiM-PER-KiloYR
+Centimole per kilogram,http://qudt.org/vocab/unit/CentiMOL-PER-KiloGM
+Centinewton Metre,http://qudt.org/vocab/unit/CentiN-M
+Centipoise,http://qudt.org/vocab/unit/CentiPOISE
+Centipoise Per Bar,http://qudt.org/vocab/unit/CentiPOISE-PER-BAR
+Centistokes,http://qudt.org/vocab/unit/CentiST
+Characteristic Acoustic Impedance,http://qudt.org/vocab/quantitykind/CharacteristicAcousticImpedance
+Chemical Affinity,http://qudt.org/vocab/quantitykind/ChemicalAffinity
+Chilean Peso,http://qudt.org/vocab/unit/ChileanPeso
+Circular Mil,http://qudt.org/vocab/unit/MIL_Circ
+Clo,http://qudt.org/vocab/unit/CLO
+Coefficient of heat transfer,http://qudt.org/vocab/quantitykind/CoefficientOfHeatTransfer
+Coercivity,http://qudt.org/vocab/quantitykind/Coercivity
+Colombian Peso,http://qudt.org/vocab/unit/ColombianPeso
+Combined Non Evaporative Heat Transfer Coefficient,http://qudt.org/vocab/quantitykind/CombinedNonEvaporativeHeatTransferCoefficient
+Combined Non Evaporative Heat Transfer Coefficient,http://qudt.org/vocab/quantitykind/EvaporativeHeatTransferCoefficient
+Common Year,http://qudt.org/vocab/unit/YR_Common
+Comoro Franc,http://qudt.org/vocab/unit/ComoroFranc
+Complex Power,http://qudt.org/vocab/quantitykind/ComplexPower
+Compressibility,http://qudt.org/vocab/quantitykind/Compressibility
+Conductance,http://qudt.org/vocab/quantitykind/Conductance
+Conduction Speed,http://qudt.org/vocab/quantitykind/ConductionSpeed
+Conductivity,http://qudt.org/vocab/quantitykind/Conductivity
+Conventional Centimeter Of Water,http://qudt.org/vocab/unit/CentiM_H2O
+Conventional Millimetre Of Water,http://qudt.org/vocab/unit/MilliM_H2O
+Convertible Marks,http://qudt.org/vocab/unit/ConvertibleMark
+Cord,http://qudt.org/vocab/unit/CORD
+Cordoba Oro,http://qudt.org/vocab/unit/CordobaOro
+Costa Rican Colon,http://qudt.org/vocab/unit/CostaRicanColon
+Coulomb Metre,http://qudt.org/vocab/unit/C-M
+Coulomb Per Cubic Centimetre,http://qudt.org/vocab/unit/C-PER-CentiM3
+Coulomb Per Cubic Millimeter,http://qudt.org/vocab/unit/C-PER-MilliM3
+Coulomb Per Kilogram Second,http://qudt.org/vocab/unit/C-PER-KiloGM-SEC
+Coulomb Per Square Centimetre,http://qudt.org/vocab/unit/C-PER-CentiM2
+Coulomb Per Square Millimetre,http://qudt.org/vocab/unit/C-PER-MilliM2
+Coulomb Square Meter Per Volt,http://qudt.org/vocab/unit/C-M2-PER-V
+Coulomb Square Metre,http://qudt.org/vocab/unit/C-M2
+Coulomb per Cubic Meter,http://qudt.org/vocab/unit/C-PER-M3
+Coulomb per Kilogram,http://qudt.org/vocab/unit/C-PER-KiloGM
+Coulomb per Metre,http://qudt.org/vocab/unit/C-PER-M
+Coulomb per Mole,http://qudt.org/vocab/unit/C-PER-MOL
+Coulomb per Square Metre,http://qudt.org/vocab/unit/C-PER-M2
+Counting Unit,http://qudt.org/schema/qudt/CountingUnit
+Counts per second,http://qudt.org/vocab/unit/NUM-PER-SEC
+Coupling Factor,http://qudt.org/vocab/quantitykind/CouplingFactor
+Croatian Kuna,http://qudt.org/vocab/unit/CroatianKuna
+Cuban Peso,http://qudt.org/vocab/unit/CubanPeso
+Cubic Centimeter Per Minute,http://qudt.org/vocab/unit/CentiM3-PER-MIN
+Cubic Centimeter Per Second,http://qudt.org/vocab/unit/CentiM3-PER-SEC
+Cubic Centimetre Per Cubic Metre,http://qudt.org/vocab/unit/CentiM3-PER-M3
+Cubic Centimetre Per Day,http://qudt.org/vocab/unit/CentiM3-PER-DAY
+Cubic Centimetre Per Hour,http://qudt.org/vocab/unit/CentiM3-PER-HR
+Cubic Centimetre Per Kelvin,http://qudt.org/vocab/unit/CentiM3-PER-K
+Cubic Coulomb Metre per Square Joule,http://qudt.org/vocab/unit/C3-M-PER-J2
+Cubic Decameter,http://qudt.org/vocab/unit/DecaM3
+Cubic Decimeter Per Cubic Meter,http://qudt.org/vocab/unit/DeciM3-PER-M3
+Cubic Decimeter Per Mole,http://qudt.org/vocab/unit/DeciM3-PER-MOL
+Cubic Decimetre Per Day,http://qudt.org/vocab/unit/DeciM3-PER-DAY
+Cubic Decimetre Per Hour,http://qudt.org/vocab/unit/DeciM3-PER-HR
+Cubic Decimetre Per Minute,http://qudt.org/vocab/unit/DeciM3-PER-MIN
+Cubic Decimetre Per Second,http://qudt.org/vocab/unit/DeciM3-PER-SEC
+Cubic Electric Dipole Moment per Square Energy,http://qudt.org/vocab/quantitykind/CubicElectricDipoleMomentPerSquareEnergy
+Cubic Expansion Coefficient,http://qudt.org/vocab/quantitykind/CubicExpansionCoefficient
+Cubic Foot,http://qudt.org/vocab/unit/FT3
+Cubic Foot Per Day,http://qudt.org/vocab/unit/FT3-PER-DAY
+Cubic Foot Per Degree Fahrenheit,http://qudt.org/vocab/unit/FT3-PER-DEG_F
+Cubic Foot Per Hour,http://qudt.org/vocab/unit/FT3-PER-HR
+Cubic Foot Per Minute Square Foot,http://qudt.org/vocab/unit/FT3-PER-MIN-FT2
+Cubic Foot per Minute,http://qudt.org/vocab/unit/FT3-PER-MIN
+Cubic Foot per Second,http://qudt.org/vocab/unit/FT3-PER-SEC
+Cubic Inch,http://qudt.org/vocab/unit/IN3
+Cubic Inch Per Hour,http://qudt.org/vocab/unit/IN3-PER-HR
+Cubic Inch Per Second,http://qudt.org/vocab/unit/IN3-PER-SEC
+Cubic Inch per Minute,http://qudt.org/vocab/unit/IN3-PER-MIN
+Cubic Kilometre per Square Second,http://qudt.org/vocab/unit/KiloM3-PER-SEC2
+Cubic Meter Per Cubic Meter,http://qudt.org/vocab/unit/M3-PER-M3
+Cubic Meter Per Day,http://qudt.org/vocab/unit/M3-PER-DAY
+Cubic Meter Per Minute,http://qudt.org/vocab/unit/M3-PER-MIN
+Cubic Meter per Hour,http://qudt.org/vocab/unit/M3-PER-HR
+Cubic Meter per Kelvin,http://qudt.org/vocab/unit/M3-PER-K
+Cubic Meter per Second,http://qudt.org/vocab/unit/M3-PER-SEC
+Cubic Meter per Square Second,http://qudt.org/vocab/unit/M3-PER-SEC2
+Cubic Metre per Coulomb,http://qudt.org/vocab/unit/M3-PER-C
+Cubic Metre per Kilogram Square Second,http://qudt.org/vocab/unit/M3-PER-KiloGM-SEC2
+Cubic Mile,http://qudt.org/vocab/unit/MI3
+Cubic Millimeter Per Cubic Meter,http://qudt.org/vocab/unit/MilliM3-PER-M3
+Cubic Millimetre,http://qudt.org/vocab/unit/MilliM3
+Cubic Yard,http://qudt.org/vocab/unit/YD3
+Cubic Yard Per Day,http://qudt.org/vocab/unit/YD3-PER-DAY
+Cubic Yard Per Degree Fahrenheit,http://qudt.org/vocab/unit/YD3-PER-DEG_F
+Cubic Yard Per Hour,http://qudt.org/vocab/unit/YD3-PER-HR
+Cubic Yard Per Second,http://qudt.org/vocab/unit/YD3-PER-SEC
+Cubic Yard per Minute,http://qudt.org/vocab/unit/YD3-PER-MIN
+Cubic micrometres (microns),http://qudt.org/vocab/unit/MicroM3
+Cubic microns per cubic metre,http://qudt.org/vocab/unit/MicroM3-PER-M3
+Cubic microns per millilitre,http://qudt.org/vocab/unit/MicroM3-PER-MilliL
+Cup (US),http://qudt.org/vocab/unit/CUP_US
+Currency,http://qudt.org/vocab/quantitykind/Currency
+Currency Unit,http://qudt.org/schema/qudt/CurrencyUnit
+Current Linkage,http://qudt.org/vocab/quantitykind/CurrentLinkage
+Curvature,http://qudt.org/vocab/quantitykind/Curvature
+Curvature,http://qudt.org/vocab/quantitykind/CurvatureFromRadius
+Cyprus Pound,http://qudt.org/vocab/unit/CyprusPound
+Czech Koruna,http://qudt.org/vocab/unit/CzechKoruna
+Dalasi,http://qudt.org/vocab/unit/Dalasi
+Danish Krone,http://qudt.org/vocab/unit/DanishKrone
+Data Rate,http://qudt.org/vocab/quantitykind/DataRate
+Deaths per 1000 individuals per year,http://qudt.org/vocab/unit/DEATHS-PER-1000I-YR
+Deaths per Million individuals per year,http://qudt.org/vocab/unit/DEATHS-PER-1000000I-YR
+Debye,http://qudt.org/vocab/unit/Debye
+Debye-Waller Factor,http://qudt.org/vocab/quantitykind/Debye-WallerFactor
+Dec,http://qudt.org/vocab/unit/DECADE
+DecaCoulomb,http://qudt.org/vocab/unit/DecaC
+Decagram,http://qudt.org/vocab/unit/DecaGM
+Decalitre,http://qudt.org/vocab/unit/DecaL
+Decametre,http://qudt.org/vocab/unit/DecaM
+Decapascal,http://qudt.org/vocab/unit/DecaPA
+Decare,http://qudt.org/vocab/unit/DecaARE
+Decay Constant,http://qudt.org/vocab/quantitykind/DecayConstant
+DeciCoulomb,http://qudt.org/vocab/unit/DeciC
+Decibar,http://qudt.org/vocab/unit/DeciBAR
+Decibars per year,http://qudt.org/vocab/unit/DeciBAR-PER-YR
+Decibel Carrier Unit,http://qudt.org/vocab/unit/DeciB_C
+Decibel Referred to 1mw,http://qudt.org/vocab/unit/DeciB_M
+Decigram,http://qudt.org/vocab/unit/DeciGM
+Decilitre Per Gram,http://qudt.org/vocab/unit/DeciL-PER-GM
+Decimetre,http://qudt.org/vocab/unit/DeciM
+Decinewton Metre,http://qudt.org/vocab/unit/DeciN-M
+Degree API,http://qudt.org/vocab/unit/DEGREE_API
+Degree Balling,http://qudt.org/vocab/unit/DEGREE_BALLING
+Degree Baume (US Heavy),http://qudt.org/vocab/unit/DEGREE_BAUME_US_HEAVY
+Degree Baume (US Light),http://qudt.org/vocab/unit/DEGREE_BAUME_US_LIGHT
+Degree Baume (origin Scale),http://qudt.org/vocab/unit/DEGREE_BAUME
+Degree Brix,http://qudt.org/vocab/unit/DEGREE_BRIX
+Degree Celsius Centimetre,http://qudt.org/vocab/unit/DEG_C-CentiM
+Degree Celsius Per Kelvin,http://qudt.org/vocab/unit/DEG_C-PER-K
+Degree Celsius per Hour,http://qudt.org/vocab/unit/DEG_C-PER-HR
+Degree Celsius per Minute,http://qudt.org/vocab/unit/DEG_C-PER-MIN
+Degree Celsius per Second,http://qudt.org/vocab/unit/DEG_C-PER-SEC
+Degree Fahrenheit Hour,http://qudt.org/vocab/unit/DEG_F-HR
+Degree Fahrenheit Hour Square Foot per British Thermal Unit (international Table),http://qudt.org/vocab/unit/DEG_F-HR-FT2-PER-BTU_IT
+Degree Fahrenheit Hour Square Foot per British Thermal Unit (thermochemical),http://qudt.org/vocab/unit/DEG_F-HR-FT2-PER-BTU_TH
+Degree Fahrenheit Hour per BTU,http://qudt.org/vocab/unit/DEG_F-HR-PER-BTU_IT
+Degree Fahrenheit Per Kelvin,http://qudt.org/vocab/unit/DEG_F-PER-K
+Degree Fahrenheit per Hour,http://qudt.org/vocab/unit/DEG_F-PER-HR
+Degree Fahrenheit per Minute,http://qudt.org/vocab/unit/DEG_F-PER-MIN
+Degree Fahrenheit per Second,http://qudt.org/vocab/unit/DEG_F-PER-SEC
+Degree Fahrenheit per Square Second,http://qudt.org/vocab/unit/DEG_F-PER-SEC2
+Degree Oechsle,http://qudt.org/vocab/unit/DEGREE_OECHSLE
+Degree Plato,http://qudt.org/vocab/unit/DEGREE_PLATO
+Degree Rankine,http://qudt.org/vocab/unit/DEG_R
+Degree Rankine per Hour,http://qudt.org/vocab/unit/DEG_R-PER-HR
+Degree Rankine per Minute,http://qudt.org/vocab/unit/DEG_R-PER-MIN
+Degree Rankine per Second,http://qudt.org/vocab/unit/DEG_R-PER-SEC
+Degree Twaddell,http://qudt.org/vocab/unit/DEGREE_TWADDELL
+Degree of Dissociation,http://qudt.org/vocab/quantitykind/DegreeOfDissociation
+Degree per Hour,http://qudt.org/vocab/unit/DEG-PER-HR
+Degree per Minute,http://qudt.org/vocab/unit/DEG-PER-MIN
+Degree per Second,http://qudt.org/vocab/unit/DEG-PER-SEC
+Degree per Square Second,http://qudt.org/vocab/unit/DEG-PER-SEC2
+Degrees Celsius kilogram per square metre,http://qudt.org/vocab/unit/DEG_C-KiloGM-PER-M2
+Degrees Celsius per metre,http://qudt.org/vocab/unit/DEG_C-PER-M
+Degrees Celsius per year,http://qudt.org/vocab/unit/DEG_C-PER-YR
+Degrees Kelvin per metre,http://qudt.org/vocab/unit/K-PER-M
+Degrees per metre,http://qudt.org/vocab/unit/DEG-PER-M
+Denar,http://qudt.org/vocab/unit/Denar
+Denier,http://qudt.org/vocab/unit/Denier
+Density,http://qudt.org/vocab/quantitykind/Density
+Density of states,http://qudt.org/vocab/quantitykind/DensityOfStates
+Derived Unit,http://qudt.org/schema/qudt/DerivedUnit
+Diffusion Coefficient,http://qudt.org/vocab/quantitykind/NeutronDiffusionCoefficient
+Diffusion Coefficient,http://qudt.org/vocab/quantitykind/DiffusionCoefficient
+Dimensionless,http://qudt.org/vocab/quantitykind/Dimensionless
+Dimensionless Ratio,http://qudt.org/vocab/quantitykind/DimensionlessRatio
+Diopter,http://qudt.org/vocab/unit/DIOPTER
+Displacement Current,http://qudt.org/vocab/quantitykind/DisplacementCurrent
+Displacement Current Density,http://qudt.org/vocab/quantitykind/DisplacementCurrentDensity
+Dissipance,http://qudt.org/vocab/quantitykind/Dissipance
+Djibouti Franc,http://qudt.org/vocab/unit/DjiboutiFranc
+Dobra,http://qudt.org/vocab/unit/Dobra
+Dominican Peso,http://qudt.org/vocab/unit/DominicanPeso
+Dose Equivalent,http://qudt.org/vocab/quantitykind/DoseEquivalent
+Dose Equivalent Quality Factor,http://qudt.org/vocab/quantitykind/DoseEquivalentQualityFactor
+Dram (UK),http://qudt.org/vocab/unit/DRAM_UK
+Dram (US),http://qudt.org/vocab/unit/DRAM_US
+Dry Barrel (US),http://qudt.org/vocab/unit/BBL_US_DRY
+Dry Gallon US,http://qudt.org/vocab/unit/GAL_US_DRY
+Dry Volume,http://qudt.org/vocab/quantitykind/DryVolume
+Dynamic Viscosity,http://qudt.org/vocab/quantitykind/DynamicViscosity
+Dyne,http://qudt.org/vocab/unit/DYN
+Dyne Centimeter ,http://qudt.org/vocab/unit/DYN-CentiM
+Dyne Per Centimetre,http://qudt.org/vocab/unit/DYN-PER-CentiM
+Dyne Second Per Centimetre,http://qudt.org/vocab/unit/DYN-SEC-PER-CentiM
+Dyne Second Per Cubic Centimetre,http://qudt.org/vocab/unit/DYN-SEC-PER-CentiM3
+Dyne per Square Centimeter,http://qudt.org/vocab/unit/DYN-PER-CentiM2
+Earth mass,http://qudt.org/vocab/unit/EarthMass
+East Caribbean Dollar,http://qudt.org/vocab/unit/EastCaribbeanDollar
+Egyptian Pound,http://qudt.org/vocab/unit/EgyptianPound
+Einstein Transition Probability,http://qudt.org/vocab/quantitykind/EinsteinTransitionProbability
+Electric Charge Density,http://qudt.org/vocab/quantitykind/ElectricChargeDensity
+Electric Charge Line Density,http://qudt.org/vocab/quantitykind/ElectricChargeLineDensity
+Electric Charge Linear Density,http://qudt.org/vocab/quantitykind/ElectricChargeLinearDensity
+Electric Charge Per Mass,http://qudt.org/vocab/quantitykind/ElectricChargePerMass
+Electric Charge Surface Density,http://qudt.org/vocab/quantitykind/ElectricChargeSurfaceDensity
+Electric Charge Volume Density,http://qudt.org/vocab/quantitykind/ElectricChargeVolumeDensity
+Electric Conductivity,http://qudt.org/vocab/quantitykind/ElectricConductivity
+Electric Current,http://qudt.org/vocab/quantitykind/ElectricCurrent
+Electric Current Density,http://qudt.org/vocab/quantitykind/ElectricCurrentDensity
+Electric Current Phasor,http://qudt.org/vocab/quantitykind/ElectricCurrentPhasor
+Electric Current per Angle,http://qudt.org/vocab/quantitykind/ElectricCurrentPerAngle
+Electric Current per Unit Energy,http://qudt.org/vocab/quantitykind/ElectricCurrentPerUnitEnergy
+Electric Current per Unit Temperature,http://qudt.org/vocab/quantitykind/ElectricCurrentPerUnitTemperature
+Electric Dipole Moment,http://qudt.org/vocab/quantitykind/ElectricDipoleMoment
+Electric Field,http://qudt.org/vocab/quantitykind/ElectricField
+Electric Field Strength,http://qudt.org/vocab/quantitykind/ElectricFieldStrength
+Electric Flux,http://qudt.org/vocab/quantitykind/ElectricFlux
+Electric Flux Density,http://qudt.org/vocab/quantitykind/ElectricFluxDensity
+Electric Polarizability,http://qudt.org/vocab/quantitykind/ElectricPolarizability
+Electric Polarization,http://qudt.org/vocab/quantitykind/ElectricPolarization
+Electric Quadrupole Moment,http://qudt.org/vocab/quantitykind/ElectricQuadrupoleMoment
+Electric Susceptibility,http://qudt.org/vocab/quantitykind/ElectricSusceptibility
+Electric charge per amount of substance,http://qudt.org/vocab/quantitykind/ElectricChargePerAmountOfSubstance
+Electric charge per area,http://qudt.org/vocab/quantitykind/ElectricChargePerArea
+Electrolytic Conductivity,http://qudt.org/vocab/quantitykind/ElectrolyticConductivity
+Electromagnetic Energy Density,http://qudt.org/vocab/quantitykind/ElectromagneticEnergyDensity
+Electromagnetic Permeability Ratio,http://qudt.org/vocab/quantitykind/ElectromagneticPermeabilityRatio
+Electromagnetic Wave Phase Speed,http://qudt.org/vocab/quantitykind/ElectromagneticWavePhaseSpeed
+Electron Volt Second,http://qudt.org/vocab/unit/EV-SEC
+Electron Volt per Kelvin,http://qudt.org/vocab/unit/EV-PER-K
+Electron Volt per Tesla,http://qudt.org/vocab/unit/EV-PER-T
+Electronvolt Per Metre,http://qudt.org/vocab/unit/EV-PER-M
+Elementary Charge,http://qudt.org/vocab/quantitykind/ElementaryCharge
+Elementary Charge,http://qudt.org/vocab/unit/E
+Elementary Charge,http://qudt.org/vocab/unit/ElementaryCharge
+Emissivity,http://qudt.org/vocab/quantitykind/Emissivity
+Energy,http://qudt.org/vocab/quantitykind/Energy
+Energy Density,http://qudt.org/vocab/quantitykind/EnergyDensity
+Energy Density of States,http://qudt.org/vocab/quantitykind/EnergyDensityOfStates
+Energy Fluence,http://qudt.org/vocab/quantitykind/EnergyFluence
+Energy Fluence Rate,http://qudt.org/vocab/quantitykind/EnergyFluenceRate
+Energy Per Area Electric Charge,http://qudt.org/vocab/quantitykind/EnergyPerAreaElectricCharge
+Energy Per Square Magnetic Flux Density,http://qudt.org/vocab/quantitykind/EnergyPerSquareMagneticFluxDensity
+Energy and work per mass amount of substance,http://qudt.org/vocab/quantitykind/EnergyPerMassAmountOfSubstance
+Energy per Area,http://qudt.org/vocab/quantitykind/EnergyPerArea
+Energy per electric charge,http://qudt.org/vocab/quantitykind/EnergyPerElectricCharge
+Energy per temperature,http://qudt.org/vocab/quantitykind/EnergyPerTemperature
+Entropy,http://qudt.org/vocab/quantitykind/Entropy
+Erg,http://qudt.org/vocab/unit/ERG
+Erg Per Centimetre,http://qudt.org/vocab/unit/ERG-PER-CentiM
+Erg Per Gram,http://qudt.org/vocab/unit/ERG-PER-GM
+Erg Per Gram Second,http://qudt.org/vocab/unit/ERG-PER-GM-SEC
+Erg Second,http://qudt.org/vocab/unit/ERG-SEC
+Erg per Cubic Centimeter,http://qudt.org/vocab/unit/ERG-PER-CentiM3
+Erg per Gram,http://qudt.org/vocab/unit/ERG-PER-G
+Erg per Second,http://qudt.org/vocab/unit/ERG-PER-SEC
+Erg per Square Centimetre Second,http://qudt.org/vocab/unit/ERG-PER-CentiM2-SEC
+Erlang,http://qudt.org/vocab/unit/ERLANG
+Ethiopian Birr,http://qudt.org/vocab/unit/EthiopianBirr
+Euro,http://qudt.org/vocab/unit/Euro
+European Composite Unit (EURCO) (Bonds market unit),http://qudt.org/vocab/unit/EuropeanCompositeUnit
+European Monetary Unit (E.M.U.-6) (Bonds market unit),http://qudt.org/vocab/unit/EuropeanMonetaryUnit
+European Unit of Account 17 (E.U.A.-17) (Bonds market unit),http://qudt.org/vocab/unit/EuropeanUnitOfAccount17
+European Unit of Account 9 (E.U.A.-9) (Bonds market unit),http://qudt.org/vocab/unit/EuropeanUnitOfAccount9
+ExaCoulomb,http://qudt.org/vocab/unit/ExaC
+Exajoule,http://qudt.org/vocab/unit/ExaJ
+Exbi,http://qudt.org/2.1/vocab/prefix/Exbi
+Exchange Integral,http://qudt.org/vocab/quantitykind/ExchangeIntegral
+Exposure,http://qudt.org/vocab/quantitykind/Exposure
+Exposure Rate,http://qudt.org/vocab/quantitykind/ExposureRate
+Extent of Reaction,http://qudt.org/vocab/quantitykind/ExtentOfReaction
+Failures In Time,http://qudt.org/vocab/unit/failures-in-time
+Falkland Islands Pound,http://qudt.org/vocab/unit/FalklandIslandsPound
+Farad,http://qudt.org/vocab/unit/FARAD
+Farad Per Kilometer,http://qudt.org/vocab/unit/FARAD-PER-KiloM
+Farad per Meter,http://qudt.org/vocab/unit/FARAD-PER-M
+Faraday,http://qudt.org/vocab/unit/F
+Fast Fission Factor,http://qudt.org/vocab/quantitykind/FastFissionFactor
+FemtoCoulomb,http://qudt.org/vocab/unit/FemtoC
+Femtograms per kilogram,http://qudt.org/vocab/unit/FemtoGM-PER-KiloGM
+Femtograms per litre,http://qudt.org/vocab/unit/FemtoGM-PER-L
+Femtojoule,http://qudt.org/vocab/unit/FemtoJ
+Femtometre,http://qudt.org/vocab/unit/FemtoM
+Femtomoles per kilogram,http://qudt.org/vocab/unit/FemtoMOL-PER-KiloGM
+Femtomoles per litre,http://qudt.org/vocab/unit/FemtoMOL-PER-L
+Fermi Angular Wavenumber,http://qudt.org/vocab/quantitykind/FermiAngularWavenumber
+Fiji Dollar,http://qudt.org/vocab/unit/FijiDollar
+Flight,http://qudt.org/vocab/unit/Flight
+Fluid Ounce (UK),http://qudt.org/vocab/unit/OZ_VOL_UK
+Flux,http://qudt.org/vocab/quantitykind/Flux
+Foot Lambert,http://qudt.org/vocab/unit/FT-LA
+Foot Of Mercury,http://qudt.org/vocab/unit/FT_HG
+Foot Per Degree Fahrenheit,http://qudt.org/vocab/unit/FT-PER-DEG_F
+Foot Pound Force,http://qudt.org/vocab/unit/FT-LB_F
+Foot Pound Force Second,http://qudt.org/vocab/unit/FT-LB_F-SEC
+Foot Pound Force per Hour,http://qudt.org/vocab/unit/FT-LB_F-PER-HR
+Foot Pound Force per Minute,http://qudt.org/vocab/unit/FT-LB_F-PER-MIN
+Foot Pound Force per Second,http://qudt.org/vocab/unit/FT-LB_F-PER-SEC
+Foot Pound Force per Square Foot Second,http://qudt.org/vocab/unit/FT-LB_F-PER-FT2-SEC
+Foot Pound Force per Square Metre,http://qudt.org/vocab/unit/FT-LB_F-PER-M2
+Foot Pound per Square Foot,http://qudt.org/vocab/unit/FT-LB_F-PER-FT2
+Foot Poundal,http://qudt.org/vocab/unit/FT-PDL
+Foot of Water,http://qudt.org/vocab/unit/FT_H2O
+Foot per Hour,http://qudt.org/vocab/unit/FT-PER-HR
+Foot per Minute,http://qudt.org/vocab/unit/FT-PER-MIN
+Foot per Second,http://qudt.org/vocab/unit/FT-PER-SEC
+Foot per Square Second,http://qudt.org/vocab/unit/FT-PER-SEC2
+Force,http://qudt.org/vocab/quantitykind/Force
+Force Magnitude,http://qudt.org/vocab/quantitykind/ForceMagnitude
+Force Per Area,http://qudt.org/vocab/quantitykind/ForcePerArea
+Force Per Area Time,http://qudt.org/vocab/quantitykind/ForcePerAreaTime
+Force per Electric Charge,http://qudt.org/vocab/quantitykind/ForcePerElectricCharge
+Force per Length,http://qudt.org/vocab/quantitykind/ForcePerLength
+Forint,http://qudt.org/vocab/unit/Forint
+Fractional area,http://qudt.org/vocab/unit/FA
+Frame per Second,http://qudt.org/vocab/unit/FRAME-PER-SEC
+Franc Congolais,http://qudt.org/vocab/unit/FrancCongolais
+Franklin,http://qudt.org/vocab/unit/FR
+French Gauge,http://qudt.org/vocab/unit/GAUGE_FR
+Frequency,http://qudt.org/vocab/quantitykind/Frequency
+Fugacity,http://qudt.org/vocab/quantitykind/Fugacity
+Galileo,http://qudt.org/vocab/unit/GAL
+Gallon (UK),http://qudt.org/vocab/unit/GAL_UK
+Gallon (UK) Per Day,http://qudt.org/vocab/unit/GAL_UK-PER-DAY
+Gallon (UK) Per Hour,http://qudt.org/vocab/unit/GAL_UK-PER-HR
+Gallon (UK) Per Second,http://qudt.org/vocab/unit/GAL_UK-PER-SEC
+Gallon (US Liquid) Per Second,http://qudt.org/vocab/unit/GAL_US-PER-SEC
+Gallon (US) Per Hour,http://qudt.org/vocab/unit/GAL_US-PER-HR
+Gallon UK) Per Minute,http://qudt.org/vocab/unit/GAL_UK-PER-MIN
+Gamma,http://qudt.org/vocab/unit/Gamma
+Gauss,http://qudt.org/vocab/unit/GAUSS
+Generalized Coordinate,http://qudt.org/vocab/quantitykind/GeneralizedCoordinate
+Generalized Force,http://qudt.org/vocab/quantitykind/GeneralizedMomentum
+Generalized Force,http://qudt.org/vocab/quantitykind/GeneralizedForce
+Generalized Velocity,http://qudt.org/vocab/quantitykind/GeneralizedVelocity
+Gibraltar pound,http://qudt.org/vocab/unit/GibraltarPound
+Giga Electron Volt,http://qudt.org/vocab/unit/GigaEV
+GigaCoulomb,http://qudt.org/vocab/unit/GigaC
+Gigabecquerel,http://qudt.org/vocab/unit/GigaBQ
+Gigacoulomb Per Cubic Metre,http://qudt.org/vocab/unit/GigaC-PER-M3
+Gigahertz,http://qudt.org/vocab/unit/GigaHZ
+Gigahertz Meter,http://qudt.org/vocab/unit/GigaHZ-M
+Gigajoule,http://qudt.org/vocab/unit/GigaJ
+Gigaohm,http://qudt.org/vocab/unit/GigaOHM
+Gigapascal,http://qudt.org/vocab/unit/GigaPA
+Gigawatt,http://qudt.org/vocab/unit/GigaW
+Gigawatt Hour,http://qudt.org/vocab/unit/GigaW-HR
+Gilbert,http://qudt.org/vocab/unit/GI
+Gill (UK),http://qudt.org/vocab/unit/GI_UK
+Gill (UK) Per Day,http://qudt.org/vocab/unit/GI_UK-PER-DAY
+Gill (UK) Per Hour,http://qudt.org/vocab/unit/GI_UK-PER-HR
+Gill (UK) Per Minute,http://qudt.org/vocab/unit/GI_UK-PER-MIN
+Gill (UK) Per Second,http://qudt.org/vocab/unit/GI_UK-PER-SEC
+Gill (US),http://qudt.org/vocab/unit/GI_US
+Gill (US) Per Day,http://qudt.org/vocab/unit/GI_US-PER-DAY
+Gill (US) Per Hour,http://qudt.org/vocab/unit/GI_US-PER-HR
+Gill (US) Per Minute,http://qudt.org/vocab/unit/GI_US-PER-MIN
+Gill (US) Per Second,http://qudt.org/vocab/unit/GI_US-PER-SEC
+Gold (one Troy ounce),http://qudt.org/vocab/unit/Gold-OunceTroy
+Gold franc (special settlement currency),http://qudt.org/vocab/unit/GoldFranc
+Gon,http://qudt.org/vocab/unit/GON
+Grad,http://qudt.org/vocab/unit/GRAD
+Grade,http://qudt.org/vocab/unit/GR
+Grain Per Gallon (US),http://qudt.org/vocab/unit/GRAIN-PER-GAL_US
+Grain per Gallon,http://qudt.org/vocab/unit/GRAIN-PER-GAL
+Gram Degree Celsius,http://qudt.org/vocab/unit/GM-PER-DEG_C
+Gram Force Per Square Centimetre,http://qudt.org/vocab/unit/GM_F-PER-CentiM2
+Gram Millimetre,http://qudt.org/vocab/unit/GM-MilliM
+Gram Per Cubic Decimeter,http://qudt.org/vocab/unit/GM-PER-DeciM3
+Gram Per Cubic Metre,http://qudt.org/vocab/unit/GM-PER-M3
+Gram Per Day,http://qudt.org/vocab/unit/GM-PER-DAY
+Gram Per Gram,http://qudt.org/vocab/unit/GM-PER-GM
+Gram Per Hour,http://qudt.org/vocab/unit/GM-PER-HR
+Gram Per Kilogram,http://qudt.org/vocab/unit/GM-PER-KiloGM
+Gram Per Metre,http://qudt.org/vocab/unit/GM-PER-M
+Gram Per Millimetre,http://qudt.org/vocab/unit/GM-PER-MilliM
+Gram Per Minute,http://qudt.org/vocab/unit/GM-PER-MIN
+Gram Per Second,http://qudt.org/vocab/unit/GM-PER-SEC
+Gram Per Square Centimetre,http://qudt.org/vocab/unit/GM-PER-CentiM2
+Grams per square centimetre per year,http://qudt.org/vocab/unit/GM-PER-CentiM2-YR
+Graph Metadata,http://www.linkedmodel.org/schema/vaem#GraphMetaData
+Gravitational Attraction,http://qudt.org/vocab/quantitykind/GravitationalAttraction
+Gravity,http://qudt.org/vocab/unit/G
+Gray per Second,http://qudt.org/vocab/unit/GRAY-PER-SEC
+Gross Tonnage,http://qudt.org/vocab/unit/GT
+Group Speed of Sound,http://qudt.org/vocab/quantitykind/GroupSpeedOfSound
+Gruneisen Parameter,http://qudt.org/vocab/quantitykind/GruneisenParameter
+Gs,http://qudt.org/vocab/unit/Gs
+Guarani,http://qudt.org/vocab/unit/Guarani
+Guinea Franc,http://qudt.org/vocab/unit/GuineaFranc
+Guyana Dollar,http://qudt.org/vocab/unit/GuyanaDollar
+Gyromagnetic Ratio,http://qudt.org/vocab/quantitykind/GyromagneticRatio
+Haiti Gourde,http://qudt.org/vocab/unit/HaitiGourde
+Hall Coefficient,http://qudt.org/vocab/quantitykind/HallCoefficient
+Hamilton Function,http://qudt.org/vocab/quantitykind/HamiltonFunction
+Hartley,http://qudt.org/vocab/unit/HART
+Hartley per Second,http://qudt.org/vocab/unit/HART-PER-SEC
+Hartree,http://qudt.org/vocab/unit/E_h
+Heart Beat,http://qudt.org/vocab/unit/HeartBeat
+Heart Beats per Minute,http://qudt.org/vocab/unit/BEAT-PER-MIN
+Heart Rate,http://qudt.org/vocab/quantitykind/HeartRate
+Heat Capacity,http://qudt.org/vocab/quantitykind/HeatCapacity
+Heat Flow Rate,http://qudt.org/vocab/quantitykind/HeatFlowRate
+HectoCoulomb,http://qudt.org/vocab/unit/HectoC
+Hectobar,http://qudt.org/vocab/unit/HectoBAR
+Hectogram,http://qudt.org/vocab/unit/HectoGM
+Hectolitre,http://qudt.org/vocab/unit/HectoL
+Hectometre,http://qudt.org/vocab/unit/HectoM
+Hectopascal,http://qudt.org/vocab/unit/HectoPA
+Hectopascal Cubic Metre Per Second,http://qudt.org/vocab/unit/HectoPA-M3-PER-SEC
+Hectopascal Litre Per Second,http://qudt.org/vocab/unit/HectoPA-L-PER-SEC
+Hectopascal Per Bar,http://qudt.org/vocab/unit/HectoPA-PER-BAR
+Hectopascal Per Kelvin,http://qudt.org/vocab/unit/HectoPA-PER-K
+Hectopascals per hour,http://qudt.org/vocab/unit/HectoPA-PER-HR
+Henry,http://qudt.org/vocab/unit/H
+Henry Per Kiloohm,http://qudt.org/vocab/unit/H-PER-KiloOHM
+Henry Per Ohm,http://qudt.org/vocab/unit/H-PER-OHM
+Henry per Metre,http://qudt.org/vocab/unit/H-PER-M
+Hertz Meter,http://qudt.org/vocab/unit/HZ-M
+Hertz per Kelvin,http://qudt.org/vocab/unit/HZ-PER-K
+Hertz per Tesla,http://qudt.org/vocab/unit/HZ-PER-T
+Hertz per Volt,http://qudt.org/vocab/unit/HZ-PER-V
+Hong Kong Dollar,http://qudt.org/vocab/unit/HongKongDollar
+Horsepower,http://qudt.org/vocab/unit/HP
+Horsepower (brake),http://qudt.org/vocab/unit/HP_Brake
+Horsepower (electric),http://qudt.org/vocab/unit/HP_Electric
+Horsepower (metric),http://qudt.org/vocab/unit/HP_Metric
+Horsepower Electric,http://qudt.org/vocab/unit/HP-PER-V
+Horsepower Metric,http://qudt.org/vocab/unit/HP-PER-M
+Hour Square Foot,http://qudt.org/vocab/unit/HR-FT2
+Hryvnia,http://qudt.org/vocab/unit/Hryvnia
+Hundred Weight - Short,http://qudt.org/vocab/unit/CWT_SHORT
+Hundredweight (UK),http://qudt.org/vocab/unit/Hundredweight_UK
+Hundredweight (US),http://qudt.org/vocab/unit/Hundredweight_US
+Iceland Krona,http://qudt.org/vocab/unit/IcelandKrona
+Impedance,http://qudt.org/vocab/quantitykind/Impedance
+Imperial Gallon,http://qudt.org/vocab/unit/GAL_IMP
+Imperial Mass Ounce per Cubic Inch,http://qudt.org/vocab/unit/OZ_PER-IN3
+Imperial Mass Ounce per Gallon,http://qudt.org/vocab/unit/OZ_PER-GAL
+Imperial Mass Ounce per Square Foot,http://qudt.org/vocab/unit/OZ_PER-FT2
+Imperial Mass Ounce per Square Yard,http://qudt.org/vocab/unit/OZ_PER-YD2
+Imperial Ounce Force,http://qudt.org/vocab/unit/OZ_F
+Imperial Ounce Force Inch,http://qudt.org/vocab/unit/OZ_F-IN
+Imperial Pint,http://qudt.org/vocab/unit/PINT
+Imperial System of Units,http://qudt.org/vocab/sou/SOU_IMPERIAL
+Inch Per Degree Fahrenheit,http://qudt.org/vocab/unit/IN-PER-DEG_F
+Inch of Mercury,http://qudt.org/vocab/unit/IN_HG
+Inch of Water,http://qudt.org/vocab/unit/IN_H2O
+Inch per Second,http://qudt.org/vocab/unit/IN-PER-SEC
+Inch per Square second,http://qudt.org/vocab/unit/IN-PER-SEC2
+Indian Rupee,http://qudt.org/vocab/unit/IndianRupee
+Inductance,http://qudt.org/vocab/quantitykind/Inductance
+Information Entropy,http://qudt.org/vocab/quantitykind/InformationEntropy
+Information flow rate,http://qudt.org/vocab/quantitykind/InformationFlowRate
+InternalConversionFactor,http://qudt.org/vocab/quantitykind/InternalConversionFactor
+International Mile,http://qudt.org/vocab/unit/MI
+International System of Units,http://qudt.org/vocab/sou/SOU_SI
+International Table calorie,http://qudt.org/vocab/unit/CAL_IT
+International Unit,http://qudt.org/vocab/unit/IU
+International Unit per Litre,http://qudt.org/vocab/unit/IU-PER-L
+Inverse Energy,http://qudt.org/vocab/quantitykind/InverseEnergy
+Inverse Length,http://qudt.org/vocab/quantitykind/InverseLength
+Inverse Length Temperature,http://qudt.org/vocab/quantitykind/InverseLengthTemperature
+Inverse Magnetic Flux,http://qudt.org/vocab/quantitykind/InverseMagneticFlux
+Inverse Permittivity,http://qudt.org/vocab/quantitykind/InversePermittivity
+Inverse Pressure,http://qudt.org/vocab/quantitykind/InversePressure
+Inverse Square Energy,http://qudt.org/vocab/quantitykind/InverseSquareEnergy
+Inverse Square Mass,http://qudt.org/vocab/quantitykind/InverseSquareMass
+Inverse Square Planck Mass,http://qudt.org/vocab/unit/PER-PlanckMass2
+Inverse Temperature,http://qudt.org/vocab/quantitykind/InverseTemperature
+Inverse Time Temperature,http://qudt.org/vocab/quantitykind/InverseTimeTemperature
+Inverse Volume,http://qudt.org/vocab/quantitykind/InverseVolume
+Inverse amount of substance,http://qudt.org/vocab/quantitykind/InverseAmountOfSubstance
+Ionic Strength,http://qudt.org/vocab/quantitykind/IonicStrength
+Iranian Rial,http://qudt.org/vocab/unit/IranianRial
+Iraqi Dinar,http://qudt.org/vocab/unit/IraqiDinar
+Irradiance,http://qudt.org/vocab/quantitykind/Irradiance
+Isentropic Compressibility,http://qudt.org/vocab/quantitykind/IsentropicCompressibility
+Isentropic Exponent,http://qudt.org/vocab/quantitykind/IsentropicExponent
+Isothermal compressibility,http://qudt.org/vocab/quantitykind/IsothermalCompressibility
+Jamaican Dollar,http://qudt.org/vocab/unit/JamaicanDollar
+Japanese yen,http://qudt.org/vocab/unit/JapaneseYen
+Jordanian Dinar,http://qudt.org/vocab/unit/JordanianDinar
+Joule Meter per Mole,http://qudt.org/vocab/unit/J-M-PER-MOL
+Joule Per Gram,http://qudt.org/vocab/unit/J-PER-GM
+Joule Per Hour,http://qudt.org/vocab/unit/J-PER-HR
+Joule Per Meter,http://qudt.org/vocab/unit/J-PER-M
+Joule Per Second,http://qudt.org/vocab/unit/J-PER-SEC
+Joule Per Square Centimeter,http://qudt.org/vocab/unit/J-PER-CentiM2
+Joule Second,http://qudt.org/vocab/unit/J-SEC
+Joule Second per Mole,http://qudt.org/vocab/unit/J-SEC-PER-MOL
+Joule Square Meter per Kilogram,http://qudt.org/vocab/unit/J-M2-PER-KiloGM
+Joule Square Metre,http://qudt.org/vocab/unit/J-M2
+Joule per Cubic Meter,http://qudt.org/vocab/unit/J-PER-M3
+Joule per Cubic Metre Kelvin,http://qudt.org/vocab/unit/J-PER-M3-K
+Joule per Kelvin,http://qudt.org/vocab/unit/J-PER-K
+Joule per Kilogram,http://qudt.org/vocab/unit/J-PER-KiloGM
+Joule per Kilogram Kelvin Cubic Metre,http://qudt.org/vocab/unit/J-PER-KiloGM-K-M3
+Joule per Kilogram Kelvin per Pascal,http://qudt.org/vocab/unit/J-PER-KiloGM-K-PA
+Joule per Mole,http://qudt.org/vocab/unit/J-PER-MOL
+Joule per Mole Kelvin,http://qudt.org/vocab/unit/J-PER-MOL-K
+Joule per Quartic Meter,http://qudt.org/vocab/unit/J-PER-M4
+Joule per Square Meter,http://qudt.org/vocab/unit/J-PER-M2
+Joule per Square Tesla,http://qudt.org/vocab/unit/J-PER-T2
+Joule per Tesla,http://qudt.org/vocab/unit/J-PER-T
+Joules per kilogram per Kelvin,http://qudt.org/vocab/unit/J-PER-KiloGM-K
+Joules per square centimetre per day,http://qudt.org/vocab/unit/J-PER-CentiM2-DAY
+Kayser,http://qudt.org/vocab/unit/KY
+Kelvin Metre Per Watt,http://qudt.org/vocab/unit/K-M-PER-W
+Kelvin Pascals per second,http://qudt.org/vocab/unit/K-PA-PER-SEC
+Kelvin Per Kelvin,http://qudt.org/vocab/unit/K-PER-K
+Kelvin metres,http://qudt.org/vocab/unit/K-M
+Kelvin metres per second,http://qudt.org/vocab/unit/K-M-PER-SEC
+Kelvin per Hour,http://qudt.org/vocab/unit/K-PER-HR
+Kelvin per Minute,http://qudt.org/vocab/unit/K-PER-MIN
+Kelvin per Second,http://qudt.org/vocab/unit/K-PER-SEC
+Kelvin per Tesla,http://qudt.org/vocab/unit/K-PER-T
+Kelvin per Watt,http://qudt.org/vocab/unit/K-PER-W
+Kelvin second,http://qudt.org/vocab/unit/K-SEC
+Kelvin square metres per kilogram per second,http://qudt.org/vocab/unit/K-M2-PER-KiloGM-SEC
+Kenyan Shilling,http://qudt.org/vocab/unit/KenyanShilling
+Kerma,http://qudt.org/vocab/quantitykind/Kerma
+Kibi,http://qudt.org/2.1/vocab/prefix/Kibi
+Kilo Byte,http://qudt.org/vocab/unit/KiloBYTE
+Kilo Electron Volt,http://qudt.org/vocab/unit/KiloEV
+Kilo Electron Volt per Micrometre,http://qudt.org/vocab/unit/KiloEV-PER-MicroM
+KiloCoulomb,http://qudt.org/vocab/unit/KiloC
+Kiloampere Hour,http://qudt.org/vocab/unit/KiloA-HR
+Kiloampere Per Meter,http://qudt.org/vocab/unit/KiloA-PER-M
+Kiloampere Per Square Meter,http://qudt.org/vocab/unit/KiloA-PER-M2
+Kilobar,http://qudt.org/vocab/unit/KiloBAR
+Kilobecquerel,http://qudt.org/vocab/unit/KiloBQ
+Kilobit per Second,http://qudt.org/vocab/unit/KiloBIT-PER-SEC
+Kilobyte per Second,http://qudt.org/vocab/unit/KiloBYTE-PER-SEC
+Kilocalorie (international Table),http://qudt.org/vocab/unit/KiloCAL_IT
+Kilocalorie (international Table) Per Hour Meter Degree Celsius,http://qudt.org/vocab/unit/KiloCAL_IT-PER-HR-M-DEG_C
+Kilocalorie (mean),http://qudt.org/vocab/unit/KiloCAL_Mean
+Kilocalorie (thermochemical),http://qudt.org/vocab/unit/KiloCAL_TH
+Kilocalorie (thermochemical) Per Hour,http://qudt.org/vocab/unit/KiloCAL_TH-PER-HR
+Kilocalorie (thermochemical) Per Minute,http://qudt.org/vocab/unit/KiloCAL_TH-PER-MIN
+Kilocalorie (thermochemical) Per Second,http://qudt.org/vocab/unit/KiloCAL_TH-PER-SEC
+Kilocalorie Per Minute,http://qudt.org/vocab/unit/KiloCAL-PER-MIN
+Kilocalorie Per Second,http://qudt.org/vocab/unit/KiloCAL-PER-SEC
+Kilocalorie per Centimetre Second Degree Celsius,http://qudt.org/vocab/unit/KiloCAL-PER-CentiM-SEC-DEG_C
+Kilocalorie per Gram,http://qudt.org/vocab/unit/KiloCAL-PER-GM
+Kilocalorie per Mole,http://qudt.org/vocab/unit/KiloCAL-PER-MOL
+Kilocalorie per Mole Degree Celsius,http://qudt.org/vocab/unit/KiloCAL-PER-MOL-DEG_C
+Kilocalorie per Square Centimetre,http://qudt.org/vocab/unit/KiloCAL-PER-CentiM2
+Kilocalorie per Square Centimetre Minute,http://qudt.org/vocab/unit/KiloCAL-PER-CentiM2-MIN
+Kilocalorie per Square Centimetre Second,http://qudt.org/vocab/unit/KiloCAL-PER-CentiM2-SEC
+Kilocoulomb Per Cubic Metre,http://qudt.org/vocab/unit/KiloC-PER-M3
+Kilocoulomb Per Square Metre,http://qudt.org/vocab/unit/KiloC-PER-M2
+Kilocurie,http://qudt.org/vocab/unit/KiloCi
+Kilogauss,http://qudt.org/vocab/unit/KiloGAUSS
+Kilogram Force,http://qudt.org/vocab/unit/KiloGM_F
+Kilogram Force Metre,http://qudt.org/vocab/unit/KiloGM_F-PER-M
+Kilogram Force Per Square Metre,http://qudt.org/vocab/unit/KiloGM_F-PER-M2
+Kilogram Force Per Square Millimeter,http://qudt.org/vocab/unit/KiloGM_F-PER-MilliM2
+Kilogram Force per Square Centimetre,http://qudt.org/vocab/unit/KiloGM_F-PER-CentiM2
+Kilogram Kelvin,http://qudt.org/vocab/unit/KiloGM-K
+Kilogram Per Cubic Centimeter,http://qudt.org/vocab/unit/KiloGM-PER-CentiM3
+Kilogram Per Cubic Decimeter,http://qudt.org/vocab/unit/KiloGM-PER-DeciM3
+Kilogram Per Day,http://qudt.org/vocab/unit/KiloGM-PER-DAY
+Kilogram Per Kilogram,http://qudt.org/vocab/unit/KiloGM-PER-KiloGM
+Kilogram Per Kilomol,http://qudt.org/vocab/unit/KiloGM-PER-KiloMOL
+Kilogram Per Millimetre,http://qudt.org/vocab/unit/KiloGM-PER-MilliM
+Kilogram Per Minute,http://qudt.org/vocab/unit/KiloGM-PER-MIN
+Kilogram Per Second Square Meter,http://qudt.org/vocab/unit/KiloGM-PER-SEC-M2
+Kilogram Per Square Centimetre,http://qudt.org/vocab/unit/KiloGM-PER-CentiM2
+Kilogram Square Centimeter,http://qudt.org/vocab/unit/KiloGM-CentiM2
+Kilogram Square Metre,http://qudt.org/vocab/unit/KiloGM-M2
+Kilogram Square Metre Per Second,http://qudt.org/vocab/unit/KiloGM-M2-PER-SEC
+Kilogram Square Millimeter,http://qudt.org/vocab/unit/KiloGM-MilliM2
+Kilogram Square Second,http://qudt.org/vocab/unit/KiloGM-SEC2
+Kilogram per Hour,http://qudt.org/vocab/unit/KiloGM-PER-HR
+Kilogram per Mol,http://qudt.org/vocab/unit/KiloGM-PER-MOL
+Kilogram per Second,http://qudt.org/vocab/unit/KiloGM-PER-SEC
+Kilogram per Square Second,http://qudt.org/vocab/unit/KiloGM-PER-SEC2
+Kilogram?force Metre,http://qudt.org/vocab/unit/KiloGM_F-M
+Kilogram?force Metre Per Second,http://qudt.org/vocab/unit/KiloGM_F-M-PER-SEC
+Kilogram?force Metre Per Square Centimetre,http://qudt.org/vocab/unit/KiloGM_F-M-PER-CentiM2
+Kilograms per cubic metre per second,http://qudt.org/vocab/unit/KiloGM-PER-M3-SEC
+Kilograms per metre per hour,http://qudt.org/vocab/unit/KiloGM-PER-M-HR
+Kilograms per metre per second,http://qudt.org/vocab/unit/KiloGM-PER-M-SEC
+Kilograms per square kilometre,http://qudt.org/vocab/unit/KiloGM-PER-KiloM2
+Kilograms per square metre per second,http://qudt.org/vocab/unit/KiloGM-PER-M2-SEC
+Kilohertz,http://qudt.org/vocab/unit/KiloHZ
+Kilohertz Metre,http://qudt.org/vocab/unit/KiloHZ-M
+Kilojoule,http://qudt.org/vocab/unit/KiloJ
+Kilojoule Per Kelvin,http://qudt.org/vocab/unit/KiloJ-PER-K
+Kilojoule Per Kilogram,http://qudt.org/vocab/unit/KiloJ-PER-KiloGM
+Kilojoule Per Kilogram Kelvin,http://qudt.org/vocab/unit/KiloJ-PER-KiloGM-K
+Kilojoule Per Mole,http://qudt.org/vocab/unit/KiloJ-PER-MOL
+Kilolitre,http://qudt.org/vocab/unit/KiloL
+Kilolitre Per Hour,http://qudt.org/vocab/unit/KiloL-PER-HR
+Kilometer per Second,http://qudt.org/vocab/unit/KiloM-PER-SEC
+Kilometre ,http://qudt.org/vocab/unit/KiloM
+Kilometres per day,http://qudt.org/vocab/unit/KiloM-PER-DAY
+Kilomole,http://qudt.org/vocab/unit/KiloMOL
+Kilomole Per Cubic Meter,http://qudt.org/vocab/unit/KiloMOL-PER-M3
+Kilomole Per Hour,http://qudt.org/vocab/unit/KiloMOL-PER-HR
+Kilomole Per Minute,http://qudt.org/vocab/unit/KiloMOL-PER-MIN
+Kilomole Per Second,http://qudt.org/vocab/unit/KiloMOL-PER-SEC
+Kilonewton,http://qudt.org/vocab/unit/KiloN
+Kilonewton Metre,http://qudt.org/vocab/unit/KiloN-M
+Kiloohm,http://qudt.org/vocab/unit/KiloOHM
+Kilopascal,http://qudt.org/vocab/unit/KiloPA
+Kilopascal Absolute,http://qudt.org/vocab/unit/KiloPA_A
+Kilopascal Per Bar,http://qudt.org/vocab/unit/KiloPA-PER-BAR
+Kilopascal Per Kelvin,http://qudt.org/vocab/unit/KiloPA-PER-K
+Kilopascal Per Millimeter,http://qudt.org/vocab/unit/KiloPA-PER-MilliM
+Kilopascal Square Meter per Gram,http://qudt.org/vocab/unit/KiloPA-M2-PER-GM
+Kilopond,http://qudt.org/vocab/unit/KiloP
+Kilopond,http://qudt.org/vocab/unit/KiloPOND
+Kilopound Force Per Square Inch,http://qudt.org/vocab/unit/KiloLB_F-PER-IN2
+Kiloroentgen,http://qudt.org/vocab/unit/KiloR
+Kilosiemens,http://qudt.org/vocab/unit/KiloS
+Kilosiemens Per Metre,http://qudt.org/vocab/unit/KiloS-PER-M
+Kilovolt Ampere,http://qudt.org/vocab/unit/KiloV-A
+Kilovolt Ampere Hour,http://qudt.org/vocab/unit/KiloV-A-HR
+Kilovolt Ampere Reactive,http://qudt.org/vocab/unit/KiloV-A_Reactive
+Kilovolt Ampere Reactive Hour,http://qudt.org/vocab/unit/KiloV-A_Reactive-HR
+Kilovolt Per Metre,http://qudt.org/vocab/unit/KiloV-PER-M
+Kilowatt,http://qudt.org/vocab/unit/KiloW
+Kilowatthour,http://qudt.org/vocab/unit/KiloW-HR
+Kiloweber Per Metre,http://qudt.org/vocab/unit/KiloWB-PER-M
+Kina,http://qudt.org/vocab/unit/Kina
+Kinematic Viscosity,http://qudt.org/vocab/quantitykind/KinematicViscosity
+Kip,http://qudt.org/vocab/unit/KIP_F
+Kip per Square Inch,http://qudt.org/vocab/unit/KIP_F-PER-IN2
+Knot,http://qudt.org/vocab/unit/KN
+Knot per Second,http://qudt.org/vocab/unit/KN-PER-SEC
+Kroon,http://qudt.org/vocab/unit/Kroon
+Kuwaiti Dinar,http://qudt.org/vocab/unit/KuwaitiDinar
+Kwanza,http://qudt.org/vocab/unit/Kwanza
+Kyat,http://qudt.org/vocab/unit/Kyat
+Lagrange Function,http://qudt.org/vocab/quantitykind/LagrangeFunction
+Lambert,http://qudt.org/vocab/unit/LA
+Lande g-Factor,http://qudt.org/vocab/quantitykind/LandeGFactor
+Lao kip,http://qudt.org/vocab/unit/LaoKip
+Lari,http://qudt.org/vocab/unit/Lari
+Latvian Lats,http://qudt.org/vocab/unit/LatvianLats
+Leakage Factor,http://qudt.org/vocab/quantitykind/LeakageFactor
+Lebanese Pound,http://qudt.org/vocab/unit/LebanesePound
+Lek,http://qudt.org/vocab/unit/Lek
+Lempira,http://qudt.org/vocab/unit/Lempira
+Length,http://qudt.org/vocab/quantitykind/Length
+Length Energy,http://qudt.org/vocab/quantitykind/LengthEnergy
+Length Mass,http://qudt.org/vocab/quantitykind/LengthMass
+Length Molar Energy,http://qudt.org/vocab/quantitykind/LengthMolarEnergy
+Length Temperature,http://qudt.org/vocab/quantitykind/LengthTemperature
+Length Temperature Time,http://qudt.org/vocab/quantitykind/LengthTemperatureTime
+Leone,http://qudt.org/vocab/unit/Leone
+Lethargy,http://qudt.org/vocab/quantitykind/Lethargy
+Level Width,http://qudt.org/vocab/quantitykind/LevelWidth
+Liberian Dollar,http://qudt.org/vocab/unit/LiberianDollar
+Libyan Dinar,http://qudt.org/vocab/unit/LibyanDinar
+Light Year,http://qudt.org/vocab/unit/LY
+Lilangeni,http://qudt.org/vocab/unit/Lilangeni
+Linear Absorption Coefficient,http://qudt.org/vocab/quantitykind/LinearAbsorptionCoefficient
+Linear Attenuation Coefficient,http://qudt.org/vocab/quantitykind/LinearAttenuationCoefficient
+Linear Density,http://qudt.org/vocab/quantitykind/LinearDensity
+Linear Electric Current Density,http://qudt.org/vocab/quantitykind/LinearElectricCurrentDensity
+Linear Energy Transfer,http://qudt.org/vocab/quantitykind/LinearEnergyTransfer
+Linear Expansion Coefficient,http://qudt.org/vocab/quantitykind/LinearExpansionCoefficient
+Linear Ionization,http://qudt.org/vocab/quantitykind/LinearIonization
+Linear Momentum,http://qudt.org/vocab/quantitykind/LinearMomentum
+Linear Thermal Expansion,http://qudt.org/vocab/quantitykind/LinearThermalExpansion
+Liquid Volume,http://qudt.org/vocab/quantitykind/LiquidVolume
+Liter Per Hour,http://qudt.org/vocab/unit/L-PER-HR
+Liter Per Kelvin,http://qudt.org/vocab/unit/L-PER-K
+Liter Per Minute,http://qudt.org/vocab/unit/L-PER-MIN
+Liter Per Second,http://qudt.org/vocab/unit/L-PER-SEC
+Lithuanian Litas,http://qudt.org/vocab/unit/LithuanianLitas
+Litre Per Day,http://qudt.org/vocab/unit/L-PER-DAY
+Litre Per Litre,http://qudt.org/vocab/unit/L-PER-L
+Litre Per Mole,http://qudt.org/vocab/unit/L-PER-MOL
+Litres per micromole,http://qudt.org/vocab/unit/L-PER-MicroMOL
+Logarithmic Unit,http://qudt.org/schema/qudt/LogarithmicUnit
+Logarithmic frequency interval,http://qudt.org/vocab/quantitykind/LogarithmicFrequencyInterval
+Long Furlong,http://qudt.org/vocab/unit/FUR_Long
+Long Hundred Weight,http://qudt.org/vocab/unit/CWT_LONG
+Long Ton,http://qudt.org/vocab/unit/TON_LONG
+Long Ton (UK) Per Cubic Yard,http://qudt.org/vocab/unit/TON_UK-PER-YD3
+Long Ton (uk) Per Day,http://qudt.org/vocab/unit/TON_UK-PER-DAY
+Long Ton per Cubic Yard,http://qudt.org/vocab/unit/TON_LONG-PER-YD3
+Long-Range Order Parameter,http://qudt.org/vocab/quantitykind/Long-RangeOrderParameter
+Lorenz Coefficient,http://qudt.org/vocab/quantitykind/LorenzCoefficient
+Loss Factor,http://qudt.org/vocab/quantitykind/LossFactor
+Loti,http://qudt.org/vocab/unit/Loti
+Lumen per Watt,http://qudt.org/vocab/unit/LM-PER-W
+Luminance,http://qudt.org/vocab/quantitykind/Luminance
+Luminous Efficacy,http://qudt.org/vocab/quantitykind/LuminousEfficacy
+Luminous Energy,http://qudt.org/vocab/quantitykind/LuminousEnergy
+Luminous Exposure,http://qudt.org/vocab/quantitykind/LuminousExposure
+Luminous Flux,http://qudt.org/vocab/quantitykind/LuminousFlux
+Luminous Flux per Area,http://qudt.org/vocab/quantitykind/LuminousFluxPerArea
+Luminous Intensity,http://qudt.org/vocab/quantitykind/LuminousIntensity
+Lunar mass,http://qudt.org/vocab/unit/LunarMass
+Lux Hour,http://qudt.org/vocab/unit/LUX-HR
+Mach,http://qudt.org/vocab/unit/MACH
+Mach Number,http://qudt.org/vocab/quantitykind/MachNumber
+Madelung Constant,http://qudt.org/vocab/quantitykind/MadelungConstant
+Magnetic Dipole Moment,http://qudt.org/vocab/quantitykind/MagneticDipoleMoment
+Magnetic Field,http://qudt.org/vocab/quantitykind/MagneticField
+Magnetic Field Strength,http://qudt.org/vocab/quantitykind/MagneticFieldStrength
+Magnetic Flux,http://qudt.org/vocab/quantitykind/MagneticFlux
+Magnetic Reluctivity,http://qudt.org/vocab/quantitykind/MagneticReluctivity
+Magnetic Susceptability,http://qudt.org/vocab/quantitykind/MagneticSusceptability
+Magnetic Tension,http://qudt.org/vocab/quantitykind/MagneticTension
+Magnetic Vector Potential,http://qudt.org/vocab/quantitykind/MagneticVectorPotential
+Magnetic flux density,http://qudt.org/vocab/quantitykind/MagneticFluxDensity
+Magnetic flux per unit length,http://qudt.org/vocab/quantitykind/MagneticFluxPerUnitLength
+Magnetomotive Force,http://qudt.org/vocab/quantitykind/MagnetomotiveForce
+Malagasy Ariary,http://qudt.org/vocab/unit/MalagasyAriary
+Malawi Kwacha,http://qudt.org/vocab/unit/MalawiKwacha
+Malaysian Ringgit,http://qudt.org/vocab/unit/MalaysianRinggit
+Maltese Lira,http://qudt.org/vocab/unit/MalteseLira
+Manat,http://qudt.org/vocab/unit/Manat
+Mass,http://qudt.org/vocab/quantitykind/Mass
+Mass Absorption Coefficient,http://qudt.org/vocab/quantitykind/MassAbsorptionCoefficient
+Mass Amount of Substance,http://qudt.org/vocab/quantitykind/MassAmountOfSubstance
+Mass Amount of Substance Temperature,http://qudt.org/vocab/quantitykind/MassAmountOfSubstanceTemperature
+Mass Attenuation Coefficient,http://qudt.org/vocab/quantitykind/MassAttenuationCoefficient
+Mass Concentration,http://qudt.org/vocab/quantitykind/MassConcentration
+Mass Concentration of Water,http://qudt.org/vocab/quantitykind/MassConcentrationOfWater
+Mass Concentration of Water To Dry Matter,http://qudt.org/vocab/quantitykind/MassRatioOfWaterToDryMatter
+Mass Concentration of Water Vapour,http://qudt.org/vocab/quantitykind/MassConcentrationOfWaterVapour
+Mass Density,http://qudt.org/vocab/quantitykind/MassDensity
+Mass Energy Transfer Coefficient,http://qudt.org/vocab/quantitykind/MassEnergyTransferCoefficient
+Mass Flow Rate,http://qudt.org/vocab/quantitykind/MassFlowRate
+Mass Fraction,http://qudt.org/vocab/quantitykind/MassFraction
+Mass Fraction of Dry Matter,http://qudt.org/vocab/quantitykind/MassFractionOfDryMatter
+Mass Fraction of Water,http://qudt.org/vocab/quantitykind/MassFractionOfWater
+Mass Ratio,http://qudt.org/vocab/quantitykind/MassRatio
+Mass Ratio of Water Vapour to Dry Gas,http://qudt.org/vocab/quantitykind/MassRatioOfWaterVapourToDryGas
+Mass Temperature,http://qudt.org/vocab/quantitykind/MassTemperature
+Mass per Area,http://qudt.org/vocab/quantitykind/MassPerArea
+Mass per Area Time,http://qudt.org/vocab/quantitykind/MassPerAreaTime
+Mass per Electric Charge,http://qudt.org/vocab/quantitykind/MassPerElectricCharge
+Mass per Length,http://qudt.org/vocab/quantitykind/MassPerLength
+Mass per Time,http://qudt.org/vocab/quantitykind/MassPerTime
+Massic Activity,http://qudt.org/vocab/quantitykind/MassicActivity
+Massieu Function,http://qudt.org/vocab/quantitykind/MassieuFunction
+Mauritius Rupee,http://qudt.org/vocab/unit/MauritiusRupee
+Maxwell,http://qudt.org/vocab/unit/MX
+Mean Gregorian Month,http://qudt.org/vocab/unit/MO_MeanGREGORIAN
+Mean Julian Month,http://qudt.org/vocab/unit/MO_MeanJulian
+Mean Mass Range,http://qudt.org/vocab/quantitykind/MeanMassRange
+Mechanical Mobility,http://qudt.org/vocab/quantitykind/MechanicalMobility
+Mechanical surface impedance,http://qudt.org/vocab/quantitykind/MechanicalSurfaceImpedance
+Mega Electron Volt,http://qudt.org/vocab/unit/MegaEV
+Mega Electron Volt Femtometre,http://qudt.org/vocab/unit/MegaEV-FemtoM
+Mega Electron Volt per Centimetre,http://qudt.org/vocab/unit/MegaEV-PER-CentiM
+Mega Electron Volt per Speed of Light,http://qudt.org/vocab/unit/MegaEV-PER-SpeedOfLight
+Mega Hertz per Kelvin,http://qudt.org/vocab/unit/MegaHZ-PER-K
+Mega Hertz per Tesla,http://qudt.org/vocab/unit/MegaHZ-PER-T
+Mega Pound Force,http://qudt.org/vocab/unit/MegaLB_F
+Mega byte,http://qudt.org/vocab/unit/MegaBYTE
+MegaByte of Memory,http://qudt.org/vocab/unit/MegaBYTE_Memory
+MegaCoulomb,http://qudt.org/vocab/unit/MegaC
+MegaJoule per Kelvin,http://qudt.org/vocab/unit/MegaJ-PER-K
+MegaW,http://qudt.org/vocab/unit/MegaW
+Megaampere,http://qudt.org/vocab/unit/MegaA
+Megaampere Per Square Metre,http://qudt.org/vocab/unit/MegaA-PER-M2
+Megabar,http://qudt.org/vocab/unit/MegaBAR
+Megabecquerel,http://qudt.org/vocab/unit/MegaBQ
+Megabit per Second,http://qudt.org/vocab/unit/MegaBIT-PER-SEC
+Megacoulomb Per Cubic Meter,http://qudt.org/vocab/unit/MegaC-PER-M3
+Megacoulomb Per Square Meter,http://qudt.org/vocab/unit/MegaC-PER-M2
+Megagram,http://qudt.org/vocab/unit/MegaGM
+Megagram Per Cubic Meter,http://qudt.org/vocab/unit/MegaGM-PER-M3
+Megahertz Metre,http://qudt.org/vocab/unit/MegaHZ-M
+Megajoule,http://qudt.org/vocab/unit/MegaJ
+Megajoule Per Cubic Metre,http://qudt.org/vocab/unit/MegaJ-PER-M3
+Megajoule Per Kilogram,http://qudt.org/vocab/unit/MegaJ-PER-KiloGM
+Megajoule Per Second,http://qudt.org/vocab/unit/MegaJ-PER-SEC
+Megajoule Per Square Meter,http://qudt.org/vocab/unit/MegaJ-PER-M2
+Megalitre,http://qudt.org/vocab/unit/MegaL
+Meganewton,http://qudt.org/vocab/unit/MegaN
+Meganewton Metre,http://qudt.org/vocab/unit/MegaN-M
+Megaohm,http://qudt.org/vocab/unit/MegaOHM
+Megapascal,http://qudt.org/vocab/unit/MegaPA
+Megapascal Cubic Meter Per Second,http://qudt.org/vocab/unit/MegaPA-M3-PER-SEC
+Megapascal Litre Per Second,http://qudt.org/vocab/unit/MegaPA-L-PER-SEC
+Megapascal Per Bar,http://qudt.org/vocab/unit/MegaPA-PER-BAR
+Megapascal Per Kelvin,http://qudt.org/vocab/unit/MegaPA-PER-K
+Megasiemens Per Meter,http://qudt.org/vocab/unit/MegaS-PER-M
+Megaton of Oil Equivalent,http://qudt.org/vocab/unit/MegaTOE
+Megavolt Ampere,http://qudt.org/vocab/unit/MegaV-A
+Megavolt Ampere Hour,http://qudt.org/vocab/unit/MegaV-A-HR
+Megavolt Ampere Reactive,http://qudt.org/vocab/unit/MegaV-A_Reactive
+Megavolt Ampere Reactive Hour,http://qudt.org/vocab/unit/MegaV-A_Reactive-HR
+Megavolt Per Metre,http://qudt.org/vocab/unit/MegaV-PER-M
+Megawatt Hour,http://qudt.org/vocab/unit/MegaW-HR
+Meter Kelvin,http://qudt.org/vocab/unit/M-K
+Meter Kelvin per Watt,http://qudt.org/vocab/unit/M-K-PER-W
+Meter per Hour,http://qudt.org/vocab/unit/M-PER-HR
+Meter per Kelvin,http://qudt.org/vocab/unit/M-PER-K
+Meter per Minute,http://qudt.org/vocab/unit/M-PER-MIN
+Meter per Square Second,http://qudt.org/vocab/unit/M-PER-SEC2
+Metical,http://qudt.org/vocab/unit/Metical
+Metre Kilogram,http://qudt.org/vocab/unit/M-KiloGM
+Metre per Farad,http://qudt.org/vocab/unit/M-PER-FARAD
+Metres per year,http://qudt.org/vocab/unit/M-PER-YR
+Metres to the power four per second,http://qudt.org/vocab/unit/M4-PER-SEC
+Metric DeciTON,http://qudt.org/vocab/unit/DeciTON_Metric
+Metric KiloTON,http://qudt.org/vocab/unit/KiloTON_Metric
+Metric Ton,http://qudt.org/vocab/unit/TON_Metric
+Mexican Peso,http://qudt.org/vocab/unit/MexicanPeso
+Mexican Unidad de Inversion (UDI) (Funds code),http://qudt.org/vocab/unit/MexicanUnidadDeInversion
+MicroCoulomb,http://qudt.org/vocab/unit/MicroC
+MicroGals per metre,http://qudt.org/vocab/unit/MicroGAL-PER-M
+MicroSievert per hour,http://qudt.org/vocab/unit/MicroSV-PER-HR
+MicroTorr,http://qudt.org/vocab/unit/MicroTORR
+Microatmospheres,http://qudt.org/vocab/unit/MicroATM
+Microbar,http://qudt.org/vocab/unit/MicroBAR
+Microbecquerel,http://qudt.org/vocab/unit/MicroBQ
+Microbecquerels per kilogram,http://qudt.org/vocab/unit/MicroBQ-PER-KiloGM
+Microbecquerels per litre,http://qudt.org/vocab/unit/MicroBQ-PER-L
+Microbial Formation,http://qudt.org/vocab/quantitykind/MicrobialFormation
+Microcoulomb Per Cubic Meter,http://qudt.org/vocab/unit/MicroC-PER-M3
+Microcoulomb Per Square Metre,http://qudt.org/vocab/unit/MicroC-PER-M2
+Microfarad Per Kilometre,http://qudt.org/vocab/unit/MicroFARAD-PER-KiloM
+Microfarad Per Meter,http://qudt.org/vocab/unit/MicroFARAD-PER-M
+Microgram Per Cubic Metre,http://qudt.org/vocab/unit/MicroGM-PER-M3
+Microgram Per Kilogram,http://qudt.org/vocab/unit/MicroGM-PER-KiloGM
+Micrograms per cubic metre per hour,http://qudt.org/vocab/unit/MicroGM-PER-M3-HR
+Micrograms per gram,http://qudt.org/vocab/unit/MicroGM-PER-GM
+Micrograms per litre per hour,http://qudt.org/vocab/unit/MicroGM-PER-L-HR
+Micrograms per square metre per day,http://qudt.org/vocab/unit/MicroGM-PER-M2-DAY
+Microgravity,http://qudt.org/vocab/unit/MicroG
+Microhenry,http://qudt.org/vocab/unit/MicroH
+Microhenry Per Kiloohm,http://qudt.org/vocab/unit/MicroH-PER-KiloOHM
+Microhenry Per Meter,http://qudt.org/vocab/unit/MicroH-PER-M
+Microhenry Per Ohm,http://qudt.org/vocab/unit/MicroH-PER-OHM
+Microinch,http://qudt.org/vocab/unit/MicroIN
+Microlitre Per Litre,http://qudt.org/vocab/unit/MicroL-PER-L
+Micrometre Per Kelvin,http://qudt.org/vocab/unit/MicroM-PER-K
+Micromho,http://qudt.org/vocab/unit/MicroMHO
+Micromole per micromole of biomass per day,http://qudt.org/vocab/unit/MicroMOL-PER-MicroMOL-DAY
+Micromoles per kilogram,http://qudt.org/vocab/unit/MicroMOL-PER-KiloGM
+Micromoles per litre,http://qudt.org/vocab/unit/MicroMOL-PER-L
+Micromoles per litre per day,http://qudt.org/vocab/unit/MicroM-PER-L-DAY
+Micromoles per litre per hour,http://qudt.org/vocab/unit/MicroMOL-PER-L-HR
+Micromoles per mole,http://qudt.org/vocab/unit/MicroMOL-PER-MOL
+Micromoles per square metre per day,http://qudt.org/vocab/unit/MicroMOL-PER-M2-DAY
+Micromoles per square metre per hour,http://qudt.org/vocab/unit/MicroMOL-PER-M2-HR
+Micromoles per square metre per second,http://qudt.org/vocab/unit/MicroMOL-PER-M2-SEC
+Micronewton,http://qudt.org/vocab/unit/MicroN
+Micronewton Meter,http://qudt.org/vocab/unit/MicroN-M
+Microohm,http://qudt.org/vocab/unit/MicroOHM
+Micropascal,http://qudt.org/vocab/unit/MicroPA
+Micropoise,http://qudt.org/vocab/unit/MicroPOISE
+Microsiemens,http://qudt.org/vocab/unit/MicroS
+Microsiemens Per Centimeter,http://qudt.org/vocab/unit/MicroS-PER-CentiM
+Microsiemens Per Metre,http://qudt.org/vocab/unit/MicroS-PER-M
+Microtesla,http://qudt.org/vocab/unit/MicroT
+Microvolt Per Meter,http://qudt.org/vocab/unit/MicroV-PER-M
+Microwatt,http://qudt.org/vocab/unit/MicroW
+Microwatt Per Square Metre,http://qudt.org/vocab/unit/MicroW-PER-M2
+Mil Angle (NATO),http://qudt.org/vocab/unit/MIL
+Mil Length,http://qudt.org/vocab/unit/MilLength
+Mile US Statute,http://qudt.org/vocab/unit/MI_US
+Mile per Hour,http://qudt.org/vocab/unit/MI-PER-HR
+Mile per Minute,http://qudt.org/vocab/unit/MI-PER-MIN
+Milli ArcSecond,http://qudt.org/vocab/unit/MilliARCSEC
+Milli?inch,http://qudt.org/vocab/unit/MilliIN
+MilliCoulomb,http://qudt.org/vocab/unit/MilliC
+MilliGals per month,http://qudt.org/vocab/unit/MilliGAL-PER-MO
+MilliSiemens per metre,http://qudt.org/vocab/unit/MilliS-PER-M
+MilliTorr,http://qudt.org/vocab/unit/MilliTORR
+MilliW,http://qudt.org/vocab/unit/MilliW
+Milliampere Hour,http://qudt.org/vocab/unit/MilliA-HR
+Milliampere Per Inch,http://qudt.org/vocab/unit/MilliA-PER-IN
+Milliampere Per Millimetre,http://qudt.org/vocab/unit/MilliA-PER-MilliM
+Millibar,http://qudt.org/vocab/unit/MilliBAR
+Millibar Cubic Metre Per Second,http://qudt.org/vocab/unit/MilliBAR-M3-PER-SEC
+Millibar Litre Per Second,http://qudt.org/vocab/unit/MilliBAR-L-PER-SEC
+Millibar Per Bar,http://qudt.org/vocab/unit/MilliBAR-PER-BAR
+Millibar Per Kelvin,http://qudt.org/vocab/unit/MilliBAR-PER-K
+Millibecquerels per gram,http://qudt.org/vocab/unit/MilliBQ-PER-GM
+Millibecquerels per kilogram,http://qudt.org/vocab/unit/MilliBQ-PER-KiloGM
+Millibecquerels per litre,http://qudt.org/vocab/unit/MilliBQ-PER-L
+Millibecquerels per square metre per day,http://qudt.org/vocab/unit/MilliBQ-PER-M2-DAY
+Millicoulomb Per Cubic Meter,http://qudt.org/vocab/unit/MilliC-PER-M3
+Millicoulomb Per Kilogram,http://qudt.org/vocab/unit/MilliC-PER-KiloGM
+Millicoulomb Per Square Meter,http://qudt.org/vocab/unit/MilliC-PER-M2
+Millidegree Celsius,http://qudt.org/vocab/unit/MilliDEG_C
+Millifarad,http://qudt.org/vocab/unit/MilliFARAD
+Milligal,http://qudt.org/vocab/unit/MilliGAL
+Milligram Per Cubic Meter,http://qudt.org/vocab/unit/MilliGM-PER-M3
+Milligram Per Day,http://qudt.org/vocab/unit/MilliGM-PER-DAY
+Milligram Per Gram,http://qudt.org/vocab/unit/MilliGM-PER-GM
+Milligram Per Hour,http://qudt.org/vocab/unit/MilliGM-PER-HR
+Milligram Per Metre,http://qudt.org/vocab/unit/MilliGM-PER-M
+Milligram Per Minute,http://qudt.org/vocab/unit/MilliGM-PER-MIN
+Milligram Per Second,http://qudt.org/vocab/unit/MilliGM-PER-SEC
+Milligram Per Square Centimeter,http://qudt.org/vocab/unit/MilliGM-PER-CentiM2
+Milligram Per Square Metre,http://qudt.org/vocab/unit/MilliGM-PER-M2
+Milligrams per cubic metre per day,http://qudt.org/vocab/unit/MilliGM-PER-M3-DAY
+Milligrams per cubic metre per hour,http://qudt.org/vocab/unit/MilliGM-PER-M3-HR
+Milligrams per square metre per day,http://qudt.org/vocab/unit/MilliGM-PER-M2-DAY
+Milligrams per square metre per hour,http://qudt.org/vocab/unit/MilliGM-PER-M2-HR
+Milligravity,http://qudt.org/vocab/unit/MilliG
+Millihenry,http://qudt.org/vocab/unit/MilliH
+Millihenry Per Kiloohm,http://qudt.org/vocab/unit/MilliH-PER-KiloOHM
+Millihenry Per Ohm,http://qudt.org/vocab/unit/MilliH-PER-OHM
+Millijoule,http://qudt.org/vocab/unit/MilliJ
+Millilitre Per Day,http://qudt.org/vocab/unit/MilliL-PER-DAY
+Millilitre Per Hour,http://qudt.org/vocab/unit/MilliL-PER-HR
+Millilitre Per Kelvin,http://qudt.org/vocab/unit/MilliL-PER-K
+Millilitre Per Liter,http://qudt.org/vocab/unit/MilliL-PER-L
+Millilitre Per Minute,http://qudt.org/vocab/unit/MilliL-PER-MIN
+Millilitre Per Second,http://qudt.org/vocab/unit/MilliL-PER-SEC
+Millilitre Per Square Centimeter Minute,http://qudt.org/vocab/unit/MilliL-PER-CentiM2-MIN
+Millilitre Per Square Centimeter Second,http://qudt.org/vocab/unit/MilliL-PER-CentiM2-SEC
+Millilitres per square metre per day,http://qudt.org/vocab/unit/MilliL-PER-M2-DAY
+Millimeter Per Year,http://qudt.org/vocab/unit/MilliM-PER-YR
+Millimetre Per Hour,http://qudt.org/vocab/unit/MilliM-PER-HR
+Millimetre Per Kelvin,http://qudt.org/vocab/unit/MilliM-PER-K
+Millimetre Per Minute,http://qudt.org/vocab/unit/MilliM-PER-MIN
+Millimetre Per Second,http://qudt.org/vocab/unit/MilliM-PER-SEC
+Millimetre of Mercury,http://qudt.org/vocab/unit/MilliM_HG
+Millimetre of Mercury - Absolute,http://qudt.org/vocab/unit/MilliM_HGA
+Millimole Per Gram,http://qudt.org/vocab/unit/MilliMOL-PER-GM
+Millimole Per Kilogram,http://qudt.org/vocab/unit/MilliMOL-PER-KiloGM
+Millimoles per cubic metre,http://qudt.org/vocab/unit/MilliMOL-PER-M3
+Millimoles per cubic metre per day,http://qudt.org/vocab/unit/MilliMOL-PER-M3-DAY
+Millimoles per mole,http://qudt.org/vocab/unit/MilliMOL-PER-MOL
+Millimoles per square metre,http://qudt.org/vocab/unit/MilliMOL-PER-M2
+Millimoles per square metre per day,http://qudt.org/vocab/unit/MilliMOL-PER-M2-DAY
+Millinewton,http://qudt.org/vocab/unit/MilliN
+Millinewton Meter,http://qudt.org/vocab/unit/MilliN-M
+Millinewton Per Meter,http://qudt.org/vocab/unit/MilliN-PER-M
+Milliohm,http://qudt.org/vocab/unit/MilliOHM
+Million US Dollars,http://qudt.org/vocab/unit/MillionUSD
+Million US Dollars per Flight,http://qudt.org/vocab/unit/MDOLLAR-PER-FLIGHT
+Million US Dollars per Year,http://qudt.org/vocab/unit/MillionUSD-PER-YR
+Millipascal,http://qudt.org/vocab/unit/MilliPA
+Millipascal Second,http://qudt.org/vocab/unit/MilliPA-SEC
+Millipascal Second Per Bar,http://qudt.org/vocab/unit/MilliPA-SEC-PER-BAR
+Millirads per hour,http://qudt.org/vocab/unit/MilliRAD_R-PER-HR
+Milliroentgen,http://qudt.org/vocab/unit/MilliR
+Milliroentgen Equivalent Man,http://qudt.org/vocab/unit/MilliR_man
+Millisiemens Per Centimetre,http://qudt.org/vocab/unit/MilliS-PER-CentiM
+Millitesla,http://qudt.org/vocab/unit/MilliT
+Millivolt Per Meter,http://qudt.org/vocab/unit/MilliV-PER-M
+Millivolt Per Minute,http://qudt.org/vocab/unit/MilliV-PER-MIN
+Milliwatt Per Square Metre,http://qudt.org/vocab/unit/MilliW-PER-M2
+Milliwatts per square centimetre per micrometre per steradian,http://qudt.org/vocab/unit/MilliW-PER-CentiM2-MicroM-SR
+Milliwatts per square metre per nanometre,http://qudt.org/vocab/unit/MilliW-PER-M2-NanoM
+Milliwatts per square metre per nanometre per steradian,http://qudt.org/vocab/unit/MilliW-PER-M2-NanoM-SR
+Milliweber,http://qudt.org/vocab/unit/MilliWB
+Minute Angle,http://qudt.org/vocab/unit/MIN_Angle
+Mobility,http://qudt.org/vocab/quantitykind/Mobility
+Mobility Ratio,http://qudt.org/vocab/quantitykind/MobilityRatio
+Modulus Of Impedance,http://qudt.org/vocab/quantitykind/ModulusOfImpedance
+Modulus of Elasticity,http://qudt.org/vocab/quantitykind/ModulusOfElasticity
+Mohm,http://qudt.org/vocab/unit/MOHM
+Mol per Kilogram,http://qudt.org/vocab/unit/MOL-PER-KiloGM
+Molality of Solute,http://qudt.org/vocab/quantitykind/MolalityOfSolute
+Molar Absorption Coefficient,http://qudt.org/vocab/quantitykind/MolarAbsorptionCoefficient
+Molar Angular Momentum,http://qudt.org/vocab/quantitykind/MolarAngularMomentum
+Molar Attenuation Coefficient,http://qudt.org/vocab/quantitykind/MolarAttenuationCoefficient
+Molar Conductivity,http://qudt.org/vocab/quantitykind/MolarConductivity
+Molar Energy,http://qudt.org/vocab/quantitykind/MolarEnergy
+Molar Entropy,http://qudt.org/vocab/quantitykind/MolarEntropy
+Molar Flow Rate,http://qudt.org/vocab/quantitykind/MolarFlowRate
+Molar Heat Capacity,http://qudt.org/vocab/quantitykind/MolarHeatCapacity
+Molar Mass,http://qudt.org/vocab/quantitykind/MolarMass
+Molar Optical Rotatory Power,http://qudt.org/vocab/quantitykind/MolarOpticalRotatoryPower
+Molar Volume,http://qudt.org/vocab/quantitykind/MolarVolume
+Moldovan Leu,http://qudt.org/vocab/unit/MoldovanLeu
+Mole Degree Celsius,http://qudt.org/vocab/unit/MOL-DEG_C
+Mole Kelvin,http://qudt.org/vocab/unit/MOL-K
+Mole Per Cubic Decimetre,http://qudt.org/vocab/unit/MOL-PER-DeciM3
+Mole Per Hour,http://qudt.org/vocab/unit/MOL-PER-HR
+Mole Per Liter,http://qudt.org/vocab/unit/MOL-PER-L
+Mole Per Minute,http://qudt.org/vocab/unit/MOL-PER-MIN
+Mole Per Second,http://qudt.org/vocab/unit/MOL-PER-SEC
+Mole per Cubic Meter,http://qudt.org/vocab/unit/MOL-PER-M3
+Molecular Mass,http://qudt.org/vocab/quantitykind/MolecularMass
+Moles per cubic metre per second,http://qudt.org/vocab/unit/MOL-PER-M3-SEC
+Moles per gram per hour,http://qudt.org/vocab/unit/MOL-PER-GM-HR
+Moles per mole,http://qudt.org/vocab/unit/MOL-PER-MOL
+Moles per square metre,http://qudt.org/vocab/unit/MOL-PER-M2
+Moles per square metre per second,http://qudt.org/vocab/unit/MOL-PER-M2-SEC
+Moles per square metre per second per metre,http://qudt.org/vocab/unit/MOL-PER-M2-SEC-M
+Moles per square metre per second per metre per steradian,http://qudt.org/vocab/unit/MOL-PER-M2-SEC-M-SR
+Moles per square metre per second per steradian,http://qudt.org/vocab/unit/MOL-PER-M2-SEC-SR
+Moment of Force,http://qudt.org/vocab/quantitykind/MomentOfForce
+Moment of Inertia,http://qudt.org/vocab/quantitykind/MomentOfInertia
+Momentum,http://qudt.org/vocab/quantitykind/Momentum
+Morbidity Rate,http://qudt.org/vocab/quantitykind/MorbidityRate
+Moroccan Dirham,http://qudt.org/vocab/unit/MoroccanDirham
+Mortality Rate,http://qudt.org/vocab/quantitykind/MortalityRate
+Multiplication Factor,http://qudt.org/vocab/quantitykind/MultiplicationFactor
+N-PER-M2,http://qudt.org/vocab/unit/N-PER-M2
+Naira,http://qudt.org/vocab/unit/Naira
+Nakfa,http://qudt.org/vocab/unit/Nakfa
+Namibian Dollar,http://qudt.org/vocab/unit/NamibianDollar
+NanoCoulomb,http://qudt.org/vocab/unit/NanoC
+Nanobecquerels per litre,http://qudt.org/vocab/unit/NanoBQ-PER-L
+Nanofarad,http://qudt.org/vocab/unit/NanoFARAD
+Nanofarad Per Metre,http://qudt.org/vocab/unit/NanoFARAD-PER-M
+Nanogram Per Cubic Meter,http://qudt.org/vocab/unit/NanoGM-PER-M3
+Nanogram Per Kilogram,http://qudt.org/vocab/unit/NanoGM-PER-KiloGM
+Nanograms,http://qudt.org/vocab/unit/NanoGM
+Nanograms per day,http://qudt.org/vocab/unit/NanoGM-PER-DAY
+Nanograms per litre,http://qudt.org/vocab/unit/NanoGM-PER-L
+Nanograms per microlitre,http://qudt.org/vocab/unit/NanoGM-PER-MicroL
+Nanohenry,http://qudt.org/vocab/unit/NanoH
+Nanohenry Per Meter,http://qudt.org/vocab/unit/NanoH-PER-M
+Nanomoles per cubic centimetre per hour,http://qudt.org/vocab/unit/NanoMOL-PER-CentiM3-HR
+Nanomoles per kilogram,http://qudt.org/vocab/unit/NanoMOL-PER-KiloGM
+Nanomoles per litre per day,http://qudt.org/vocab/unit/NanoMOL-PER-L-DAY
+Nanomoles per litre per hour,http://qudt.org/vocab/unit/NanoMOL-PER-L-HR
+Nanomoles per microgram per hour,http://qudt.org/vocab/unit/NanoMOL-PER-MicroGM-HR
+Nanomoles per micromole,http://qudt.org/vocab/unit/NanoMOL-PER-MicroMOL
+Nanomoles per micromole per day,http://qudt.org/vocab/unit/NanoMOL-PER-MicroMOL-DAY
+Nanomoles per square metre per day,http://qudt.org/vocab/unit/NanoMOL-PER-M2-DAY
+Nanosiemens Per Centimeter,http://qudt.org/vocab/unit/NanoS-PER-CentiM
+Nanosiemens Per Metre,http://qudt.org/vocab/unit/NanoS-PER-M
+Nanotesla,http://qudt.org/vocab/unit/NanoT
+Nanowatt,http://qudt.org/vocab/unit/NanoW
+Napierian Absorbance,http://qudt.org/vocab/quantitykind/NapierianAbsorbance
+Nat,http://qudt.org/vocab/unit/NAT
+Nat per Second,http://qudt.org/vocab/unit/NAT-PER-SEC
+Nautical Mile per Hour,http://qudt.org/vocab/unit/MI_N-PER-HR
+Nautical Mile per Minute,http://qudt.org/vocab/unit/MI_N-PER-MIN
+Nepalese Rupee,http://qudt.org/vocab/unit/NepaleseRupee
+Neper,http://qudt.org/vocab/unit/NP
+Nephelometry Turbidity Unit,http://qudt.org/vocab/unit/NTU
+Netherlands Antillian Guilder,http://qudt.org/vocab/unit/NetherlandsAntillianGuilder
+Neutron Yield per Absorption,http://qudt.org/vocab/quantitykind/NeutronYieldPerAbsorption
+Neutron Yield per Fission,http://qudt.org/vocab/quantitykind/NeutronYieldPerFission
+New Israeli Shekel,http://qudt.org/vocab/unit/NewIsraeliShekel
+New Taiwan Dollar,http://qudt.org/vocab/unit/NewTaiwanDollar
+New Turkish Lira,http://qudt.org/vocab/unit/NewTurkishLira
+New Zealand Dollar,http://qudt.org/vocab/unit/NewZealandDollar
+Newton Centimetre,http://qudt.org/vocab/unit/N-CentiM
+Newton Meter Per Ampere,http://qudt.org/vocab/unit/N-M-PER-A
+Newton Meter Per Square Meter,http://qudt.org/vocab/unit/N-M-PER-M2
+Newton Meter Second,http://qudt.org/vocab/unit/N-M-SEC
+Newton Metre,http://qudt.org/vocab/unit/N-M
+Newton Metre Per Kilogram,http://qudt.org/vocab/unit/N-M-PER-KiloGM
+Newton Per Ampere,http://qudt.org/vocab/unit/N-PER-A
+Newton Per Centimeter,http://qudt.org/vocab/unit/N-PER-CentiM
+Newton Per Millimetre,http://qudt.org/vocab/unit/N-PER-MilliM
+Newton Per Square Centimetre,http://qudt.org/vocab/unit/N-PER-CentiM2
+Newton Per Square Millimetre,http://qudt.org/vocab/unit/N-PER-MilliM2
+Newton Second,http://qudt.org/vocab/unit/N-SEC
+Newton Second per Meter,http://qudt.org/vocab/unit/N-SEC-PER-M
+Newton Square Meter Per Square Kilogram,http://qudt.org/vocab/unit/N-M2-PER-KiloGM2
+Newton per Coulomb,http://qudt.org/vocab/unit/N-PER-C
+Newton per Kilogram,http://qudt.org/vocab/unit/N-PER-KiloGM
+Newton second per Cubic Meter,http://qudt.org/vocab/unit/N-SEC-PER-M3
+Newtons per cubic metre,http://qudt.org/vocab/unit/N-PER-M3
+Ngultrum,http://qudt.org/vocab/unit/Ngultrum
+Non-Leakage Probability,http://qudt.org/vocab/quantitykind/Non-LeakageProbability
+Non-active Power,http://qudt.org/vocab/quantitykind/NonActivePower
+North Korean Won,http://qudt.org/vocab/unit/NorthKoreanWon
+Norwegian Krone,http://qudt.org/vocab/unit/NorwegianKrone
+Nuclear Quadrupole Moment,http://qudt.org/vocab/quantitykind/NuclearQuadrupoleMoment
+Nuevo Sol,http://qudt.org/vocab/unit/NuevoSol
+Number,http://qudt.org/vocab/unit/NUM
+Number Density,http://qudt.org/vocab/quantitykind/NumberDensity
+Number of Particles,http://qudt.org/vocab/quantitykind/NumberOfParticles
+Number per 100 grams,http://qudt.org/vocab/unit/NUM-PER-HectoGM
+Number per Year,http://qudt.org/vocab/unit/NUM-PER-YR
+Number per cubic metre,http://qudt.org/vocab/unit/NUM-PER-M3
+Number per gram,http://qudt.org/vocab/unit/NUM-PER-GM
+Number per hectare,http://qudt.org/vocab/unit/NUM-PER-HA
+Number per individual per hour,http://qudt.org/vocab/unit/NUM-PER-HR
+Number per litre,http://qudt.org/vocab/unit/NUM-PER-L
+Number per metre,http://qudt.org/vocab/unit/NUM-PER-M
+Number per microlitre,http://qudt.org/vocab/unit/NUM-PER-MicroL
+Number per milligram,http://qudt.org/vocab/unit/NUM-PER-MilliGM
+Number per nanolitre,http://qudt.org/vocab/unit/NUM-PER-NanoL
+Number per square centimetre per thousand years,http://qudt.org/vocab/unit/NUM-PER-CentiM-KiloYR
+Number per square kilometre,http://qudt.org/vocab/unit/NUM-PER-KiloM2
+Number per square metre,http://qudt.org/vocab/unit/NUM-PER-M2
+Number per square metre per day,http://qudt.org/vocab/unit/NUM-PER-M2-DAY
+Oct,http://qudt.org/vocab/unit/OCT
+Oersted,http://qudt.org/vocab/unit/OERSTED
+Oersted Centimeter,http://qudt.org/vocab/unit/OERSTED-CentiM
+Ohm,http://qudt.org/vocab/unit/OHM
+Ohm Meter,http://qudt.org/vocab/unit/OHM-M
+Ohm Square Meter per Meter,http://qudt.org/vocab/unit/OHM-M2-PER-M
+Order of Reflection,http://qudt.org/vocab/quantitykind/OrderOfReflection
+Osmotic Coefficient,http://qudt.org/vocab/quantitykind/OsmoticCoefficient
+Ouguiya,http://qudt.org/vocab/unit/Ouguiya
+Ounce (UK Fluid) Per Day,http://qudt.org/vocab/unit/OZ_VOL_UK-PER-DAY
+Ounce (UK Fluid) Per Hour,http://qudt.org/vocab/unit/OZ_VOL_UK-PER-HR
+Ounce (UK Fluid) Per Minute,http://qudt.org/vocab/unit/OZ_VOL_UK-PER-MIN
+Ounce (UK Fluid) Per Second,http://qudt.org/vocab/unit/OZ_VOL_UK-PER-SEC
+Ounce (US Fluid) Per Day,http://qudt.org/vocab/unit/OZ_VOL_US-PER-DAY
+Ounce (US Fluid) Per Hour,http://qudt.org/vocab/unit/OZ_VOL_US-PER-HR
+Ounce (US Fluid) Per Minute,http://qudt.org/vocab/unit/OZ_VOL_US-PER-MIN
+Ounce (US Fluid) Per Second,http://qudt.org/vocab/unit/OZ_VOL_US-PER-SEC
+Ounce (avoirdupois) Foot,http://qudt.org/vocab/unit/OZ-FT
+Ounce (avoirdupois) Inch,http://qudt.org/vocab/unit/OZ-IN
+Ounce (avoirdupois) Per Cubic Yard,http://qudt.org/vocab/unit/OZ-PER-YD3
+Ounce (avoirdupois) Per Day,http://qudt.org/vocab/unit/OZ-PER-DAY
+Ounce (avoirdupois) Per Gallon (UK),http://qudt.org/vocab/unit/OZ_PER-GAL_UK
+Ounce (avoirdupois) Per Gallon (US),http://qudt.org/vocab/unit/OZ-PER-GAL_US
+Ounce (avoirdupois) Per Hour,http://qudt.org/vocab/unit/OZ-PER-HR
+Ounce (avoirdupois) Per Minute,http://qudt.org/vocab/unit/OZ-PER-MIN
+Ounce (avoirdupois) Per Second,http://qudt.org/vocab/unit/OZ-PER-SEC
+Ounce Mass,http://qudt.org/vocab/unit/OZ
+Ounce Troy,http://qudt.org/vocab/unit/OZ_TROY
+PSI Cubic Metre Per Second,http://qudt.org/vocab/unit/PSI-M3-PER-SEC
+Pa'anga,http://qudt.org/vocab/unit/Paanga
+Packing Fraction,http://qudt.org/vocab/quantitykind/PackingFraction
+Pakistan Rupee,http://qudt.org/vocab/unit/PakistanRupee
+Palladium (one Troy ounce),http://qudt.org/vocab/unit/Palladium-OunceTroy
+Parsec,http://qudt.org/vocab/unit/PARSEC
+Particle Current,http://qudt.org/vocab/quantitykind/ParticleCurrent
+Particle Fluence,http://qudt.org/vocab/quantitykind/ParticleFluence
+Particle Fluence Rate,http://qudt.org/vocab/quantitykind/ParticleFluenceRate
+Particle Source Density,http://qudt.org/vocab/quantitykind/ParticleSourceDensity
+Parts per thousand per hour,http://qudt.org/vocab/unit/PPTH-PER-HR
+Parts per trillion by volume,http://qudt.org/vocab/unit/PPTR_VOL
+Pascal Cubic Meter Per Second,http://qudt.org/vocab/unit/PA-M3-PER-SEC
+Pascal Litre Per Second,http://qudt.org/vocab/unit/PA-L-PER-SEC
+Pascal Per Bar,http://qudt.org/vocab/unit/PA-PER-BAR
+Pascal Per Metre,http://qudt.org/vocab/unit/PA-PER-M
+Pascal Second Per Bar,http://qudt.org/vocab/unit/PA-SEC-PER-BAR
+Pascal Second Per Cubic Meter,http://qudt.org/vocab/unit/PA-SEC-PER-M3
+Pascal Second Per Metre,http://qudt.org/vocab/unit/PA-SEC-PER-M
+Pascal metres,http://qudt.org/vocab/unit/PA-M
+Pascal metres per second,http://qudt.org/vocab/unit/PA-M-PER-SEC
+Pascal metres per square second,http://qudt.org/vocab/unit/PA-M-PER-SEC2
+Pascal per Hour,http://qudt.org/vocab/unit/PA-PER-HR
+Pascal per Kelvin,http://qudt.org/vocab/unit/PA-PER-K
+Pascal per Minute,http://qudt.org/vocab/unit/PA-PER-MIN
+Pascal per Second,http://qudt.org/vocab/unit/PA-PER-SEC
+Pataca,http://qudt.org/vocab/unit/Pataca
+Pebi,http://qudt.org/2.1/vocab/prefix/Pebi
+PebiByte,http://qudt.org/vocab/unit/PebiBYTE
+Peck (UK),http://qudt.org/vocab/unit/PK_UK
+Peck (UK) Per Day,http://qudt.org/vocab/unit/PK_UK-PER-DAY
+Peck (UK) Per Hour,http://qudt.org/vocab/unit/PK_UK-PER-HR
+Peck (UK) Per Minute,http://qudt.org/vocab/unit/PK_UK-PER-MIN
+Peck (UK) Per Second,http://qudt.org/vocab/unit/PK_UK-PER-SEC
+Peck (US Dry) Per Day,http://qudt.org/vocab/unit/PK_US_DRY-PER-DAY
+Peck (US Dry) Per Hour,http://qudt.org/vocab/unit/PK_US_DRY-PER-HR
+Peck (US Dry) Per Minute,http://qudt.org/vocab/unit/PK_US_DRY-PER-MIN
+Peck (US Dry) Per Second,http://qudt.org/vocab/unit/PK_US_DRY-PER-SEC
+Penny Weight,http://qudt.org/vocab/unit/DWT
+Pennyweight,http://qudt.org/vocab/unit/Pennyweight
+Percent Relative Humidity,http://qudt.org/vocab/unit/PERCENT_RH
+Percent per day,http://qudt.org/vocab/unit/PERCENT-PER-DAY
+Percent per hour,http://qudt.org/vocab/unit/PERCENT-PER-HR
+Percent per metre,http://qudt.org/vocab/unit/PERCENT-PER-M
+Percent per week,http://qudt.org/vocab/unit/PERCENT-PER-WK
+Period,http://qudt.org/vocab/quantitykind/Period
+Permeability,http://qudt.org/vocab/quantitykind/ElectromagneticPermeability
+Permeability Ratio,http://qudt.org/vocab/quantitykind/PermeabilityRatio
+Permeance,http://qudt.org/vocab/quantitykind/Permeance
+Permittivity,http://qudt.org/vocab/quantitykind/Permittivity
+Peso Uruguayo,http://qudt.org/vocab/unit/UruguayPeso
+PetaByte,http://qudt.org/vocab/unit/PetaBYTE
+PetaCoulomb,http://qudt.org/vocab/unit/PetaC
+Petajoule,http://qudt.org/vocab/unit/PetaJ
+Phase coefficient,http://qudt.org/vocab/quantitykind/PhaseCoefficient
+Phase speed of sound,http://qudt.org/vocab/quantitykind/PhaseSpeedOfSound
+Philippine Peso,http://qudt.org/vocab/unit/PhilippinePeso
+Phot,http://qudt.org/vocab/unit/Phot
+Photon Intensity,http://qudt.org/vocab/quantitykind/PhotonIntensity
+Photon Radiance,http://qudt.org/vocab/quantitykind/PhotonRadiance
+Pica,http://qudt.org/vocab/unit/PCA
+PicoCoulomb,http://qudt.org/vocab/unit/PicoC
+Picoamps per micromole per litre,http://qudt.org/vocab/unit/PicoA-PER-MicroMOL-L
+Picofarad,http://qudt.org/vocab/unit/PicoFARAD
+Picofarad Per Meter,http://qudt.org/vocab/unit/PicoFARAD-PER-M
+Picofarad Per Meter,http://qudt.org/vocab/unit/PicoGM-PER-L
+Picograms,http://qudt.org/vocab/unit/PicoGM
+Picograms per gram,http://qudt.org/vocab/unit/PicoGM-PER-GM
+Picograms per kilogram,http://qudt.org/vocab/unit/PicoGM-PER-KiloGM
+Picohenry,http://qudt.org/vocab/unit/PicoH
+Picomoles per cubic metre,http://qudt.org/vocab/unit/PicoMOL-PER-M3
+Picomoles per cubic metre per second,http://qudt.org/vocab/unit/PicoMOL-PER-M3-SEC
+Picomoles per kilogram,http://qudt.org/vocab/unit/PicoMOL-PER-KiloGM
+Picomoles per litre,http://qudt.org/vocab/unit/PicoMOL-PER-L
+Picomoles per litre per day,http://qudt.org/vocab/unit/PicoMOL-PER-L-DAY
+Picomoles per litre per hour,http://qudt.org/vocab/unit/PicoMOL-PER-L-HR
+Picomoles per metre per watt per second,http://qudt.org/vocab/unit/PicoMOL-PER-M-W-SEC
+Picomoles per square metre per day,http://qudt.org/vocab/unit/PicoMOL-PER-M2-DAY
+Picopascal Per Kilometre,http://qudt.org/vocab/unit/PicoPA-PER-KiloM
+Picosiemens Per Metre,http://qudt.org/vocab/unit/PicoS-PER-M
+Picowatt,http://qudt.org/vocab/unit/PicoW
+Picowatt Per Square Meter,http://qudt.org/vocab/unit/PicoW-PER-M2
+Picowatts per square centimetre per litre,http://qudt.org/vocab/unit/PicoW-PER-CentiM2-L
+Pint (UK),http://qudt.org/vocab/unit/PINT_UK
+Pint (UK) Per Day,http://qudt.org/vocab/unit/PINT_UK-PER-DAY
+Pint (UK) Per Hour,http://qudt.org/vocab/unit/PINT_UK-PER-HR
+Pint (UK) Per Minute,http://qudt.org/vocab/unit/PINT_UK-PER-MIN
+Pint (UK) Per Second,http://qudt.org/vocab/unit/PINT_UK-PER-SEC
+Pint (US Liquid) Per Day,http://qudt.org/vocab/unit/PINT_US-PER-DAY
+Pint (US Liquid) Per Hour,http://qudt.org/vocab/unit/PINT_US-PER-HR
+Pint (US Liquid) Per Minute,http://qudt.org/vocab/unit/PINT_US-PER-MIN
+Pint (US Liquid) Per Second,http://qudt.org/vocab/unit/PINT_US-PER-SEC
+Planck Angular Frequency,http://qudt.org/vocab/unit/PlanckFrequency_Ang
+Planck Area,http://qudt.org/vocab/unit/PlanckArea
+Planck Charge,http://qudt.org/vocab/unit/PlanckCharge
+Planck Current,http://qudt.org/vocab/unit/PlanckCurrent
+Planck Current Density,http://qudt.org/vocab/unit/PlanckCurrentDensity
+Planck Density,http://qudt.org/vocab/unit/PlanckDensity
+Planck Energy,http://qudt.org/vocab/unit/PlanckEnergy
+Planck Force,http://qudt.org/vocab/unit/PlanckForce
+Planck Frequency,http://qudt.org/vocab/unit/PlanckFrequency
+Planck Impedance,http://qudt.org/vocab/unit/PlanckImpedance
+Planck Length,http://qudt.org/vocab/unit/PlanckLength
+Planck Mass,http://qudt.org/vocab/unit/PlanckMass
+Planck Momentum,http://qudt.org/vocab/unit/PlanckMomentum
+Planck Power,http://qudt.org/vocab/unit/PlanckPower
+Planck Pressure,http://qudt.org/vocab/unit/PlanckPressure
+Planck System of Units,http://qudt.org/vocab/sou/SOU_PLANCK
+Planck Time,http://qudt.org/vocab/unit/PlanckTime
+Planck Volt,http://qudt.org/vocab/unit/PlanckVolt
+Planck Volume,http://qudt.org/vocab/unit/PlanckVolume
+PlanckTemperature,http://qudt.org/vocab/unit/PlanckTemperature
+Platinum (one Troy ounce),http://qudt.org/vocab/unit/Platinum-OunceTroy
+Point,http://qudt.org/vocab/unit/PT
+Poise Per Bar,http://qudt.org/vocab/unit/POISE-PER-BAR
+Poisson Ratio,http://qudt.org/vocab/quantitykind/PoissonRatio
+Polarizability,http://qudt.org/vocab/quantitykind/Polarizability
+Pound (avoirdupois) Per Day,http://qudt.org/vocab/unit/LB-PER-DAY
+Pound (avoirdupois) Per Gallon (UK),http://qudt.org/vocab/unit/LB-PER-GAL_UK
+Pound (avoirdupois) Per Gallon (US),http://qudt.org/vocab/unit/LB-PER-GAL_US
+Pound (avoirdupois) Per Second,http://qudt.org/vocab/unit/LB-PER-SEC
+Pound (avoirdupois) Per Square Inch,http://qudt.org/vocab/unit/LB-PER-IN2
+Pound Degree Fahrenheit,http://qudt.org/vocab/unit/LB-DEG_F
+Pound Degree Rankine,http://qudt.org/vocab/unit/LB-DEG_R
+Pound Force,http://qudt.org/vocab/unit/LB_F
+Pound Force Foot,http://qudt.org/vocab/unit/LB_F-FT
+Pound Force Foot Per Ampere,http://qudt.org/vocab/unit/KiloLB_F-FT-PER-A
+Pound Force Foot Per Pound,http://qudt.org/vocab/unit/KiloLB_F-FT-PER-LB
+Pound Force Inch,http://qudt.org/vocab/unit/LB_F-IN
+Pound Force Per Foot,http://qudt.org/vocab/unit/KiloLB_F-PER-FT
+Pound Force Per Square Inch Degree Fahrenheit,http://qudt.org/vocab/unit/LB_F-PER-IN2-DEG_F
+Pound Force Second per Square Foot,http://qudt.org/vocab/unit/LB_F-SEC-PER-FT2
+Pound Force Second per Square Inch,http://qudt.org/vocab/unit/LB_F-SEC-PER-IN2
+Pound Force per Foot,http://qudt.org/vocab/unit/LB_F-PER-FT
+Pound Force per Inch,http://qudt.org/vocab/unit/LB_F-PER-IN
+Pound Force per Pound,http://qudt.org/vocab/unit/LB_F-PER-LB
+Pound Force per Square Foot,http://qudt.org/vocab/unit/LB_F-PER-FT2
+Pound Force per Square Inch,http://qudt.org/vocab/unit/LB_F-PER-IN2
+Pound Force per Square Inch Second,http://qudt.org/vocab/unit/LB_F-PER-IN2-SEC
+Pound Mass,http://qudt.org/vocab/unit/LB
+Pound Mass (avoirdupois) Inch,http://qudt.org/vocab/unit/LB-IN
+Pound Mass (avoirdupois) Per Square Foot,http://qudt.org/vocab/unit/LB-PER-FT2
+Pound Mass (avoirdupois) Square Foot,http://qudt.org/vocab/unit/LB-FT2
+Pound Mass (avoirdupois) Square Inch,http://qudt.org/vocab/unit/LB-IN2
+Pound Mole,http://qudt.org/vocab/unit/LB-MOL
+Pound Mole Degree Fahrenheit,http://qudt.org/vocab/unit/LB-MOL-DEG_F
+Pound Sterling,http://qudt.org/vocab/unit/PoundSterling
+Pound Troy,http://qudt.org/vocab/unit/LB_T
+Pound per Cubic Foot,http://qudt.org/vocab/unit/LB-PER-FT3
+Pound per Cubic Inch,http://qudt.org/vocab/unit/LB-PER-IN3
+Pound per Cubic Meter,http://qudt.org/vocab/unit/LB-PER-M3
+Pound per Cubic Yard,http://qudt.org/vocab/unit/LB-PER-YD3
+Pound per Foot,http://qudt.org/vocab/unit/LB-PER-FT
+Pound per Foot Hour,http://qudt.org/vocab/unit/LB-PER-FT-HR
+Pound per Foot Second,http://qudt.org/vocab/unit/LB-PER-FT-SEC
+Pound per Gallon,http://qudt.org/vocab/unit/LB-PER-GAL
+Pound per Hour,http://qudt.org/vocab/unit/LB-PER-HR
+Pound per Inch,http://qudt.org/vocab/unit/LB-PER-IN
+Pound per Minute,http://qudt.org/vocab/unit/LB-PER-MIN
+Poundal,http://qudt.org/vocab/unit/PDL
+Poundal per Square Foot,http://qudt.org/vocab/unit/PDL-PER-FT2
+Power,http://qudt.org/vocab/quantitykind/Power
+Power Area,http://qudt.org/vocab/quantitykind/PowerArea
+Power Area per Solid Angle,http://qudt.org/vocab/quantitykind/PowerAreaPerSolidAngle
+Power Factor,http://qudt.org/vocab/quantitykind/PowerFactor
+Power Per Area,http://qudt.org/vocab/quantitykind/PowerPerArea
+Power Per Electric Charge,http://qudt.org/vocab/quantitykind/PowerPerElectricCharge
+Power per area quartic temperature,http://qudt.org/vocab/quantitykind/PowerPerAreaQuarticTemperature
+Poynting Vector,http://qudt.org/vocab/quantitykind/PoyntingVector
+Pressure Coefficient,http://qudt.org/vocab/quantitykind/PressureCoefficient
+Pressure Ratio,http://qudt.org/vocab/quantitykind/PressureRatio
+Propagation coefficient,http://qudt.org/vocab/quantitykind/PropagationCoefficient
+Propellant Burn Rate,http://qudt.org/vocab/quantitykind/PropellantBurnRate
+Psi Cubic Inch Per Second,http://qudt.org/vocab/unit/PSI-IN3-PER-SEC
+Psi Cubic Yard Per Second,http://qudt.org/vocab/unit/PSI-YD3-PER-SEC
+Psi Litre Per Second,http://qudt.org/vocab/unit/PSI-L-PER-SEC
+Psi Per Psi,http://qudt.org/vocab/unit/PSI-PER-PSI
+Pula,http://qudt.org/vocab/unit/Pula
+QUDT UNITS Vocab Catalog Entry,http://voag.linkedmodel.org/schema/voag#QUDT-UNITS-VocabCatalogEntry
+Qatari Rial,http://qudt.org/vocab/unit/QatariRial
+Quad,http://qudt.org/vocab/unit/QUAD
+Quality Factor,http://qudt.org/vocab/quantitykind/QualityFactor
+Quart (UK Liquid) Per Day,http://qudt.org/vocab/unit/QT_UK-PER-DAY
+Quart (UK Liquid) Per Hour,http://qudt.org/vocab/unit/QT_UK-PER-HR
+Quart (UK Liquid) Per Minute,http://qudt.org/vocab/unit/QT_UK-PER-MIN
+Quart (UK Liquid) Per Second,http://qudt.org/vocab/unit/QT_UK-PER-SEC
+Quart (UK),http://qudt.org/vocab/unit/QT_UK
+Quart (US Liquid) Per Day,http://qudt.org/vocab/unit/QT_US-PER-DAY
+Quart (US Liquid) Per Hour,http://qudt.org/vocab/unit/QT_US-PER-HR
+Quart (US Liquid) Per Minute,http://qudt.org/vocab/unit/QT_US-PER-MIN
+Quart (US Liquid) Per Second,http://qudt.org/vocab/unit/QT_US-PER-SEC
+Quarter (UK),http://qudt.org/vocab/unit/Quarter_UK
+Quartic Coulomb Meter per Cubic Energy,http://qudt.org/vocab/unit/C4-M4-PER-J3
+Quartic Electric Dipole Moment per Cubic Energy,http://qudt.org/vocab/quantitykind/QuarticElectricDipoleMomentPerCubicEnergy
+Quartic Inch,http://qudt.org/vocab/unit/IN4
+Quartic Meter,http://qudt.org/vocab/unit/M4
+Quartic Millimeter,http://qudt.org/vocab/unit/MilliM4
+Quetzal,http://qudt.org/vocab/unit/Quetzal
+RF-Power Level,http://qudt.org/vocab/quantitykind/RF-Power
+Radian Square Meter per Kilogram,http://qudt.org/vocab/unit/RAD-M2-PER-KiloGM
+Radian Square Meter per Mole,http://qudt.org/vocab/unit/RAD-M2-PER-MOL
+Radian per Hour,http://qudt.org/vocab/unit/RAD-PER-HR
+Radian per Metre,http://qudt.org/vocab/unit/RAD-PER-M
+Radian per Minute,http://qudt.org/vocab/unit/RAD-PER-MIN
+Radian per Square Second,http://qudt.org/vocab/unit/RAD-PER-SEC2
+Radiance,http://qudt.org/vocab/quantitykind/Radiance
+Radiance Factor,http://qudt.org/vocab/quantitykind/RadianceFactor
+Radiant Emmitance,http://qudt.org/vocab/quantitykind/RadiantEmmitance
+Radiant Energy Density,http://qudt.org/vocab/quantitykind/RadiantEnergyDensity
+Radiant Fluence,http://qudt.org/vocab/quantitykind/RadiantFluence
+Radiant Fluence Rate,http://qudt.org/vocab/quantitykind/RadiantFluenceRate
+Radiant Intensity,http://qudt.org/vocab/quantitykind/RadiantIntensity
+Radiosity,http://qudt.org/vocab/quantitykind/Radiosity
+Ratio of Specific Heat Capacities,http://qudt.org/vocab/quantitykind/RatioOfSpecificHeatCapacities
+Rayl,http://qudt.org/vocab/unit/RAYL
+Reactance,http://qudt.org/vocab/quantitykind/Reactance
+Reactive Power,http://qudt.org/vocab/quantitykind/ReactivePower
+Reactivity,http://qudt.org/vocab/quantitykind/Reactivity
+Reciprocal Bar,http://qudt.org/vocab/unit/PER-BAR
+Reciprocal Centimeter,http://qudt.org/vocab/unit/PER-CentiM
+Reciprocal Cubic Centimetre,http://qudt.org/vocab/unit/PER-CentiM3
+Reciprocal Cubic Foot,http://qudt.org/vocab/unit/PER-FT3
+Reciprocal Cubic Inch,http://qudt.org/vocab/unit/PER-IN3
+Reciprocal Cubic Meter,http://qudt.org/vocab/unit/PER-M3
+Reciprocal Cubic Meter Second,http://qudt.org/vocab/unit/PER-M3-SEC
+Reciprocal Cubic Millimetre,http://qudt.org/vocab/unit/PER-MilliM3
+Reciprocal Cubic Yard,http://qudt.org/vocab/unit/PER-YD3
+Reciprocal Day,http://qudt.org/vocab/unit/PER-DAY
+Reciprocal Henry,http://qudt.org/vocab/unit/PER-H
+Reciprocal Hour,http://qudt.org/vocab/unit/PER-HR
+Reciprocal Joule Cubic Meter,http://qudt.org/vocab/unit/PER-J-M3
+Reciprocal Kelvin,http://qudt.org/vocab/unit/PER-K
+Reciprocal Kilovolt Ampere Hour,http://qudt.org/vocab/unit/PER-KiloV-A-HR
+Reciprocal Litre,http://qudt.org/vocab/unit/PER-L
+Reciprocal Meter,http://qudt.org/vocab/unit/PER-M
+Reciprocal Meter Kelvin,http://qudt.org/vocab/unit/PER-M-K
+Reciprocal Mille Per Psi,http://qudt.org/vocab/unit/PER-MILLE-PER-PSI
+Reciprocal Minute,http://qudt.org/vocab/unit/PER-MIN
+Reciprocal Mole,http://qudt.org/vocab/unit/PER-MOL
+Reciprocal Month,http://qudt.org/vocab/unit/PER-MO
+Reciprocal Pascal,http://qudt.org/vocab/unit/PER-PA
+Reciprocal Pascal per second,http://qudt.org/vocab/unit/PER-PA-SEC
+Reciprocal Psi,http://qudt.org/vocab/unit/PER-PSI
+Reciprocal Second,http://qudt.org/vocab/unit/PER-SEC
+Reciprocal Second Square Meter Steradian,http://qudt.org/vocab/unit/PER-SEC-M2-SR
+Reciprocal Second Square Metre,http://qudt.org/vocab/unit/PER-SEC-M2
+Reciprocal Second Steradian,http://qudt.org/vocab/unit/PER-SEC-SR
+Reciprocal Square Giga Electron Volt Unit,http://qudt.org/vocab/unit/PER-GigaEV2
+Reciprocal Square Meter,http://qudt.org/vocab/unit/PER-M2
+Reciprocal Tesla Metre,http://qudt.org/vocab/unit/PER-T-M
+Reciprocal Tesla Second Unit,http://qudt.org/vocab/unit/PER-T-SEC
+Reciprocal Weber,http://qudt.org/vocab/unit/PER-WB
+Reciprocal Week,http://qudt.org/vocab/unit/PER-WK
+Reciprocal Year,http://qudt.org/vocab/unit/PER-YR
+Reciprocal gram,http://qudt.org/vocab/unit/PER-GM
+Reciprocal metre per nanometre,http://qudt.org/vocab/unit/PER-M-NanoM
+Reciprocal metre per nanometre per steradian,http://qudt.org/vocab/unit/PER-M-NanoM-SR
+Reciprocal metre per second,http://qudt.org/vocab/unit/PER-M-SEC
+Reciprocal metre per steradian,http://qudt.org/vocab/unit/PER-M-SR
+Reciprocal micromole per litre,http://qudt.org/vocab/unit/PER-MicroMOL-L
+Reciprocal millisecond,http://qudt.org/vocab/unit/PER-MilliSEC
+Reciprocal square metre per second,http://qudt.org/vocab/unit/PER-M2-SEC
+Reciprocal square second,http://qudt.org/vocab/unit/PER-SEC2
+Reciprocal steradian,http://qudt.org/vocab/unit/PER-SR
+Reciprocal Ã¥ngstrÃ¶m,http://qudt.org/vocab/unit/PER-ANGSTROM
+Recombination Coefficient,http://qudt.org/vocab/quantitykind/RecombinationCoefficient
+Refectance,http://qudt.org/vocab/quantitykind/Refectance
+Reflectance,http://qudt.org/vocab/quantitykind/Reflectance
+Reflectance Factor,http://qudt.org/vocab/quantitykind/ReflectanceFactor
+Refractive index,http://qudt.org/vocab/quantitykind/RefractiveIndex
+Register Ton,http://qudt.org/vocab/unit/RT
+Relative Electromagnetic Permeability,http://qudt.org/vocab/unit/PERMEABILITY_EM_REL
+Relative Humidity,http://qudt.org/vocab/quantitykind/RelativeHumidity
+Relative Mass Concentration of Vapour,http://qudt.org/vocab/quantitykind/RelativeMassConcentrationOfVapour
+Relative Mass Density,http://qudt.org/vocab/quantitykind/RelativeMassDensity
+Relative Mass Excess,http://qudt.org/vocab/quantitykind/RelativeMassExcess
+Relative Mass Ratio of Vapour,http://qudt.org/vocab/quantitykind/RelativeMassRatioOfVapour
+Relative Partial Pressure,http://qudt.org/vocab/quantitykind/RelativePartialPressure
+Relative Permeability,http://qudt.org/vocab/unit/PERMEABILITY_REL
+Relative Permittivity,http://qudt.org/vocab/quantitykind/RelativePermittivity
+Relative Permittivity,http://qudt.org/vocab/unit/PERMITTIVITY_REL
+Relative Pressure Coefficient,http://qudt.org/vocab/quantitykind/RelativePressureCoefficient
+Residual Resistivity,http://qudt.org/vocab/quantitykind/ResidualResistivity
+Resistance,http://qudt.org/vocab/quantitykind/Resistance
+Resistivity,http://qudt.org/vocab/quantitykind/Resistivity
+Resonance Escape Probability,http://qudt.org/vocab/quantitykind/ResonanceEscapeProbability
+Respiratory Rate,http://qudt.org/vocab/quantitykind/RespiratoryRate
+Revolution,http://qudt.org/vocab/unit/REV
+Revolution per Hour,http://qudt.org/vocab/unit/REV-PER-HR
+Revolution per Minute,http://qudt.org/vocab/unit/REV-PER-MIN
+Revolution per Second,http://qudt.org/vocab/unit/REV-PER-SEC
+Revolution per Square Second,http://qudt.org/vocab/unit/REV-PER-SEC2
+Rial Omani,http://qudt.org/vocab/unit/OmaniRial
+Richardson Constant,http://qudt.org/vocab/quantitykind/RichardsonConstant
+Riel,http://qudt.org/vocab/unit/Riel
+Rod,http://qudt.org/vocab/unit/ROD
+Romanian New Leu,http://qudt.org/vocab/unit/RomanianNeLeu
+Rufiyaa,http://qudt.org/vocab/unit/Rufiyaa
+Rupiah,http://qudt.org/vocab/unit/Rupiah
+Russian Ruble,http://qudt.org/vocab/unit/RussianRuble
+Rwanda Franc,http://qudt.org/vocab/unit/RwandaFranc
+Saint Helena Pound,http://qudt.org/vocab/unit/SaintHelenaPound
+Samoan Tala,http://qudt.org/vocab/unit/SamoanTala
+Sample per second,http://qudt.org/vocab/unit/SAMPLE-PER-SEC
+Saudi Riyal,http://qudt.org/vocab/unit/SaudiRiyal
+Scalar Magnetic Potential,http://qudt.org/vocab/quantitykind/ScalarMagneticPotential
+Second Axial Moment of Area,http://qudt.org/vocab/quantitykind/SecondAxialMomentOfArea
+Second Polar Moment of Area,http://qudt.org/vocab/quantitykind/SecondPolarMomentOfArea
+Second Square Foot,http://qudt.org/vocab/unit/SEC-FT2
+Second per Radian Cubic Metre,http://qudt.org/vocab/unit/SEC-PER-RAD-M3
+Seconds per metre,http://qudt.org/vocab/unit/SEC-PER-M
+Section Modulus,http://qudt.org/vocab/quantitykind/SectionModulus
+Seebeck Coefficient,http://qudt.org/vocab/quantitykind/SeebeckCoefficient
+Serbian Dinar,http://qudt.org/vocab/unit/SerbianDinar
+Serum or Plasma Level,http://qudt.org/vocab/quantitykind/SerumOrPlasmaLevel
+Seychelles Rupee,http://qudt.org/vocab/unit/SeychellesRupee
+Shake,http://qudt.org/vocab/unit/SH
+Shannon,http://qudt.org/vocab/unit/SHANNON
+Shannon per Second,http://qudt.org/vocab/unit/SHANNON-PER-SEC
+Shear Modulus,http://qudt.org/vocab/quantitykind/ShearModulus
+Short Ton,http://qudt.org/vocab/unit/TON_SHORT
+Short Ton (US) Per Cubic Yard,http://qudt.org/vocab/unit/TON_US-PER-YD3
+Short Ton (us) Per Day,http://qudt.org/vocab/unit/TON_US-PER-DAY
+Short Ton per Cubic Yard,http://qudt.org/vocab/unit/TON_SHORT-PER-YD3
+Short Ton per Hour,http://qudt.org/vocab/unit/TON_SHORT-PER-HR
+Short-Range Order Parameter,http://qudt.org/vocab/quantitykind/Short-RangeOrderParameter
+Sidereal Day,http://qudt.org/vocab/unit/DAY_Sidereal
+Sidereal Hour,http://qudt.org/vocab/unit/HR_Sidereal
+Sidereal Minute,http://qudt.org/vocab/unit/MIN_Sidereal
+Sidereal Year,http://qudt.org/vocab/unit/YR_Sidereal
+Siemens Per Centimeter,http://qudt.org/vocab/unit/S-PER-CentiM
+Siemens Per Metre,http://qudt.org/vocab/unit/S-PER-M
+Siemens Square metre per mole,http://qudt.org/vocab/unit/S-M2-PER-MOL
+Signal Detection Threshold,http://qudt.org/vocab/quantitykind/SignalDetectionThreshold
+Signal Strength,http://qudt.org/vocab/quantitykind/SignalStrength
+Silver (one Troy ounce),http://qudt.org/vocab/unit/Silver-OunceTroy
+Singapore Dollar,http://qudt.org/vocab/unit/SingaporeDollar
+Slovak Koruna,http://qudt.org/vocab/unit/SlovakKoruna
+Slowing-Down Density,http://qudt.org/vocab/quantitykind/Slowing-DownDensity
+Slug Per Day,http://qudt.org/vocab/unit/SLUG-PER-DAY
+Slug Per Hour,http://qudt.org/vocab/unit/SLUG-PER-HR
+Slug Per Minute,http://qudt.org/vocab/unit/SLUG-PER-MIN
+Slug per Cubic Foot,http://qudt.org/vocab/unit/SLUG-PER-FT3
+Slug per Foot,http://qudt.org/vocab/unit/SLUG-PER-FT
+Slug per Foot Second,http://qudt.org/vocab/unit/SLUG-PER-FT-SEC
+Slug per Second,http://qudt.org/vocab/unit/SLUG-PER-SEC
+Slug per Square Foot,http://qudt.org/vocab/unit/SLUG-PER-FT2
+Solar mass,http://qudt.org/vocab/unit/SolarMass
+Solid Angle,http://qudt.org/vocab/quantitykind/SolidAngle
+Solomon Islands Dollar,http://qudt.org/vocab/unit/SolomonIslandsDollar
+Som,http://qudt.org/vocab/unit/Som
+Somali Shilling,http://qudt.org/vocab/unit/SomaliShilling
+Somoni,http://qudt.org/vocab/unit/Somoni
+Sound exposure,http://qudt.org/vocab/quantitykind/SoundExposure
+Sound exposure level,http://qudt.org/vocab/quantitykind/SoundExposureLevel
+Sound particle velocity,http://qudt.org/vocab/quantitykind/SoundParticleVelocity
+Sound power level,http://qudt.org/vocab/quantitykind/SoundPowerLevel
+Sound pressure level,http://qudt.org/vocab/quantitykind/SoundPressureLevel
+Sound reduction index,http://qudt.org/vocab/quantitykind/SoundReductionIndex
+Sound volume velocity,http://qudt.org/vocab/quantitykind/SoundVolumeVelocity
+South African Rand,http://qudt.org/vocab/unit/SouthAfricanRand
+South Korean Won,http://qudt.org/vocab/unit/SouthKoreanWon
+Special Drawing Rights,http://qudt.org/vocab/unit/SpecialDrawingRights
+Specific Acoustic Impedance,http://qudt.org/vocab/quantitykind/SpecificAcousticImpedance
+Specific Activity,http://qudt.org/vocab/quantitykind/SpecificActivity
+Specific Energy,http://qudt.org/vocab/quantitykind/SpecificEnergy
+Specific Enthalpy,http://qudt.org/vocab/quantitykind/SpecificEnthalpy
+Specific Entropy,http://qudt.org/vocab/quantitykind/SpecificEntropy
+Specific Gibbs Energy,http://qudt.org/vocab/quantitykind/SpecificGibbsEnergy
+Specific Heat Capacity,http://qudt.org/vocab/quantitykind/SpecificHeatCapacity
+Specific Heat Capacity at Saturation,http://qudt.org/vocab/quantitykind/SpecificHeatCapacityAtSaturation
+Specific Heat Pressure,http://qudt.org/vocab/quantitykind/SpecificHeatPressure
+Specific Heat Volume,http://qudt.org/vocab/quantitykind/SpecificHeatVolume
+Specific Helmholtz Energy,http://qudt.org/vocab/quantitykind/SpecificHelmholtzEnergy
+Specific Internal Energy,http://qudt.org/vocab/quantitykind/SpecificInternalEnergy
+Specific Optical Rotatory Power,http://qudt.org/vocab/quantitykind/SpecificOpticalRotatoryPower
+Specific Volume,http://qudt.org/vocab/quantitykind/SpecificVolume
+Specific heat capacity at constant pressure,http://qudt.org/vocab/quantitykind/SpecificHeatCapacityAtConstantPressure
+Specific heat capacity at constant volume,http://qudt.org/vocab/quantitykind/SpecificHeatCapacityAtConstantVolume
+Spectral Angular Cross-section,http://qudt.org/vocab/quantitykind/SpectralAngularCrossSection
+Spectral Cross-section,http://qudt.org/vocab/quantitykind/SpectralCrossSection
+Spectral Luminous Efficiency,http://qudt.org/vocab/quantitykind/SpectralLuminousEfficiency
+Spectral Radiant Energy Density,http://qudt.org/vocab/quantitykind/SpectralRadiantEnergyDensity
+Speed,http://qudt.org/vocab/quantitykind/Speed
+Speed of sound,http://qudt.org/vocab/quantitykind/SpeedOfSound
+Square Centimetre Minute,http://qudt.org/vocab/unit/CentiM2-MIN
+Square Centimetre Second,http://qudt.org/vocab/unit/CentiM2-SEC
+Square Coulomb Meter per Joule,http://qudt.org/vocab/unit/C2-M-PER-J
+Square Decimeter,http://qudt.org/vocab/unit/DeciM2
+Square Degrees Celsius per second,http://qudt.org/vocab/unit/DEG_C2-PER-SEC
+Square Foot,http://qudt.org/vocab/unit/FT2
+Square Foot Degree Fahrenheit,http://qudt.org/vocab/unit/FT2-DEG_F
+Square Foot Hour Degree Fahrenheit,http://qudt.org/vocab/unit/FT2-HR-DEG_F
+Square Foot Hour Degree Fahrenheit per BTU,http://qudt.org/vocab/unit/FT2-HR-DEG_F-PER-BTU_IT
+Square Foot Second Degree Fahrenheit,http://qudt.org/vocab/unit/FT2-SEC-DEG_F
+Square Foot per BTU Inch,http://qudt.org/vocab/unit/FT2-PER-BTU_IT-IN
+Square Foot per Hour,http://qudt.org/vocab/unit/FT2-PER-HR
+Square Foot per Second,http://qudt.org/vocab/unit/FT2-PER-SEC
+Square Inch,http://qudt.org/vocab/unit/IN2
+Square Inch Per Second,http://qudt.org/vocab/unit/IN2-PER-SEC
+Square Kelvin,http://qudt.org/vocab/unit/K2
+Square Kilograms per square second,http://qudt.org/vocab/unit/KiloGM2-PER-SEC2
+Square Meter Kelvin,http://qudt.org/vocab/unit/M2-K
+Square Meter Kelvin per Watt,http://qudt.org/vocab/unit/M2-K-PER-W
+Square Meter per Second,http://qudt.org/vocab/unit/M2-PER-SEC
+Square Meter per Steradian Joule,http://qudt.org/vocab/unit/M2-PER-SR-J
+Square Meter per Volt Second,http://qudt.org/vocab/unit/M2-PER-V-SEC
+Square Metre Hour Degree Celsius Per Kilocalorie (international Table),http://qudt.org/vocab/unit/M2-HR-DEG_C-PER-KiloCAL_IT
+Square Metre Per Newton,http://qudt.org/vocab/unit/M2-PER-N
+Square Metre Steradian,http://qudt.org/vocab/unit/M2-SR
+Square Metre per Joule,http://qudt.org/vocab/unit/M2-PER-J
+Square Metre per Kelvin,http://qudt.org/vocab/unit/M2-PER-K
+Square Metre per Kilogram,http://qudt.org/vocab/unit/M2-PER-KiloGM
+Square Metre per Mole,http://qudt.org/vocab/unit/M2-PER-MOL
+Square Metre per Steradian,http://qudt.org/vocab/unit/M2-PER-SR
+Square Metres square Hertz,http://qudt.org/vocab/unit/M2-HZ2
+Square Mile,http://qudt.org/vocab/unit/MI2
+Square Millimetre Per Second,http://qudt.org/vocab/unit/MilliM2-PER-SEC
+Square Pascal Second,http://qudt.org/vocab/unit/PA2-SEC
+Square Second,http://qudt.org/vocab/unit/SEC2
+Square Volt per Square Kelvin,http://qudt.org/vocab/unit/V2-PER-K2
+Square Yard,http://qudt.org/vocab/unit/YD2
+Square centimetres per cubic centimetre,http://qudt.org/vocab/unit/CentiM2-PER-CentiM3
+Square centimetres per second,http://qudt.org/vocab/unit/CentiM2-PER-SEC
+Square degree,http://qudt.org/vocab/unit/DEG2
+Square metre seconds per radian,http://qudt.org/vocab/unit/M2-SEC-PER-RAD
+Square metres Hertz,http://qudt.org/vocab/unit/M2-HZ
+Square metres Hertz^4,http://qudt.org/vocab/unit/M2-HZ4
+Square metres cubic Hertz,http://qudt.org/vocab/unit/M2-HZ3
+Square metres per Hertz,http://qudt.org/vocab/unit/M2-PER-HZ
+Square metres per Hertz per degree,http://qudt.org/vocab/unit/M2-PER-HZ-DEG
+Square metres per gram,http://qudt.org/vocab/unit/M2-PER-GM
+Square metres per gram of dry sediment,http://qudt.org/vocab/unit/M2-PER-GM_DRY
+Square metres per square Hertz,http://qudt.org/vocab/unit/M2-PER-HZ2
+Square metres per square second,http://qudt.org/vocab/unit/M2-PER-SEC2
+Square microns per millilitre,http://qudt.org/vocab/unit/MicroM-PER-MilliL
+Square pascal per square second,http://qudt.org/vocab/unit/PA2-PER-SEC2
+Sri Lanka Rupee,http://qudt.org/vocab/unit/SriLankaRupee
+Standard,http://qudt.org/vocab/unit/Standard
+Standard Absolute Activity,http://qudt.org/vocab/quantitykind/StandardAbsoluteActivity
+Standard Atmosphere,http://qudt.org/vocab/unit/ATM
+Standard Gravitational Parameter,http://qudt.org/vocab/quantitykind/StandardGravitationalParameter
+Statampere,http://qudt.org/vocab/unit/A_Stat
+Statampere per Square Centimetre,http://qudt.org/vocab/unit/A_Stat-PER-CentiM2
+Statcoulomb,http://qudt.org/vocab/unit/C_Stat
+Statcoulomb per Mole,http://qudt.org/vocab/unit/C_Stat-PER-MOL
+Statcoulomb per Square Centimeter,http://qudt.org/vocab/unit/C_Stat-PER-CentiM2
+Statfarad,http://qudt.org/vocab/unit/FARAD_Stat
+Stathenry,http://qudt.org/vocab/unit/H_Stat
+Stathenry per Centimetre,http://qudt.org/vocab/unit/H_Stat-PER-CentiM
+Statistical Weight,http://qudt.org/vocab/quantitykind/StatisticalWeight
+Statmho,http://qudt.org/vocab/unit/MHO_Stat
+Statohm,http://qudt.org/vocab/unit/OHM_Stat
+Statsiemens,http://qudt.org/vocab/unit/S_Stat
+Statvolt,http://qudt.org/vocab/unit/V_Stat
+Statvolt per Centimeter,http://qudt.org/vocab/unit/V_Stat-PER-CentiM
+Stere,http://qudt.org/vocab/unit/STR
+Stilb,http://qudt.org/vocab/unit/STILB
+Stokes,http://qudt.org/vocab/unit/ST
+Stone (UK),http://qudt.org/vocab/unit/Stone_UK
+Stress,http://qudt.org/vocab/quantitykind/Stress
+Structure Factor,http://qudt.org/vocab/quantitykind/StructureFactor
+Sudanese Pound,http://qudt.org/vocab/unit/SudanesePound
+Surface Activity Density,http://qudt.org/vocab/quantitykind/SurfaceActivityDensity
+Surface Coefficient of Heat Transfer,http://qudt.org/vocab/quantitykind/SurfaceCoefficientOfHeatTransfer
+Surface Density,http://qudt.org/vocab/quantitykind/SurfaceDensity
+Surinam Dollar,http://qudt.org/vocab/unit/SurinamDollar
+Swedish Krona,http://qudt.org/vocab/unit/SwedishKrona
+Swiss Franc,http://qudt.org/vocab/unit/SwissFranc
+Synodic month,http://qudt.org/vocab/unit/MO_Synodic
+Syrian Pound,http://qudt.org/vocab/unit/SyrianPound
+T-M,http://qudt.org/vocab/unit/T-M
+T-SEC,http://qudt.org/vocab/unit/T-SEC
+THM_EEC,http://qudt.org/vocab/unit/THM_EEC
+Tanzanian Shilling,http://qudt.org/vocab/unit/TanzanianShilling
+Technical Atmosphere,http://qudt.org/vocab/unit/ATM_T
+Temperature,http://qudt.org/vocab/quantitykind/Temperature
+Temperature Amount of Substance,http://qudt.org/vocab/quantitykind/TemperatureAmountOfSubstance
+Temperature Ratio,http://qudt.org/vocab/quantitykind/TemperatureRatio
+Temperature per Magnetic Flux Density,http://qudt.org/vocab/quantitykind/TemperaturePerMagneticFluxDensity
+Temperature per Time,http://qudt.org/vocab/quantitykind/TemperaturePerTime
+Temporal Summation Function,http://qudt.org/vocab/quantitykind/TemporalSummationFunction
+Tenge,http://qudt.org/vocab/unit/Tenge
+TeraCoulomb,http://qudt.org/vocab/unit/TeraC
+Terahertz,http://qudt.org/vocab/unit/TeraHZ
+Terajoule,http://qudt.org/vocab/unit/TeraJ
+Teraohm,http://qudt.org/vocab/unit/TeraOHM
+Terawatt,http://qudt.org/vocab/unit/TeraW
+Terawatt Hour,http://qudt.org/vocab/unit/TeraW-HR
+Tex,http://qudt.org/vocab/unit/TEX
+Therm US,http://qudt.org/vocab/unit/THM_US
+Thermal Conductance,http://qudt.org/vocab/quantitykind/ThermalConductance
+Thermal Conductivity,http://qudt.org/vocab/quantitykind/ThermalConductivity
+Thermal Diffusion Coefficient,http://qudt.org/vocab/quantitykind/ThermalDiffusionRatioCoefficient
+Thermal Diffusion Factor,http://qudt.org/vocab/quantitykind/ThermalDiffusionFactor
+Thermal Diffusion Ratio,http://qudt.org/vocab/quantitykind/ThermalDiffusionRatio
+Thermal Energy,http://qudt.org/vocab/quantitykind/ThermalEnergy
+Thermal Energy Length,http://qudt.org/vocab/quantitykind/ThermalEnergyLength
+Thermal Insulance,http://qudt.org/vocab/quantitykind/ThermalInsulance
+Thermal Resistance,http://qudt.org/vocab/quantitykind/ThermalResistance
+Thermal Resistivity,http://qudt.org/vocab/quantitykind/ThermalResistivity
+Thermal Utilization Factor,http://qudt.org/vocab/quantitykind/ThermalUtilizationFactor
+Thermochemical Calorie,http://qudt.org/vocab/unit/CAL_TH
+Thermodynamic Temperature,http://qudt.org/vocab/quantitykind/ThermodynamicTemperature
+Thomson Coefficient,http://qudt.org/vocab/quantitykind/ThomsonCoefficient
+Thrust To Mass Ratio,http://qudt.org/vocab/quantitykind/ThrustToMassRatio
+Time,http://qudt.org/vocab/quantitykind/Time
+Time Squared,http://qudt.org/vocab/quantitykind/TimeSquared
+Time Temperature,http://qudt.org/vocab/quantitykind/TimeTemperature
+Ton (UK),http://qudt.org/vocab/unit/TON_UK
+Ton (US Shipping),http://qudt.org/vocab/unit/TON_SHIPPING_US
+Ton (US),http://qudt.org/vocab/unit/TON_US
+Ton (US) Per Hour,http://qudt.org/vocab/unit/TON_US-PER-HR
+Ton Energy,http://qudt.org/vocab/unit/TonEnergy
+Ton Force (US Short),http://qudt.org/vocab/unit/TON_F_US
+Ton of Oil Equivalent,http://qudt.org/vocab/unit/TOE
+Ton of Refrigeration,http://qudt.org/vocab/unit/TON_FG
+Tonne,http://qudt.org/vocab/unit/TONNE
+Tonne Per Cubic Meter,http://qudt.org/vocab/unit/TONNE-PER-M3
+Tonne Per Cubic Meter,http://qudt.org/vocab/unit/TON_Metric-PER-M3
+Tonne Per Day,http://qudt.org/vocab/unit/TON_Metric-PER-DAY
+Tonne Per Day,http://qudt.org/vocab/unit/TONNE-PER-DAY
+Tonne Per Minute,http://qudt.org/vocab/unit/TON_Metric-PER-MIN
+Tonne Per Minute,http://qudt.org/vocab/unit/TONNE-PER-MIN
+Tonne Per Second,http://qudt.org/vocab/unit/TONNE-PER-SEC
+Tonne Per Second (metric Ton),http://qudt.org/vocab/unit/TON_Metric-PER-SEC
+Torque,http://qudt.org/vocab/quantitykind/Torque
+Torr,http://qudt.org/vocab/unit/TORR
+Total Atomic Stopping Power,http://qudt.org/vocab/quantitykind/TotalAtomicStoppingPower
+Total Current,http://qudt.org/vocab/quantitykind/TotalCurrent
+Total Current Density,http://qudt.org/vocab/quantitykind/TotalCurrentDensity
+Total Ionization,http://qudt.org/vocab/quantitykind/TotalIonization
+Total Linear Stopping Power,http://qudt.org/vocab/quantitykind/TotalLinearStoppingPower
+Total Mass Stopping Power,http://qudt.org/vocab/quantitykind/TotalMassStoppingPower
+Transmittance,http://qudt.org/vocab/quantitykind/Transmittance
+Transmittance Density,http://qudt.org/vocab/quantitykind/TransmittanceDensity
+Trinidad and Tobago Dollar,http://qudt.org/vocab/unit/TrinidadAndTobagoDollar
+Tropical Year,http://qudt.org/vocab/unit/YR_TROPICAL
+Tugrik,http://qudt.org/vocab/unit/Tugrik
+Tunisian Dinar,http://qudt.org/vocab/unit/TunisianDinar
+Turbidity,http://qudt.org/vocab/quantitykind/Turbidity
+Turns,http://qudt.org/vocab/quantitykind/Turns
+UIC franc (special settlement currency),http://qudt.org/vocab/unit/UICFranc
+US Customary Unit System,http://qudt.org/vocab/sou/SOU_USCS
+US Dollar,http://qudt.org/vocab/unit/USDollar
+US Dry Pint,http://qudt.org/vocab/unit/PINT_US_DRY
+US Dry Quart,http://qudt.org/vocab/unit/QT_US_DRY
+US Gallon,http://qudt.org/vocab/unit/GAL_US
+US Gallon per Day,http://qudt.org/vocab/unit/GAL_US-PER-DAY
+US Gallon per Minute,http://qudt.org/vocab/unit/GAL_US-PER-MIN
+US Liquid Cup,http://qudt.org/vocab/unit/CUP
+US Liquid Ounce,http://qudt.org/vocab/unit/OZ_VOL_US
+US Liquid Pint,http://qudt.org/vocab/unit/PINT_US
+US Liquid Quart,http://qudt.org/vocab/unit/QT_US
+US Peck,http://qudt.org/vocab/unit/PK_US_DRY
+US Survey Foot,http://qudt.org/vocab/unit/FT_US
+Uganda Shilling,http://qudt.org/vocab/unit/UgandaShilling
+Unidad de Valor Real,http://qudt.org/vocab/unit/UnidadDeValorReal
+Unidades de formento (Funds code),http://qudt.org/vocab/unit/UnidadesDeFormento
+Unit Pole,http://qudt.org/vocab/unit/UnitPole
+United Arab Emirates dirham,http://qudt.org/vocab/unit/UAEDirham
+United States Dollar (next day) (funds code),http://qudt.org/vocab/unit/USDollar-NextDay
+United States Dollar (same day) (funds code),http://qudt.org/vocab/unit/USDollar-SameDay
+Unitless,http://qudt.org/vocab/unit/UNITLESS
+Uzbekistan Som,http://qudt.org/vocab/unit/UzbekistanSom
+V-M,http://qudt.org/vocab/unit/V-M
+V_Stat-CentiM,http://qudt.org/vocab/unit/V_Stat-CentiM
+Vatu,http://qudt.org/vocab/unit/Vatu
+Velocity,http://qudt.org/vocab/quantitykind/Velocity
+Venezuelan bolvar,http://qudt.org/vocab/unit/VenezuelanBolvar
+Video Frame Rate,http://qudt.org/vocab/quantitykind/VideoFrameRate
+Vietnamese ??ng,http://qudt.org/vocab/unit/VietnameseDong
+Vocabulary graph,http://www.linkedmodel.org/schema/vaem#VocabularyGraph
+Volt Ampere,http://qudt.org/vocab/unit/V-A
+Volt Ampere Hour,http://qudt.org/vocab/unit/V-A-HR
+Volt Ampere Reactive,http://qudt.org/vocab/unit/V-A_Reactive
+Volt Ampere Reactive Hour,http://qudt.org/vocab/unit/V-A_Reactive-HR
+Volt Per Centimetre,http://qudt.org/vocab/unit/V-PER-CentiM
+Volt Per Inch,http://qudt.org/vocab/unit/V-PER-IN
+Volt Per Microsecond,http://qudt.org/vocab/unit/V-PER-MicroSEC
+Volt Per Millimetre,http://qudt.org/vocab/unit/V-PER-MilliM
+Volt Second Per Meter,http://qudt.org/vocab/unit/V-SEC-PER-M
+Volt per Kelvin,http://qudt.org/vocab/unit/V-PER-K
+Volt per Square Metre,http://qudt.org/vocab/unit/V-PER-M2
+Volt per second,http://qudt.org/vocab/unit/V-PER-SEC
+Voltage,http://qudt.org/vocab/quantitykind/Voltage
+Volume,http://qudt.org/vocab/quantitykind/Volume
+Volume Flow Rate,http://qudt.org/vocab/quantitykind/VolumeFlowRate
+Volume Fraction,http://qudt.org/vocab/quantitykind/VolumeFraction
+Volume Thermal Expansion,http://qudt.org/vocab/quantitykind/VolumeThermalExpansion
+Volume per Unit Time,http://qudt.org/vocab/quantitykind/VolumePerUnitTime
+Volumetric Flux,http://qudt.org/vocab/quantitykind/VolumetricFlux
+Volumetric Heat Capacity,http://qudt.org/vocab/quantitykind/VolumetricHeatCapacity
+Volumic Electromagnetic Energy,http://qudt.org/vocab/quantitykind/VolumicElectromagneticEnergy
+W-M2,http://qudt.org/vocab/unit/W-M2
+W-M2-PER-SR,http://qudt.org/vocab/unit/W-M2-PER-SR
+WIR Euro (complementary currency),http://qudt.org/vocab/unit/WIREuro
+WIR Franc (complementary currency),http://qudt.org/vocab/unit/WIRFranc
+Watt Per Cubic Metre,http://qudt.org/vocab/unit/W-PER-M3
+Watt Per Kilogram,http://qudt.org/vocab/unit/W-PER-KiloGM
+Watt Second,http://qudt.org/vocab/unit/W-SEC
+Watt per Kelvin,http://qudt.org/vocab/unit/W-PER-K
+Watt per Square Centimetre,http://qudt.org/vocab/unit/W-PER-CentiM2
+Watt per Square Foot,http://qudt.org/vocab/unit/W-PER-FT2
+Watt per Square Inch,http://qudt.org/vocab/unit/W-PER-IN2
+Watt per Square Meter Kelvin,http://qudt.org/vocab/unit/W-PER-M2-K
+Watt per Square Meter Pascal,http://qudt.org/vocab/unit/W-PER-M2-PA
+Watt per Square Meter Steradian,http://qudt.org/vocab/unit/W-PER-M2-SR
+Watt per Square Metre Quartic Kelvin,http://qudt.org/vocab/unit/W-PER-M2-K4
+Watt seconds per square metre,http://qudt.org/vocab/unit/W-SEC-PER-M2
+Watthour,http://qudt.org/vocab/unit/W-HR
+Watthour per Cubic metre,http://qudt.org/vocab/unit/W-HR-PER-M3
+Watts per metre,http://qudt.org/vocab/unit/W-PER-M
+Watts per square metre per inverse metre per steradian,http://qudt.org/vocab/unit/W-M-PER-M2-SR
+Watts per square metre per metre,http://qudt.org/vocab/unit/W-PER-M2-M
+Watts per square metre per metre per steradian,http://qudt.org/vocab/unit/W-PER-M2-M-SR
+Watts per square metre per nanometre,http://qudt.org/vocab/unit/W-PER-M2-NanoM
+Watts per square metre per nanometre per steradian,http://qudt.org/vocab/unit/W-PER-M2-NanoM-SR
+Weber Metre,http://qudt.org/vocab/unit/WB-M
+Weber Per Meter,http://qudt.org/vocab/unit/WB-PER-M
+Weber Per Millimetre,http://qudt.org/vocab/unit/WB-PER-MilliM
+Yard Per Degree Fahrenheit,http://qudt.org/vocab/unit/YD-PER-DEG_F
+Yemeni Rial,http://qudt.org/vocab/unit/YemeniRial
+YoctoCoulomb,http://qudt.org/vocab/unit/YoctoC
+YottaCoulomb,http://qudt.org/vocab/unit/YottaC
+Yuan Renminbi,http://qudt.org/vocab/unit/YuanRenminbi
+Zambian Kwacha,http://qudt.org/vocab/unit/ZambianKwacha
+ZeptoCoulomb,http://qudt.org/vocab/unit/ZeptoC
+ZettaCoulomb,http://qudt.org/vocab/unit/ZettaC
+Zimbabwe Dollar,http://qudt.org/vocab/unit/ZimbabweDollar
+Zloty,http://qudt.org/vocab/unit/Zloty
+are,http://qudt.org/vocab/unit/ARE
+astronomical-unit,http://qudt.org/vocab/unit/AU
+atomic-number,http://qudt.org/vocab/unit/Z
+bushel (UK),http://qudt.org/vocab/unit/BU_UK
+bushel (US),http://qudt.org/vocab/unit/BU_US
+calorieIT per gram (calIT/g),http://qudt.org/vocab/unit/CAL_IT-PER-G
+calorieTH per gram (calTH/g),http://qudt.org/vocab/unit/CAL_TH-PER-G
+centimetre per second,http://qudt.org/vocab/unit/CentiM-PER-SEC
+decisiemens per meter,http://qudt.org/vocab/unit/DeciS-PER-M
+fermi,http://qudt.org/vocab/unit/FM
+g-Factor of Nucleus,http://qudt.org/vocab/quantitykind/GFactorOfNucleus
+grams Carbon per square metre per day,http://qudt.org/vocab/unit/GM_Carbon-PER-M2-DAY
+kiloampere,http://qudt.org/vocab/unit/KiloA
+kilosecond,http://qudt.org/vocab/unit/KiloSEC
+lumen second,http://qudt.org/vocab/unit/LM-SEC
+metric tonne per hectare,http://qudt.org/vocab/unit/TON_Metric-PER-HA
+microfarad,http://qudt.org/vocab/unit/MicroFARAD
+microradian,http://qudt.org/vocab/unit/MicroRAD
+milligrams per decilitre,http://qudt.org/vocab/unit/MilliGM-PER-DeciL
+millimoles per litre,http://qudt.org/vocab/unit/MilliMOL-PER-L
+milliradian,http://qudt.org/vocab/unit/MilliRAD
+nanoampere,http://qudt.org/vocab/unit/NanoA
+square metres per hectare,http://qudt.org/vocab/unit/M2-PER-HA
+tonne per hectare,http://qudt.org/vocab/unit/TONNE-PER-HA

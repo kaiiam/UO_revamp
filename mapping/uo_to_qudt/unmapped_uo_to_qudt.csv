@@ -1,0 +1,386 @@
+﻿UO ID,UO label
+UO:0000001,length unit
+UO:0000002,mass unit
+UO:0000003,time unit
+UO:0000004,electric current unit
+UO:0000005,temperature unit
+UO:0000006,substance unit
+UO:0000007,luminous intensity unit
+UO:0000024,nanogram
+UO:0000025,picogram
+UO:0000026,femtogram
+UO:0000041,nanomole
+UO:0000042,picomole
+UO:0000043,femtomole
+UO:0000044,attomole
+UO:0000045,base unit
+UO:0000046,prefix
+UO:0000047,area unit
+UO:0000048,acceleration unit
+UO:0000049,angular velocity unit
+UO:0000050,angular acceleration unit
+UO:0000051,concentration unit
+UO:0000052,mass density unit
+UO:0000053,luminance unit
+UO:0000054,area density unit
+UO:0000055,molar mass unit
+UO:0000056,molar volume unit
+UO:0000057,momentum unit
+UO:0000058,rotational frequency unit
+UO:0000059,specific volume unit
+UO:0000060,speed/velocity unit
+UO:0000061,unit of molarity
+UO:0000062,molar
+UO:0000063,millimolar
+UO:0000064,micromolar
+UO:0000065,nanomolar
+UO:0000066,picomolar
+UO:0000067,unit of molality
+UO:0000068,molal
+UO:0000069,millimolal
+UO:0000070,micromolal
+UO:0000071,nanomolal
+UO:0000072,picomolal
+UO:0000073,femtomolar
+UO:0000074,unit of normality
+UO:0000075,normal
+UO:0000076,mole fraction
+UO:0000077,meter per second per second
+UO:0000078,radian per second per second
+UO:0000087,kilogram per mole
+UO:0000092,turns per second
+UO:0000095,volume unit
+UO:0000102,nanoliter
+UO:0000103,picoliter
+UO:0000104,femtoliter
+UO:0000105,frequency unit
+UO:0000107,force unit
+UO:0000109,pressure unit
+UO:0000111,energy unit
+UO:0000113,power unit
+UO:0000115,illuminance unit
+UO:0000117,luminous flux unit
+UO:0000119,catalytic activity unit
+UO:0000121,angle unit
+UO:0000122,plane angle unit
+UO:0000124,solid angle unit
+UO:0000126,
+UO:0000127,radiation unit
+UO:0000128,activity (of a radionuclide) unit
+UO:0000129,absorbed dose unit
+UO:0000130,dose equivalent unit
+UO:0000131,exposure unit
+UO:0000143,nanogray
+UO:0000144,nanosievert
+UO:0000147,disintegrations per minute
+UO:0000148,counts per minute
+UO:0000149,
+UO:0000151,century
+UO:0000152,half life
+UO:0000154,irradiance unit
+UO:0000156,einstein per square meter per second
+UO:0000157,light unit
+UO:0000158,watt per steradian per square meter
+UO:0000159,radiant intensity unit
+UO:0000160,microeinstein per square meter per second
+UO:0000161,radiance unit
+UO:0000163,mass percentage
+UO:0000164,mass volume percentage
+UO:0000165,volume percentage
+UO:0000166,parts per notation unit
+UO:0000167,parts per hundred
+UO:0000172,parts per quadrillion
+UO:0000176,milligram per milliliter
+UO:0000177,unit per volume unit
+UO:0000178,unit per milliliter
+UO:0000179,unit per liter
+UO:0000180,mass per unit volume
+UO:0000181,enzyme unit
+UO:0000182,density unit
+UO:0000183,linear density unit
+UO:0000188,pi
+UO:0000189,count unit
+UO:0000190,ratio
+UO:0000191,fraction
+UO:0000192,molecule count
+UO:0000193,purity percentage
+UO:0000194,confluence percentage
+UO:0000196,pH
+UO:0000199,microliter per kilogram
+UO:0000200,cell concentration unit
+UO:0000201,cells per milliliter
+UO:0000202,catalytic (activity) concentration unit
+UO:0000203,katal per cubic meter
+UO:0000204,katal per liter
+UO:0000205,volume per unit volume
+UO:0000207,milliliter per liter
+UO:0000208,gram per deciliter
+UO:0000211,plaque forming unit
+UO:0000212,colony forming unit per volume
+UO:0000213,colony forming unit per milliliter
+UO:0000214,plaque forming unit per volume
+UO:0000215,plaque forming unit per milliliter
+UO:0000216,disintegrations per second
+UO:0000217,electric potential difference unit
+UO:0000222,kilodalton
+UO:0000223,watt-hour
+UO:0000224,kilowatt-hour
+UO:0000225,magnetic flux unit
+UO:0000227,magnetic flux density unit
+UO:0000229,volt-hour
+UO:0000230,kilovolt-hour
+UO:0000231,information unit
+UO:0000234,kilobyte
+UO:0000235,megabyte
+UO:0000236,image resolution unit
+UO:0000237,chroma sampling unit
+UO:0000238,dynamic range unit
+UO:0000239,spatial resolution unit
+UO:0000241,micron pixel
+UO:0000242,pixels per inch
+UO:0000243,pixels per millimeter
+UO:0000244,base pair
+UO:0000245,kibibyte
+UO:0000246,mebibyte
+UO:0000250,nanovolt
+UO:0000251,picovolt
+UO:0000253,surface tension unit
+UO:0000255,dyne per cm
+UO:0000256,viscosity unit
+UO:0000260,effective dose unit
+UO:0000261,conduction unit
+UO:0000262,electrical conduction unit
+UO:0000263,heat conduction unit
+UO:0000267,electric field strength unit
+UO:0000269,absorbance unit
+UO:0000270,volumetric flow rate unit
+UO:0000271,microliters per minute
+UO:0000272,millimetres of mercury
+UO:0000274,microgram per milliliter
+UO:0000275,nanogram per milliliter
+UO:0000276,amount per container
+UO:0000277,ug/disk
+UO:0000278,nmole/disk
+UO:0000279,milliunits per milliliter
+UO:0000280,rate unit
+UO:0000281,count per nanomolar second
+UO:0000282,count per molar second
+UO:0000284,count per nanomolar
+UO:0000285,count per molar
+UO:0000307,dose unit
+UO:0000309,milligram per square meter
+UO:0000310,dosage unit
+UO:0000311,milligram per kilogram per day
+UO:0000312,relative light unit
+UO:0000313,relative luminescence unit
+UO:0000314,relative fluorescence unit
+UO:0000315,turbidity unit
+UO:0000316,cells per microliter
+UO:0000317,cells per well
+UO:0000318,formazin nephelometric unit
+UO:0000319,radioactivity concentration
+UO:0000320,curie per liter
+UO:0000321,microcurie per milliliter
+UO:0000322,fold dilution
+UO:0000323,ton per hectare
+UO:0000324,square angstrom
+UO:0000326,centiMorgan
+UO:0000327,centiRay
+UO:0000328,kilobasepair
+UO:0000329,megabasepair
+UO:0000330,gigabasepair
+UO:0010003,micromole per litre
+UO:0010004,micromole per kilogram
+UO:0010006,ratio
+UO:0010007,volt-second per square centimeter
+UO:0010012,thou
+UO:0010017,mile
+UO:0010018,league
+UO:0010019,maritime length unit
+UO:0010021,cable
+UO:0010023,perch
+UO:0010024,rood
+UO:0010026,fluid ounce
+UO:0010027,gill
+UO:0010028,pint
+UO:0010029,quart
+UO:0010030,gallon
+UO:0010032,drachm
+UO:0010033,ounce
+UO:0010034,pound
+UO:0010035,stone
+UO:0010036,quarter
+UO:0010037,hundredweight
+UO:0010038,ton
+UO:0010041,united states customary teaspoon
+UO:0010043,australian metric tablespoon
+UO:0010044,united states customary tablespoon
+UO:0010045,metric cup
+UO:0010046,united states customary cup
+UO:0010047,united states fda cup
+UO:0010050,nanogram per microliter
+UO:0010053,micrograms per wheaton bottle
+UO:1000008,meter based unit
+UO:1000010,second based unit
+UO:1000011,ampere based unit
+UO:1000012,kelvin based unit
+UO:1000013,mole based unit
+UO:1000014,candela based unit
+UO:1000019,angstrom based unit
+UO:1000021,gram based unit
+UO:1000027,degree Celsius based unit
+UO:1000031,minute based unit
+UO:1000032,hour based unit
+UO:1000033,day based unit
+UO:1000034,week based unit
+UO:1000035,month based unit
+UO:1000036,year based unit
+UO:1000062,molar based unit
+UO:1000068,molal based unit
+UO:1000075,normal based unit
+UO:1000076,mole fraction based unit
+UO:1000077,meter per second per second based unit
+UO:1000078,radian per second per second based unit
+UO:1000079,radian per second based unit
+UO:1000080,square meter based unit
+UO:1000081,square centimeter based unit
+UO:1000082,square millimeter based unit
+UO:1000084,gram per cubic centimeter based unit
+UO:1000085,candela per square meter based unit
+UO:1000088,gram per mole based unit
+UO:1000089,cubic meter per mole based unit
+UO:1000090,cubic centimeter per mole based unit
+UO:1000092,turns per second based unit
+UO:1000093,cubic meter per kilogram based unit
+UO:1000094,meter per second based unit
+UO:1000096,cubic meter based unit
+UO:1000097,cubic centimeter based unit
+UO:1000099,liter based unit
+UO:1000100,cubic decimeter based unit
+UO:1000106,hertz based unit
+UO:1000108,newton based unit
+UO:1000110,pascal based unit
+UO:1000112,joule based unit
+UO:1000114,watt based unit
+UO:1000116,lux based unit
+UO:1000118,lumen based unit
+UO:1000120,katal based unit
+UO:1000123,radian based unit
+UO:1000125,steradian based unit
+UO:1000132,becquerel based unit
+UO:1000133,curie based unit
+UO:1000134,gray based unit
+UO:1000135,rad based unit
+UO:1000136,roentgen based unit
+UO:1000137,sievert based unit
+UO:1000140,Roentgen equivalent man based unit
+UO:1000147,disintegrations per minute based unit
+UO:1000148,counts per minute based unit
+UO:1000151,century based unit
+UO:1000152,half life based unit
+UO:1000153,foot candle based unit
+UO:1000155,watt per square meter based unit
+UO:1000156,einstein per square meter per second based unit
+UO:1000158,watt per steradian per square meter based unit
+UO:1000162,watt per steradian based unit
+UO:1000163,mass percentage based unit
+UO:1000164,mass volume percentage based unit
+UO:1000165,volume percentage based unit
+UO:1000167,parts per hundred based unit
+UO:1000168,parts per thousand based unit
+UO:1000169,parts per million based unit
+UO:1000170,parts per billion based unit
+UO:1000171,parts per trillion based unit
+UO:1000172,parts per quadrillion based unit
+UO:1000173,gram per milliliter based unit
+UO:1000175,gram per liter based unit
+UO:1000178,unit per milliliter based unit
+UO:1000179,unit per liter based unit
+UO:1000180,mass per unit volume based unit
+UO:1000181,enzyme unit based unit
+UO:1000185,degree based unit
+UO:1000188,pi based unit
+UO:1000192,molecule count based unit
+UO:1000193,purity percentage based unit
+UO:1000194,confluence percentage based unit
+UO:1000195,degree Fahrenheit based unit
+UO:1000196,pH based unit
+UO:1000197,liter per kilogram based unit
+UO:1000201,cells per milliliter based unit
+UO:1000203,katal per cubic meter based unit
+UO:1000204,katal per liter based unit
+UO:1000208,gram per deciliter based unit
+UO:1000210,colony forming unit based unit
+UO:1000211,plaque forming unit based unit
+UO:1000213,colony forming unit per milliliter based unit
+UO:1000215,plaque forming unit per milliliter based unit
+UO:1000216,disintegrations per second based unit
+UO:1000218,volt based unit
+UO:1000220,coulomb based unit
+UO:1000221,dalton based unit
+UO:1000223,watt-hour based unit
+UO:1000226,weber based unit
+UO:1000228,tesla based unit
+UO:1000229,volt-hour based unit
+UO:1000232,bit based unit
+UO:1000233,byte based unit
+UO:1000237,chroma sampling unit based unit
+UO:1000238,dynamic range unit based unit
+UO:1000240,dots per inch based unit
+UO:1000242,pixels per inch based unit
+UO:1000243,pixels per millimeter based unit
+UO:1000244,base pair based unit
+UO:1000245,kibibyte based unit
+UO:1000246,mebibyte based unit
+UO:1000254,newton per meter based unit
+UO:1000255,dyne per cm based unit
+UO:1000257,pascal second based unit
+UO:1000258,poise based unit
+UO:1000260,effective dose unit based unit
+UO:1000264,siemens based unit
+UO:1000265,watt per meter kelvin based unit
+UO:1000266,electronvolt based unit
+UO:1000268,volt per meter based unit
+UO:1000269,absorbance unit based unit
+UO:1000281,count per nanomolar second based unit
+UO:1000282,count per molar second based unit
+UO:1000284,count per nanomolar based unit
+UO:1000285,count per molar based unit
+UO:1000310,dosage unit based unit
+UO:1000312,relative light unit based unit
+UO:1000313,relative luminescence unit based unit
+UO:1000314,relative fluorescence unit based unit
+UO:1010001,square micrometer based unit
+UO:1010010,hectare based unit
+UO:1010011,inch based unit
+UO:1010012,thou based unit
+UO:1010013,foot based unit
+UO:1010014,yard based unit
+UO:1010015,chain based unit
+UO:1010016,furlong based unit
+UO:1010017,mile based unit
+UO:1010018,league based unit
+UO:1010019,maritime length unit based unit
+UO:1010020,fathom based unit
+UO:1010021,cable based unit
+UO:1010022,nautical mile based unit
+UO:1010023,perch based unit
+UO:1010024,rood based unit
+UO:1010025,acre based unit
+UO:1010026,fluid ounce based unit
+UO:1010027,gill based unit
+UO:1010028,pint based unit
+UO:1010029,quart based unit
+UO:1010030,gallon based unit
+UO:1010031,grain based unit
+UO:1010032,drachm based unit
+UO:1010033,ounce based unit
+UO:1010034,pound based unit
+UO:1010035,stone based unit
+UO:1010036,quarter based unit
+UO:1010037,hundredweight based unit
+UO:1010038,ton based unit
+UO:1010039,slug based unit
+UO:1010040,teaspoon based unit
+UO:1010049,gram per square meter based unit
+UO:1010051,large calorie based unit

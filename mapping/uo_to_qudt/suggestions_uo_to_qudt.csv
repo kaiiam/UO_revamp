@@ -1,0 +1,40 @@
+﻿Hamm dist,UO ID,UO label,QUDT label,QUDT ID
+1,UO:0000024,nanogram,Nanograms,http://qudt.org/vocab/unit/NanoGM
+1,UO:0000025,picogram,Picograms,http://qudt.org/vocab/unit/PicoGM
+2,UO:0000026,femtogram,Hectogram,http://qudt.org/vocab/unit/HectoGM
+2,UO:0000042,picomole,Kilomole,http://qudt.org/vocab/unit/KiloMOL
+1,UO:0000087,kilogram per mole,Kilogram per Mol,http://qudt.org/vocab/unit/KiloGM-PER-MOL
+2,UO:0000143,nanogray,Nanograms,http://qudt.org/vocab/unit/NanoGM
+2,UO:0000188,pi,Gs,http://qudt.org/vocab/unit/Gs
+2,UO:0000188,pi,Kip,http://qudt.org/vocab/unit/KIP_F
+2,UO:0000188,pi,Pica,http://qudt.org/vocab/unit/PCA
+2,UO:0000196,pH,Gs,http://qudt.org/vocab/unit/Gs
+2,UO:0000207,milliliter per liter,Millilitre Per Liter,http://qudt.org/vocab/unit/MilliL-PER-L
+2,UO:0000235,megabyte,PetaByte,http://qudt.org/vocab/unit/PetaBYTE
+2,UO:0000245,kibibyte,PebiByte,http://qudt.org/vocab/unit/PebiBYTE
+1,UO:0000246,mebibyte,PebiByte,http://qudt.org/vocab/unit/PebiBYTE
+2,UO:0000309,milligram per square meter,Milligram Per Square Metre,http://qudt.org/vocab/unit/MilliGM-PER-M2
+2,UO:0000327,centiRay,Centibar,http://qudt.org/vocab/unit/CentiBAR
+2,UO:0010012,thou,Phot,http://qudt.org/vocab/unit/Phot
+2,UO:0010017,mile,Time,http://qudt.org/vocab/quantitykind/Time
+2,UO:0010024,rood,Cord,http://qudt.org/vocab/unit/CORD
+2,UO:0010024,rood,Rod,http://qudt.org/vocab/unit/ROD
+2,UO:0010027,gill,Riel,http://qudt.org/vocab/unit/Riel
+2,UO:0010028,pint,Biot,http://qudt.org/vocab/unit/BIOT
+2,UO:0010028,pint,Kina,http://qudt.org/vocab/unit/Kina
+2,UO:0010028,pint,Pica,http://qudt.org/vocab/unit/PCA
+2,UO:0010028,pint,Phot,http://qudt.org/vocab/unit/Phot
+2,UO:0010029,quart,Quad,http://qudt.org/vocab/unit/QUAD
+2,UO:0010034,pound,Poundal,http://qudt.org/vocab/unit/PDL
+2,UO:0010034,pound,Point,http://qudt.org/vocab/unit/PT
+2,UO:0010035,stone,Leone,http://qudt.org/vocab/unit/Leone
+2,UO:0010035,stone,Stokes,http://qudt.org/vocab/unit/ST
+2,UO:0010035,stone,Stere,http://qudt.org/vocab/unit/STR
+2,UO:0010038,ton,Ban,http://qudt.org/vocab/unit/BAN
+1,UO:0010038,ton,Gon,http://qudt.org/vocab/unit/GON
+2,UO:0010038,ton,Rod,http://qudt.org/vocab/unit/ROD
+2,UO:0010038,ton,Som,http://qudt.org/vocab/unit/Som
+2,UO:0010038,ton,T-M,http://qudt.org/vocab/unit/T-M
+2,UO:0010038,ton,Tex,http://qudt.org/vocab/unit/TEX
+2,UO:0010038,ton,Tonne,http://qudt.org/vocab/unit/TONNE
+2,UO:0010038,ton,Torr,http://qudt.org/vocab/unit/TORR

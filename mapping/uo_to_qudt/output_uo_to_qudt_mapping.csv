@@ -1,0 +1,170 @@
+﻿UO ID,UO label,QUDT label,QUDT ID
+UO:0000000,unit,Unit,http://qudt.org/schema/qudt/Unit
+UO:0000008,meter,Metre,http://qudt.org/vocab/unit/M
+UO:0000009,kilogram,Kilogram,http://qudt.org/vocab/unit/KiloGM
+UO:0000010,second,Second,http://qudt.org/vocab/unit/SEC
+UO:0000011,ampere,Ampere,http://qudt.org/vocab/unit/A
+UO:0000012,kelvin,Kelvin,http://qudt.org/vocab/unit/K
+UO:0000013,mole,Mole,http://qudt.org/vocab/unit/MOL
+UO:0000014,candela,Candela,http://qudt.org/vocab/unit/CD
+UO:0000015,centimeter,Centimeter,http://qudt.org/vocab/unit/CentiM
+UO:0000016,millimeter,Millimeter,http://qudt.org/vocab/unit/MilliM
+UO:0000017,micrometer,Micrometer,http://qudt.org/vocab/unit/MicroM
+UO:0000018,nanometer,Nanometer,http://qudt.org/vocab/unit/NanoM
+UO:0000019,angstrom,Angstrom,http://qudt.org/vocab/unit/ANGSTROM
+UO:0000020,picometer,Picometer,http://qudt.org/vocab/unit/PicoM
+UO:0000021,gram,Gram,http://qudt.org/vocab/unit/GM
+UO:0000022,milligram,Milligram,http://qudt.org/vocab/unit/MilliGM
+UO:0000023,microgram,Microgram,http://qudt.org/vocab/unit/MicroGM
+UO:0000027,degree Celsius,Degree Celsius,http://qudt.org/vocab/unit/DEG_C
+UO:0000028,millisecond,millisecond,http://qudt.org/vocab/unit/MilliSEC
+UO:0000029,microsecond,microsecond,http://qudt.org/vocab/unit/MicroSEC
+UO:0000030,picosecond,Picosecond,http://qudt.org/vocab/unit/PicoSEC
+UO:0000031,minute,Minute,http://qudt.org/vocab/unit/MIN
+UO:0000032,hour,Hour,http://qudt.org/vocab/unit/HR
+UO:0000033,day,Day,http://qudt.org/vocab/unit/DAY
+UO:0000034,week,Week,http://qudt.org/vocab/unit/WK
+UO:0000035,month,Month,http://qudt.org/vocab/unit/MO
+UO:0000036,year,Year,http://qudt.org/vocab/unit/YR
+UO:0000037,milliampere,MilliAmpere,http://qudt.org/vocab/unit/MilliA
+UO:0000038,microampere,microampere,http://qudt.org/vocab/unit/MicroA
+UO:0000039,micromole,Micromole,http://qudt.org/vocab/unit/MicroMOL
+UO:0000040,millimole,Millimole,http://qudt.org/vocab/unit/MilliMOL
+UO:0000079,radian per second,radian per second,http://qudt.org/vocab/unit/RAD-PER-SEC
+UO:0000080,square meter,Square Metre,http://qudt.org/vocab/unit/M2
+UO:0000081,square centimeter,Square Centimetre,http://qudt.org/vocab/unit/CentiM2
+UO:0000082,square millimeter,Square Millimeter,http://qudt.org/vocab/unit/MilliM2
+UO:0000083,kilogram per cubic meter,Kilogram per Cubic Meter,http://qudt.org/vocab/unit/KiloGM-PER-M3
+UO:0000084,gram per cubic centimeter,Gram Per Cubic Centimetre,http://qudt.org/vocab/unit/GM-PER-CentiM3
+UO:0000085,candela per square meter,candela per square meter,http://qudt.org/vocab/unit/CD-PER-M2
+UO:0000086,kilogram per square meter,Kilogram per Square Meter,http://qudt.org/vocab/unit/KiloGM-PER-M2
+UO:0000088,gram per mole,Gram Per Mole,http://qudt.org/vocab/unit/GM-PER-MOL
+UO:0000089,cubic meter per mole,Cubic Meter per Mole,http://qudt.org/vocab/unit/M3-PER-MOL
+UO:0000090,cubic centimeter per mole,Cubic Centimetre Per Mole,http://qudt.org/vocab/unit/CentiM3-PER-MOL
+UO:0000091,kilogram meter per second,Kilogram Meter Per Second,http://qudt.org/vocab/unit/KiloGM-M-PER-SEC
+UO:0000093,cubic meter per kilogram,Cubic Meter per Kilogram,http://qudt.org/vocab/unit/M3-PER-KiloGM
+UO:0000094,meter per second,Meter per Second,http://qudt.org/vocab/unit/M-PER-SEC
+UO:0000096,cubic meter,Cubic Metre,http://qudt.org/vocab/unit/M3
+UO:0000097,cubic centimeter,cubic centimetre,http://qudt.org/vocab/unit/CentiM3
+UO:0000098,milliliter,Millilitre,http://qudt.org/vocab/unit/MilliL
+UO:0000099,liter,Liter,http://qudt.org/vocab/unit/L
+UO:0000100,cubic decimeter,Cubic Decimeter,http://qudt.org/vocab/unit/DeciM3
+UO:0000101,microliter,Microlitre,http://qudt.org/vocab/unit/MicroL
+UO:0000106,hertz,Hertz,http://qudt.org/vocab/unit/HZ
+UO:0000108,newton,Newton,http://qudt.org/vocab/unit/N
+UO:0000110,pascal,Pascal,http://qudt.org/vocab/unit/PA
+UO:0000112,joule,Joule,http://qudt.org/vocab/unit/J
+UO:0000114,watt,Watt,http://qudt.org/vocab/unit/W
+UO:0000116,lux,Lux,http://qudt.org/vocab/unit/LUX
+UO:0000118,lumen,lumen,http://qudt.org/vocab/unit/LM
+UO:0000120,katal,Katal,http://qudt.org/vocab/unit/KAT
+UO:0000123,radian,Radian,http://qudt.org/vocab/unit/RAD
+UO:0000123,radian,Rad,http://qudt.org/vocab/unit/RAD_R
+UO:0000125,steradian,Steradian,http://qudt.org/vocab/unit/SR
+UO:0000132,becquerel,Becquerel,http://qudt.org/vocab/unit/BQ
+UO:0000133,curie,Curie,http://qudt.org/vocab/unit/Ci
+UO:0000134,gray,Gray,http://qudt.org/vocab/unit/GRAY
+UO:0000135,rad,Rad,http://qudt.org/vocab/unit/RAD_R
+UO:0000136,roentgen,Roentgen,http://qudt.org/vocab/unit/R
+UO:0000137,sievert,Sievert,http://qudt.org/vocab/unit/SV
+UO:0000138,millisievert,Millisievert,http://qudt.org/vocab/unit/MilliSV
+UO:0000139,microsievert,MicroSievert,http://qudt.org/vocab/unit/MicroSV
+UO:0000140,Roentgen equivalent man,Rem,http://qudt.org/vocab/unit/REM
+UO:0000141,microgray,MicroGray,http://qudt.org/vocab/unit/MicroGRAY
+UO:0000142,milligray,Milligray,http://qudt.org/vocab/unit/MilliGRAY
+UO:0000145,millicurie,Millicurie,http://qudt.org/vocab/unit/MilliCi
+UO:0000146,microcurie,MicroCurie,http://qudt.org/vocab/unit/MicroCi
+UO:0000150,nanosecond,nanosecond,http://qudt.org/vocab/unit/NanoSEC
+UO:0000153,foot candle,Foot Candle,http://qudt.org/vocab/unit/FC
+UO:0000155,watt per square meter,Watt per Square Metre,http://qudt.org/vocab/unit/W-PER-M2
+UO:0000162,watt per steradian,Watt per Steradian,http://qudt.org/vocab/unit/W-PER-SR
+UO:0000168,parts per thousand,Parts per thousand,http://qudt.org/vocab/unit/PPTH
+UO:0000169,parts per million,Parts per million,http://qudt.org/vocab/unit/PPM
+UO:0000170,parts per billion,Parts per billion,http://qudt.org/vocab/unit/PPB
+UO:0000171,parts per trillion,Parts per trillion,http://qudt.org/vocab/unit/PPTR
+UO:0000173,gram per milliliter,Gram Per Millilitre,http://qudt.org/vocab/unit/GM-PER-MilliL
+UO:0000174,kilogram per liter,Kilogram Per Litre,http://qudt.org/vocab/unit/KiloGM-PER-L
+UO:0000175,gram per liter,Gram Per Liter,http://qudt.org/vocab/unit/GM-PER-L
+UO:0000184,kilogram per meter,Kilogram per Meter,http://qudt.org/vocab/unit/KiloGM-PER-M
+UO:0000185,degree,Degree,http://qudt.org/vocab/unit/DEG
+UO:0000186,dimensionless unit,Dimensionless Unit,http://qudt.org/schema/qudt/DimensionlessUnit
+UO:0000187,percent,Percent,http://qudt.org/vocab/unit/PERCENT
+UO:0000195,degree Fahrenheit,Degree Fahrenheit,http://qudt.org/vocab/unit/DEG_F
+UO:0000197,liter per kilogram,Litre Per Kilogram,http://qudt.org/vocab/unit/L-PER-KiloGM
+UO:0000198,milliliter per kilogram,Millilitre Per Kilogram,http://qudt.org/vocab/unit/MilliL-PER-KiloGM
+UO:0000206,milliliter per cubic meter,Millilitre Per Cubic Metre,http://qudt.org/vocab/unit/MilliL-PER-M3
+UO:0000209,deciliter,Decilitre,http://qudt.org/vocab/unit/DeciL
+UO:0000210,colony forming unit,Colony Forming Unit,http://qudt.org/vocab/unit/CFU
+UO:0000218,volt,Volt,http://qudt.org/vocab/unit/V
+UO:0000219,electric charge,Electric Charge,http://qudt.org/vocab/quantitykind/ElectricCharge
+UO:0000220,coulomb,Coulomb,http://qudt.org/vocab/unit/C
+UO:0000221,dalton,Dalton,http://qudt.org/vocab/unit/Da
+UO:0000221,dalton,Unified Atomic Mass Unit,http://qudt.org/vocab/unit/U
+UO:0000226,weber,Weber,http://qudt.org/vocab/unit/WB
+UO:0000228,tesla,Tesla,http://qudt.org/vocab/unit/T
+UO:0000232,bit,Bit,http://qudt.org/vocab/unit/BIT
+UO:0000233,byte,Byte,http://qudt.org/vocab/unit/BYTE
+UO:0000240,dots per inch,Dots Per Inch,http://qudt.org/vocab/unit/DPI
+UO:0000247,millivolt,Millivolt,http://qudt.org/vocab/unit/MilliV
+UO:0000248,kilovolt,Kilovolt,http://qudt.org/vocab/unit/KiloV
+UO:0000249,microvolt,Microvolt,http://qudt.org/vocab/unit/MicroV
+UO:0000252,megavolt,Megavolt,http://qudt.org/vocab/unit/MegaV
+UO:0000254,newton per meter,Newton per Meter,http://qudt.org/vocab/unit/N-PER-M
+UO:0000257,pascal second,Pascal Second,http://qudt.org/vocab/unit/PA-SEC
+UO:0000258,poise,Poise,http://qudt.org/vocab/unit/POISE
+UO:0000259,decibel,Decibel,http://qudt.org/vocab/unit/DeciB
+UO:0000264,siemens,Mho,http://qudt.org/vocab/unit/MHO
+UO:0000264,siemens,Siemens,http://qudt.org/vocab/unit/S
+UO:0000265,watt per meter kelvin,Watt per Metre Kelvin,http://qudt.org/vocab/unit/W-PER-M-K
+UO:0000266,electronvolt,Electron Volt,http://qudt.org/vocab/unit/EV
+UO:0000268,volt per meter,Volt per Metre,http://qudt.org/vocab/unit/V-PER-M
+UO:0000273,milligram per liter,Milligram Per Liter,http://qudt.org/vocab/unit/MilliGM-PER-L
+UO:0000283,kilogram per hectare,Kilogram per Hectare,http://qudt.org/vocab/unit/KiloGM-PER-HA
+UO:0000286,yotta,Yotta,http://qudt.org/2.1/vocab/prefix/Yotta
+UO:0000287,hecto,Hecto,http://qudt.org/2.1/vocab/prefix/Hecto
+UO:0000288,zetta,Zetta,http://qudt.org/2.1/vocab/prefix/Zetta
+UO:0000289,exa,Exa,http://qudt.org/2.1/vocab/prefix/Exa
+UO:0000290,peta,Peta,http://qudt.org/2.1/vocab/prefix/Peta
+UO:0000291,tera,Tera,http://qudt.org/2.1/vocab/prefix/Tera
+UO:0000292,giga,Giga,http://qudt.org/2.1/vocab/prefix/Giga
+UO:0000293,mega,Mega,http://qudt.org/2.1/vocab/prefix/Mega
+UO:0000294,kilo,Kilo,http://qudt.org/2.1/vocab/prefix/Kilo
+UO:0000295,deca,Deca,http://qudt.org/2.1/vocab/prefix/Deca
+UO:0000296,deci,Deci,http://qudt.org/2.1/vocab/prefix/Deci
+UO:0000297,milli,Milli,http://qudt.org/2.1/vocab/prefix/Milli
+UO:0000298,centi,Centi,http://qudt.org/2.1/vocab/prefix/Centi
+UO:0000299,micro,Micro,http://qudt.org/2.1/vocab/prefix/Micro
+UO:0000300,nano,Nano,http://qudt.org/2.1/vocab/prefix/Nano
+UO:0000301,microgram per liter,Microgram Per Litre,http://qudt.org/vocab/unit/MicroGM-PER-L
+UO:0000302,pico,Pico,http://qudt.org/2.1/vocab/prefix/Pico
+UO:0000303,femto,Femto,http://qudt.org/2.1/vocab/prefix/Femto
+UO:0000304,atto,Atto,http://qudt.org/2.1/vocab/prefix/Atto
+UO:0000305,zepto,Zepto,http://qudt.org/2.1/vocab/prefix/Zepto
+UO:0000306,yocto,Yocto,http://qudt.org/2.1/vocab/prefix/Yocto
+UO:0000308,milligram per kilogram,Milligram Per Kilogram,http://qudt.org/vocab/unit/MilliGM-PER-KiloGM
+UO:0000325,megaHertz,Megahertz,http://qudt.org/vocab/unit/MegaHZ
+UO:0000331,gigabyte,GigaByte,http://qudt.org/vocab/unit/GigaBYTE
+UO:0000332,terabyte,TeraByte,http://qudt.org/vocab/unit/TeraBYTE
+UO:0010001,square micrometer,Square Micrometre,http://qudt.org/vocab/unit/MicroM2
+UO:0010002,millisiemens,Millisiemens,http://qudt.org/vocab/unit/MilliS
+UO:0010005,millimeters per day,millimeters per day,http://qudt.org/vocab/unit/MilliM-PER-DAY
+UO:0010008,kilometer per hour,Kilometre per Hour,http://qudt.org/vocab/unit/KiloM-PER-HR
+UO:0010009,milli,Milli,http://qudt.org/2.1/vocab/prefix/Milli
+UO:0010010,hectare,Hectare,http://qudt.org/vocab/unit/HA
+UO:0010011,inch,Inch,http://qudt.org/vocab/unit/IN
+UO:0010013,foot,Foot,http://qudt.org/vocab/unit/FT
+UO:0010014,yard,Yard,http://qudt.org/vocab/unit/YD
+UO:0010015,chain,chain,http://qudt.org/vocab/unit/CH
+UO:0010016,furlong,Furlong,http://qudt.org/vocab/unit/FUR
+UO:0010020,fathom,Fathom,http://qudt.org/vocab/unit/FATH
+UO:0010022,nautical mile,Nautical Mile,http://qudt.org/vocab/unit/MI_N
+UO:0010025,acre,Acre,http://qudt.org/vocab/unit/AC
+UO:0010031,grain,Grain,http://qudt.org/vocab/unit/GRAIN
+UO:0010039,slug,Slug,http://qudt.org/vocab/unit/SLUG
+UO:0010040,teaspoon,Teaspoon,http://qudt.org/vocab/unit/TSP
+UO:0010042,tablespoon,Tablespoon,http://qudt.org/vocab/unit/TBSP
+UO:0010048,micromole,Micromole,http://qudt.org/vocab/unit/MicroMOL
+UO:0010049,gram per square meter,Gram Per Square Meter,http://qudt.org/vocab/unit/GM-PER-M2
+UO:0010051,large calorie,Kilocalorie,http://qudt.org/vocab/unit/KiloCAL
+UO:0010052,pounds per square inch,PSI,http://qudt.org/vocab/unit/PSI
+UO:0010054,picoampere,picoampere,http://qudt.org/vocab/unit/PicoA
