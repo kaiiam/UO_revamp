@@ -214,6 +214,7 @@ def extract_label(in_str, unit_keys, prefix_dict, units_dict):
         return None
 
 
+# --------------------------------------------------
 def extract_label_with_symbol(in_str, unit_keys, prefix_dict, units_dict, powers_dict):
     """Given strings like ng1 or L3 return nanogram or cubic litre"""
     match = re.search("(.*)(\d)", in_str)
@@ -314,6 +315,44 @@ def gen_qname_label(qname_str, qname_mapping_list):
             return ' '.join(num_names_list) + ' per ' + ' '.join(denom_names_list)
 
 
+def ucum_str_to_qname_str(in_str, unit_keys, qname_ucum_map_dict):
+    """
+    convert just % to PCT
+    Might need to update the regex string as new qname/UCUM mappings are made
+    """
+    match = re.search(r"^([a-zA-Z%#_']+)([-]?[0-9]{0,2})$", in_str)
+    code = match.group(1)
+    ucum_code_symbol = extract_qname_symbol(code, unit_keys)
+    qname_code = get_value(ucum_code_symbol,qname_ucum_map_dict)
+    qstr_out = in_str.replace(ucum_code_symbol, qname_code)
+    return qstr_out
+
+# --------------------------------------------------
+def ucum_to_qname(in_str, qname_mapping_list):
+    """
+    Function to convert UCUM strings to Qname string
+    e.g. `%` to `PCT`
+    """
+    qname_ucum_map_dict = {}
+    for i in qname_mapping_list:
+        if i['prefix'] == 'FALSE':
+            qname_ucum_map_dict[i['ucum']] = i['qname']
+    prefix_dict = {}
+    for i in qname_mapping_list:
+        if i['prefix'] == 'TRUE':
+            prefix_dict[i['qname']] = i['label_en']
+    unit_keys = list(qname_ucum_map_dict.keys())
+
+    if '.' not in in_str:
+        return ucum_str_to_qname_str(in_str, unit_keys, qname_ucum_map_dict)
+    else:
+        unit_parts_list = in_str.split('.')
+        new_list = []
+        for x in unit_parts_list:
+            new_list.append(ucum_str_to_qname_str(x, unit_keys, qname_ucum_map_dict))
+        return '.'.join(new_list)
+
+
 # --------------------------------------------------
 def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qname_mapping_list):
     """Parse input mappings to find UCUM, QUDT, OM, UO IDs/strings.
@@ -353,9 +392,9 @@ def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
 
     # Try a new function that converts the UCUM style in_st to a proper QName str
-    # Call it_ucum_to_qname()
+    qname_str = ucum_to_qname(in_str, qname_mapping_list)
 
-    return (format_ttl(qname_str=in_str, ucum_id_list=ucum_id_list, qudt_iri=qudt_iri, om_iri=om_iri,
+    return (format_ttl(qname_str=qname_str, ucum_id_list=ucum_id_list, qudt_iri=qudt_iri, om_iri=om_iri,
                        uo_iri=uo_iri, oboe_iri=oboe_iri, qname_label=qname_label))
 
 
