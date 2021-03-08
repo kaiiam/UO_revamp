@@ -354,7 +354,7 @@ def ucum_to_qname(in_str, qname_mapping_list):
 
 
 # --------------------------------------------------
-def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qname_mapping_list):
+def qname(in_str, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qname_mapping_list):
     """Parse input mappings to find UCUM, QUDT, OM, UO IDs/strings.
     For now we're assuming that the in_str has been checked to be a correct "UCUM" style string
     Will need to add such a check prior to passing in_str into this qname function.
@@ -393,6 +393,8 @@ def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_
 
     # Try a new function that converts the UCUM style in_st to a proper QName str
     qname_str = ucum_to_qname(in_str, qname_mapping_list)
+
+    qname_label = gen_qname_label(qname_str, qname_mapping_list)
 
     return (format_ttl(qname_str=qname_str, ucum_id_list=ucum_id_list, qudt_iri=qudt_iri, om_iri=om_iri,
                        uo_iri=uo_iri, oboe_iri=oboe_iri, qname_label=qname_label))
@@ -576,12 +578,12 @@ def main():
         # In order to get to unique qnames e.g. `Cel-1.d-1` == `d-1.Cel-1`
         # Can maybe call this function on all of input_list prior to sorting/removing duplicates and
         # Calling qname on the whole list as to make sure we have a list of unique qnames prior to printing a new one
-        qname_str = gen_qname_label(i, qname_mapping_list)
-        if qname_str == None:
-            pass
+        # qname_str = gen_qname_label(i, qname_mapping_list)
+        # if qname_str == None:
+        #     pass
 
         # Perhaps not the best way to handle the None values returned from the previous functions.
-        call = qname(in_str=i, qname_label=qname_str, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list,
+        call = qname(in_str=i, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list,
                      uo_ucum_list=uo_ucum_list, oboe_ucum_list=oboe_ucum_list,
                      qname_mapping_list=qname_mapping_list)
         if call is not None:
