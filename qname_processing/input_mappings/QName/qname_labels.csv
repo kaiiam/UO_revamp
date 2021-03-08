@@ -78,3 +78,7 @@ degree,deg,FALSE
 percent,%,FALSE
 bit,bit,FALSE
 poise,P,FALSE
+bar,bar,FALSE
+are,ar,FALSE
+degree,deg,FALSE
+tonne,t,FALSE
