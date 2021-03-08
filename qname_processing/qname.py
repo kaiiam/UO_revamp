@@ -17,7 +17,7 @@ unit:m.s-2
 
 RUN:
 
-./qname.py -i input/test1.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -o out.ttl -q input_mappings/QName/qname_labels.csv
+./qname.py -i input/test3.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out.ttl -q input_mappings/QName/qname_labels.csv
 
 """
 
@@ -37,6 +37,7 @@ prefix_dict_list = [
     {'prefix': 'UO:', 'namespace': 'http://purl.obolibrary.org/obo/UO_'},
     {'prefix': 'OM:', 'namespace': 'http://www.ontology-of-units-of-measure.org/resource/om-2/'},
     {'prefix': 'QUDT:', 'namespace': 'http://qudt.org/vocab/unit/'},
+    {'prefix': 'OBOE:', 'namespace': 'http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#'},
     {'prefix': 'skos:', 'namespace': 'http://www.w3.org/2004/02/skos/core#'}
 ]
 
@@ -59,7 +60,7 @@ def get_args():
     parser.add_argument(
         '-u1',
         '--ucum1',
-        help='UCUM keys',
+        help='UCUM mapping keys',
         metavar='str',
         type=str,
         default='')
@@ -67,7 +68,7 @@ def get_args():
     parser.add_argument(
         '-u2',
         '--ucum2',
-        help='UCUM keys',
+        help='UCUM mapping keys',
         metavar='str',
         type=str,
         default='')
@@ -75,7 +76,15 @@ def get_args():
     parser.add_argument(
         '-u3',
         '--ucum3',
-        help='UCUM keys',
+        help='UCUM mapping keys',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-u4',
+        '--ucum4',
+        help='UCUM mapping keys',
         metavar='str',
         type=str,
         default='')
@@ -303,7 +312,7 @@ def gen_qname_label(qname_str, qname_mapping_list):
 
 
 # --------------------------------------------------
-def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, qname_mapping_list):
+def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qname_mapping_list):
     """Parse input mappings to find UCUM, QUDT, OM, UO IDs/strings.
     For now we're assuming that the in_str has been checked to be a correct "UCUM" style string
     Will need to add such a check prior to passing in_str into this qname function.
@@ -312,6 +321,7 @@ def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, qname
     qudt_iri = ''
     om_iri = ''
     uo_iri = ''
+    oboe_iri = ''
 
     for q in qudt_ucum_list:
         if in_str == q['UCUM1'] or in_str == q['UCUM2']:
@@ -328,6 +338,11 @@ def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, qname
             ucum_id_list.append(u['UCUM1'])
             ucum_id_list.append(u['UCUM2'])
             uo_iri = u['IRI']
+    for x in oboe_ucum_list:
+        if in_str == x['UCUM1'] or in_str == x['UCUM2']:
+            ucum_id_list.append(x['UCUM1'])
+            ucum_id_list.append(x['UCUM2'])
+            oboe_iri = x['IRI']
 
     ucum_id_list.append(in_str)
 
@@ -335,7 +350,7 @@ def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, qname
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
 
     return (format_ttl(qname_str=in_str, ucum_id_list=ucum_id_list, qudt_iri=qudt_iri, om_iri=om_iri,
-                       uo_iri=uo_iri, qname_label=qname_label))
+                       uo_iri=uo_iri, oboe_iri=oboe_iri, qname_label=qname_label))
 
 
 # --------------------------------------------------
@@ -380,14 +395,16 @@ def ucum_to_qname(in_str):
 
 
 # --------------------------------------------------
-def format_ttl(qname_str, ucum_id_list, qudt_iri, om_iri, uo_iri, qname_label):
+def format_ttl(qname_str, ucum_id_list, qudt_iri, om_iri, uo_iri, oboe_iri, qname_label):
     """Format parsed IDs and UCUM codes into ttl"""
     qudt_id = ''
     om_id = ''
     uo_id = ''
+    oboe_id = ''
     qudt_regex = r"(http://qudt.org/vocab/unit/)(.*)"
     om_regex = r"(http://www.ontology-of-units-of-measure.org/resource/om-2/)(.*)"
     uo_regex = r"(http://purl.obolibrary.org/obo/UO_)(.*)"
+    oboe_regex = r"(http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#)(.*)"
 
     if re.search(qudt_regex, qudt_iri):
         match = re.search(qudt_regex, qudt_iri)
@@ -401,6 +418,10 @@ def format_ttl(qname_str, ucum_id_list, qudt_iri, om_iri, uo_iri, qname_label):
         match = re.search(uo_regex, uo_iri)
         uo_id = match.group(2)
         uo_id = 'UO:' + uo_id
+    if re.search(oboe_regex, oboe_iri):
+        match = re.search(oboe_regex, oboe_iri)
+        oboe_id = match.group(2)
+        oboe_id = 'OBOE:' + oboe_id
 
     # TODO could maybe add some more checks to ensure we only get correctly formatted QName strings
     prefixed_qname = '{}{}\n'.format('unit:', qname_str)
@@ -416,6 +437,8 @@ def format_ttl(qname_str, ucum_id_list, qudt_iri, om_iri, uo_iri, qname_label):
         return_list.append('  {}exactMatch {}'.format('skos:', om_id))
     if uo_id:
         return_list.append('  {}exactMatch {}'.format('skos:', uo_id))
+    if oboe_id:
+        return_list.append('  {}exactMatch {}'.format('skos:', oboe_id))
 
     [return_list.append('  {}ucum_code "{}"'.format('unit:', u)) for u in ucum_id_list]
 
@@ -440,6 +463,7 @@ def main():
     om_ucum = args.ucum1
     qudt_ucum = args.ucum2
     uo_ucum = args.ucum3
+    oboe_ucum = args.ucum4
     out_file = args.output
     qname_mapping = args.qname
 
@@ -472,6 +496,13 @@ def main():
         for row in reader:
             uo_ucum_list.append(row)
 
+    oboe_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(oboe_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            oboe_ucum_list.append(row)
+
     qname_mapping_list = []
     # open and save input file as list of dictionaries
     with open(qname_mapping, mode='r', encoding='utf-8-sig') as csvfile:
@@ -503,7 +534,7 @@ def main():
         qname_str = gen_qname_label(i, qname_mapping_list)
 
         # Perhaps not the best way to handle the None values returned from the previous functions.
-        call = qname(in_str=i, qname_label=qname_str, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list, uo_ucum_list=uo_ucum_list,
+        call = qname(in_str=i, qname_label=qname_str, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list, uo_ucum_list=uo_ucum_list, oboe_ucum_list = oboe_ucum_list,
                      qname_mapping_list=qname_mapping_list)
         if call is not None:
             print(call, file=f)
