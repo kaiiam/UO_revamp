@@ -352,6 +352,9 @@ def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_
     # Clean up parsed info:
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
 
+    # Try a new function that converts the UCUM style in_st to a proper QName str
+    # Call it_ucum_to_qname()
+
     return (format_ttl(qname_str=in_str, ucum_id_list=ucum_id_list, qudt_iri=qudt_iri, om_iri=om_iri,
                        uo_iri=uo_iri, oboe_iri=oboe_iri, qname_label=qname_label))
 
@@ -367,7 +370,7 @@ def backslash_case(in_str):
 
 
 # --------------------------------------------------
-def ucum_to_qname(in_str):
+def reformat_backslash(in_str):
     """Verify if input is a valid QName string. If not convert it to one.
     Input should be a UCUM or QName string
     Outputs a QName string
@@ -522,7 +525,7 @@ def main():
     print('', file=f)
 
     # Convert from / formats to . formats
-    input_list = [ucum_to_qname(i) for i in input_list]
+    input_list = [reformat_backslash(i) for i in input_list]
     # Remove duplicates
     input_list = list(set(input_list))
     # Sort alphabetically
