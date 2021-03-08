@@ -324,7 +324,7 @@ def qname(in_str, qname_label, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_
     oboe_iri = ''
 
     for q in qudt_ucum_list:
-        if in_str == q['UCUM1'] or in_str == q['UCUM2']:
+        if in_str == q['UCUM1'] or in_str == q['UCUM2'] or in_str == q['UCUM3'] or in_str == q['UCUM4']:
             ucum_id_list.append(q['UCUM1'])
             ucum_id_list.append(q['UCUM2'])
             qudt_iri = q['IRI']
