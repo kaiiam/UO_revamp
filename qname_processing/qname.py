@@ -15,9 +15,12 @@ unit:m.s-2
   unit:ucum_code "m.s-2" ;
   unit:ucum_code "m/s2" .
 
-RUN:
+test run:
 
-./qname.py -i input/test3.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out.ttl -q input_mappings/QName/qname_labels.csv
+./qname.py -i input/test6.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out.ttl -q input_mappings/QName/qname_labels.csv
+
+Run with full set from all ontologies:
+./qname.py -i input/from_existing_ontologies.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out_full.ttl -q input_mappings/QName/qname_labels.csv
 
 """
 
@@ -470,7 +473,7 @@ def main():
     # Read in argument input files
     input_list = []
     # open and save input data file as list of strings
-    with open(input_file, mode ='r', encoding='utf-8-sig') as input:
+    with open(input_file, mode='r', encoding='utf-8-sig') as input:
         csv_reader = csv.reader(input, delimiter=',')
         for row in csv_reader:
             input_list.append(row[0])
@@ -532,9 +535,12 @@ def main():
         # Can maybe call this function on all of input_list prior to sorting/removing duplicates and
         # Calling qname on the whole list as to make sure we have a list of unique qnames prior to printing a new one
         qname_str = gen_qname_label(i, qname_mapping_list)
+        if qname_str == None:
+            pass
 
         # Perhaps not the best way to handle the None values returned from the previous functions.
-        call = qname(in_str=i, qname_label=qname_str, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list, uo_ucum_list=uo_ucum_list, oboe_ucum_list = oboe_ucum_list,
+        call = qname(in_str=i, qname_label=qname_str, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list,
+                     uo_ucum_list=uo_ucum_list, oboe_ucum_list=oboe_ucum_list,
                      qname_mapping_list=qname_mapping_list)
         if call is not None:
             print(call, file=f)
