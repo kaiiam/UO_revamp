@@ -327,6 +327,7 @@ def ucum_str_to_qname_str(in_str, unit_keys, qname_ucum_map_dict):
     qstr_out = in_str.replace(ucum_code_symbol, qname_code)
     return qstr_out
 
+
 # --------------------------------------------------
 def ucum_to_qname(in_str, qname_mapping_list):
     """
@@ -337,10 +338,28 @@ def ucum_to_qname(in_str, qname_mapping_list):
     for i in qname_mapping_list:
         if i['prefix'] == 'FALSE':
             qname_ucum_map_dict[i['ucum']] = i['qname']
-    prefix_dict = {}
+    unit_keys = list(qname_ucum_map_dict.keys())
+
+    if '.' not in in_str:
+        return ucum_str_to_qname_str(in_str, unit_keys, qname_ucum_map_dict)
+    else:
+        unit_parts_list = in_str.split('.')
+        new_list = []
+        for x in unit_parts_list:
+            new_list.append(ucum_str_to_qname_str(x, unit_keys, qname_ucum_map_dict))
+        return '.'.join(new_list)
+
+
+# --------------------------------------------------
+def qname_to_ucum(in_str, qname_mapping_list):
+    """
+    Function to convert Qname strings to UCUM string
+    e.g.`PCT` to `%`
+    """
+    qname_ucum_map_dict = {}
     for i in qname_mapping_list:
-        if i['prefix'] == 'TRUE':
-            prefix_dict[i['qname']] = i['label_en']
+        if i['prefix'] == 'FALSE':
+            qname_ucum_map_dict[i['qname']] = i['ucum']
     unit_keys = list(qname_ucum_map_dict.keys())
 
     if '.' not in in_str:
@@ -359,6 +378,15 @@ def qname(in_str, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qn
     For now we're assuming that the in_str has been checked to be a correct "UCUM" style string
     Will need to add such a check prior to passing in_str into this qname function.
     """
+    # Convert UCUM style in_str to a proper QName str
+    qname_str = ucum_to_qname(in_str, qname_mapping_list)
+    # Generate label from qname str
+    qname_label = gen_qname_label(qname_str, qname_mapping_list)
+
+    # Perhaps call fn like qname_to_ucum which maps ucum string to QName
+    ucum_from_qname = qname_to_ucum(qname_str, qname_mapping_list)
+    #print(ucum_from_qname)
+
     ucum_id_list = []
     qudt_iri = ''
     om_iri = ''
@@ -391,10 +419,6 @@ def qname(in_str, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qn
     # Clean up parsed info:
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
 
-    # Try a new function that converts the UCUM style in_st to a proper QName str
-    qname_str = ucum_to_qname(in_str, qname_mapping_list)
-
-    qname_label = gen_qname_label(qname_str, qname_mapping_list)
 
     return (format_ttl(qname_str=qname_str, ucum_id_list=ucum_id_list, qudt_iri=qudt_iri, om_iri=om_iri,
                        uo_iri=uo_iri, oboe_iri=oboe_iri, qname_label=qname_label))
@@ -574,15 +598,13 @@ def main():
 
     for i in input_list:
         # get qname string label
-        # TODO can modify gen_qname_label() to make input strings unique by alphabetizing "." separated terms
+        # TODO write a function similar to modify gen_qname_label()
+        # to make input strings unique by alphabetizing "." separated terms
         # In order to get to unique qnames e.g. `Cel-1.d-1` == `d-1.Cel-1`
         # Can maybe call this function on all of input_list prior to sorting/removing duplicates and
         # Calling qname on the whole list as to make sure we have a list of unique qnames prior to printing a new one
-        # qname_str = gen_qname_label(i, qname_mapping_list)
-        # if qname_str == None:
-        #     pass
 
-        # Perhaps not the best way to handle the None values returned from the previous functions.
+        # Perhaps not the best way to handle the None values returned from the previous functions
         call = qname(in_str=i, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list,
                      uo_ucum_list=uo_ucum_list, oboe_ucum_list=oboe_ucum_list,
                      qname_mapping_list=qname_mapping_list)
