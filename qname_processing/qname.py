@@ -373,52 +373,70 @@ def qname_to_ucum(in_str, qname_mapping_list):
 
 
 # --------------------------------------------------
-def qname(in_str, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qname_mapping_list):
+def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qname_mapping_list):
     """Parse input mappings to find UCUM, QUDT, OM, UO IDs/strings.
     For now we're assuming that the in_str has been checked to be a correct "UCUM" style string
     Will need to add such a check prior to passing in_str into this qname function.
     """
-    # Convert UCUM style in_str to a proper QName str
-    qname_str = ucum_to_qname(in_str, qname_mapping_list)
-    # Generate label from qname str
-    qname_label = gen_qname_label(qname_str, qname_mapping_list)
-
-    # Perhaps call fn like qname_to_ucum which maps ucum string to QName
-    ucum_from_qname = qname_to_ucum(qname_str, qname_mapping_list)
-    #print(ucum_from_qname)
-
+    # List of UCUM strings
     ucum_id_list = []
     qudt_iri = ''
     om_iri = ''
     uo_iri = ''
     oboe_iri = ''
 
-    for q in qudt_ucum_list:
-        if in_str == q['UCUM1'] or in_str == q['UCUM2'] or in_str == q['UCUM3'] or in_str == q['UCUM4']:
-            ucum_id_list.append(q['UCUM1'])
-            ucum_id_list.append(q['UCUM2'])
-            qudt_iri = q['IRI']
-    for o in om_ucum_list:
-        if in_str == o['UCUM1'] or in_str == o['UCUM2']:
-            ucum_id_list.append(o['UCUM1'])
-            ucum_id_list.append(o['UCUM2'])
-            om_iri = o['IRI']
-    for u in uo_ucum_list:
-        if in_str == u['UCUM1'] or in_str == u['UCUM2']:
-            ucum_id_list.append(u['UCUM1'])
-            ucum_id_list.append(u['UCUM2'])
-            uo_iri = u['IRI']
-    for x in oboe_ucum_list:
-        if in_str == x['UCUM1'] or in_str == x['UCUM2']:
-            ucum_id_list.append(x['UCUM1'])
-            ucum_id_list.append(x['UCUM2'])
-            oboe_iri = x['IRI']
+    # Convert UCUM style in_str to a proper QName str
+    qname_str = ucum_to_qname(in_str, qname_mapping_list)
+    # Generate label from qname str
+    qname_label = gen_qname_label(qname_str, qname_mapping_list)
+    # Map ucum string to QName
+    ucum_from_qname = qname_to_ucum(qname_str, qname_mapping_list)
 
-    ucum_id_list.append(in_str)
+    # This works but it's a bit big
+    for x in ontology_mapping_list:
+        if 'qudt' in x['IRI']:
+            if in_str == x['UCUM1'] or in_str == x['UCUM2'] or in_str == x['UCUM3'] or in_str == x['UCUM4']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                qudt_iri = x['IRI']
+            if ucum_from_qname == x['UCUM1'] or ucum_from_qname == x['UCUM2'] or ucum_from_qname == x['UCUM3'] or ucum_from_qname == x['UCUM4']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                qudt_iri = x['IRI']
+        if 'ontology-of-units-of-measure.org' in x['IRI']:
+            if in_str == x['UCUM1'] or in_str == x['UCUM2']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                om_iri = x['IRI']
+            if ucum_from_qname == x['UCUM1'] or ucum_from_qname == x['UCUM2']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                om_iri = x['IRI']
+        if 'obolibrary.org/obo/UO_' in x['IRI']:
+            if in_str == x['UCUM1'] or in_str == x['UCUM2']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                uo_iri = x['IRI']
+            if ucum_from_qname == x['UCUM1'] or ucum_from_qname == x['UCUM2']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                uo_iri = x['IRI']
+        if '/oboe/oboe.' in x['IRI']:
+            if in_str == x['UCUM1'] or in_str == x['UCUM2']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                oboe_iri = x['IRI']
+            if ucum_from_qname == x['UCUM1'] or ucum_from_qname == x['UCUM2']:
+                ucum_id_list.append(x['UCUM1'])
+                ucum_id_list.append(x['UCUM2'])
+                oboe_iri = x['IRI']
+
+    # Maybe we can also call a fn that:
+    # Converts from the instr with . to the form with /s
+    # for example m/s/d to m.s-1.d-1
 
     # Clean up parsed info:
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
-
 
     return (format_ttl(qname_str=qname_str, ucum_id_list=ucum_id_list, qudt_iri=qudt_iri, om_iri=om_iri,
                        uo_iri=uo_iri, oboe_iri=oboe_iri, qname_label=qname_label))
@@ -546,6 +564,7 @@ def main():
         for row in csv_reader:
             input_list.append(row[0])
 
+    # Read in ontology to UCUM mappings
     om_ucum_list = []
     # open and save input file as list of dictionaries
     with open(om_ucum, mode='r', encoding='utf-8-sig') as csvfile:
@@ -573,6 +592,14 @@ def main():
         reader = csv.DictReader(csvfile)
         for row in reader:
             oboe_ucum_list.append(row)
+
+    # Join all the input ontology to UCUM mappings into single list of dict
+    ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list
+    # print(ontology_mapping_list)
+
+
+
+
 
     qname_mapping_list = []
     # open and save input file as list of dictionaries
@@ -605,7 +632,7 @@ def main():
         # Calling qname on the whole list as to make sure we have a list of unique qnames prior to printing a new one
 
         # Perhaps not the best way to handle the None values returned from the previous functions
-        call = qname(in_str=i, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list,
+        call = qname(in_str=i, ontology_mapping_list=ontology_mapping_list, om_ucum_list=om_ucum_list, qudt_ucum_list=qudt_ucum_list,
                      uo_ucum_list=uo_ucum_list, oboe_ucum_list=oboe_ucum_list,
                      qname_mapping_list=qname_mapping_list)
         if call is not None:
