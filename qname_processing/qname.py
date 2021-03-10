@@ -500,7 +500,7 @@ def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_l
     # for example m/s/d to m.s-1.d-1
     ucum_id_list.append(ucum_from_qname)
     for x in ucum_id_list:
-        get_ucum_dash_str(x)
+        print(get_ucum_dash_str(x))
 
     # Clean up parsed info:
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
