@@ -1,0 +1,209 @@
+﻿@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix unit: <http://purl.obolibrary.org/obo/unit_> .
+@prefix UO: <http://purl.obolibrary.org/obo/UO_> .
+@prefix OM: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix QUDT: <http://qudt.org/vocab/unit/> .
+@prefix OBOE: <http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+unit:PCT
+  a owl:NamedIndividual ;
+  rdfs:label "percent"@en ;
+  skos:exactMatch QUDT:PERCENT ;
+  skos:exactMatch OM:percent ;
+  skos:exactMatch UO:0000187 ;
+  skos:exactMatch OBOE:Percent ;
+  unit:ucum_code "%" .
+
+unit:A-1.s-3.cg-3.T-3
+  a owl:NamedIndividual ;
+  rdfs:label "reciprocal ampere cubic second cubic centigram cubic tesla"@en ;
+  unit:ucum_code "A-1.s-3.cg-3.T-3" .
+
+unit:Cel.d-1
+  a owl:NamedIndividual ;
+  rdfs:label "degree Celsius per day"@en ;
+  unit:ucum_code "Cel/d" ;
+  unit:ucum_code "Cel.d-1" .
+
+unit:E.s-2
+  a owl:NamedIndividual ;
+  rdfs:label "einstein per square second"@en ;
+  unit:ucum_code "E.s-2" ;
+  unit:ucum_code "E/s2" .
+
+unit:Em.s-2
+  a owl:NamedIndividual ;
+  rdfs:label "exametre per square second"@en ;
+  skos:exactMatch OM:exametrePerSecond-TimeSquared ;
+  unit:ucum_code "Em.s-2" ;
+  unit:ucum_code "Em/s2" .
+
+unit:K2
+  a owl:NamedIndividual ;
+  rdfs:label "square kelvin"@en ;
+  skos:exactMatch QUDT:K2 ;
+  unit:ucum_code "K2" .
+
+unit:Wb
+  a owl:NamedIndividual ;
+  rdfs:label "weber"@en ;
+  skos:exactMatch QUDT:WB ;
+  skos:exactMatch OM:weber ;
+  skos:exactMatch UO:0000226 ;
+  unit:ucum_code "Wb" .
+
+unit:aBq
+  a owl:NamedIndividual ;
+  rdfs:label "attobecquerel"@en ;
+  skos:exactMatch OM:attobecquerel ;
+  unit:ucum_code "aBq" .
+
+unit:dL.g-1
+  a owl:NamedIndividual ;
+  rdfs:label "decilitre per gram"@en ;
+  skos:exactMatch QUDT:DeciL-PER-GM ;
+  unit:ucum_code "dL.g-1" ;
+  unit:ucum_code "dL/g" .
+
+unit:dlm
+  a owl:NamedIndividual ;
+  rdfs:label "decilumen"@en ;
+  skos:exactMatch OM:decilumen ;
+  unit:ucum_code "dlm" .
+
+unit:dlx
+  a owl:NamedIndividual ;
+  rdfs:label "decilux"@en ;
+  skos:exactMatch OM:decilux ;
+  unit:ucum_code "dlx" .
+
+unit:dm
+  a owl:NamedIndividual ;
+  rdfs:label "decimetre"@en ;
+  skos:exactMatch QUDT:DeciM ;
+  skos:exactMatch OM:decimetre ;
+  skos:exactMatch OBOE:Decimeter ;
+  unit:ucum_code "dm" .
+
+unit:g-1
+  a owl:NamedIndividual ;
+  rdfs:label "reciprocal gram"@en ;
+  skos:exactMatch QUDT:PER-GM ;
+  skos:exactMatch OM:reciprocalGram ;
+  unit:ucum_code "g-1" ;
+  unit:ucum_code "/g" .
+
+unit:g.cm-3
+  a owl:NamedIndividual ;
+  rdfs:label "gram per cubic centimetre"@en ;
+  skos:exactMatch QUDT:GM-PER-CentiM3 ;
+  skos:exactMatch OM:gramPerCubicCentimetre ;
+  skos:exactMatch UO:0000084 ;
+  unit:ucum_code "g/cm3" ;
+  unit:ucum_code "g.cm-3" .
+
+unit:kW.h-1
+  a owl:NamedIndividual ;
+  rdfs:label "kilowatt per hour"@en ;
+  unit:ucum_code "kW.h-1" ;
+  unit:ucum_code "kW/h" .
+
+unit:m-3
+  a owl:NamedIndividual ;
+  rdfs:label "reciprocal cubic metre"@en ;
+  skos:exactMatch QUDT:PER-M3 ;
+  skos:exactMatch OM:reciprocalCubicMetre ;
+  unit:ucum_code "m-3" ;
+  unit:ucum_code "/m3" .
+
+unit:m.s-1
+  a owl:NamedIndividual ;
+  rdfs:label "metre per second"@en ;
+  skos:exactMatch QUDT:M-PER-SEC ;
+  skos:exactMatch OM:metrePerSecond-Time ;
+  skos:exactMatch UO:0000094 ;
+  skos:exactMatch OBOE:MeterPerSecond ;
+  unit:ucum_code "m/s" ;
+  unit:ucum_code "m.s-1" .
+
+unit:m.s-1.d-1
+  a owl:NamedIndividual ;
+  rdfs:label "metre per second day"@en ;
+  unit:ucum_code "m.s-1.d-1" ;
+  unit:ucum_code "m/s/d" .
+
+unit:m.s-2
+  a owl:NamedIndividual ;
+  rdfs:label "metre per square second"@en ;
+  skos:exactMatch QUDT:M-PER-SEC2 ;
+  skos:exactMatch OM:metrePerSecond-TimeSquared ;
+  skos:exactMatch UO:0000077 ;
+  unit:ucum_code "m.s-2" ;
+  unit:ucum_code "m/s2" .
+
+unit:mmol.mL-1
+  a owl:NamedIndividual ;
+  rdfs:label "millimole per millilitre"@en ;
+  unit:ucum_code "mmol/mL" ;
+  unit:ucum_code "mmol.mL-1" .
+
+unit:mol.L-1
+  a owl:NamedIndividual ;
+  rdfs:label "mole per litre"@en ;
+  skos:exactMatch QUDT:MOL-PER-L ;
+  skos:exactMatch OM:molePerLitre ;
+  skos:exactMatch UO:0000062 ;
+  skos:exactMatch OBOE:MolePerLiter ;
+  unit:ucum_code "mol/L" ;
+  unit:ucum_code "mol.L-1" .
+
+unit:mol.um
+  a owl:NamedIndividual ;
+  rdfs:label "mole micrometre"@en ;
+  skos:exactMatch OM:moleMicrometre ;
+  unit:ucum_code "mol.um" ;
+  unit:ucum_code "mol/um" .
+
+unit:ng-1
+  a owl:NamedIndividual ;
+  rdfs:label "reciprocal nanogram"@en ;
+  unit:ucum_code "ng-1" ;
+  unit:ucum_code "/ng" .
+
+unit:pA
+  a owl:NamedIndividual ;
+  rdfs:label "picoampere"@en ;
+  skos:exactMatch QUDT:PicoA ;
+  skos:exactMatch OM:picoampere ;
+  skos:exactMatch UO:0010054 ;
+  unit:ucum_code "pA" .
+
+unit:ug.mL-1
+  a owl:NamedIndividual ;
+  rdfs:label "microgram per millilitre"@en ;
+  skos:exactMatch UO:0000274 ;
+  unit:ucum_code "ug.mL-1" ;
+  unit:ucum_code "ug/mL" .
+
+unit:umol.L-1
+  a owl:NamedIndividual ;
+  rdfs:label "micromole per litre"@en ;
+  skos:exactMatch QUDT:MicroMOL-PER-L ;
+  skos:exactMatch OM:micromolePerLitre ;
+  skos:exactMatch UO:0010003 ;
+  unit:ucum_code "umol/L" ;
+  unit:ucum_code "umol.L-1" .
+
+unit:us
+  a owl:NamedIndividual ;
+  rdfs:label "microsecond"@en ;
+  skos:exactMatch QUDT:MicroSEC ;
+  skos:exactMatch OM:microsecond-Time ;
+  skos:exactMatch UO:0000029 ;
+  skos:exactMatch OBOE:Microsecond ;
+  unit:ucum_code "us" .
+
