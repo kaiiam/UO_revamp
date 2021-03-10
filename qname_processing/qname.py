@@ -383,6 +383,10 @@ def get_ucum_dash_str(in_str):
     # Converts from the instr with . to the form with /s
     # for example m/s/d to m.s-1.d-1
     kindof like the opposite of backslash_case() and reformat_backslash()
+
+    Currently has workaround for non sorted inputs e.g., `s-1.cd` vs `cd.s-1`
+    Might want to improve this to generate all permutations from a x.y.z UCUM code
+
     """
     if re.search('/', in_str):
         # print(in_str, 'case with /')
@@ -443,7 +447,6 @@ def get_ucum_dash_str(in_str):
                     two = match.group(2)
                 return_str = '/' + match.group(1) + two
                 return return_str
-            ## TODO add case like `/nN/E`
             # case like nN-1.E-1 to /nN/E
             if in_str.count('-') == 2:
                 match = re.search(r"^([a-zA-Z%#_']+)[-]([0-9]{0,2})[.]([a-zA-Z%#_']+)[-]([0-9]{0,2})", in_str)
@@ -475,9 +478,6 @@ def get_ucum_dash_str(in_str):
                     six = match.group(6)
                 return_str = '/' + match.group(1) + two + '/' + match.group(3) + four + '/' + match.group(5) + six
                 return return_str
-
-
-
 
 
 # --------------------------------------------------
@@ -553,9 +553,9 @@ def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_l
         ucum_id = get_ucum_dash_str(x)
         if ucum_id is not None:
             new_ucum_list.append(ucum_id)
-        else:
-            warn('get_ucum_dash_str() result from {} is None'.format(x))
-            pass
+        # else:
+        #     warn('get_ucum_dash_str() result from {} is None'.format(in_str))
+        #     pass
 
 
     ucum_id_list += new_ucum_list
@@ -664,6 +664,9 @@ def format_ttl(qname_str, ucum_id_list, qudt_iri, om_iri, uo_iri, oboe_iri, qnam
     return_str = ''
     return_str += prefixed_qname
     return_list = []
+
+    # Assert that this is an owl instance
+    return_list.append('  a owl:NamedIndividual')
 
     if qname_label:
         return_list.append('  {}label "{}"@en'.format('rdfs:', qname_label))
