@@ -19,8 +19,11 @@ test run:
 
 ./qname.py -i input/test6.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out.ttl -q input_mappings/QName/qname_labels.csv
 
-Run with full set from all ontologies:
-./qname.py -i input/from_existing_ontologies.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out_full.ttl -q input_mappings/QName/qname_labels.csv
+Demo run:
+./qname.py -i input/demo1.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out.ttl -q input_mappings/QName/qname_labels.csv
+
+#Run with full set from all ontologies:
+#./qname.py -i input/from_existing_ontologies.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -o out_full.ttl -q input_mappings/QName/qname_labels.csv
 
 """
 
