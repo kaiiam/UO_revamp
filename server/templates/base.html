@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>OBO Units Test</title>
+    <style>#examples li a { text-decoration: none; }</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="/">OBO Units Test</a></h1>
+
+      {%if content %}
+      <div><pre>{{ content|safe }}</pre></div>
+      {% else %}
+      <form>
+        <input name="code" type="text"></input>
+      </form>
+      <ul id="examples">
+        <li><a href="?code=/A/s3/cg3/T3">/A/s3/cg3/T3</a></li>
+        <li><a href="?code=/g">/g</a></li>
+        <li><a href="?code=/m3">/m3</a></li>
+        <li><a href="PCT">%</a></li>
+        <li><a href="aBq">aBq</a></li>
+        <li><a href="Cel.d-1">Cel.d-1</a></li>
+        <li><a href="?code=dL/g">dL/g</a></li>
+        <li><a href="dlm">dlm</a></li>
+        <li><a href="dlx">dlx</a></li>
+        <li><a href="dm">dm</a></li>
+        <li><a href="Em.s-2">Em.s-2</a></li>
+        <li><a href="g.cm-3">g.cm-3</a></li>
+        <li><a href="K2">K2</a></li>
+        <li><a href="?code=kW/h">kW/h</a></li>
+        <li><a href="m.s-1">m.s-1</a></li>
+        <li><a href="m.s-2">m.s-2</a></li>
+        <li><a href="?code=m/s/d">m/s/d</a></li>
+        <li><a href="mmol.mL-1">mmol.mL-1</a></li>
+        <li><a href="mol.L-1">mol.L-1</a></li>
+        <li><a href="mol.um">mol.um</a></li>
+        <li><a href="ng-1">ng-1</a></li>
+        <li><a href="pA">pA</a></li>
+        <li><a href="ug.mL-1">ug.mL-1</a></li>
+        <li><a href="umol.L-1">umol.L-1</a></li>
+        <li><a href="us">us</a></li>
+        <li><a href="Wb">Wb</a></li>
+        <li><a href="?code=E/s2">E/s2</a></li>
+      </ul>
+      {% endif %}
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

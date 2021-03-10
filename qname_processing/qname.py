@@ -483,6 +483,35 @@ def get_ucum_dash_str(in_str):
                 return return_str
 
 
+
+def qname2(in_str, lists):
+    output = []
+    for p in prefix_dict_list:
+        output.append('@prefix {} &lt;{}&gt; .'.format(p['prefix'], p['namespace']))
+    output.append("")
+
+    try:
+        turtle = qname(
+           reformat_backslash(in_str),
+           lists["ontology_mapping_list"],
+           lists["om_ucum_list"],
+           lists["qudt_ucum_list"],
+           lists["uo_ucum_list"],
+           lists["oboe_ucum_list"],
+           lists["qname_mapping_list"]
+        )
+    except:
+        return f"Could not process '{in_str}'"
+
+    for line in turtle.splitlines():
+        line = re.sub(r"QUDT:(\S+)", r'<a href="http://qudt.org/vocab/unit/\1">QUDT:\1</a>', line)
+        line = re.sub(r"OM:(\S+)", r'<a href="http://www.ontology-of-units-of-measure.org/resource/om-2/\1">OM:\1</a>', line)
+        line = re.sub(r"UO:(\S+)", r'<a href="http://purl.obolibrary.org/obo/UO_\1">UO:\1</a>', line)
+        output.append(line)
+    return "\n".join(output)
+
+
+
 # --------------------------------------------------
 def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list,
           qname_mapping_list):
@@ -697,6 +726,55 @@ def format_ttl(qname_str, ucum_id_list, qudt_iri, om_iri, uo_iri, oboe_iri, qnam
     return return_str
 
 
+def load_lists(om_ucum, qudt_ucum, uo_ucum, oboe_ucum, qname_mapping):
+    # Read in ontology to UCUM mappings
+    om_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(om_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            om_ucum_list.append(row)
+
+    qudt_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(qudt_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            qudt_ucum_list.append(row)
+
+    uo_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(uo_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            uo_ucum_list.append(row)
+
+    oboe_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(oboe_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            oboe_ucum_list.append(row)
+
+    # Join all the input ontology to UCUM mappings into single list of dict
+    ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list
+    # print(ontology_mapping_list)
+
+    qname_mapping_list = []
+    # open and save input file as list of dictionaries
+    with open(qname_mapping, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            qname_mapping_list.append(row)
+
+    return {
+       "ontology_mapping_list": ontology_mapping_list,
+       "om_ucum_list": om_ucum_list,
+       "qudt_ucum_list": qudt_ucum_list,
+       "uo_ucum_list": uo_ucum_list,
+       "oboe_ucum_list": oboe_ucum_list,
+       "qname_mapping_list": qname_mapping_list,
+    }
 # --------------------------------------------------
 def main():
     """Make a jazz noise here"""
