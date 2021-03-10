@@ -324,7 +324,7 @@ def ucum_str_to_qname_str(in_str, unit_keys, qname_ucum_map_dict):
     match = re.search(r"^([a-zA-Z%#_']+)([-]?[0-9]{0,2})$", in_str)
     code = match.group(1)
     ucum_code_symbol = extract_qname_symbol(code, unit_keys)
-    qname_code = get_value(ucum_code_symbol,qname_ucum_map_dict)
+    qname_code = get_value(ucum_code_symbol, qname_ucum_map_dict)
     qstr_out = in_str.replace(ucum_code_symbol, qname_code)
     return qstr_out
 
@@ -385,18 +385,18 @@ def get_ucum_dash_str(in_str):
         return in_str
 
     if re.search('.', in_str):
-        #print(in_str, 'case with .')
+        # print(in_str, 'case with .')
 
         if not re.search('-', in_str):
-            #print(in_str, 'case with . and no -')
+            # print(in_str, 'case with . and no -')
             return in_str.replace('.', '/')
 
         if in_str.count('-') == in_str.count('.'):
-            #print(in_str, 'case with . and - are equal')
+            # print(in_str, 'case with . and - are equal')
             if in_str.count('-') == 1:
                 # print(in_str, 'case with . and - are equal one of them')
                 match = re.search(r"^([a-zA-Z%#_']+[0-9]{0,2})[.]([a-zA-Z%#_']+)[-]?([0-9]{0,2})", in_str)
-                #three = match.group(3)
+                # three = match.group(3)
                 if match.group(3) == '1':
                     three = ''
                 else:
@@ -406,7 +406,9 @@ def get_ucum_dash_str(in_str):
             # case with two - and .
             if in_str.count('-') == 2:
                 # TODO fix this regex for the two . case e.g. J.mm-2.d-1 or m.s-1.d-1
-                match = re.search(r"^([a-zA-Z%#_']+[0-9]{0,2})[.]?([a-zA-Z%#_']+)[-]?([0-9]{0,2})[.]?([a-zA-Z%#_']+)[-]?([0-9]{0,2})", in_str)
+                match = re.search(
+                    r"^([a-zA-Z%#_']+[0-9]{0,2})[.]?([a-zA-Z%#_']+)[-]?([0-9]{0,2})[.]?([a-zA-Z%#_']+)[-]?([0-9]{0,2})",
+                    in_str)
                 if match.group(3) == '1':
                     three = ''
                 else:
@@ -432,9 +434,9 @@ def get_ucum_dash_str(in_str):
         ## TODO add case like `/nN/E`
 
 
-
 # --------------------------------------------------
-def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list, qname_mapping_list):
+def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_list, oboe_ucum_list,
+          qname_mapping_list):
     """Parse input mappings to find UCUM, QUDT, OM, UO IDs/strings.
     For now we're assuming that the in_str has been checked to be a correct "UCUM" style string
     Will need to add such a check prior to passing in_str into this qname function.
@@ -460,7 +462,8 @@ def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_l
                 ucum_id_list.append(x['UCUM1'])
                 ucum_id_list.append(x['UCUM2'])
                 qudt_iri = x['IRI']
-            if ucum_from_qname == x['UCUM1'] or ucum_from_qname == x['UCUM2'] or ucum_from_qname == x['UCUM3'] or ucum_from_qname == x['UCUM4']:
+            if ucum_from_qname == x['UCUM1'] or ucum_from_qname == x['UCUM2'] or ucum_from_qname == x[
+                'UCUM3'] or ucum_from_qname == x['UCUM4']:
                 ucum_id_list.append(x['UCUM1'])
                 ucum_id_list.append(x['UCUM2'])
                 qudt_iri = x['IRI']
@@ -522,18 +525,40 @@ def reformat_backslash(in_str):
     Input should be a UCUM or QName string
     Outputs a QName string
 
+    E.g. reformat /m to m-1 or mol/s to mol.s-1
     Maybe rename this along the lines of converting UCUM to QName?
-    TODO add more checks to validate input
+    TODO add more checks to validate input Currently only does up to 4 /'s
     """
     # Input contains "/"
     if re.search('/', in_str):
+        # Other possible version:
+        # match = re.search(r"^([\/]?)([a-zA-Z%#_']+[0-9]{0,2})([\/]?)([a-zA-Z%#_']+[0-9]{0,2})?([\/]?)([a-zA-Z%#_']+[0-9]{0,2})?([\/]?)([a-zA-Z%#_']+[0-9]{0,2})?", in_str)
+
+        if in_str.count("/") == 4:
+            match = re.search(r"(.*)/(.*)/(.*)/(.*)/(.*)", in_str)
+            if match.group(1) == '':
+                return '{}.{}.{}.{}'.format(backslash_case(match.group(2)), backslash_case(match.group(3)),
+                                            backslash_case(match.group(4)), backslash_case(match.group(5)))
+            else:
+                return '{}.{}.{}.{}.{}'.format(match.group(1), backslash_case(match.group(2)),
+                                               backslash_case(match.group(3)),
+                                               backslash_case(match.group(4)), backslash_case(match.group(5)))
         if in_str.count("/") == 3:
             match = re.search(r"(.*)/(.*)/(.*)/(.*)", in_str)
-            return ('{}.{}.{}.{}'.format(match.group(1), backslash_case(match.group(2)), backslash_case(match.group(3)),
-                                         backslash_case(match.group(4))))
+            if match.group(1) == '':
+                return '{}.{}.{}'.format(backslash_case(match.group(2)), backslash_case(match.group(3)),
+                                         backslash_case(match.group(4)))
+            else:
+                return '{}.{}.{}.{}'.format(match.group(1), backslash_case(match.group(2)),
+                                            backslash_case(match.group(3)),
+                                            backslash_case(match.group(4)))
         if in_str.count("/") == 2:
             match = re.search(r"(.*)/(.*)/(.*)", in_str)
-            return '{}.{}.{}'.format(match.group(1), backslash_case(match.group(2)), backslash_case(match.group(3)))
+
+            if match.group(1) == '':
+                return '{}.{}'.format(backslash_case(match.group(2)), backslash_case(match.group(3)))
+            else:
+                return '{}.{}.{}'.format(match.group(1), backslash_case(match.group(2)), backslash_case(match.group(3)))
         if in_str.count("/") == 1:
             match = re.search(r"(.*)/(.*)", in_str)
             if match.group(1) is '':
@@ -660,10 +685,6 @@ def main():
     # Join all the input ontology to UCUM mappings into single list of dict
     ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list
     # print(ontology_mapping_list)
-
-
-
-
 
     qname_mapping_list = []
     # open and save input file as list of dictionaries
