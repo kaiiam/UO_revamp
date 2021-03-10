@@ -315,6 +315,7 @@ def gen_qname_label(qname_str, qname_mapping_list):
             return ' '.join(num_names_list) + ' per ' + ' '.join(denom_names_list)
 
 
+# --------------------------------------------------
 def ucum_str_to_qname_str(in_str, unit_keys, qname_ucum_map_dict):
     """
     convert just % to PCT
@@ -370,6 +371,66 @@ def qname_to_ucum(in_str, qname_mapping_list):
         for x in unit_parts_list:
             new_list.append(ucum_str_to_qname_str(x, unit_keys, qname_ucum_map_dict))
         return '.'.join(new_list)
+
+
+# --------------------------------------------------
+def get_ucum_dash_str(in_str):
+    """
+    # Converts from the instr with . to the form with /s
+    # for example m/s/d to m.s-1.d-1
+    kindof like the opposite of backslash_case() and reformat_backslash()
+    """
+    if re.search('/', in_str):
+        # print(in_str, 'case with /')
+        return in_str
+
+    if re.search('.', in_str):
+        #print(in_str, 'case with .')
+
+        if not re.search('-', in_str):
+            #print(in_str, 'case with . and no -')
+            return in_str.replace('.', '/')
+
+        if in_str.count('-') == in_str.count('.'):
+            #print(in_str, 'case with . and - are equal')
+            if in_str.count('-') == 1:
+                # print(in_str, 'case with . and - are equal one of them')
+                match = re.search(r"^([a-zA-Z%#_']+[0-9]{0,2})[.]([a-zA-Z%#_']+)[-]?([0-9]{0,2})", in_str)
+                #three = match.group(3)
+                if match.group(3) == '1':
+                    three = ''
+                else:
+                    three = match.group(3)
+                return_str = match.group(1) + '/' + match.group(2) + three
+                return return_str
+            # case with two - and .
+            if in_str.count('-') == 2:
+                # TODO fix this regex for the two . case e.g. J.mm-2.d-1 or m.s-1.d-1
+                match = re.search(r"^([a-zA-Z%#_']+[0-9]{0,2})[.]?([a-zA-Z%#_']+)[-]?([0-9]{0,2})[.]?([a-zA-Z%#_']+)[-]?([0-9]{0,2})", in_str)
+                if match.group(3) == '1':
+                    three = ''
+                else:
+                    three = match.group(3)
+                if match.group(5) == '1':
+                    five = ''
+                else:
+                    five = match.group(3)
+                return_str = match.group(1) + '/' + match.group(2) + three + '/' + match.group(4) + five
+                return return_str
+
+        if in_str.count('-') > in_str.count('.'):
+            if in_str.count('-') == 1:
+                # x-n case e.g. mT-1
+                match = re.search(r"^([a-zA-Z%#_']+)[-]([0-9]{0,2})$", in_str)
+
+                if match.group(2) == '1':
+                    two = ''
+                else:
+                    two = match.group(2)
+                return_str = '/' + match.group(1) + two
+                return return_str
+        ## TODO add case like `/nN/E`
+
 
 
 # --------------------------------------------------
@@ -434,6 +495,9 @@ def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_l
     # Maybe we can also call a fn that:
     # Converts from the instr with . to the form with /s
     # for example m/s/d to m.s-1.d-1
+    ucum_id_list.append(ucum_from_qname)
+    for x in ucum_id_list:
+        get_ucum_dash_str(x)
 
     # Clean up parsed info:
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
