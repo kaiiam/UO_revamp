@@ -44,6 +44,10 @@ prefix_dict_list = [
     {'prefix': 'skos:', 'namespace': 'http://www.w3.org/2004/02/skos/core#'}
 ]
 
+# --------------------------------------------------
+def warn(msg):
+    """Print a message to STDERR"""
+    print(msg, file=sys.stderr)
 
 # --------------------------------------------------
 def get_args():
@@ -395,8 +399,17 @@ def get_ucum_dash_str(in_str):
             # print(in_str, 'case with . and - are equal')
             if in_str.count('-') == 1:
                 # print(in_str, 'case with . and - are equal one of them')
+
+                # Currently these might not be sorted e.g. `s-1.cd` vs `cd.s-1`
+                # the former causes error the latter not
+                # Temporary fix is to reorder them but this should be done earlier in an
+                # alphabetize step which also guaranties unique horizontal combos
+                # e.g. `s-1.cd` and `cd.s-1` should be the same.
+                x = in_str.split(".")
+                if x[0].count('-') > 0:
+                    in_str = x[1] + '.' + x[0]
                 match = re.search(r"^([a-zA-Z%#_']+[0-9]{0,2})[.]([a-zA-Z%#_']+)[-]?([0-9]{0,2})", in_str)
-                # three = match.group(3)
+                #print(in_str, match)
                 if match.group(3) == '1':
                     three = ''
                 else:
@@ -424,14 +437,47 @@ def get_ucum_dash_str(in_str):
             if in_str.count('-') == 1:
                 # x-n case e.g. mT-1
                 match = re.search(r"^([a-zA-Z%#_']+)[-]([0-9]{0,2})$", in_str)
-
                 if match.group(2) == '1':
                     two = ''
                 else:
                     two = match.group(2)
                 return_str = '/' + match.group(1) + two
                 return return_str
-        ## TODO add case like `/nN/E`
+            ## TODO add case like `/nN/E`
+            # case like nN-1.E-1 to /nN/E
+            if in_str.count('-') == 2:
+                match = re.search(r"^([a-zA-Z%#_']+)[-]([0-9]{0,2})[.]([a-zA-Z%#_']+)[-]([0-9]{0,2})", in_str)
+                if match.group(2) == '1':
+                    two = ''
+                else:
+                    two = match.group(2)
+                if match.group(4) == '1':
+                    four = ''
+                else:
+                    four = match.group(4)
+                return_str = '/' + match.group(1) + two + '/' + match.group(3) + four
+                return return_str
+            # case like nN-1.E-1.s-12 to /nN/E/s12
+            if in_str.count('-') == 3:
+                match = re.search(r"^([a-zA-Z%#_']+)[-]([0-9]{0,2})[.]([a-zA-Z%#_']+)[-]([0-9]{0,2})[.]([a-zA-Z%#_']+)[-]([0-9]{0,2})", in_str)
+                #print(match)
+                if match.group(2) == '1':
+                    two = ''
+                else:
+                    two = match.group(2)
+                if match.group(4) == '1':
+                    four = ''
+                else:
+                    four = match.group(4)
+                if match.group(6) == '1':
+                    six = ''
+                else:
+                    six = match.group(6)
+                return_str = '/' + match.group(1) + two + '/' + match.group(3) + four + '/' + match.group(5) + six
+                return return_str
+
+
+
 
 
 # --------------------------------------------------
@@ -499,8 +545,20 @@ def qname(in_str, ontology_mapping_list, om_ucum_list, qudt_ucum_list, uo_ucum_l
     # Converts from the instr with . to the form with /s
     # for example m/s/d to m.s-1.d-1
     ucum_id_list.append(ucum_from_qname)
+    # print(ucum_id_list)
+
+    # TODO RETURN and change get_ucum_dash_str() after sorting inputs horizontally
+    new_ucum_list = []
     for x in ucum_id_list:
-        print(get_ucum_dash_str(x))
+        ucum_id = get_ucum_dash_str(x)
+        if ucum_id is not None:
+            new_ucum_list.append(ucum_id)
+        else:
+            warn('get_ucum_dash_str() result from {} is None'.format(x))
+            pass
+
+
+    ucum_id_list += new_ucum_list
 
     # Clean up parsed info:
     ucum_id_list = list(set([i for i in ucum_id_list if i]))
