@@ -121,3 +121,13 @@ for u in ["cm", "m.s", "m/s", "/g", "m2", "s-1", "[in_i]", "{cell}"]:
         result = result[0]
     print(u, result)
 
+# Result:
+# cm [{'prefix': 'c', 'type': 'metric', 'unit': 'm'}]
+# m.s [{'type': 'metric', 'unit': 'm'}, {'operator': '.', 'type': 'metric', 'unit': 's'}]
+# m/s [{'type': 'metric', 'unit': 'm'}, {'operator': '/', 'type': 'metric', 'unit': 's'}]
+# /g [{'type': 'metric', 'unit': 'g'}]
+# m2 [{'type': 'metric', 'unit': 'm', 'exponent': 2}]
+# s-1 [{'type': 'metric', 'unit': 's', 'exponent': -1}]
+# [in_i] [{'type': 'non-metric', 'unit': 'in_i'}]
+# {cell} [{'type': 'non-unit', 'unit': 'cell'}]
+ 
