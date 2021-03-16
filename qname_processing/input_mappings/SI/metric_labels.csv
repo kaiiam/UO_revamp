@@ -1,0 +1,60 @@
+﻿SI_symbol,NC_symbol,label_en,SI_category,Notes
+A,A,ampere,Base unit,
+au,au,astronomical unit,Non-SI units accepted for use,
+a,a,are,Non-SI units accepted for use*,"Mentions ""ha"" not ""a"""
+Bq,Bq,becquerel,Special named,
+B,B,bel,Non-SI units accepted for use,"Also mentions ""dB"""
+C,C,coulomb,Special named,
+°C,Cel,degree Celsius,Special named,
+°,deg,plane angle degree,Non-SI units accepted for use,
+cd,cd,candela,Base unit,
+d,d,day,Non-SI units accepted for use,
+Da,Da,dalton,Non-SI units accepted for use,"Alt symbol ""u"""
+eV,eV,electronvolt,Non-SI units accepted for use,
+F,F,farad,Special named,
+Gy,Gy,gray,Special named,
+g,g,gram,Base unit*,mentions kg not g
+h,h,hour,Non-SI units accepted for use,
+Hz,Hz,hertz,Special named,
+H,H,henry,Special named,
+J,J,joule,Special named,
+kat,kat,katal,Special named,
+K,K,kelvin,Base unit,
+lm,lm,lumen,Special named,
+lx,lx,lux,Special named,
+ly,ly,lightyear,"Non-SI not mentioned in SI brochure, but maybe accepted (according to wiki)",
+l,L,litre,Non-SI units accepted for use,"Also has symbol ""L"""
+mol,mol,mole,Base unit,
+min,min,minute,Non-SI units accepted for use,
+m,m,metre,Base unit,
+Np,Np,neper,Non-SI units accepted for use,
+N,N,newton,Special named,
+Ω,Ohm,ohm,Special named,
+Pa,Pa,pascal,Special named,
+rad,rad,radian,Special named,
+Sv,Sv,sievert,Special named,
+sr,sr,steradian,Special named,
+s,s,second,Base unit,
+S,S,siemens,Special named,
+T,T,tesla,Special named,
+t,t,tonne,Non-SI units accepted for use,"Alt label ""metric ton"""
+V,V,volt,Special named,
+Wb,Wb,weber,Special named,
+W,W,watt,Special named,
+′,PAM,plane angle minute,Non-SI units accepted for use,"Alt label ""arcsecond"""
+′′,PAS,plane angle second,Non-SI units accepted for use,
+μ,,micron,Mentioned,"Mentioned on p162. Same as ""um""."
+erg,erg,erg,Mentioned,Mentioned on p162. 
+P,P,poise,Mentioned,Mentioned on p162. 
+st,st,stere,Mentioned,Mentioned on p162. 
+dyn,dyn,dyne,Mentioned,Mentioned on p162. 
+cal,cal,calorie,Mentioned,Mentioned on p162. 
+bar,bar,bar,Mentioned,Mentioned on p162. 
+sb,sb,stilb,Mentioned,Mentioned on p162. 
+atm,atm,standard atmosphere,Mentioned,Mentioned on p163. 
+var,,var,Mentioned,Mentioned on p140. The var is identical to the volt ampere.
+%,PCT,percent,Mentioned,Mentioned on p151. 
+ppm,ppm,parts per million,Mentioned,Mentioned on p151. 
+ppb,ppb,parts per billion,Mentioned,"Mentioned on p151. Notes the symbol ""should be avoided""."
+ppt,ppt,parts per trillion,Mentioned,"Mentioned on p151. Notes the symbol ""should be avoided""."
+Ci,Ci,curie,Non SI but mentioned,
