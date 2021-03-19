@@ -2,7 +2,12 @@
 """
 Author : kai
 Date   : 2021-03-16
-Purpose: Rock the Casbah
+Purpose: Parse SI formatted inputs
+
+Run:
+
+./SI_parser.py
+
 """
 
 import argparse
@@ -53,26 +58,6 @@ def die(msg='Something bad happened'):
     """warn() and exit with error"""
     warn(msg)
     sys.exit(1)
-
-
-# # --------------------------------------------------
-# def main():
-#     """Make a jazz noise here"""
-#     args = get_args()
-#     str_arg = args.arg
-#     int_arg = args.int
-#     flag_arg = args.flag
-#     pos_arg = args.positional
-#
-#     print('str_arg = "{}"'.format(str_arg))
-#     print('int_arg = "{}"'.format(int_arg))
-#     print('flag_arg = "{}"'.format(flag_arg))
-#     print('positional = "{}"'.format(pos_arg))
-
-
-# # --------------------------------------------------
-# if __name__ == '__main__':
-#     main()
 
 
 # Crude Transformer based on examples
@@ -176,19 +161,33 @@ term: term OPERATOR component
 start: "/" term | term
 OPERATOR: /\.|\//
 PREFIX: "Y" | "Z" | "E" | "P"| "T" | "G" | "M" | "k" | "h" | "da" | "d" | "c" | "m" | "u" | "n" | "p" | "f" | "a" | "z" | "y"
-METRIC: "A"| "au" | "a" | "Bq" | "B" | "C" | "°C" | "°" | "cal" | "cd" | "dyn" | "d" | "Da" | "erg" | "eV" | "F" | "Gy" | "g" | "h"| "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "ly" | "l" | "mol" | "min" | "m" | "Np" | "N" | "Ω" | "Pa" | "P" | "rad" | "Sv" | "sb" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "μ"  | "′′" | "′"  
+METRIC: "A"| "au" | "a" | "Bq" | "B" | "C" | "°C" | "°" | "cd" | "d" | "Da" | "eV" | "F" | "Gy" | "g" | "h"| "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" | "min" | "m" | "Np" | "N" | "Ω" | "Pa" | "P" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" | "′"  
 %ignore " "           // Disregard spaces in text
 ''')
 
 # Note the rules need to be in order if we have  "m" | "mol" then mol won't be found
 
-# test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
 
-test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd" , "mlm/Hz", "nH/plm/mΩ", "°C", "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "ly/l", "TT/t/daDa", "eV.V-1", "Np/nN", "B.Bq-2", "μ/erg", "P.dyn-1", "kcal/sb", "aau/aa/A"]
+# --------------------------------------------------
+def main():
+    """Main function to test if input is SI or UCUM then parse and covert and post"""
 
-for u in test_list:
-    tree = ucum_grammar.parse(u)
-    result = transformer().transform(tree)
-    if isinstance(result[0], list):
-        result = result[0]
-    print(u, result)
+    # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
+    # test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
+    #              "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
+    #              "Np/nN", "B.Bq-2", "P.lm-1", "aau/aa/A"]
+
+    #test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
+    test_list = ["m.s-1", "m/s"]
+
+    for u in test_list:
+        tree = ucum_grammar.parse(u)
+        result = transformer().transform(tree)
+        if isinstance(result[0], list):
+            result = result[0]
+        print(u, result)
+
+
+# --------------------------------------------------
+if __name__ == '__main__':
+    main()
