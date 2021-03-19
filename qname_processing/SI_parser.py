@@ -12,6 +12,7 @@ Run:
 
 import argparse
 import sys
+import collections.abc
 from lark import Lark, Tree, Transformer
 
 
@@ -142,11 +143,9 @@ class transformer(Transformer):
     #     }
 
 
-# UCUM grammar based on "Exhibit 1" https://ucum.org/ucum.html
-# WARN: This is a weird hybrid of the given grammar with Lark idioms.
-# If it were more Lark-y, the Transformer would be nicer.
-ucum_grammar = Lark('''
-SIGN: "+" | "-"
+# SI grammar based on "Exhibit 1" https://ucum.org/ucum.html
+si_grammar = Lark('''
+SIGN: "-"
 DIGIT: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 digits: DIGIT digits | DIGIT
 factor: digits
@@ -164,8 +163,64 @@ PREFIX: "Y" | "Z" | "E" | "P"| "T" | "G" | "M" | "k" | "h" | "da" | "d" | "c" | 
 METRIC: "A"| "au" | "a" | "Bq" | "B" | "C" | "°C" | "°" | "cd" | "d" | "Da" | "eV" | "F" | "Gy" | "g" | "h"| "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" | "min" | "m" | "Np" | "N" | "Ω" | "Pa" | "P" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" | "′"  
 %ignore " "           // Disregard spaces in text
 ''')
-
 # Note the rules need to be in order if we have  "m" | "mol" then mol won't be found
+
+
+# --------------------------------------------------
+def flatten(x):
+    """
+    https://stackoverflow.com/questions/42102473/parsing-values-from-a-list-of-dictionaries-with-nested-list-in-python
+    """
+    if isinstance(x, dict) :
+        return [x]
+    elif isinstance(x, collections.abc.Iterable) :
+        return [a for i in x for a in flatten(i)]
+    else:
+        return [x]
+
+
+# --------------------------------------------------
+def get_key(val, dict):
+    for key, value in dict.items():
+        if val == value:
+            return key
+    return "key doesn't exist"
+
+
+# --------------------------------------------------
+def get_value(key, dict):
+    for k, value in dict.items():
+        if k == key:
+            return value
+    return None
+
+
+# --------------------------------------------------
+def replace_slash(result, dict_list):
+    """
+    Fix to get prefixes e.g. "aA/aB/aC"
+    """
+    #print(result)
+    if get_value(key="operator", dict=result) == "/":
+        # print(r)
+        # if it doesn't have an exponent key create one at -1 else change exp to -
+        if "exponent" not in result:
+            # print('no exp', r)
+            # Make a new dict
+            x = {'operator': '.', 'type': result['type'], 'unit': result['unit'], 'exponent': int('-1')}
+            #print(x)
+            dict_list.append(x)
+        else:
+            # print('exp case', r)
+            exp = int('-' + str(result['exponent']))
+            x = {'operator': '.', 'type': result['type'], 'unit': result['unit'], 'exponent': exp}
+            #print(x)
+            dict_list.append(x)
+    # no operator or . case
+    else:
+        #print(result)  # don't change just append
+        dict_list.append(result)
+    return dict_list
 
 
 # --------------------------------------------------
@@ -177,15 +232,29 @@ def main():
     #              "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
     #              "Np/nN", "B.Bq-2", "P.lm-1", "aau/aa/A"]
 
-    #test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
-    test_list = ["m.s-1", "m/s"]
+    # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
+    # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
+    # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2", "A/N/W", "A.N-1.W-1"]
+    # test_list = ["m.s-1"]
+    # test_list = ["A.N-1.W-1"]
+    # test_list = ["A.B-1.C-1.d-1.eV-1"]
+    # test_list = ["A/B/C/d"]
+    test_list = ["aA/aB/aC"]
 
+    # # breakup input list one term at a time
     for u in test_list:
-        tree = ucum_grammar.parse(u)
+        tree = si_grammar.parse(u)
         result = transformer().transform(tree)
-        if isinstance(result[0], list):
-            result = result[0]
-        print(u, result)
+        res_flat = flatten(result)
+        # print(u, res_flat)
+
+        new_dict_list = []
+        # Function to convert the x/y operator to the x.y-1 style
+        for r in res_flat:
+            #print(r)
+            replace_slash(r, new_dict_list)
+        print(new_dict_list)
+
 
 
 # --------------------------------------------------
