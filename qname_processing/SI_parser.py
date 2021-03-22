@@ -260,6 +260,13 @@ def split_num_denom(result, numerator_list, denominator_list, mapping_dict):
 
 
 # --------------------------------------------------
+def canonical_nc_label(numerator_list, denominator_list):
+    #pass
+    for n in numerator_list:
+        print(n['nc_code'])
+
+
+# --------------------------------------------------
 def main():
     """Main function to test if input is SI or UCUM then parse and covert and post"""
     args = get_args()
@@ -333,7 +340,10 @@ def main():
         # Sort in canonical alphebetical order
         numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
         denominator_list = sorted(denominator_list, key=lambda k: k['nc_code'])
-        print(u, numerator_list, denominator_list)
+        #print(u, numerator_list, denominator_list)
+
+        # Print canonical nc_name code
+        canonical_nc_label(numerator_list=numerator_list,denominator_list=denominator_list)
 
 
 
