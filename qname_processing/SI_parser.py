@@ -349,10 +349,9 @@ def main():
         # print(u, new_dict_list)
 
         # Function to create english labels from units and prefixes
-        # new_dict_list2 = []
-        # for r in new_dict_list1:
-        #     gen_en_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict)
-        # print(u, new_dict_list1)
+        for r in new_dict_list:
+            gen_en_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict)
+        print(u, new_dict_list)
 
         # Function to split numerator and denominator into two lists
         numerator_list = []
@@ -367,7 +366,7 @@ def main():
         #print(u, numerator_list, denominator_list)
 
         # Print canonical nc_name code
-        print(u, '->', canonical_nc_label(numerator_list=numerator_list,denominator_list=denominator_list))
+        #print(u, '->', canonical_nc_label(numerator_list=numerator_list,denominator_list=denominator_list))
 
 
 
