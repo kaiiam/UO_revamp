@@ -261,9 +261,15 @@ def split_num_denom(result, numerator_list, denominator_list, mapping_dict):
 
 # --------------------------------------------------
 def canonical_nc_label(numerator_list, denominator_list):
-    #pass
+    return_lst = []
     for n in numerator_list:
-        print(n['nc_code'])
+        if str(n['exponent']) == '1':
+            return_lst.append(n['nc_code'])
+        else:
+            return_lst.append(n['nc_code'] + str(n['exponent']))
+    for n in denominator_list:
+        return_lst.append(n['nc_code'] + str(n['exponent']))
+    return '.'.join(return_lst)
 
 
 # --------------------------------------------------
@@ -310,7 +316,7 @@ def main():
     # test_list = ["/ng/l"]
     # test_list = ["L/l"]
     # test_list = ['Pa.aa-1']
-    test_list = ['m.g.W-2.A-1', 'g.m.A-1.W-2']
+    test_list = ['m2.g.W-2.A-1', 'g.m2.A-1.W-2']
 
     # # breakup input list one term at a time
     for u in test_list:
@@ -343,7 +349,7 @@ def main():
         #print(u, numerator_list, denominator_list)
 
         # Print canonical nc_name code
-        canonical_nc_label(numerator_list=numerator_list,denominator_list=denominator_list)
+        print(u, '->', canonical_nc_label(numerator_list=numerator_list,denominator_list=denominator_list))
 
 
 
