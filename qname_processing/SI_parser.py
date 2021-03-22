@@ -414,15 +414,18 @@ def main():
         #print(u, 'num:', numerator_list, 'denom:', denominator_list)
 
         # Sort in canonical alphebetical order
-        numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
-        denominator_list = sorted(denominator_list, key=lambda k: k['nc_code'])
+        #numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
+        numerator_list = sorted(numerator_list, key=lambda k: (k.casefold(), k['nc_code']))
+        print(u, numerator_list)
+
+        # denominator_list = sorted(denominator_list, key=lambda k: k['nc_code'])
         # print(u, numerator_list, denominator_list)
 
         # Generate canonical nc_name code
         # print(u, '->', canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list))
 
-        # Generate canonical term label
-        print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
+        # # Generate canonical term label
+        # print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
 
     # --------------------------------------------------
 if __name__ == '__main__':
