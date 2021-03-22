@@ -233,16 +233,21 @@ def pre_process_unit_list(result, original, dict_list):
 
 
 # --------------------------------------------------
-def gen_nc_code(result, dict_list, mapping_dict):
+def gen_nc_code(result, mapping_dict):
     """
     Add nc_code based on prefix and unit
     """
     nc_unit = get_value(result['unit'], mapping_dict)
     nc_code = result['prefix'] + nc_unit
+    result.update({'nc_code': nc_code})
 
-    x = {'prefix': result['prefix'], 'type': result['type'], 'unit': result['unit'], 'exponent': result['exponent'],
-         'nc_code': nc_code}
-    dict_list.append(x)
+
+# --------------------------------------------------
+def gen_en_label_parts(result, SI_unit_label_dict, prefix_dict):
+    #pass
+    #print(result)
+    result.update({'Germany': 49})
+    return(result)
 
 
 # --------------------------------------------------
@@ -292,6 +297,10 @@ def main():
     for i in SI_list:
         SI_NC_units_dict[i['SI_symbol']] = i['NC_symbol']
 
+    SI_unit_label_en_dict = {}
+    for i in SI_list:
+        SI_unit_label_en_dict[i['SI_symbol']] = i['label_en']
+
     # Read in SI prefixes
     prefix_list = []
     # open and save input file as list of dictionaries
@@ -299,6 +308,10 @@ def main():
         reader = csv.DictReader(csvfile)
         for row in reader:
             prefix_list.append(row)
+
+    prefix_en_dict = {}
+    for i in prefix_list:
+        prefix_en_dict[i['symbol']] = i['label_en']
 
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
     # test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
@@ -308,7 +321,6 @@ def main():
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2", "A/N/W", "A.N-1.W-1"]
-    # test_list = ["m.s-1"]
     # test_list = ["A.N-1.W-1"]
     # test_list = ["A.B-1.C-1.d-1.eV-1"]
     # test_list = ["A2/B/C/d"]
@@ -317,6 +329,7 @@ def main():
     # test_list = ["L/l"]
     # test_list = ['Pa.aa-1']
     test_list = ['m2.g.W-2.A-1', 'g.m2.A-1.W-2']
+    #test_list = ["m.s-2"]
 
     # # breakup input list one term at a time
     for u in test_list:
@@ -331,15 +344,20 @@ def main():
             pre_process_unit_list(r, u, new_dict_list)
 
         # # Function to create the NCname code from prefix and unit
-        new_dict_list1 = []
         for r in new_dict_list:
-            gen_nc_code(result=r, dict_list=new_dict_list1, mapping_dict=SI_NC_units_dict)
+            gen_nc_code(result=r, mapping_dict=SI_NC_units_dict)
+        # print(u, new_dict_list)
+
+        # Function to create english labels from units and prefixes
+        # new_dict_list2 = []
+        # for r in new_dict_list1:
+        #     gen_en_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict)
         # print(u, new_dict_list1)
 
         # Function to split numerator and denominator into two lists
         numerator_list = []
         denominator_list = []
-        for r in new_dict_list1:
+        for r in new_dict_list:
             split_num_denom(result=r, numerator_list=numerator_list, denominator_list=denominator_list)
         #print(u, 'num:', numerator_list, 'denom:', denominator_list)
 
