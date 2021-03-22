@@ -6,12 +6,13 @@ Purpose: Parse SI formatted inputs
 
 Run:
 
-./SI_parser.py
+./SI_parser.py -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv
 
 """
 
 import argparse
 import sys
+import csv
 import collections.abc
 from lark import Lark, Tree, Transformer
 
@@ -24,26 +25,23 @@ def get_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument(
-        'positional', metavar='str', help='A positional argument')
-
-    parser.add_argument(
-        '-a',
-        '--arg',
-        help='A named string argument',
+        '-s',
+        '--SI',
+        help='SI unit labels and codes mapping csv',
         metavar='str',
         type=str,
         default='')
 
     parser.add_argument(
-        '-i',
-        '--int',
-        help='A named integer argument',
-        metavar='int',
-        type=int,
-        default=0)
+        '-p',
+        '--prefix',
+        help='SI prefixes labels and codes mapping csv',
+        metavar='str',
+        type=str,
+        default='')
 
-    parser.add_argument(
-        '-f', '--flag', help='A boolean flag', action='store_true')
+    # parser.add_argument(
+    #     '-f', '--flag', help='A boolean flag', action='store_true')
 
     return parser.parse_args()
 
@@ -150,7 +148,8 @@ DIGIT: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 digits: DIGIT digits | DIGIT
 factor: digits
 exponent: SIGN digits | digits
-simple_unit: PREFIX? METRIC
+simple_unit: METRIC
+            | PREFIX? METRIC
 annotatable: simple_unit exponent
            | simple_unit
 component: annotatable
@@ -160,7 +159,7 @@ term: term OPERATOR component
 start: "/" term | term
 OPERATOR: /\.|\//
 PREFIX: "Y" | "Z" | "E" | "P"| "T" | "G" | "M" | "k" | "h" | "da" | "d" | "c" | "m" | "u" | "n" | "p" | "f" | "a" | "z" | "y"
-METRIC: "A"| "au" | "a" | "Bq" | "B" | "C" | "°C" | "°" | "cd" | "d" | "Da" | "eV" | "F" | "Gy" | "g" | "h"| "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" | "min" | "m" | "Np" | "N" | "Ω" | "Pa" | "P" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" | "′"  
+METRIC: "A"| "au" | "a" | "Bq" | "B" | "C" | "°C" | "°" | "cd" | "d" | "Da" | "eV" | "F" | "Gy" | "g" | "h"| "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" | "min" | "m" | "Np" | "N" | "Ω" | "Pa" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" | "′"  
 %ignore " "           // Disregard spaces in text
 ''')
 # Note the rules need to be in order if we have  "m" | "mol" then mol won't be found
@@ -234,13 +233,60 @@ def pre_process_unit_list(result, original, dict_list):
 
 
 # --------------------------------------------------
+def split_num_denom_nc_code(result, numerator_list, denominator_list, mapping_dict):
+    """
+    Add nc_code based on prefix and unit
+    Seperate into numerator and denominator lists
+    """
+    nc_unit = get_value(result['unit'], mapping_dict)
+    nc_code = result['prefix'] + nc_unit
+
+    x = {'prefix': result['prefix'], 'type': result['type'], 'unit': result['unit'], 'exponent': result['exponent'],
+         'nc_code': nc_code}
+
+    # split based on result['exponent']
+    if str(result['exponent'])[0] == "-":
+        #print('denominator_list')
+        denominator_list.append(x)
+    else:
+        #print('numerator_list')
+        numerator_list.append(x)
+
+
+
+
+
 def main():
     """Main function to test if input is SI or UCUM then parse and covert and post"""
+    args = get_args()
+    #input_file = args.input
+    SI_file = args.SI
+    prefix_file = args.prefix
+
+    # Read in SI units
+    SI_list = []
+    # open and save input file as list of dictionaries
+    with open(SI_file, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            SI_list.append(row)
+
+    SI_NC_units_dict = {}
+    for i in SI_list:
+        SI_NC_units_dict[i['SI_symbol']] = i['NC_symbol']
+
+    # Read in SI prefixes
+    prefix_list = []
+    # open and save input file as list of dictionaries
+    with open(prefix_file, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            prefix_list.append(row)
 
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
     # test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
     #              "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
-    #              "Np/nN", "B.Bq-2", "P.lm-1", "aau/aa/A"]
+    #              "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A"]
 
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
@@ -250,7 +296,10 @@ def main():
     # test_list = ["A.B-1.C-1.d-1.eV-1"]
     # test_list = ["A2/B/C/d"]
     # test_list = ["aA/aB/aC"]
-    test_list = ["/ng/L"]
+    # test_list = ["/ng/l"]
+    # test_list = ["L/l"]
+    # test_list = ['Pa.aa-1']
+    test_list = ['m.g.W-2.A-1', 'g.m.A-1.W-2']
 
     # # breakup input list one term at a time
     for u in test_list:
@@ -260,14 +309,24 @@ def main():
         #print(u, res_flat)
 
         new_dict_list = []
-        # Function to convert the x/y operator to the x.y-1 style
+        # Convert the inputs into a preprocessed list of dict
         for r in res_flat:
-            #print(r)
             pre_process_unit_list(r, u, new_dict_list)
-        print(u, new_dict_list)
+
+        # Function to create the NCname code from prefix and unit and split num/denom
+        numerator_list = []
+        denominator_list = []
+        for r in new_dict_list:
+            split_num_denom_nc_code(result=r, numerator_list=numerator_list, denominator_list=denominator_list, mapping_dict=SI_NC_units_dict)
+        # print(u, 'num:',numerator_list, 'denom:', denominator_list)
+
+        # Sort in canonical alphebetical order
+        numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
+        denominator_list = sorted(denominator_list, key=lambda k: k['nc_code'])
+        print(u, numerator_list, denominator_list)
 
 
 
-# --------------------------------------------------
+    # --------------------------------------------------
 if __name__ == '__main__':
     main()
