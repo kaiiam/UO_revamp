@@ -244,6 +244,11 @@ def gen_nc_code(result, mapping_dict):
 
 # --------------------------------------------------
 def gen_label_parts(result, SI_unit_label_dict, prefix_dict, powers_dict,label_lan):
+    """
+    Create labels from units and prefixes
+    TODO add special case for unit = are to print hectare instead of hectoare etc
+    deci might be the only exception
+    """
     if get_value(result['prefix'], prefix_dict) is not None:
         prefix = get_value(result['prefix'], prefix_dict)
     else:
@@ -274,7 +279,7 @@ def split_num_denom(result, numerator_list, denominator_list):
 
 
 # --------------------------------------------------
-def canonical_nc_label(numerator_list, denominator_list):
+def canonical_nc_iri(numerator_list, denominator_list):
     return_lst = []
     for n in numerator_list:
         if str(n['exponent']) == '1':
@@ -284,6 +289,38 @@ def canonical_nc_label(numerator_list, denominator_list):
     for n in denominator_list:
         return_lst.append(n['nc_code'] + str(n['exponent']))
     return '.'.join(return_lst)
+
+
+# --------------------------------------------------
+def canonical_nc_label(numerator_list, denominator_list, label_lan):
+    return_lst = []
+    # Case 1 no denominators
+    if not denominator_list:
+        for n in numerator_list:
+            return_lst.append(n[label_lan])
+    # case 2 no numerators
+    elif not numerator_list:
+        return_lst.append('reciprocal')
+        for d in denominator_list:
+            return_lst.append(d[label_lan])
+    # Case 3 mix of numerators and denominators
+    else:
+        for n in numerator_list:
+            return_lst.append(n[label_lan])
+        return_lst.append('per')
+        for d in denominator_list:
+            return_lst.append(d[label_lan])
+
+
+
+
+    return ' '.join(return_lst)
+
+
+    # for n in numerator_list:
+    #     print(n[label_lan])
+    # for n in denominator_list:
+    #     print(n[label_lan])
 
 
 # --------------------------------------------------
@@ -328,7 +365,7 @@ def main():
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
     test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
                  "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
-                 "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A"]
+                 "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A", "mW.S.T-1"]
 
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
@@ -342,7 +379,9 @@ def main():
     # test_list = ['Pa.aa-1']
     # test_list = ['m2.g.W-2.A-1', 'g.m2.A-1.W-2']
     # test_list = ["nm.us-2"]
-    # test_list = ['m.F']
+    # test_list = ['/mg/as']
+    # test_list = ['mg-1.as-1']
+    # test_list = ['A2.mN']
 
     # # breakup input list one term at a time
     for u in test_list:
@@ -365,7 +404,7 @@ def main():
         # pass in desired language SI unit, prefix and powers dicts + label_lan
         for r in new_dict_list:
             gen_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict, powers_dict=powers_en_dict, label_lan='label_en')
-        print(u, new_dict_list)
+        # print(u, new_dict_list)
 
         # Function to split numerator and denominator into two lists
         numerator_list = []
@@ -377,12 +416,13 @@ def main():
         # Sort in canonical alphebetical order
         numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
         denominator_list = sorted(denominator_list, key=lambda k: k['nc_code'])
-        #print(u, numerator_list, denominator_list)
+        # print(u, numerator_list, denominator_list)
 
-        # Print canonical nc_name code
-        #print(u, '->', canonical_nc_label(numerator_list=numerator_list,denominator_list=denominator_list))
+        # Generate canonical nc_name code
+        # print(u, '->', canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list))
 
-
+        # Generate canonical term label
+        print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
 
     # --------------------------------------------------
 if __name__ == '__main__':
