@@ -365,7 +365,7 @@ def main():
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
     test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
                  "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
-                 "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A", "mW.S.T-1"]
+                 "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A", "S.mW.T-1", "Np.mm"]
 
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
@@ -415,17 +415,15 @@ def main():
 
         # Sort in canonical alphebetical order
         #numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
-        numerator_list = sorted(numerator_list, key=lambda k: (k.casefold(), k['nc_code']))
-        print(u, numerator_list)
-
-        # denominator_list = sorted(denominator_list, key=lambda k: k['nc_code'])
+        numerator_list = sorted(numerator_list, key=lambda k: (k['nc_code'].casefold(), k))
+        denominator_list = sorted(denominator_list, key=lambda k: (k['nc_code'].casefold(), k))
         # print(u, numerator_list, denominator_list)
 
         # Generate canonical nc_name code
         # print(u, '->', canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list))
 
         # # Generate canonical term label
-        # print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
+        print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
 
     # --------------------------------------------------
 if __name__ == '__main__':
