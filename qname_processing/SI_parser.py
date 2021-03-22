@@ -243,11 +243,20 @@ def gen_nc_code(result, mapping_dict):
 
 
 # --------------------------------------------------
-def gen_en_label_parts(result, SI_unit_label_dict, prefix_dict):
-    #pass
-    #print(result)
-    result.update({'Germany': 49})
-    return(result)
+def gen_label_parts(result, SI_unit_label_dict, prefix_dict, powers_dict,label_lan):
+    if get_value(result['prefix'], prefix_dict) is not None:
+        prefix = get_value(result['prefix'], prefix_dict)
+    else:
+        prefix = ''
+    unit = get_value(result['unit'], SI_unit_label_dict)
+    power = str(result['exponent'])
+    power = power.replace('-', '')
+    power = get_value(power, powers_dict)
+    if power is None:
+        label_str = prefix + unit
+    else:
+        label_str = power + ' ' + prefix + unit
+    result.update({label_lan: label_str})
 
 
 # --------------------------------------------------
@@ -313,10 +322,13 @@ def main():
     for i in prefix_list:
         prefix_en_dict[i['symbol']] = i['label_en']
 
+    powers_en_dict = {'1': None, '2': 'square', '3': 'cubic', '4': 'quartic', '5': 'quintic', '6': 'sextic', '7': 'septic',
+                   '8': 'octic', '9': 'nonic', '10': 'decic'}
+
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
-    # test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
-    #              "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
-    #              "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A"]
+    test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
+                 "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
+                 "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A"]
 
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
@@ -328,8 +340,9 @@ def main():
     # test_list = ["/ng/l"]
     # test_list = ["L/l"]
     # test_list = ['Pa.aa-1']
-    test_list = ['m2.g.W-2.A-1', 'g.m2.A-1.W-2']
-    #test_list = ["m.s-2"]
+    # test_list = ['m2.g.W-2.A-1', 'g.m2.A-1.W-2']
+    # test_list = ["nm.us-2"]
+    # test_list = ['m.F']
 
     # # breakup input list one term at a time
     for u in test_list:
@@ -348,9 +361,10 @@ def main():
             gen_nc_code(result=r, mapping_dict=SI_NC_units_dict)
         # print(u, new_dict_list)
 
-        # Function to create english labels from units and prefixes
+        # Function to create labels from units and prefixes
+        # pass in desired language SI unit, prefix and powers dicts + label_lan
         for r in new_dict_list:
-            gen_en_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict)
+            gen_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict, powers_dict=powers_en_dict, label_lan='label_en')
         print(u, new_dict_list)
 
         # Function to split numerator and denominator into two lists
