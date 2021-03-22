@@ -233,29 +233,33 @@ def pre_process_unit_list(result, original, dict_list):
 
 
 # --------------------------------------------------
-def split_num_denom_nc_code(result, numerator_list, denominator_list, mapping_dict):
+def gen_nc_code(result, dict_list, mapping_dict):
     """
     Add nc_code based on prefix and unit
-    Seperate into numerator and denominator lists
     """
     nc_unit = get_value(result['unit'], mapping_dict)
     nc_code = result['prefix'] + nc_unit
 
     x = {'prefix': result['prefix'], 'type': result['type'], 'unit': result['unit'], 'exponent': result['exponent'],
          'nc_code': nc_code}
+    dict_list.append(x)
 
+
+# --------------------------------------------------
+def split_num_denom(result, numerator_list, denominator_list, mapping_dict):
+    """
+    Separate input list into numerator and denominator lists
+    """
     # split based on result['exponent']
     if str(result['exponent'])[0] == "-":
         #print('denominator_list')
-        denominator_list.append(x)
+        denominator_list.append(result)
     else:
         #print('numerator_list')
-        numerator_list.append(x)
+        numerator_list.append(result)
 
 
-
-
-
+# --------------------------------------------------
 def main():
     """Main function to test if input is SI or UCUM then parse and covert and post"""
     args = get_args()
@@ -313,12 +317,18 @@ def main():
         for r in res_flat:
             pre_process_unit_list(r, u, new_dict_list)
 
-        # Function to create the NCname code from prefix and unit and split num/denom
+        # # Function to create the NCname code from prefix and unit
+        new_dict_list1 = []
+        for r in new_dict_list:
+            gen_nc_code(result=r, dict_list=new_dict_list1, mapping_dict=SI_NC_units_dict)
+        # print(u, new_dict_list1)
+
+        # Function to split numerator and denominator into two lists
         numerator_list = []
         denominator_list = []
-        for r in new_dict_list:
-            split_num_denom_nc_code(result=r, numerator_list=numerator_list, denominator_list=denominator_list, mapping_dict=SI_NC_units_dict)
-        # print(u, 'num:',numerator_list, 'denom:', denominator_list)
+        for r in new_dict_list1:
+            split_num_denom(result=r, numerator_list=numerator_list, denominator_list=denominator_list, mapping_dict=SI_NC_units_dict)
+        #print(u, 'num:', numerator_list, 'denom:', denominator_list)
 
         # Sort in canonical alphebetical order
         numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
