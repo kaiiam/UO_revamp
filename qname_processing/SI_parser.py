@@ -246,7 +246,7 @@ def gen_nc_code(result, dict_list, mapping_dict):
 
 
 # --------------------------------------------------
-def split_num_denom(result, numerator_list, denominator_list, mapping_dict):
+def split_num_denom(result, numerator_list, denominator_list):
     """
     Separate input list into numerator and denominator lists
     """
@@ -340,7 +340,7 @@ def main():
         numerator_list = []
         denominator_list = []
         for r in new_dict_list1:
-            split_num_denom(result=r, numerator_list=numerator_list, denominator_list=denominator_list, mapping_dict=SI_NC_units_dict)
+            split_num_denom(result=r, numerator_list=numerator_list, denominator_list=denominator_list)
         #print(u, 'num:', numerator_list, 'denom:', denominator_list)
 
         # Sort in canonical alphebetical order
