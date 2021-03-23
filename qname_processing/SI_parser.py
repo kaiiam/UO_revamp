@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Author : kai
+Author : Kai
 Date   : 2021-03-16
 Purpose: Parse SI formatted inputs
 
 Run:
 
-./SI_parser.py -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv
+./SI_parser.py -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv
 
 """
 
@@ -36,6 +36,14 @@ def get_args():
         '-p',
         '--prefix',
         help='SI prefixes labels and codes mapping csv',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-e',
+        '--exponents',
+        help='Exponent labels csv',
         metavar='str',
         type=str,
         default='')
@@ -243,7 +251,7 @@ def gen_nc_code(result, mapping_dict):
 
 
 # --------------------------------------------------
-def gen_label_parts(result, SI_unit_label_dict, prefix_dict, powers_dict,label_lan):
+def gen_label_parts(result, SI_unit_label_dict, prefix_dict, exponents_dict,label_lan):
     """
     Create labels from units and prefixes
     TODO add special case for unit = are to print hectare instead of hectoare etc
@@ -256,7 +264,7 @@ def gen_label_parts(result, SI_unit_label_dict, prefix_dict, powers_dict,label_l
     unit = get_value(result['unit'], SI_unit_label_dict)
     power = str(result['exponent'])
     power = power.replace('-', '')
-    power = get_value(power, powers_dict)
+    power = get_value(power, exponents_dict)
     if power is None:
         label_str = prefix + unit
     else:
@@ -310,17 +318,7 @@ def canonical_nc_label(numerator_list, denominator_list, label_lan):
         return_lst.append('per')
         for d in denominator_list:
             return_lst.append(d[label_lan])
-
-
-
-
     return ' '.join(return_lst)
-
-
-    # for n in numerator_list:
-    #     print(n[label_lan])
-    # for n in denominator_list:
-    #     print(n[label_lan])
 
 
 # --------------------------------------------------
@@ -330,6 +328,7 @@ def main():
     #input_file = args.input
     SI_file = args.SI
     prefix_file = args.prefix
+    exponents_file = args.exponents
 
     # Read in SI units
     SI_list = []
@@ -359,10 +358,18 @@ def main():
     for i in prefix_list:
         prefix_en_dict[i['symbol']] = i['label_en']
 
-    powers_en_dict = {'1': None, '2': 'square', '3': 'cubic', '4': 'quartic', '5': 'quintic', '6': 'sextic', '7': 'septic',
-                   '8': 'octic', '9': 'nonic', '10': 'decic'}
+    # Read in powers
+    exponents_list = []
+    # open and save input file as list of dictionaries
+    with open(exponents_file, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            exponents_list.append(row)
 
-    # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "dam", "Gg/um", "ccd" , "mmol/Ecd", "nmol/pm/ms", "°C"]
+    exponents_en_dict = {}
+    for i in exponents_list:
+        exponents_en_dict[i['power']] = i['label_en']
+
     test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
                  "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
                  "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A", "S.mW.T-1", "Np.mm"]
@@ -372,7 +379,7 @@ def main():
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2", "A/N/W", "A.N-1.W-1"]
     # test_list = ["A.N-1.W-1"]
     # test_list = ["A.B-1.C-1.d-1.eV-1"]
-    # test_list = ["A2/B/C/d"]
+    # test_list = ["A2/B3/C4/d5"]
     # test_list = ["aA/aB/aC"]
     # test_list = ["/ng/l"]
     # test_list = ["L/l"]
@@ -401,9 +408,9 @@ def main():
         # print(u, new_dict_list)
 
         # Function to create labels from units and prefixes
-        # pass in desired language SI unit, prefix and powers dicts + label_lan
+        # pass in desired language SI unit, prefix and exponents dicts + label_lan
         for r in new_dict_list:
-            gen_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict, powers_dict=powers_en_dict, label_lan='label_en')
+            gen_label_parts(result=r, SI_unit_label_dict=SI_unit_label_en_dict, prefix_dict=prefix_en_dict, exponents_dict=exponents_en_dict, label_lan='label_en')
         # print(u, new_dict_list)
 
         # Function to split numerator and denominator into two lists
