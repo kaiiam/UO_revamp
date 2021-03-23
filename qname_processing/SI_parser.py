@@ -7,7 +7,12 @@ Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-
 
 Run:
 
-./SI_parser.py -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+Test
+./SI_parser.py -i input/SI/test3.csv -o out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+
+UCUM list from QUDT OM UO and OBOE
+./SI_parser.py -i input/SI/prelim_list.csv -o out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+
 
 """
 
@@ -19,12 +24,34 @@ import re
 from lark import Lark, Tree, Transformer
 from itertools import permutations
 
+prefix_dict_list = [
+    {'prefix': 'rdf:', 'namespace': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
+    {'prefix': 'rdfs:', 'namespace': 'http://www.w3.org/2000/01/rdf-schema#'},
+    {'prefix': 'xsd:', 'namespace': 'http://www.w3.org/2001/XMLSchema#'},
+    {'prefix': 'owl:', 'namespace': 'http://www.w3.org/2002/07/owl#'},
+    {'prefix': 'unit:', 'namespace': 'http://purl.obolibrary.org/obo/unit_'},
+    {'prefix': 'UO:', 'namespace': 'http://purl.obolibrary.org/obo/UO_'},
+    {'prefix': 'OM:', 'namespace': 'http://www.ontology-of-units-of-measure.org/resource/om-2/'},
+    {'prefix': 'QUDT:', 'namespace': 'http://qudt.org/vocab/unit/'},
+    {'prefix': 'OBOE:', 'namespace': 'http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#'},
+    {'prefix': 'skos:', 'namespace': 'http://www.w3.org/2004/02/skos/core#'}
+]
+
+
 # --------------------------------------------------
 def get_args():
     """get command-line arguments"""
     parser = argparse.ArgumentParser(
         description='Argparse Python script',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+    parser.add_argument(
+        '-i',
+        '--input',
+        help='input csv file',
+        metavar='str',
+        type=str,
+        default='')
 
     parser.add_argument(
         '-s',
@@ -46,6 +73,14 @@ def get_args():
         '-e',
         '--exponents',
         help='Exponent labels csv',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-o',
+        '--output',
+        help='ttl output file',
         metavar='str',
         type=str,
         default='')
@@ -556,10 +591,19 @@ def format_si_ttl(iri, label, si_code, ucum_code, mapping_list):
 def main():
     """Main function to test if input is SI or UCUM then parse and covert and post"""
     args = get_args()
-    #input_file = args.input
+    input_file = args.input
     SI_file = args.SI
     prefix_file = args.prefix
     exponents_file = args.exponents
+    out_file = args.output
+
+    # Read in argument input files
+    input_list = []
+    # open and save input data file as list of strings
+    with open(input_file, mode='r', encoding='utf-8-sig') as input:
+        csv_reader = csv.reader(input, delimiter=',')
+        for row in csv_reader:
+            input_list.append(row[0])
 
     om_ucum = args.ucum1
     qudt_ucum = args.ucum2
@@ -669,14 +713,33 @@ def main():
     # test_list = ['mg-1.as-1']
     # test_list = ['A2.mN']
     # test_list = ['mm2.Gg.pW-2.yA-1']
-    test_list = ['m.s-1']
+    test_list = ['m.s-1', 'asdf']
+
+    valid_SI_input_list = []
 
     # # breakup input list one term at a time
-    for u in test_list:
+    for u in input_list:
+    # for u in test_list:
+        try:
+            tree = si_grammar.parse(u)
+            result = transformer().transform(tree)
+            valid_SI_input_list.append(u)
+        except:
+            print(f"Could not process '{u}' with SI parser")
+
+    # Open outfile
+    f = open(out_file, mode='w', encoding='utf-8-sig')
+
+    # write out prefixes followed by linebreak
+    for p in prefix_dict_list:
+        print('@prefix {} <{}> .'.format(p['prefix'], p['namespace']), file=f)
+    print('', file=f)
+
+    for u in valid_SI_input_list:
         tree = si_grammar.parse(u)
         result = transformer().transform(tree)
         res_flat = flatten(result)
-        #print(u, res_flat)
+        # print(u, res_flat)
 
         new_dict_list = []
         # Convert the inputs into a preprocessed list of dict
@@ -744,7 +807,7 @@ def main():
         #print(mapping_list)
 
         # Format ttl for SI parser results
-        print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code, ucum_code=ucum_code, mapping_list=mapping_list))
+        print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code, ucum_code=ucum_code, mapping_list=mapping_list), file=f)
 
 
         # --------------------------------------------------
