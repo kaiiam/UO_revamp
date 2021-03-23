@@ -272,6 +272,35 @@ def si_gen_UCUM_code(result, mapping_dict):
 
 
 # --------------------------------------------------
+def gen_si_ucum_list(dict_list):
+    """
+    Create permutations of possible UCUM strings for input unit list
+    E.g., 'm.s-1' -> ['m.s-1', 's-1.m']
+    https://www.geeksforgeeks.org/generate-all-the-permutation-of-a-list-in-python/
+    At the moment only handels the ucum "." cases not the "/" cases
+    TODO add the / UCUM cases
+    """
+    return_list = []
+    code_exp_list = []
+    for d in dict_list:
+        if d['exponent'] == 1:
+            exp = ''
+        else:
+            exp = str(d['exponent'])
+        x = d['ucum_code'] + exp
+        code_exp_list.append(x)
+    code_exp_list = list(permutations(code_exp_list))
+
+    for p in code_exp_list:
+        ucum_str_list = []
+        for i in p:
+            ucum_str_list.append(i)
+        outstr = '.'.join(ucum_str_list)
+        return_list.append(outstr)
+    return return_list
+
+
+# --------------------------------------------------
 def gen_label_parts(result, SI_unit_label_dict, prefix_dict, exponents_dict,label_lan):
     """
     Create labels from units and prefixes
@@ -359,6 +388,60 @@ def canonical_si_code(numerator_list, denominator_list):
 
 
 # --------------------------------------------------
+def lookahead(iterable):
+    """Pass through all values from the given iterable, augmented by the
+    information if there are more values to come after the current one
+    (True), or if it is the last value (False).
+    https://stackoverflow.com/questions/1630320/what-is-the-pythonic-way-to-detect-the-last-element-in-a-for-loop
+    """
+    # Get an iterator and pull the first value.
+    it = iter(iterable)
+    last = next(it)
+    # Run the iterator to exhaustion (starting from the second value).
+    for val in it:
+        # Report the *previous* value (more to come).
+        try:
+            yield last, True
+            last = val
+        except StopIteration:
+            return
+    # Report the last value.
+    try:
+        yield last, False
+    except StopIteration:
+        return
+
+
+# --------------------------------------------------
+def format_si_ttl(iri, label, si_code):
+    #pass
+    #print(iri, label, si_code)
+
+    iri = '{}{}\n'.format('unit:', iri)
+    return_str = ''
+    return_str += iri
+    return_list = []
+
+    # Assert that this is an owl instance
+    return_list.append('  a owl:NamedIndividual')
+
+    if label:
+        return_list.append('  {}label "{}"@en'.format('rdfs:', label))
+
+    if si_code:
+        return_list.append('  {}SI_code "{}"'.format('unit:', si_code))
+
+    # Add ; and . for ttl formatting
+    for i, has_more in lookahead(return_list):
+        if has_more:
+            return_str += (i + ' ;\n')
+        else:
+            return_str += (i + ' .\n')
+    return return_str
+    #print(return_str)
+
+
+# --------------------------------------------------
 def main():
     """Main function to test if input is SI or UCUM then parse and covert and post"""
     args = get_args()
@@ -434,6 +517,7 @@ def main():
     # test_list = ['/mg/as']
     # test_list = ['mg-1.as-1']
     # test_list = ['A2.mN']
+    # test_list = ['mm2.Gg.pW-2.yA-1']
 
     # # breakup input list one term at a time
     for u in test_list:
@@ -460,7 +544,13 @@ def main():
         # # Function to create the UCUM codes from prefix and unit
         for r in new_dict_list:
             si_gen_UCUM_code(result=r, mapping_dict=SI_UCUM_units_dict)
-        #print(u, new_dict_list)
+        # print(u, new_dict_list)
+
+        # Function to generate list of UCUM codes from results dict list
+        # Permute Possible UCUM strings
+        UCUM_SI_list = gen_si_ucum_list(dict_list=new_dict_list)
+        #print(UCUM_SI_list)
+
 
         # Function to create labels from units and prefixes
         # pass in desired language SI unit, prefix and exponents dicts + label_lan
@@ -482,18 +572,22 @@ def main():
 
         # # Generate canonical nc_name code
         # print(u, '->', canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list))
+        si_nc_name_iri = canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list)
 
         # # Generate canonical term label
         # print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
+        label = canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en')
 
         # Generate canonical SI code e.g. `Pa s`
         # First pass complete, Later can fix superscript issue with fstrings TODO
         # print(u, '->', canonical_si_code(numerator_list=numerator_list,denominator_list=denominator_list))
+        si_code = canonical_si_code(numerator_list=numerator_list,denominator_list=denominator_list)
 
-        # Permute Possible UCUM strings
-        # TODO
-        # l = list(permutations(range(1, 4)))
-        # print(l)
+
+
+
+        # Format ttl for SI parser results
+        # print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code))
 
 
         # --------------------------------------------------
