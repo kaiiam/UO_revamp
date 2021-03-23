@@ -7,7 +7,7 @@ Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-
 
 Run:
 
-./SI_parser.py -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv
+./SI_parser.py -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
 
 """
 
@@ -15,6 +15,7 @@ import argparse
 import sys
 import csv
 import collections.abc
+import re
 from lark import Lark, Tree, Transformer
 from itertools import permutations
 
@@ -45,6 +46,38 @@ def get_args():
         '-e',
         '--exponents',
         help='Exponent labels csv',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-u1',
+        '--ucum1',
+        help='UCUM mapping keys',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-u2',
+        '--ucum2',
+        help='UCUM mapping keys',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-u3',
+        '--ucum3',
+        help='UCUM mapping keys',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-u4',
+        '--ucum4',
+        help='UCUM mapping keys',
         metavar='str',
         type=str,
         default='')
@@ -388,6 +421,19 @@ def canonical_si_code(numerator_list, denominator_list):
 
 
 # --------------------------------------------------
+def canonical_ucum_code(numerator_list, denominator_list):
+    return_lst = []
+    for n in numerator_list:
+        if str(n['exponent']) == '1':
+            return_lst.append(n['ucum_code'])
+        else:
+            return_lst.append(n['ucum_code'] + str(n['exponent']))
+    for n in denominator_list:
+        return_lst.append(n['ucum_code'] + str(n['exponent']))
+    return '.'.join(return_lst)
+
+
+# --------------------------------------------------
 def lookahead(iterable):
     """Pass through all values from the given iterable, augmented by the
     information if there are more values to come after the current one
@@ -413,9 +459,62 @@ def lookahead(iterable):
 
 
 # --------------------------------------------------
-def format_si_ttl(iri, label, si_code):
-    #pass
-    #print(iri, label, si_code)
+def temp_ucum_map(ucum_list, ontology_mapping_list):
+    """
+    Temporary lookup to UCUM to ontology mappings. Later version will use the phase 2
+    UCUM parser to parse the UCUM mappings (first column at least) and convert those to
+    canonical UCUM string via our function to do so, then look those up based on input
+    """
+    #print(ucum_list)
+    return_list = []
+    for u in ucum_list:
+        for x in ontology_mapping_list:
+            if u == x['UCUM1'] or u == x['UCUM2']:
+                #print(x['IRI'])
+                return_list.append(x['IRI'])
+                # if 'qudt' in x['IRI']:
+                #     print(x['IRI'])
+                # elif 'ontology-of-units-of-measure.org' in x['IRI']:
+                #     print(x['IRI'])
+                # elif 'obolibrary.org/obo/UO_' in x['IRI']:
+                #     print(x['IRI'])
+                # elif '/oboe/oboe.' in x['IRI']:
+                #     print(x['IRI'])
+    return return_list
+
+
+# --------------------------------------------------
+def format_si_ttl(iri, label, si_code, ucum_code, mapping_list):
+    qudt_regex = r"(http://qudt.org/vocab/unit/)(.*)"
+    om_regex = r"(http://www.ontology-of-units-of-measure.org/resource/om-2/)(.*)"
+    uo_regex = r"(http://purl.obolibrary.org/obo/UO_)(.*)"
+    oboe_regex = r"(http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#)(.*)"
+    qudt_list = []
+    om_list = []
+    uo_list = []
+    oboe_list = []
+
+    for m in mapping_list:
+        if re.search(qudt_regex, m):
+            match = re.search(qudt_regex, m)
+            qudt_id = match.group(2)
+            qudt_id = 'QUDT:' + qudt_id
+            qudt_list.append(qudt_id)
+        if re.search(om_regex, m):
+            match = re.search(om_regex, m)
+            om_id = match.group(2)
+            om_id = 'OM:' + om_id
+            om_list.append(om_id)
+        if re.search(uo_regex, m):
+            match = re.search(uo_regex, m)
+            uo_id = match.group(2)
+            uo_id = 'UO:' + uo_id
+            uo_list.append(uo_id)
+        if re.search(oboe_regex, m):
+            match = re.search(oboe_regex, m)
+            oboe_id = match.group(2)
+            oboe_id = 'OBOE:' + oboe_id
+            oboe_list.append(oboe_id)
 
     iri = '{}{}\n'.format('unit:', iri)
     return_str = ''
@@ -431,6 +530,19 @@ def format_si_ttl(iri, label, si_code):
     if si_code:
         return_list.append('  {}SI_code "{}"'.format('unit:', si_code))
 
+    if ucum_code:
+        return_list.append('  {}ucum_code "{}"'.format('unit:', ucum_code))
+
+    [return_list.append('  {}exactMatch {}'.format('skos:', x)) for x in qudt_list if qudt_list]
+
+    [return_list.append('  {}exactMatch {}'.format('skos:', x)) for x in om_list if om_list]
+
+    [return_list.append('  {}exactMatch {}'.format('skos:', x)) for x in uo_list if uo_list]
+
+    [return_list.append('  {}exactMatch {}'.format('skos:', x)) for x in oboe_list if oboe_list]
+
+    # [return_list.append('  {}ucum_code "{}"'.format('unit:', u)) for u in ucum_list]
+
     # Add ; and . for ttl formatting
     for i, has_more in lookahead(return_list):
         if has_more:
@@ -438,7 +550,6 @@ def format_si_ttl(iri, label, si_code):
         else:
             return_str += (i + ' .\n')
     return return_str
-    #print(return_str)
 
 
 # --------------------------------------------------
@@ -449,6 +560,11 @@ def main():
     SI_file = args.SI
     prefix_file = args.prefix
     exponents_file = args.exponents
+
+    om_ucum = args.ucum1
+    qudt_ucum = args.ucum2
+    uo_ucum = args.ucum3
+    oboe_ucum = args.ucum4
 
     # Read in SI units
     SI_list = []
@@ -498,6 +614,41 @@ def main():
     for i in exponents_list:
         exponents_en_dict[i['power']] = i['label_en']
 
+    ###### Mappings #######################################
+    # Read in ontology to UCUM mappings
+    om_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(om_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            om_ucum_list.append(row)
+
+    qudt_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(qudt_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            qudt_ucum_list.append(row)
+
+    uo_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(uo_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            uo_ucum_list.append(row)
+
+    oboe_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(oboe_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            oboe_ucum_list.append(row)
+
+    # Join all the input ontology to UCUM mappings into single list of dict
+    ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list
+    #print(ontology_mapping_list)
+
+
     test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
                  "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
                  "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A", "S.mW.T-1", "Np.mm"]
@@ -518,6 +669,7 @@ def main():
     # test_list = ['mg-1.as-1']
     # test_list = ['A2.mN']
     # test_list = ['mm2.Gg.pW-2.yA-1']
+    test_list = ['m.s-1']
 
     # # breakup input list one term at a time
     for u in test_list:
@@ -551,7 +703,6 @@ def main():
         UCUM_SI_list = gen_si_ucum_list(dict_list=new_dict_list)
         #print(UCUM_SI_list)
 
-
         # Function to create labels from units and prefixes
         # pass in desired language SI unit, prefix and exponents dicts + label_lan
         for r in new_dict_list:
@@ -583,11 +734,17 @@ def main():
         # print(u, '->', canonical_si_code(numerator_list=numerator_list,denominator_list=denominator_list))
         si_code = canonical_si_code(numerator_list=numerator_list,denominator_list=denominator_list)
 
+        # Generate canonical UCUM code
+        ucum_code = canonical_ucum_code(numerator_list=numerator_list, denominator_list=denominator_list)
+        #print(ucum_code)
 
-
+        # Map UCUM codes to external Ontologies
+        # LATER TODO change this to use the mappings of canonical UCUM strings by calling phase 2 on Simon’s mappings
+        mapping_list = temp_ucum_map(ucum_list=UCUM_SI_list, ontology_mapping_list=ontology_mapping_list)
+        #print(mapping_list)
 
         # Format ttl for SI parser results
-        # print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code))
+        print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code, ucum_code=ucum_code, mapping_list=mapping_list))
 
 
         # --------------------------------------------------
