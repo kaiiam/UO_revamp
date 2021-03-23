@@ -251,6 +251,17 @@ def gen_nc_code(result, mapping_dict):
 
 
 # --------------------------------------------------
+def si_gen_UCUM_code(result, mapping_dict):
+    """
+    Add UCUM_code based on prefix and unit
+    """
+    ucum_unit = get_value(result['unit'], mapping_dict)
+    ucum_code = result['prefix'] + ucum_unit
+    #print({'ucum_code': ucum_code})
+    result.update({'ucum_code': ucum_code})
+
+
+# --------------------------------------------------
 def gen_label_parts(result, SI_unit_label_dict, prefix_dict, exponents_dict,label_lan):
     """
     Create labels from units and prefixes
@@ -342,6 +353,10 @@ def main():
     for i in SI_list:
         SI_NC_units_dict[i['SI_symbol']] = i['NC_symbol']
 
+    SI_UCUM_units_dict = {}
+    for i in SI_list:
+        SI_UCUM_units_dict[i['SI_symbol']] = i['UCUM_symbol']
+
     SI_unit_label_en_dict = {}
     for i in SI_list:
         SI_unit_label_en_dict[i['SI_symbol']] = i['label_en']
@@ -407,6 +422,11 @@ def main():
             gen_nc_code(result=r, mapping_dict=SI_NC_units_dict)
         # print(u, new_dict_list)
 
+        # # Function to create the UCUM codes from prefix and unit
+        for r in new_dict_list:
+            si_gen_UCUM_code(result=r, mapping_dict=SI_UCUM_units_dict)
+        #print(u, new_dict_list)
+
         # Function to create labels from units and prefixes
         # pass in desired language SI unit, prefix and exponents dicts + label_lan
         for r in new_dict_list:
@@ -418,19 +438,18 @@ def main():
         denominator_list = []
         for r in new_dict_list:
             split_num_denom(result=r, numerator_list=numerator_list, denominator_list=denominator_list)
-        #print(u, 'num:', numerator_list, 'denom:', denominator_list)
+        # print(u, 'num:', numerator_list, 'denom:', denominator_list)
 
-        # Sort in canonical alphebetical order
-        #numerator_list = sorted(numerator_list, key=lambda k: k['nc_code'])
+        # # Sort in canonical alphabetical order
         numerator_list = sorted(numerator_list, key=lambda k: (k['nc_code'].casefold(), k))
         denominator_list = sorted(denominator_list, key=lambda k: (k['nc_code'].casefold(), k))
         # print(u, numerator_list, denominator_list)
 
-        # Generate canonical nc_name code
+        # # Generate canonical nc_name code
         # print(u, '->', canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list))
 
         # # Generate canonical term label
-        print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
+        # print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
 
     # --------------------------------------------------
 if __name__ == '__main__':
