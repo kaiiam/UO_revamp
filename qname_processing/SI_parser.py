@@ -3,6 +3,7 @@
 Author : Kai
 Date   : 2021-03-16
 Purpose: Parse SI formatted inputs
+Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9.pdf
 
 Run:
 
@@ -15,7 +16,7 @@ import sys
 import csv
 import collections.abc
 from lark import Lark, Tree, Transformer
-
+from itertools import permutations
 
 # --------------------------------------------------
 def get_args():
@@ -251,13 +252,22 @@ def gen_nc_code(result, mapping_dict):
 
 
 # --------------------------------------------------
+def gen_si_code(result, mapping_dict):
+    """
+    Add si_code based on prefix and unit
+    """
+    si_unit = get_value(result['unit'], mapping_dict)
+    si_code = result['prefix'] + si_unit
+    result.update({'si_code': si_code})
+
+
+# --------------------------------------------------
 def si_gen_UCUM_code(result, mapping_dict):
     """
     Add UCUM_code based on prefix and unit
     """
     ucum_unit = get_value(result['unit'], mapping_dict)
     ucum_code = result['prefix'] + ucum_unit
-    #print({'ucum_code': ucum_code})
     result.update({'ucum_code': ucum_code})
 
 
@@ -333,6 +343,22 @@ def canonical_nc_label(numerator_list, denominator_list, label_lan):
 
 
 # --------------------------------------------------
+def canonical_si_code(numerator_list, denominator_list):
+    # TODO use a dict of exponents mapping to f string superscript numbers to write out exponents as superscript
+    # str = 'cm'
+    # print(f'{str}\N{SUPERSCRIPT MINUS}\N{SUPERSCRIPT SEVEN}')
+    return_lst = []
+    for n in numerator_list:
+        if str(n['exponent']) == '1':
+            return_lst.append(n['si_code'])
+        else:
+            return_lst.append(n['si_code'] + str(n['exponent']))
+    for n in denominator_list:
+        return_lst.append(n['si_code'] + str(n['exponent']))
+    return ' '.join(return_lst)
+
+
+# --------------------------------------------------
 def main():
     """Main function to test if input is SI or UCUM then parse and covert and post"""
     args = get_args()
@@ -352,6 +378,10 @@ def main():
     SI_NC_units_dict = {}
     for i in SI_list:
         SI_NC_units_dict[i['SI_symbol']] = i['NC_symbol']
+
+    SI_SI_can_units_dict = {}
+    for i in SI_list:
+        SI_SI_can_units_dict[i['SI_symbol']] = i['SI_symbol_canonical']
 
     SI_UCUM_units_dict = {}
     for i in SI_list:
@@ -422,6 +452,11 @@ def main():
             gen_nc_code(result=r, mapping_dict=SI_NC_units_dict)
         # print(u, new_dict_list)
 
+        # # Function to create the SI code from prefix and unit
+        for r in new_dict_list:
+            gen_si_code(result=r, mapping_dict=SI_SI_can_units_dict)
+        # print(u, new_dict_list)
+
         # # Function to create the UCUM codes from prefix and unit
         for r in new_dict_list:
             si_gen_UCUM_code(result=r, mapping_dict=SI_UCUM_units_dict)
@@ -451,6 +486,16 @@ def main():
         # # Generate canonical term label
         # print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
 
-    # --------------------------------------------------
+        # Generate canonical SI code e.g. `Pa s`
+        # First pass complete, Later can fix superscript issue with fstrings TODO
+        # print(u, '->', canonical_si_code(numerator_list=numerator_list,denominator_list=denominator_list))
+
+        # Permute Possible UCUM strings
+        # TODO
+        # l = list(permutations(range(1, 4)))
+        # print(l)
+
+
+        # --------------------------------------------------
 if __name__ == '__main__':
     main()
