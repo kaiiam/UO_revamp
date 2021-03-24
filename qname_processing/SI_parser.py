@@ -8,7 +8,7 @@ Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-
 Run:
 
 Test
-./SI_parser.py -i input/SI/test3.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+./SI_parser.py -i input/SI/test4.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
 ./SI_parser.py -i input/SI/prelim_list.csv -o working_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
@@ -438,6 +438,34 @@ def canonical_nc_label(numerator_list, denominator_list, label_lan):
 
 
 # --------------------------------------------------
+def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, prefix_numbers_dict, SI_unit_label_en_dict, label_lan):
+    definition = None
+    # Case 1 no denominators, and only a SI base unit with no exponent
+    if not denominator_list and len(numerator_list) == 1 and numerator_list[0]['exponent'] == 1:
+        # Without prefix:
+        if numerator_list[0]['prefix'] == '':
+            for n in numerator_list:
+                definition = get_value(key=n['si_code'], dict=unit_def_dict)
+        # With prefix
+        elif numerator_list[0]['prefix'] != '':
+            for n in numerator_list:
+                si_label = get_value(key=n['unit'], dict=SI_unit_label_en_dict)
+                prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
+                definition = f'A unit which is equal to {prefix_num} {si_label}.'
+
+
+    #print(numerator_list)
+
+    return definition
+
+
+
+
+
+
+
+
+# --------------------------------------------------
 def canonical_si_code(numerator_list, denominator_list):
     # TODO use a dict of exponents mapping to f string superscript numbers to write out exponents as superscript
     # str = 'cm'
@@ -622,6 +650,10 @@ def main():
     for i in SI_list:
         SI_unit_label_en_dict[i['SI_symbol']] = i['label_en']
 
+    SI_unit_def_en_dict = {}
+    for i in SI_list:
+        SI_unit_def_en_dict[i['SI_symbol']] = i['definition_en']
+
     # Read in SI prefixes
     prefix_list = []
     # open and save input file as list of dictionaries
@@ -633,6 +665,10 @@ def main():
     prefix_en_dict = {}
     for i in prefix_list:
         prefix_en_dict[i['symbol']] = i['label_en']
+
+    prefix_numbers_dict = {}
+    for i in prefix_list:
+        prefix_numbers_dict[i['symbol']] = i['prefix_num']
 
     # Read in powers
     exponents_list = []
@@ -680,11 +716,9 @@ def main():
     ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list
     #print(ontology_mapping_list)
 
-
     test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
                  "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
                  "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A", "S.mW.T-1", "Np.mm"]
-
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2", "A/N/W", "A.N-1.W-1"]
@@ -779,6 +813,13 @@ def main():
         # # Generate canonical term label
         # print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
         label = canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en')
+
+        # Generate canonical english definition
+        # SI_unit_def_en_dict
+        # TODO/WORKING
+        definition_en = canonical_en_definition(numerator_list=numerator_list, denominator_list=denominator_list,
+                                                unit_def_dict=SI_unit_def_en_dict, prefix_numbers_dict=prefix_numbers_dict, SI_unit_label_en_dict=SI_unit_label_en_dict, label_lan='label_en')
+        print(definition_en)
 
         # Generate canonical SI code e.g. `Pa s`
         # First pass complete, Later can fix superscript issue with fstrings TODO
