@@ -8,10 +8,10 @@ Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-
 Run:
 
 Test
-./SI_parser.py -i input/SI/test3.csv -o out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+./SI_parser.py -i input/SI/test3.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
-./SI_parser.py -i input/SI/prelim_list.csv -o out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+./SI_parser.py -i input/SI/prelim_list.csv -o working_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
 
 
 """
@@ -397,10 +397,8 @@ def split_num_denom(result, numerator_list, denominator_list):
     """
     # split based on result['exponent']
     if str(result['exponent'])[0] == "-":
-        #print('denominator_list')
         denominator_list.append(result)
     else:
-        #print('numerator_list')
         numerator_list.append(result)
 
 
@@ -500,21 +498,11 @@ def temp_ucum_map(ucum_list, ontology_mapping_list):
     UCUM parser to parse the UCUM mappings (first column at least) and convert those to
     canonical UCUM string via our function to do so, then look those up based on input
     """
-    #print(ucum_list)
     return_list = []
     for u in ucum_list:
         for x in ontology_mapping_list:
-            if u == x['UCUM1'] or u == x['UCUM2']:
-                #print(x['IRI'])
+            if u == x['UCUM1'] or u == x['UCUM2'] or u == x['UCUM3'] or u == x['UCUM4']:
                 return_list.append(x['IRI'])
-                # if 'qudt' in x['IRI']:
-                #     print(x['IRI'])
-                # elif 'ontology-of-units-of-measure.org' in x['IRI']:
-                #     print(x['IRI'])
-                # elif 'obolibrary.org/obo/UO_' in x['IRI']:
-                #     print(x['IRI'])
-                # elif '/oboe/oboe.' in x['IRI']:
-                #     print(x['IRI'])
     return return_list
 
 
