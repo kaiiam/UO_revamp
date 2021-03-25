@@ -310,33 +310,13 @@ def pre_process_unit_list(result, original, dict_list):
 
 
 # --------------------------------------------------
-def gen_nc_code(result, mapping_dict):
+def gen_symbol_code(result, mapping_dict, code_str):
     """
-    Add nc_code based on prefix and unit
+    Add code_str based on prefix and unit
     """
-    nc_unit = get_value(result['unit'], mapping_dict)
-    nc_code = result['prefix'] + nc_unit
-    result.update({'nc_code': nc_code})
-
-
-# --------------------------------------------------
-def gen_si_code(result, mapping_dict):
-    """
-    Add si_code based on prefix and unit
-    """
-    si_unit = get_value(result['unit'], mapping_dict)
-    si_code = result['prefix'] + si_unit
-    result.update({'si_code': si_code})
-
-
-# --------------------------------------------------
-def si_gen_UCUM_code(result, mapping_dict):
-    """
-    Add UCUM_code based on prefix and unit
-    """
-    ucum_unit = get_value(result['unit'], mapping_dict)
-    ucum_code = result['prefix'] + ucum_unit
-    result.update({'ucum_code': ucum_code})
+    unit = get_value(result['unit'], mapping_dict)
+    code = result['prefix'] + unit
+    result.update({code_str: code})
 
 
 # --------------------------------------------------
@@ -453,16 +433,11 @@ def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, pre
                 prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
                 definition = f'A unit which is equal to {prefix_num} {si_label}.'
 
+    # something like: 'An SI derived unit which is equal to ...'
 
     #print(numerator_list)
 
     return definition
-
-
-
-
-
-
 
 
 # --------------------------------------------------
@@ -768,20 +743,16 @@ def main():
         for r in res_flat:
             pre_process_unit_list(r, u, new_dict_list)
 
-        # # Function to create the NCname code from prefix and unit
+        # Add codes to dict:
         for r in new_dict_list:
-            gen_nc_code(result=r, mapping_dict=SI_NC_units_dict)
-        # print(u, new_dict_list)
+            # Create the NCname code from prefix and unit
+            gen_symbol_code(result=r, mapping_dict=SI_NC_units_dict, code_str='nc_code' )
+            # create the SI code from prefix and unit
+            gen_symbol_code(result=r, mapping_dict=SI_NC_units_dict, code_str='si_code')
+            # create the UCUM codes from prefix and unit
+            gen_symbol_code(result=r, mapping_dict=SI_NC_units_dict, code_str='ucum_code')
 
-        # # Function to create the SI code from prefix and unit
-        for r in new_dict_list:
-            gen_si_code(result=r, mapping_dict=SI_SI_can_units_dict)
-        # print(u, new_dict_list)
-
-        # # Function to create the UCUM codes from prefix and unit
-        for r in new_dict_list:
-            si_gen_UCUM_code(result=r, mapping_dict=SI_UCUM_units_dict)
-        # print(u, new_dict_list)
+        #print(u, new_dict_list)
 
         # Function to generate list of UCUM codes from results dict list
         # Permute Possible UCUM strings
@@ -819,7 +790,7 @@ def main():
         # TODO/WORKING
         definition_en = canonical_en_definition(numerator_list=numerator_list, denominator_list=denominator_list,
                                                 unit_def_dict=SI_unit_def_en_dict, prefix_numbers_dict=prefix_numbers_dict, SI_unit_label_en_dict=SI_unit_label_en_dict, label_lan='label_en')
-        print(definition_en)
+        #print(definition_en)
 
         # Generate canonical SI code e.g. `Pa s`
         # First pass complete, Later can fix superscript issue with fstrings TODO
