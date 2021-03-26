@@ -8,7 +8,7 @@ Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-
 Run:
 
 Test
-./SI_parser.py -i input/SI/test4.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+./SI_parser.py -i input/SI/test5.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
 ./SI_parser.py -i input/SI/prelim_list.csv -o working_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
@@ -210,6 +210,13 @@ class transformer(Transformer):
           "unit": args[:],
         }
 
+    def NON_PRE_METRIC(self, args):
+        #print(args[:])
+        return {
+          "type": "metric",
+          "unit": args[:],
+        }
+
 
     # def ANNOTATION(self, args):
     #     return {
@@ -227,6 +234,7 @@ factor: digits
 exponent: SIGN digits | digits
 simple_unit: METRIC
             | PREFIX? METRIC
+            | NON_PRE_METRIC
 annotatable: simple_unit exponent
            | simple_unit
 component: annotatable
@@ -236,7 +244,8 @@ term: term OPERATOR component
 start: "/" term | term
 OPERATOR: /\.|\//
 PREFIX: "Y" | "Z" | "E" | "P"| "T" | "G" | "M" | "k" | "h" | "da" | "d" | "c" | "m" | "u" | "n" | "p" | "f" | "a" | "z" | "y"
-METRIC: "A"| "au" | "a" | "Bq" | "B" | "C" | "°C" | "°" | "cd" | "d" | "Da" | "eV" | "F" | "Gy" | "g" | "h"| "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" | "min" | "m" | "Np" | "N" | "Ω" | "Pa" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" | "′"  
+METRIC: "A"| "a" | "Bq" | "B" | "C" |  "cd" |  "Da" | "eV" | "F" | "Gy" | "g" | "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" |  "m" | "Np" | "N" | "Ω" | "Pa" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" 
+NON_PRE_METRIC: "au" | "°C" | "°" | "d" | "h" | "min" | "′"
 %ignore " "           // Disregard spaces in text
 ''')
 # Note the rules need to be in order if we have  "m" | "mol" then mol won't be found
@@ -691,9 +700,6 @@ def main():
     ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list
     #print(ontology_mapping_list)
 
-    test_list = ["cBq", "m.F", "m/s", "/g", "Gy2", "s-1", "dam", "Gg/um", "ccd", "mlm/Hz", "nH/plm/mΩ", "°C",
-                 "aSv/zS/dasr", "YWb/mΩ", "°", "m′", "′′", "mmin", "dd/hh", "ha", "aau", "L/l", "TT/t/daDa", "eV.V-1",
-                 "Np/nN", "B.Bq-2", "Pa.lm-1", "aau/aa/A", "S.mW.T-1", "Np.mm"]
     # test_list = ["cm", "m.s", "m/s", "/g", "K2", "s-1", "m/s/T", "N/Wb/W", "Gy2.lm.lx-1"]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2" ]
     # test_list = ["m.s-1", "m/s", "N.V-2", "N/V2", "A/N/W", "A.N-1.W-1"]
@@ -790,7 +796,7 @@ def main():
         # TODO/WORKING
         definition_en = canonical_en_definition(numerator_list=numerator_list, denominator_list=denominator_list,
                                                 unit_def_dict=SI_unit_def_en_dict, prefix_numbers_dict=prefix_numbers_dict, SI_unit_label_en_dict=SI_unit_label_en_dict, label_lan='label_en')
-        #print(definition_en)
+        print(definition_en)
 
         # Generate canonical SI code e.g. `Pa s`
         # First pass complete, Later can fix superscript issue with fstrings TODO
