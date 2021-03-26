@@ -440,7 +440,7 @@ def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, pre
             for n in numerator_list:
                 si_label = get_value(key=n['unit'], dict=SI_unit_label_en_dict)
                 prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
-                definition = f'A unit which is equal to {prefix_num} {si_label}.'
+                definition = f'A unit which is equal to 10{prefix_num} {si_label}.'
 
     # something like: 'An SI derived unit which is equal to ...'
 
