@@ -8,7 +8,7 @@ Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-
 Run:
 
 Test
-./SI_parser.py -i input/SI/test5.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+./SI_parser.py -i input/SI/special_named_si_charcters.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
 ./SI_parser.py -i input/SI/prelim_list.csv -o working_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
@@ -29,6 +29,7 @@ prefix_dict_list = [
     {'prefix': 'rdfs:', 'namespace': 'http://www.w3.org/2000/01/rdf-schema#'},
     {'prefix': 'xsd:', 'namespace': 'http://www.w3.org/2001/XMLSchema#'},
     {'prefix': 'owl:', 'namespace': 'http://www.w3.org/2002/07/owl#'},
+    {'prefix': 'IAO:', 'namespace': 'http://purl.obolibrary.org/obo/IAO_'},
     {'prefix': 'unit:', 'namespace': 'http://purl.obolibrary.org/obo/unit_'},
     {'prefix': 'UO:', 'namespace': 'http://purl.obolibrary.org/obo/UO_'},
     {'prefix': 'OM:', 'namespace': 'http://www.ontology-of-units-of-measure.org/resource/om-2/'},
@@ -244,7 +245,7 @@ term: term OPERATOR component
 start: "/" term | term
 OPERATOR: /\.|\//
 PREFIX: "Y" | "Z" | "E" | "P"| "T" | "G" | "M" | "k" | "h" | "da" | "d" | "c" | "m" | "u" | "n" | "p" | "f" | "a" | "z" | "y"
-METRIC: "A"| "a" | "Bq" | "B" | "C" |  "cd" |  "Da" | "eV" | "F" | "Gy" | "g" | "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" |  "m" | "Np" | "N" | "Ω" | "Pa" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" 
+METRIC: "A"| "a" | "Bq" | "B" | "cd" | "C" |  "Da" | "eV" | "F" | "Gy" | "g" | "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "l" | "L" | "mol" |  "m" | "Np" | "N" | "Ω" | "Pa" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "V" | "Wb" | "W" | "′′" 
 NON_PRE_METRIC: "au" | "°C" | "°" | "d" | "h" | "min" | "′"
 %ignore " "           // Disregard spaces in text
 ''')
@@ -429,13 +430,20 @@ def canonical_nc_label(numerator_list, denominator_list, label_lan):
 # --------------------------------------------------
 def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, prefix_numbers_dict, SI_unit_label_en_dict, label_lan):
     definition = None
+
+    #print(numerator_list)
+
     # Case 1 no denominators, and only a SI base unit with no exponent
     if not denominator_list and len(numerator_list) == 1 and numerator_list[0]['exponent'] == 1:
         # Without prefix:
         if numerator_list[0]['prefix'] == '':
             for n in numerator_list:
-                definition = get_value(key=n['si_code'], dict=unit_def_dict)
-        # With prefix
+                definition = get_value(key=n['unit'], dict=unit_def_dict)
+        # special case for kg
+        elif numerator_list[0]['prefix'] == 'k' and numerator_list[0]['unit'] == 'g':
+            kilogram_def_en = 'An SI base unit which 1) is the SI unit of mass and 2) is defined by taking the fixed numerical value of the Planck constant, h, to be 6.626 070 15 × 10⁻³⁴ when expressed in the unit joule second, which is equal to kilogram square metre per second, where the metre and the second are defined in terms of c and ∆νCs.'
+            definition = kilogram_def_en
+        # Regular With prefix case
         elif numerator_list[0]['prefix'] != '':
             for n in numerator_list:
                 si_label = get_value(key=n['unit'], dict=SI_unit_label_en_dict)
@@ -519,7 +527,7 @@ def temp_ucum_map(ucum_list, ontology_mapping_list):
 
 
 # --------------------------------------------------
-def format_si_ttl(iri, label, si_code, ucum_code, mapping_list):
+def format_si_ttl(iri, label, si_code, ucum_code, definition_en, mapping_list):
     qudt_regex = r"(http://qudt.org/vocab/unit/)(.*)"
     om_regex = r"(http://www.ontology-of-units-of-measure.org/resource/om-2/)(.*)"
     uo_regex = r"(http://purl.obolibrary.org/obo/UO_)(.*)"
@@ -561,6 +569,9 @@ def format_si_ttl(iri, label, si_code, ucum_code, mapping_list):
 
     if label:
         return_list.append('  {}label "{}"@en'.format('rdfs:', label))
+
+    if definition_en:
+        return_list.append('  {}0000115 "{}"@en'.format('IAO:', definition_en))
 
     if si_code:
         return_list.append('  {}SI_code "{}"'.format('unit:', si_code))
@@ -737,6 +748,11 @@ def main():
     for p in prefix_dict_list:
         print('@prefix {} <{}> .'.format(p['prefix'], p['namespace']), file=f)
     print('', file=f)
+    print('IAO:0000115 a rdf:Property ;', file=f)
+    print('	rdfs:label "definition" .', file=f)
+    print('', file=f)
+
+
 
     for u in valid_SI_input_list:
         tree = si_grammar.parse(u)
@@ -796,7 +812,7 @@ def main():
         # TODO/WORKING
         definition_en = canonical_en_definition(numerator_list=numerator_list, denominator_list=denominator_list,
                                                 unit_def_dict=SI_unit_def_en_dict, prefix_numbers_dict=prefix_numbers_dict, SI_unit_label_en_dict=SI_unit_label_en_dict, label_lan='label_en')
-        print(definition_en)
+        #print(definition_en)
 
         # Generate canonical SI code e.g. `Pa s`
         # First pass complete, Later can fix superscript issue with fstrings TODO
@@ -813,7 +829,7 @@ def main():
         #print(mapping_list)
 
         # Format ttl for SI parser results
-        print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code, ucum_code=ucum_code, mapping_list=mapping_list), file=f)
+        print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code, ucum_code=ucum_code, definition_en=definition_en, mapping_list=mapping_list), file=f)
 
 
         # --------------------------------------------------
