@@ -9,6 +9,7 @@ Run:
 
 Test
 ./SI_parser.py -i input/SI/special_named_si_charcters.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+./SI_parser.py -i input/SI/test5.csv -o test_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
 ./SI_parser.py -i input/SI/prelim_list.csv -o working_out.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
@@ -770,11 +771,11 @@ def main():
             # Create the NCname code from prefix and unit
             gen_symbol_code(result=r, mapping_dict=SI_NC_units_dict, code_str='nc_code' )
             # create the SI code from prefix and unit
-            gen_symbol_code(result=r, mapping_dict=SI_NC_units_dict, code_str='si_code')
+            gen_symbol_code(result=r, mapping_dict=SI_SI_can_units_dict, code_str='si_code')
             # create the UCUM codes from prefix and unit
             gen_symbol_code(result=r, mapping_dict=SI_NC_units_dict, code_str='ucum_code')
 
-        #print(u, new_dict_list)
+        # print(u, new_dict_list)
 
         # Function to generate list of UCUM codes from results dict list
         # Permute Possible UCUM strings
