@@ -360,7 +360,7 @@ def gen_si_ucum_list(dict_list):
 
 
 # --------------------------------------------------
-def gen_label_parts(result, SI_unit_label_dict, prefix_dict, exponents_dict,label_lan):
+def gen_label_parts(result, SI_unit_label_dict, prefix_dict, exponents_dict, label_lan):
     """
     Create labels from units and prefixes
     TODO add special case for unit = are to print hectare instead of hectoare etc
@@ -428,8 +428,18 @@ def canonical_nc_label(numerator_list, denominator_list, label_lan):
     return ' '.join(return_lst)
 
 
+
 # --------------------------------------------------
-def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, prefix_numbers_dict, SI_unit_label_en_dict, label_lan):
+def retrieve_exponent(in_arg, exponents_en_dict):
+    #definition = None
+    power = str(in_arg['exponent'])
+    power = power.replace('-', '')
+    power = get_value(power, exponents_en_dict)
+    return power
+
+
+# --------------------------------------------------
+def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, prefix_numbers_dict, SI_unit_label_en_dict, exponents_en_dict, label_lan):
     definition = None
 
     #print(numerator_list)
@@ -450,6 +460,19 @@ def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, pre
                 si_label = get_value(key=n['unit'], dict=SI_unit_label_en_dict)
                 prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
                 definition = f'A unit which is equal to 10{prefix_num} {si_label}.'
+    # Case 1 no denominators, and only a SI base unit with an exponent
+    elif not denominator_list:
+        for n in numerator_list:
+            print(n)
+
+            unit = get_value(n['unit'], SI_unit_label_en_dict)
+            power = retrieve_exponent(n,exponents_en_dict)
+            print(unit,power)
+
+            si_label = get_value(key=n['unit'], dict=SI_unit_label_en_dict)
+            prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
+            definition = f'A unit which is equal to a {si_label}.'
+            #print(definition)
 
     # something like: 'An SI derived unit which is equal to ...'
 
@@ -812,13 +835,13 @@ def main():
         # SI_unit_def_en_dict
         # TODO/WORKING
         definition_en = canonical_en_definition(numerator_list=numerator_list, denominator_list=denominator_list,
-                                                unit_def_dict=SI_unit_def_en_dict, prefix_numbers_dict=prefix_numbers_dict, SI_unit_label_en_dict=SI_unit_label_en_dict, label_lan='label_en')
+                                                unit_def_dict=SI_unit_def_en_dict, prefix_numbers_dict=prefix_numbers_dict, SI_unit_label_en_dict=SI_unit_label_en_dict, exponents_en_dict=exponents_en_dict, label_lan='label_en')
         #print(definition_en)
 
         # Generate canonical SI code e.g. `Pa s`
         # First pass complete, Later can fix superscript issue with fstrings TODO
         # print(u, '->', canonical_si_code(numerator_list=numerator_list,denominator_list=denominator_list))
-        si_code = canonical_si_code(numerator_list=numerator_list,denominator_list=denominator_list)
+        si_code = canonical_si_code(numerator_list=numerator_list, denominator_list=denominator_list)
 
         # Generate canonical UCUM code
         ucum_code = canonical_ucum_code(numerator_list=numerator_list, denominator_list=denominator_list)
