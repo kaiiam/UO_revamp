@@ -440,9 +440,6 @@ def retrieve_exponent(in_arg, exponents_en_dict):
 def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, prefix_numbers_dict, SI_unit_label_en_dict, exponents_en_dict, label_lan):
     definition = None
     return_lst = []
-
-    #print(numerator_list)
-
     # Case 1 no denominators, and only a SI base unit with no exponent
     if not denominator_list and len(numerator_list) == 1 and numerator_list[0]['exponent'] == 1:
         # Without prefix:
@@ -459,7 +456,7 @@ def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, pre
                 si_label = get_value(key=n['unit'], dict=SI_unit_label_en_dict)
                 prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
                 definition = f'A unit which is equal to 10{prefix_num} {si_label}.'
-    # Case 1 no denominators
+    # Case 2 no denominators
     elif not denominator_list:
         for n in numerator_list:
             unit = get_value(n['unit'], SI_unit_label_en_dict)
@@ -473,12 +470,58 @@ def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, pre
                 return_lst.append(f'{prefix_val} {unit}')
             else:
                 return_lst.append(f'{prefix_val} {power} {unit}')
-
         def_start = 'A unit which is equal to '
         definition_mid = ' by '.join(return_lst)
         definition = def_start + definition_mid + '.'
-
-
+    # Case 3 no numerators
+    elif not numerator_list:
+        for d in denominator_list:
+            unit = get_value(d['unit'], SI_unit_label_en_dict)
+            power = retrieve_exponent(d, exponents_en_dict)
+            if get_value(key=d['prefix'], dict=prefix_numbers_dict) is not None:
+                prefix_num = get_value(key=d['prefix'], dict=prefix_numbers_dict)
+                prefix_val = f'10{prefix_num}'
+            else:
+                prefix_val = '1'
+            if power is None:
+                return_lst.append(f'{prefix_val} {unit}')
+            else:
+                return_lst.append(f'{prefix_val} {power} {unit}')
+        def_start = 'A unit which is equal to the reciprocal of '
+        definition_mid = ' by '.join(return_lst)
+        definition = def_start + definition_mid + '.'
+    # Case 4 mix of numerators and denominators
+    else:
+        num_list = []
+        denom_list = []
+        for n in numerator_list:
+            unit = get_value(n['unit'], SI_unit_label_en_dict)
+            power = retrieve_exponent(n, exponents_en_dict)
+            if get_value(key=n['prefix'], dict=prefix_numbers_dict) is not None:
+                prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
+                prefix_val = f'10{prefix_num}'
+            else:
+                prefix_val = '1'
+            if power is None:
+                num_list.append(f'{prefix_val} {unit}')
+            else:
+                num_list.append(f'{prefix_val} {power} {unit}')
+        for d in denominator_list:
+            unit = get_value(d['unit'], SI_unit_label_en_dict)
+            power = retrieve_exponent(d, exponents_en_dict)
+            if get_value(key=d['prefix'], dict=prefix_numbers_dict) is not None:
+                prefix_num = get_value(key=d['prefix'], dict=prefix_numbers_dict)
+                prefix_val = f'10{prefix_num}'
+            else:
+                prefix_val = '1'
+            if power is None:
+                denom_list.append(f'{prefix_val} {unit}')
+            else:
+                denom_list.append(f'{prefix_val} {power} {unit}')
+        def_start = 'A unit which is equal to '
+        def_num = ' by '.join(num_list)
+        def_denom = ' by '.join(denom_list)
+        definition = def_start + def_num + ' per ' + def_denom + '.'
 
     return definition
 
