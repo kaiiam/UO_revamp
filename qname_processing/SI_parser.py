@@ -459,26 +459,26 @@ def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, pre
                 si_label = get_value(key=n['unit'], dict=SI_unit_label_en_dict)
                 prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
                 definition = f'A unit which is equal to 10{prefix_num} {si_label}.'
-    # Case 1 no denominators, and only a SI base unit with an exponent
+    # Case 1 no denominators
     elif not denominator_list:
-        return_lst.append('A unit which is equal to a ')
         for n in numerator_list:
-            print(n)
-
             unit = get_value(n['unit'], SI_unit_label_en_dict)
-            power = retrieve_exponent(n,exponents_en_dict)
-            print(unit, power)
+            power = retrieve_exponent(n, exponents_en_dict)
+            if get_value(key=n['prefix'], dict=prefix_numbers_dict) is not None:
+                prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
+                prefix_val = f'10{prefix_num}'
+            else:
+                prefix_val = '1'
+            if power is None:
+                return_lst.append(f'{prefix_val} {unit}')
+            else:
+                return_lst.append(f'{prefix_val} {power} {unit}')
 
-            prefix_num = get_value(key=n['prefix'], dict=prefix_numbers_dict)
-            return_lst.append(f'{power} {unit} to the x')
+        def_start = 'A unit which is equal to '
+        definition_mid = ' by '.join(return_lst)
+        definition = def_start + definition_mid + '.'
 
-            #definition = f'A unit which is equal to a {unit}.'
-        definition = ' '.join(return_lst)
-        print(definition)
 
-    # something like: 'An SI derived unit which is equal to ...'
-
-    #print(numerator_list)
 
     return definition
 
