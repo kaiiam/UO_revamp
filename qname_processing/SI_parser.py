@@ -308,7 +308,10 @@ def pre_process_unit_list(result, original, dict_list):
     # no operator or . case
     else:
         # Get or create exponent
-        if "exponent" in result:
+        if "exponent" in result and original[0] == '/':
+            exponent = int('-' + str(result['exponent']))
+            #print('got here', exponent)
+        elif "exponent" in result:
             exponent = result['exponent']
         elif original[0] == '/':
             exponent = -1
