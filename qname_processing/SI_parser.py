@@ -457,7 +457,6 @@ def canonical_en_definition_helper(units_list, unit_label_en_dict, exponents_en_
 # --------------------------------------------------
 def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, prefix_numbers_dict, SI_unit_label_en_dict, exponents_en_dict, label_lan):
     definition = None
-    return_lst = []
     # Case 1 no denominators, and only a SI base unit with no exponent
     if not denominator_list and len(numerator_list) == 1 and numerator_list[0]['exponent'] == 1:
         # Without prefix:
@@ -511,6 +510,7 @@ def canonical_en_definition(numerator_list, denominator_list, unit_def_dict, pre
 # --------------------------------------------------
 def canonical_si_code(numerator_list, denominator_list):
     # TODO use a dict of exponents mapping to f string superscript numbers to write out exponents as superscript
+    # OR use the prefix_numbers_dict
     # str = 'cm'
     # print(f'{str}\N{SUPERSCRIPT MINUS}\N{SUPERSCRIPT SEVEN}')
     return_lst = []
