@@ -1,0 +1,17 @@
+﻿SI_symbol,NC_symbol,label_en,SI_category,Notes
+Ci,Ci,curie,Non SI but mentioned,
+ly,ly,lightyear,"Non-SI not mentioned in SI brochure, but maybe accepted (according to wiki)",
+μ,,micron,Mentioned,"Mentioned on p162. Same as ""um""."
+erg,erg,erg,Mentioned,Mentioned on p162. 
+P,P,poise,Mentioned,Mentioned on p162. 
+st,st,stere,Mentioned,Mentioned on p162. 
+dyn,dyn,dyne,Mentioned,Mentioned on p162. 
+cal,cal,calorie,Mentioned,Mentioned on p162. 
+bar,bar,bar,Mentioned,Mentioned on p162. 
+sb,sb,stilb,Mentioned,Mentioned on p162. 
+atm,atm,standard atmosphere,Mentioned,Mentioned on p163. 
+var,,var,Mentioned,Mentioned on p140. The var is identical to the volt ampere.
+%,PCT,percent,Mentioned,Mentioned on p151. 
+ppm,ppm,parts per million,Mentioned,Mentioned on p151. 
+ppb,ppb,parts per billion,Mentioned,"Mentioned on p151. Notes the symbol ""should be avoided""."
+ppt,ppt,parts per trillion,Mentioned,"Mentioned on p151. Notes the symbol ""should be avoided""."
