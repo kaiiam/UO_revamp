@@ -8,6 +8,7 @@
 @prefix OM: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix QUDT: <http://qudt.org/vocab/unit/> .
 @prefix OBOE: <http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#> .
+@prefix NERC_P06: <http://vocab.nerc.ac.uk/collection/P06/current/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 IAO:0000115 a rdf:Property ;
@@ -21,7 +22,8 @@ unit:PAM
   unit:ucum_code "'" ;
   skos:exactMatch QUDT:MIN_Angle ;
   skos:exactMatch QUDT:ARCMIN ;
-  skos:exactMatch OM:minute-Angle .
+  skos:exactMatch OM:minute-Angle ;
+  skos:exactMatch NERC_P06:UAMN .
 
 unit:PAS
   a owl:NamedIndividual ;
@@ -41,7 +43,8 @@ unit:A
   skos:exactMatch QUDT:A ;
   skos:exactMatch OM:ampere ;
   skos:exactMatch UO:0000011 ;
-  skos:exactMatch OBOE:Ampere .
+  skos:exactMatch OBOE:Ampere ;
+  skos:exactMatch NERC_P06:AMPB .
 
 unit:A.Cel-1
   a owl:NamedIndividual ;
@@ -524,7 +527,8 @@ unit:Bq
   skos:exactMatch QUDT:BQ ;
   skos:exactMatch OM:becquerel ;
   skos:exactMatch UO:0000132 ;
-  skos:exactMatch OBOE:Becquerel .
+  skos:exactMatch OBOE:Becquerel ;
+  skos:exactMatch NERC_P06:BQ11 .
 
 unit:Bq.L-1
   a owl:NamedIndividual ;
@@ -532,7 +536,8 @@ unit:Bq.L-1
   IAO:0000115 "A unit which is equal to 1 becquerel per 1 litre."@en ;
   unit:SI_code "Bq L-1" ;
   unit:ucum_code "Bq.L-1" ;
-  skos:exactMatch QUDT:BQ-PER-L .
+  skos:exactMatch QUDT:BQ-PER-L ;
+  skos:exactMatch NERC_P06:UBQL .
 
 unit:Bq.m-2
   a owl:NamedIndividual ;
@@ -540,7 +545,8 @@ unit:Bq.m-2
   IAO:0000115 "A unit which is equal to 1 becquerel per 1 square metre."@en ;
   unit:SI_code "Bq m-2" ;
   unit:ucum_code "Bq.m-2" ;
-  skos:exactMatch QUDT:BQ-PER-M2 .
+  skos:exactMatch QUDT:BQ-PER-M2 ;
+  skos:exactMatch NERC_P06:BQSM .
 
 unit:Bq.m-3
   a owl:NamedIndividual ;
@@ -548,7 +554,8 @@ unit:Bq.m-3
   IAO:0000115 "A unit which is equal to 1 becquerel per 1 cubic metre."@en ;
   unit:SI_code "Bq m-3" ;
   unit:ucum_code "Bq.m-3" ;
-  skos:exactMatch QUDT:BQ-PER-M3 .
+  skos:exactMatch QUDT:BQ-PER-M3 ;
+  skos:exactMatch NERC_P06:BQM3 .
 
 unit:Bq.s.m-3
   a owl:NamedIndividual ;
@@ -556,7 +563,8 @@ unit:Bq.s.m-3
   IAO:0000115 "A unit which is equal to 1 becquerel by 1 second per 1 cubic metre."@en ;
   unit:SI_code "Bq s m-3" ;
   unit:ucum_code "Bq.s.m-3" ;
-  skos:exactMatch QUDT:BQ-SEC-PER-M3 .
+  skos:exactMatch QUDT:BQ-SEC-PER-M3 ;
+  skos:exactMatch NERC_P06:BSM3 .
 
 unit:Bq.kg-1
   a owl:NamedIndividual ;
@@ -564,7 +572,8 @@ unit:Bq.kg-1
   IAO:0000115 "A unit which is equal to 1 becquerel per 10³ gram."@en ;
   unit:SI_code "Bq kg-1" ;
   unit:ucum_code "Bq.kg-1" ;
-  skos:exactMatch QUDT:BQ-PER-KiloGM .
+  skos:exactMatch QUDT:BQ-PER-KiloGM ;
+  skos:exactMatch NERC_P06:UBQK .
 
 unit:C
   a owl:NamedIndividual ;
@@ -821,7 +830,8 @@ unit:Cel
   skos:exactMatch QUDT:DEG_C ;
   skos:exactMatch OM:degreeCelsius ;
   skos:exactMatch UO:0000027 ;
-  skos:exactMatch OBOE:Celsius .
+  skos:exactMatch OBOE:Celsius ;
+  skos:exactMatch NERC_P06:UPAA .
 
 unit:Cel-1
   a owl:NamedIndividual ;
@@ -870,7 +880,8 @@ unit:Cel.kg.m-2
   IAO:0000115 "A unit which is equal to 1 degree Celsius by 10³ gram per 1 square metre."@en ;
   unit:SI_code "°C kg m-2" ;
   unit:ucum_code "Cel.kg.m-2" ;
-  skos:exactMatch QUDT:DEG_C-KiloGM-PER-M2 .
+  skos:exactMatch QUDT:DEG_C-KiloGM-PER-M2 ;
+  skos:exactMatch NERC_P06:DKM2 .
 
 unit:Cel.m-1
   a owl:NamedIndividual ;
@@ -878,7 +889,8 @@ unit:Cel.m-1
   IAO:0000115 "A unit which is equal to 1 degree Celsius per 1 metre."@en ;
   unit:SI_code "°C m-1" ;
   unit:ucum_code "Cel.m-1" ;
-  skos:exactMatch QUDT:DEG_C-PER-M .
+  skos:exactMatch QUDT:DEG_C-PER-M ;
+  skos:exactMatch NERC_P06:UPCC .
 
 unit:Cel.min-1
   a owl:NamedIndividual ;
@@ -1048,7 +1060,8 @@ unit:cm
   skos:exactMatch QUDT:CentiM ;
   skos:exactMatch OM:centimetre ;
   skos:exactMatch UO:0000015 ;
-  skos:exactMatch OBOE:Centimeter .
+  skos:exactMatch OBOE:Centimeter ;
+  skos:exactMatch NERC_P06:ULCM .
 
 unit:cm-1
   a owl:NamedIndividual ;
@@ -1056,7 +1069,8 @@ unit:cm-1
   IAO:0000115 "A unit which is equal to the reciprocal of 10⁻² metre."@en ;
   unit:SI_code "cm-1" ;
   unit:ucum_code "cm-1" ;
-  skos:exactMatch QUDT:PER-CentiM .
+  skos:exactMatch QUDT:PER-CentiM ;
+  skos:exactMatch NERC_P06:UPCM .
 
 unit:cm-2
   a owl:NamedIndividual ;
@@ -1142,7 +1156,8 @@ unit:cm2
   skos:exactMatch QUDT:CentiM2 ;
   skos:exactMatch OM:squareCentimetre ;
   skos:exactMatch UO:0000081 ;
-  skos:exactMatch OBOE:CentimeterSquared .
+  skos:exactMatch OBOE:CentimeterSquared ;
+  skos:exactMatch NERC_P06:SQCM .
 
 unit:cm2.cm-3
   a owl:NamedIndividual ;
@@ -1150,7 +1165,8 @@ unit:cm2.cm-3
   IAO:0000115 "A unit which is equal to 10⁻² square metre per 10⁻² cubic metre."@en ;
   unit:SI_code "cm2 cm-3" ;
   unit:ucum_code "cm2.cm-3" ;
-  skos:exactMatch QUDT:CentiM2-PER-CentiM3 .
+  skos:exactMatch QUDT:CentiM2-PER-CentiM3 ;
+  skos:exactMatch NERC_P06:SQCC .
 
 unit:cm2.min
   a owl:NamedIndividual ;
@@ -1174,7 +1190,8 @@ unit:cm2.s-1
   IAO:0000115 "A unit which is equal to 10⁻² square metre per 1 second."@en ;
   unit:SI_code "cm2 s-1" ;
   unit:ucum_code "cm2.s-1" ;
-  skos:exactMatch QUDT:CentiM2-PER-SEC .
+  skos:exactMatch QUDT:CentiM2-PER-SEC ;
+  skos:exactMatch NERC_P06:UCMS .
 
 unit:cm3
   a owl:NamedIndividual ;
@@ -1185,7 +1202,8 @@ unit:cm3
   skos:exactMatch QUDT:CentiM3 ;
   skos:exactMatch OM:cubicCentimetre ;
   skos:exactMatch UO:0000097 ;
-  skos:exactMatch OBOE:CentimeterCubed .
+  skos:exactMatch OBOE:CentimeterCubed ;
+  skos:exactMatch NERC_P06:VVCC .
 
 unit:cm3.cm-3
   a owl:NamedIndividual ;
@@ -1417,7 +1435,8 @@ unit:d
   skos:exactMatch QUDT:DAY_Sidereal ;
   skos:exactMatch OM:day ;
   skos:exactMatch UO:0000033 ;
-  skos:exactMatch OBOE:Day .
+  skos:exactMatch OBOE:Day ;
+  skos:exactMatch NERC_P06:UTAA .
 
 unit:d-1
   a owl:NamedIndividual ;
@@ -1426,7 +1445,8 @@ unit:d-1
   unit:SI_code "d-1" ;
   unit:ucum_code "d-1" ;
   skos:exactMatch QUDT:PER-DAY ;
-  skos:exactMatch OM:reciprocalDay .
+  skos:exactMatch OM:reciprocalDay ;
+  skos:exactMatch NERC_P06:UPDY .
 
 unit:d.Cel-1
   a owl:NamedIndividual ;
@@ -1799,7 +1819,8 @@ unit:dB
   unit:ucum_code "dB" ;
   skos:exactMatch QUDT:DeciB ;
   skos:exactMatch OM:decibel ;
-  skos:exactMatch UO:0000259 .
+  skos:exactMatch UO:0000259 ;
+  skos:exactMatch NERC_P06:UDBL .
 
 unit:dBq
   a owl:NamedIndividual ;
@@ -1835,7 +1856,8 @@ unit:deg
   skos:exactMatch QUDT:DEG ;
   skos:exactMatch OM:degree ;
   skos:exactMatch UO:0000185 ;
-  skos:exactMatch OBOE:Degree .
+  skos:exactMatch OBOE:Degree ;
+  skos:exactMatch NERC_P06:UAAA .
 
 unit:deg.m-1
   a owl:NamedIndividual ;
@@ -1843,7 +1865,8 @@ unit:deg.m-1
   IAO:0000115 "A unit which is equal to 1 plane angle degree per 1 metre."@en ;
   unit:SI_code "° m-1" ;
   unit:ucum_code "deg.m-1" ;
-  skos:exactMatch QUDT:DEG-PER-M .
+  skos:exactMatch QUDT:DEG-PER-M ;
+  skos:exactMatch NERC_P06:DGPM .
 
 unit:deg.min-1
   a owl:NamedIndividual ;
@@ -1875,7 +1898,8 @@ unit:deg.s-1
   IAO:0000115 "A unit which is equal to 1 plane angle degree per 1 second."@en ;
   unit:SI_code "° s-1" ;
   unit:ucum_code "deg.s-1" ;
-  skos:exactMatch QUDT:DEG-PER-SEC .
+  skos:exactMatch QUDT:DEG-PER-SEC ;
+  skos:exactMatch NERC_P06:DGPS .
 
 unit:deg2
   a owl:NamedIndividual ;
@@ -2009,7 +2033,8 @@ unit:dm
   unit:ucum_code "dm" ;
   skos:exactMatch QUDT:DeciM ;
   skos:exactMatch OM:decimetre ;
-  skos:exactMatch OBOE:Decimeter .
+  skos:exactMatch OBOE:Decimeter ;
+  skos:exactMatch NERC_P06:ULDM .
 
 unit:dm.s-1
   a owl:NamedIndividual ;
@@ -2705,7 +2730,8 @@ unit:fg.kg-1
   IAO:0000115 "A unit which is equal to 10⁻¹⁵ gram per 10³ gram."@en ;
   unit:SI_code "fg kg-1" ;
   unit:ucum_code "fg.kg-1" ;
-  skos:exactMatch QUDT:FemtoGM-PER-KiloGM .
+  skos:exactMatch QUDT:FemtoGM-PER-KiloGM ;
+  skos:exactMatch NERC_P06:FGKG .
 
 unit:fg.L-1
   a owl:NamedIndividual ;
@@ -2714,7 +2740,8 @@ unit:fg.L-1
   unit:SI_code "fg L-1" ;
   unit:ucum_code "fg.L-1" ;
   skos:exactMatch QUDT:FemtoGM-PER-L ;
-  skos:exactMatch OM:femtogramPerLitre .
+  skos:exactMatch OM:femtogramPerLitre ;
+  skos:exactMatch NERC_P06:FGPL .
 
 unit:fGy
   a owl:NamedIndividual ;
@@ -2847,7 +2874,8 @@ unit:fmol.kg-1
   IAO:0000115 "A unit which is equal to 10⁻¹⁵ mole per 10³ gram."@en ;
   unit:SI_code "fmol kg-1" ;
   unit:ucum_code "fmol.kg-1" ;
-  skos:exactMatch QUDT:FemtoMOL-PER-KiloGM .
+  skos:exactMatch QUDT:FemtoMOL-PER-KiloGM ;
+  skos:exactMatch NERC_P06:FMKG .
 
 unit:fmol.L-1
   a owl:NamedIndividual ;
@@ -2858,7 +2886,8 @@ unit:fmol.L-1
   skos:exactMatch QUDT:FemtoMOL-PER-L ;
   skos:exactMatch OM:femtomolar ;
   skos:exactMatch OM:femtomolePerLitre ;
-  skos:exactMatch UO:0000073 .
+  skos:exactMatch UO:0000073 ;
+  skos:exactMatch NERC_P06:UPFM .
 
 unit:fmol.m-1
   a owl:NamedIndividual ;
@@ -2980,7 +3009,8 @@ unit:g
   skos:exactMatch QUDT:GM ;
   skos:exactMatch OM:gram ;
   skos:exactMatch UO:0000021 ;
-  skos:exactMatch OBOE:Gram .
+  skos:exactMatch OBOE:Gram ;
+  skos:exactMatch NERC_P06:UGRM .
 
 unit:g-1
   a owl:NamedIndividual ;
@@ -2989,7 +3019,8 @@ unit:g-1
   unit:SI_code "g-1" ;
   unit:ucum_code "g-1" ;
   skos:exactMatch QUDT:PER-GM ;
-  skos:exactMatch OM:reciprocalGram .
+  skos:exactMatch OM:reciprocalGram ;
+  skos:exactMatch NERC_P06:PG01 .
 
 unit:g.aL-1
   a owl:NamedIndividual ;
@@ -3014,7 +3045,8 @@ unit:g.cm-2
   unit:SI_code "g cm-2" ;
   unit:ucum_code "g.cm-2" ;
   skos:exactMatch QUDT:GM-PER-CentiM2 ;
-  skos:exactMatch OM:gramPerSquareMetreCentimetre .
+  skos:exactMatch OM:gramPerSquareMetreCentimetre ;
+  skos:exactMatch NERC_P06:GCM2 .
 
 unit:g.cm-3
   a owl:NamedIndividual ;
@@ -3024,7 +3056,8 @@ unit:g.cm-3
   unit:ucum_code "g.cm-3" ;
   skos:exactMatch QUDT:GM-PER-CentiM3 ;
   skos:exactMatch OM:gramPerCubicCentimetre ;
-  skos:exactMatch UO:0000084 .
+  skos:exactMatch UO:0000084 ;
+  skos:exactMatch NERC_P06:UGCC .
 
 unit:g.d-1
   a owl:NamedIndividual ;
@@ -3085,7 +3118,8 @@ unit:g.g-1
   unit:ucum_code "g.g-1" ;
   skos:exactMatch QUDT:GM-PER-GM ;
   skos:exactMatch OM:gramPerGram ;
-  skos:exactMatch OBOE:GramPerGram .
+  skos:exactMatch OBOE:GramPerGram ;
+  skos:exactMatch NERC_P06:GPRG .
 
 unit:g.GL-1
   a owl:NamedIndividual ;
@@ -3134,7 +3168,8 @@ unit:g.kg-1
   unit:SI_code "g kg-1" ;
   unit:ucum_code "g.kg-1" ;
   skos:exactMatch QUDT:GM-PER-KiloGM ;
-  skos:exactMatch OM:gramPerKilogram .
+  skos:exactMatch OM:gramPerKilogram ;
+  skos:exactMatch NERC_P06:UGKG .
 
 unit:g.kL-1
   a owl:NamedIndividual ;
@@ -3172,7 +3207,8 @@ unit:g.m-2
   unit:ucum_code "g.m-2" ;
   skos:exactMatch QUDT:GM-PER-M2 ;
   skos:exactMatch OM:gramPerSquareMetre ;
-  skos:exactMatch UO:0010049 .
+  skos:exactMatch UO:0010049 ;
+  skos:exactMatch NERC_P06:UGMS .
 
 unit:g.d-1.m-2
   a owl:NamedIndividual ;
@@ -3198,7 +3234,8 @@ unit:g.m-3
   unit:ucum_code "g.m-3" ;
   skos:exactMatch QUDT:GM-PER-M3 ;
   skos:exactMatch OM:gramPerCubicmetre ;
-  skos:exactMatch OBOE:GramPerMeterCubed .
+  skos:exactMatch OBOE:GramPerMeterCubed ;
+  skos:exactMatch NERC_P06:UGMC .
 
 unit:g.min-1
   a owl:NamedIndividual ;
@@ -3322,7 +3359,8 @@ unit:g.g-1
   unit:ucum_code "g.g-1" ;
   skos:exactMatch QUDT:GM-PER-GM ;
   skos:exactMatch OM:gramPerGram ;
-  skos:exactMatch OBOE:GramPerGram .
+  skos:exactMatch OBOE:GramPerGram ;
+  skos:exactMatch NERC_P06:GPRG .
 
 unit:g.kg-1
   a owl:NamedIndividual ;
@@ -3331,7 +3369,8 @@ unit:g.kg-1
   unit:SI_code "g kg-1" ;
   unit:ucum_code "g.kg-1" ;
   skos:exactMatch QUDT:GM-PER-KiloGM ;
-  skos:exactMatch OM:gramPerKilogram .
+  skos:exactMatch OM:gramPerKilogram ;
+  skos:exactMatch NERC_P06:UGKG .
 
 unit:g.m-3
   a owl:NamedIndividual ;
@@ -3341,7 +3380,8 @@ unit:g.m-3
   unit:ucum_code "g.m-3" ;
   skos:exactMatch QUDT:GM-PER-M3 ;
   skos:exactMatch OM:gramPerCubicmetre ;
-  skos:exactMatch OBOE:GramPerMeterCubed .
+  skos:exactMatch OBOE:GramPerMeterCubed ;
+  skos:exactMatch NERC_P06:UGMC .
 
 unit:GA
   a owl:NamedIndividual ;
@@ -3794,7 +3834,8 @@ unit:har
   skos:exactMatch QUDT:HA ;
   skos:exactMatch OM:hectare ;
   skos:exactMatch UO:0010010 ;
-  skos:exactMatch OBOE:Hectare .
+  skos:exactMatch OBOE:Hectare ;
+  skos:exactMatch NERC_P06:HCTR .
 
 unit:d.har
   a owl:NamedIndividual ;
@@ -4041,7 +4082,8 @@ unit:hPa
   unit:ucum_code "hPa" ;
   skos:exactMatch QUDT:HectoPA ;
   skos:exactMatch OM:hectopascal ;
-  skos:exactMatch OBOE:Hectopascal .
+  skos:exactMatch OBOE:Hectopascal ;
+  skos:exactMatch NERC_P06:HPAX .
 
 unit:hPa.h-1
   a owl:NamedIndividual ;
@@ -4049,7 +4091,8 @@ unit:hPa.h-1
   IAO:0000115 "A unit which is equal to 10² pascal per 1 hour."@en ;
   unit:SI_code "hPa h-1" ;
   unit:ucum_code "hPa.h-1" ;
-  skos:exactMatch QUDT:HectoPA-PER-HR .
+  skos:exactMatch QUDT:HectoPA-PER-HR ;
+  skos:exactMatch NERC_P06:HPAH .
 
 unit:hPa.K-1
   a owl:NamedIndividual ;
@@ -4155,7 +4198,8 @@ unit:Hz
   skos:exactMatch QUDT:HZ ;
   skos:exactMatch OM:hertz ;
   skos:exactMatch UO:0000106 ;
-  skos:exactMatch OBOE:Hertz .
+  skos:exactMatch OBOE:Hertz ;
+  skos:exactMatch NERC_P06:UTHZ .
 
 unit:Hz.K-1
   a owl:NamedIndividual ;
@@ -4197,7 +4241,8 @@ unit:J
   unit:ucum_code "J" ;
   skos:exactMatch QUDT:J ;
   skos:exactMatch OM:joule ;
-  skos:exactMatch UO:0000112 .
+  skos:exactMatch UO:0000112 ;
+  skos:exactMatch NERC_P06:JOUL .
 
 unit:J-1.m-3
   a owl:NamedIndividual ;
@@ -4221,7 +4266,8 @@ unit:J.cm-2.d-1
   IAO:0000115 "A unit which is equal to 1 joule per 10⁻² square metre by 1 day."@en ;
   unit:SI_code "J cm-2 d-1" ;
   unit:ucum_code "J.cm-2.d-1" ;
-  skos:exactMatch QUDT:J-PER-CentiM2-DAY .
+  skos:exactMatch QUDT:J-PER-CentiM2-DAY ;
+  skos:exactMatch NERC_P06:JCMH .
 
 unit:J.g-1
   a owl:NamedIndividual ;
@@ -4255,7 +4301,8 @@ unit:J.K-1.kg-1
   unit:SI_code "J K-1 kg-1" ;
   unit:ucum_code "J.K-1.kg-1" ;
   skos:exactMatch QUDT:J-PER-KiloGM-K ;
-  skos:exactMatch OM:joulePerKelvinKilogram .
+  skos:exactMatch OM:joulePerKelvinKilogram ;
+  skos:exactMatch NERC_P06:JKGK .
 
 unit:J.K-1.mol-1
   a owl:NamedIndividual ;
@@ -4273,7 +4320,8 @@ unit:J.kg-1
   unit:SI_code "J kg-1" ;
   unit:ucum_code "J.kg-1" ;
   skos:exactMatch QUDT:J-PER-KiloGM ;
-  skos:exactMatch OM:joulePerKilogram .
+  skos:exactMatch OM:joulePerKilogram ;
+  skos:exactMatch NERC_P06:JPKG .
 
 unit:J.K-1.kg-1
   a owl:NamedIndividual ;
@@ -4282,7 +4330,8 @@ unit:J.K-1.kg-1
   unit:SI_code "J K-1 kg-1" ;
   unit:ucum_code "J.K-1.kg-1" ;
   skos:exactMatch QUDT:J-PER-KiloGM-K ;
-  skos:exactMatch OM:joulePerKelvinKilogram .
+  skos:exactMatch OM:joulePerKelvinKilogram ;
+  skos:exactMatch NERC_P06:JKGK .
 
 unit:J.K-1.kg-1.Pa-1
   a owl:NamedIndividual ;
@@ -4308,7 +4357,8 @@ unit:J.m-2
   unit:ucum_code "J.m-2" ;
   skos:exactMatch QUDT:J-PER-M2 ;
   skos:exactMatch QUDT:J-M2 ;
-  skos:exactMatch OM:joulePerSquareMetre .
+  skos:exactMatch OM:joulePerSquareMetre ;
+  skos:exactMatch NERC_P06:JMSQ .
 
 unit:J.d-1.m-2
   a owl:NamedIndividual ;
@@ -4445,7 +4495,8 @@ unit:K
   skos:exactMatch QUDT:K ;
   skos:exactMatch OM:kelvin ;
   skos:exactMatch UO:0000012 ;
-  skos:exactMatch OBOE:Kelvin .
+  skos:exactMatch OBOE:Kelvin ;
+  skos:exactMatch NERC_P06:UPKA .
 
 unit:K-1
   a owl:NamedIndividual ;
@@ -4497,7 +4548,8 @@ unit:K.m
   unit:ucum_code "K.m" ;
   skos:exactMatch QUDT:K-M ;
   skos:exactMatch QUDT:M-K ;
-  skos:exactMatch OM:metreKelvin .
+  skos:exactMatch OM:metreKelvin ;
+  skos:exactMatch NERC_P06:KMTX .
 
 unit:K.m-1
   a owl:NamedIndividual ;
@@ -4505,7 +4557,9 @@ unit:K.m-1
   IAO:0000115 "A unit which is equal to 1 kelvin per 1 metre."@en ;
   unit:SI_code "K m-1" ;
   unit:ucum_code "K.m-1" ;
-  skos:exactMatch QUDT:K-PER-M .
+  skos:exactMatch QUDT:K-PER-M ;
+  skos:exactMatch NERC_P06:DKPM ;
+  skos:exactMatch NERC_P06:KPMT .
 
 unit:K.m.s-1
   a owl:NamedIndividual ;
@@ -4513,7 +4567,8 @@ unit:K.m.s-1
   IAO:0000115 "A unit which is equal to 1 kelvin by 1 metre per 1 second."@en ;
   unit:SI_code "K m s-1" ;
   unit:ucum_code "K.m.s-1" ;
-  skos:exactMatch QUDT:K-M-PER-SEC .
+  skos:exactMatch QUDT:K-M-PER-SEC ;
+  skos:exactMatch NERC_P06:KMTS .
 
 unit:K.m.W-1
   a owl:NamedIndividual ;
@@ -4530,7 +4585,8 @@ unit:K.m2.kg-1.s-1
   IAO:0000115 "A unit which is equal to 1 kelvin by 1 square metre per 10³ gram by 1 second."@en ;
   unit:SI_code "K m2 kg-1 s-1" ;
   unit:ucum_code "K.m2.kg-1.s-1" ;
-  skos:exactMatch QUDT:K-M2-PER-KiloGM-SEC .
+  skos:exactMatch QUDT:K-M2-PER-KiloGM-SEC ;
+  skos:exactMatch NERC_P06:KMSS .
 
 unit:K.min-1
   a owl:NamedIndividual ;
@@ -4555,7 +4611,8 @@ unit:K.Pa.s-1
   IAO:0000115 "A unit which is equal to 1 kelvin by 1 pascal per 1 second."@en ;
   unit:SI_code "K Pa s-1" ;
   unit:ucum_code "K.Pa.s-1" ;
-  skos:exactMatch QUDT:K-PA-PER-SEC .
+  skos:exactMatch QUDT:K-PA-PER-SEC ;
+  skos:exactMatch NERC_P06:KPAS .
 
 unit:K.s
   a owl:NamedIndividual ;
@@ -4563,7 +4620,8 @@ unit:K.s
   IAO:0000115 "A unit which is equal to 1 kelvin by 1 second."@en ;
   unit:SI_code "K s" ;
   unit:ucum_code "K.s" ;
-  skos:exactMatch QUDT:K-SEC .
+  skos:exactMatch QUDT:K-SEC ;
+  skos:exactMatch NERC_P06:KSXX .
 
 unit:K.s-1
   a owl:NamedIndividual ;
@@ -4571,7 +4629,8 @@ unit:K.s-1
   IAO:0000115 "A unit which is equal to 1 kelvin per 1 second."@en ;
   unit:SI_code "K s-1" ;
   unit:ucum_code "K.s-1" ;
-  skos:exactMatch QUDT:K-PER-SEC .
+  skos:exactMatch QUDT:K-PER-SEC ;
+  skos:exactMatch NERC_P06:KPRS .
 
 unit:K.T-1
   a owl:NamedIndividual ;
@@ -4603,7 +4662,8 @@ unit:K2
   IAO:0000115 "A unit which is equal to 1 square kelvin."@en ;
   unit:SI_code "K2" ;
   unit:ucum_code "K2" ;
-  skos:exactMatch QUDT:K2 .
+  skos:exactMatch QUDT:K2 ;
+  skos:exactMatch NERC_P06:KLSQ .
 
 unit:K2.s-1
   a owl:NamedIndividual ;
@@ -4611,7 +4671,8 @@ unit:K2.s-1
   IAO:0000115 "A unit which is equal to 1 square kelvin per 1 second."@en ;
   unit:SI_code "K2 s-1" ;
   unit:ucum_code "K2.s-1" ;
-  skos:exactMatch QUDT:DEG_C2-PER-SEC .
+  skos:exactMatch QUDT:DEG_C2-PER-SEC ;
+  skos:exactMatch NERC_P06:UCSS .
 
 unit:kA
   a owl:NamedIndividual ;
@@ -4755,7 +4816,8 @@ unit:kg
   skos:exactMatch QUDT:KiloGM ;
   skos:exactMatch OM:kilogram ;
   skos:exactMatch UO:0000009 ;
-  skos:exactMatch OBOE:Kilogram .
+  skos:exactMatch OBOE:Kilogram ;
+  skos:exactMatch NERC_P06:KGXX .
 
 unit:kg.cm-2
   a owl:NamedIndividual ;
@@ -4812,7 +4874,8 @@ unit:kg.h-1
   IAO:0000115 "A unit which is equal to 10³ gram per 1 hour."@en ;
   unit:SI_code "kg h-1" ;
   unit:ucum_code "kg.h-1" ;
-  skos:exactMatch QUDT:KiloGM-PER-HR .
+  skos:exactMatch QUDT:KiloGM-PER-HR ;
+  skos:exactMatch NERC_P06:KGPH .
 
 unit:kg.har-1
   a owl:NamedIndividual ;
@@ -4856,7 +4919,8 @@ unit:kg.km-2
   IAO:0000115 "A unit which is equal to 10³ gram per 10³ square metre."@en ;
   unit:SI_code "kg km-2" ;
   unit:ucum_code "kg.km-2" ;
-  skos:exactMatch QUDT:KiloGM-PER-KiloM2 .
+  skos:exactMatch QUDT:KiloGM-PER-KiloM2 ;
+  skos:exactMatch NERC_P06:KGAK .
 
 unit:kg.L-1
   a owl:NamedIndividual ;
@@ -4884,7 +4948,8 @@ unit:kg.h-1.m-1
   IAO:0000115 "A unit which is equal to 10³ gram per 1 hour by 1 metre."@en ;
   unit:SI_code "kg h-1 m-1" ;
   unit:ucum_code "kg.h-1.m-1" ;
-  skos:exactMatch QUDT:KiloGM-PER-M-HR .
+  skos:exactMatch QUDT:KiloGM-PER-M-HR ;
+  skos:exactMatch NERC_P06:KGMH .
 
 unit:kg.m-1.s-1
   a owl:NamedIndividual ;
@@ -4892,7 +4957,8 @@ unit:kg.m-1.s-1
   IAO:0000115 "A unit which is equal to 10³ gram per 1 metre by 1 second."@en ;
   unit:SI_code "kg m-1 s-1" ;
   unit:ucum_code "kg.m-1.s-1" ;
-  skos:exactMatch QUDT:KiloGM-PER-M-SEC .
+  skos:exactMatch QUDT:KiloGM-PER-M-SEC ;
+  skos:exactMatch NERC_P06:KMPS .
 
 unit:kg.m-2
   a owl:NamedIndividual ;
@@ -4904,7 +4970,8 @@ unit:kg.m-2
   skos:exactMatch OM:kilogramPerSquareMetre ;
   skos:exactMatch OM:kilogramSquareMetre ;
   skos:exactMatch UO:0000086 ;
-  skos:exactMatch OBOE:KilogramPerMeterSquared .
+  skos:exactMatch OBOE:KilogramPerMeterSquared ;
+  skos:exactMatch NERC_P06:KMP2 .
 
 unit:kg.d-1.m-2
   a owl:NamedIndividual ;
@@ -4920,7 +4987,8 @@ unit:kg.m-2.s-1
   IAO:0000115 "A unit which is equal to 10³ gram per 1 square metre by 1 second."@en ;
   unit:SI_code "kg m-2 s-1" ;
   unit:ucum_code "kg.m-2.s-1" ;
-  skos:exactMatch QUDT:KiloGM-PER-M2-SEC .
+  skos:exactMatch QUDT:KiloGM-PER-M2-SEC ;
+  skos:exactMatch NERC_P06:KSP2 .
 
 unit:kg.m-3
   a owl:NamedIndividual ;
@@ -4931,7 +4999,8 @@ unit:kg.m-3
   skos:exactMatch QUDT:KiloGM-PER-M3 ;
   skos:exactMatch OM:kilogramPerCubicmetre ;
   skos:exactMatch UO:0000083 ;
-  skos:exactMatch OBOE:KilogramPerMeterCubed .
+  skos:exactMatch OBOE:KilogramPerMeterCubed ;
+  skos:exactMatch NERC_P06:UKMC .
 
 unit:kg.m-3.s-1
   a owl:NamedIndividual ;
@@ -4939,7 +5008,8 @@ unit:kg.m-3.s-1
   IAO:0000115 "A unit which is equal to 10³ gram per 1 cubic metre by 1 second."@en ;
   unit:SI_code "kg m-3 s-1" ;
   unit:ucum_code "kg.m-3.s-1" ;
-  skos:exactMatch QUDT:KiloGM-PER-M3-SEC .
+  skos:exactMatch QUDT:KiloGM-PER-M3-SEC ;
+  skos:exactMatch NERC_P06:KSP3 .
 
 unit:kg.m.s-1
   a owl:NamedIndividual ;
@@ -5017,7 +5087,8 @@ unit:kg.s-1
   unit:SI_code "kg s-1" ;
   unit:ucum_code "kg.s-1" ;
   skos:exactMatch QUDT:KiloGM-PER-SEC ;
-  skos:exactMatch OM:kilogramPerSecond-Time .
+  skos:exactMatch OM:kilogramPerSecond-Time ;
+  skos:exactMatch NERC_P06:KGPS .
 
 unit:kg.m-2.s-1
   a owl:NamedIndividual ;
@@ -5025,7 +5096,8 @@ unit:kg.m-2.s-1
   IAO:0000115 "A unit which is equal to 10³ gram per 1 square metre by 1 second."@en ;
   unit:SI_code "kg m-2 s-1" ;
   unit:ucum_code "kg.m-2.s-1" ;
-  skos:exactMatch QUDT:KiloGM-PER-M2-SEC .
+  skos:exactMatch QUDT:KiloGM-PER-M2-SEC ;
+  skos:exactMatch NERC_P06:KSP2 .
 
 unit:kg.s2
   a owl:NamedIndividual ;
@@ -5074,7 +5146,8 @@ unit:kg.m-2
   skos:exactMatch OM:kilogramPerSquareMetre ;
   skos:exactMatch OM:kilogramSquareMetre ;
   skos:exactMatch UO:0000086 ;
-  skos:exactMatch OBOE:KilogramPerMeterSquared .
+  skos:exactMatch OBOE:KilogramPerMeterSquared ;
+  skos:exactMatch NERC_P06:KMP2 .
 
 unit:kg.m-3
   a owl:NamedIndividual ;
@@ -5085,7 +5158,8 @@ unit:kg.m-3
   skos:exactMatch QUDT:KiloGM-PER-M3 ;
   skos:exactMatch OM:kilogramPerCubicmetre ;
   skos:exactMatch UO:0000083 ;
-  skos:exactMatch OBOE:KilogramPerMeterCubed .
+  skos:exactMatch OBOE:KilogramPerMeterCubed ;
+  skos:exactMatch NERC_P06:UKMC .
 
 unit:kg.s-2
   a owl:NamedIndividual ;
@@ -5101,7 +5175,8 @@ unit:kg2.s-2
   IAO:0000115 "A unit which is equal to 10³ square gram per 1 square second."@en ;
   unit:SI_code "kg2 s-2" ;
   unit:ucum_code "kg2.s-2" ;
-  skos:exactMatch QUDT:KiloGM2-PER-SEC2 .
+  skos:exactMatch QUDT:KiloGM2-PER-SEC2 ;
+  skos:exactMatch NERC_P06:KGS2 .
 
 unit:kGy
   a owl:NamedIndividual ;
@@ -5252,7 +5327,8 @@ unit:km
   unit:ucum_code "km" ;
   skos:exactMatch QUDT:KiloM ;
   skos:exactMatch OM:kilometre ;
-  skos:exactMatch OBOE:Kilometer .
+  skos:exactMatch OBOE:Kilometer ;
+  skos:exactMatch NERC_P06:ULKM .
 
 unit:km.d-1
   a owl:NamedIndividual ;
@@ -5260,7 +5336,8 @@ unit:km.d-1
   IAO:0000115 "A unit which is equal to 10³ metre per 1 day."@en ;
   unit:SI_code "km d-1" ;
   unit:ucum_code "km.d-1" ;
-  skos:exactMatch QUDT:KiloM-PER-DAY .
+  skos:exactMatch QUDT:KiloM-PER-DAY ;
+  skos:exactMatch NERC_P06:KMDY .
 
 unit:km.h-1
   a owl:NamedIndividual ;
@@ -5306,7 +5383,8 @@ unit:km2
   unit:SI_code "km2" ;
   unit:ucum_code "km2" ;
   skos:exactMatch OM:squareKilometre ;
-  skos:exactMatch OBOE:KilometerSquared .
+  skos:exactMatch OBOE:KilometerSquared ;
+  skos:exactMatch NERC_P06:SQKM .
 
 unit:km3
   a owl:NamedIndividual ;
@@ -5423,7 +5501,8 @@ unit:kPa
   unit:ucum_code "kPa" ;
   skos:exactMatch QUDT:KiloPA ;
   skos:exactMatch OM:kilopascal ;
-  skos:exactMatch OBOE:Kilopascal .
+  skos:exactMatch OBOE:Kilopascal ;
+  skos:exactMatch NERC_P06:KIPA .
 
 unit:kPa.K-1
   a owl:NamedIndividual ;
@@ -5599,7 +5678,8 @@ unit:L
   skos:exactMatch QUDT:L ;
   skos:exactMatch OM:litre ;
   skos:exactMatch UO:0000099 ;
-  skos:exactMatch OBOE:Liter .
+  skos:exactMatch OBOE:Liter ;
+  skos:exactMatch NERC_P06:ULIT .
 
 unit:L-1
   a owl:NamedIndividual ;
@@ -5632,7 +5712,8 @@ unit:L.kg-1
   unit:SI_code "L kg-1" ;
   unit:ucum_code "L.kg-1" ;
   skos:exactMatch QUDT:L-PER-KiloGM ;
-  skos:exactMatch UO:0000197 .
+  skos:exactMatch UO:0000197 ;
+  skos:exactMatch NERC_P06:ULKG .
 
 unit:L.mol-1
   a owl:NamedIndividual ;
@@ -5657,7 +5738,8 @@ unit:L.umol-1
   IAO:0000115 "A unit which is equal to 1 litre per 10⁻⁶ mole."@en ;
   unit:SI_code "L umol-1" ;
   unit:ucum_code "L.umol-1" ;
-  skos:exactMatch QUDT:L-PER-MicroMOL .
+  skos:exactMatch QUDT:L-PER-MicroMOL ;
+  skos:exactMatch NERC_P06:LPUM .
 
 unit:L.h-1
   a owl:NamedIndividual ;
@@ -5674,7 +5756,8 @@ unit:L.kg-1
   unit:SI_code "L kg-1" ;
   unit:ucum_code "L.kg-1" ;
   skos:exactMatch QUDT:L-PER-KiloGM ;
-  skos:exactMatch UO:0000197 .
+  skos:exactMatch UO:0000197 ;
+  skos:exactMatch NERC_P06:ULKG .
 
 unit:L.L-1
   a owl:NamedIndividual ;
@@ -5690,7 +5773,8 @@ unit:L.min-1
   IAO:0000115 "A unit which is equal to 1 litre per 1 minute."@en ;
   unit:SI_code "L min-1" ;
   unit:ucum_code "L.min-1" ;
-  skos:exactMatch QUDT:L-PER-MIN .
+  skos:exactMatch QUDT:L-PER-MIN ;
+  skos:exactMatch NERC_P06:ULPM .
 
 unit:lm
   a owl:NamedIndividual ;
@@ -5771,7 +5855,8 @@ unit:m
   skos:exactMatch QUDT:M ;
   skos:exactMatch OM:metre ;
   skos:exactMatch UO:0000008 ;
-  skos:exactMatch OBOE:Meter .
+  skos:exactMatch OBOE:Meter ;
+  skos:exactMatch NERC_P06:ULAA .
 
 unit:m-1
   a owl:NamedIndividual ;
@@ -5781,7 +5866,8 @@ unit:m-1
   unit:ucum_code "m-1" ;
   skos:exactMatch QUDT:PER-M ;
   skos:exactMatch OM:reciprocalMetre ;
-  skos:exactMatch OBOE:ReciprocalMeter .
+  skos:exactMatch OBOE:ReciprocalMeter ;
+  skos:exactMatch NERC_P06:UPRM .
 
 unit:K-1.m-1
   a owl:NamedIndividual ;
@@ -5797,7 +5883,8 @@ unit:m-1.nm-1
   IAO:0000115 "A unit which is equal to the reciprocal of 1 metre by 10⁻⁹ metre."@en ;
   unit:SI_code "m-1 nm-1" ;
   unit:ucum_code "m-1.nm-1" ;
-  skos:exactMatch QUDT:PER-M-NanoM .
+  skos:exactMatch QUDT:PER-M-NanoM ;
+  skos:exactMatch NERC_P06:UMNX .
 
 unit:m-1.nm-1.sr-1
   a owl:NamedIndividual ;
@@ -5805,7 +5892,8 @@ unit:m-1.nm-1.sr-1
   IAO:0000115 "A unit which is equal to the reciprocal of 1 metre by 10⁻⁹ metre by 1 steradian."@en ;
   unit:SI_code "m-1 nm-1 sr-1" ;
   unit:ucum_code "m-1.nm-1.sr-1" ;
-  skos:exactMatch QUDT:PER-M-NanoM-SR .
+  skos:exactMatch QUDT:PER-M-NanoM-SR ;
+  skos:exactMatch NERC_P06:UMNS .
 
 unit:m-1.s-1
   a owl:NamedIndividual ;
@@ -5813,7 +5901,8 @@ unit:m-1.s-1
   IAO:0000115 "A unit which is equal to the reciprocal of 1 metre by 1 second."@en ;
   unit:SI_code "m-1 s-1" ;
   unit:ucum_code "m-1.s-1" ;
-  skos:exactMatch QUDT:PER-M-SEC .
+  skos:exactMatch QUDT:PER-M-SEC ;
+  skos:exactMatch NERC_P06:PMPS .
 
 unit:m-1.sr-1
   a owl:NamedIndividual ;
@@ -5821,7 +5910,8 @@ unit:m-1.sr-1
   IAO:0000115 "A unit which is equal to the reciprocal of 1 metre by 1 steradian."@en ;
   unit:SI_code "m-1 sr-1" ;
   unit:ucum_code "m-1.sr-1" ;
-  skos:exactMatch QUDT:PER-M-SR .
+  skos:exactMatch QUDT:PER-M-SR ;
+  skos:exactMatch NERC_P06:PMSR .
 
 unit:m-2
   a owl:NamedIndividual ;
@@ -5830,7 +5920,8 @@ unit:m-2
   unit:SI_code "m-2" ;
   unit:ucum_code "m-2" ;
   skos:exactMatch QUDT:PER-M2 ;
-  skos:exactMatch OM:reciprocalSquareMetre .
+  skos:exactMatch OM:reciprocalSquareMetre ;
+  skos:exactMatch NERC_P06:PMSQ .
 
 unit:g-1.m-2
   a owl:NamedIndividual ;
@@ -5847,7 +5938,8 @@ unit:m-2.s-1
   unit:SI_code "m-2 s-1" ;
   unit:ucum_code "m-2.s-1" ;
   skos:exactMatch QUDT:PER-M2-SEC ;
-  skos:exactMatch QUDT:PER-SEC-M2 .
+  skos:exactMatch QUDT:PER-SEC-M2 ;
+  skos:exactMatch NERC_P06:M2S2 .
 
 unit:m-3
   a owl:NamedIndividual ;
@@ -5856,7 +5948,8 @@ unit:m-3
   unit:SI_code "m-3" ;
   unit:ucum_code "m-3" ;
   skos:exactMatch QUDT:PER-M3 ;
-  skos:exactMatch OM:reciprocalCubicMetre .
+  skos:exactMatch OM:reciprocalCubicMetre ;
+  skos:exactMatch NERC_P06:PCUM .
 
 unit:m-3.s-1
   a owl:NamedIndividual ;
@@ -5864,7 +5957,8 @@ unit:m-3.s-1
   IAO:0000115 "A unit which is equal to the reciprocal of 1 cubic metre by 1 second."@en ;
   unit:SI_code "m-3 s-1" ;
   unit:ucum_code "m-3.s-1" ;
-  skos:exactMatch QUDT:PER-M3-SEC .
+  skos:exactMatch QUDT:PER-M3-SEC ;
+  skos:exactMatch NERC_P06:M3PS .
 
 unit:m.as-1
   a owl:NamedIndividual ;
@@ -6018,7 +6112,8 @@ unit:K.m
   unit:ucum_code "K.m" ;
   skos:exactMatch QUDT:M-K ;
   skos:exactMatch QUDT:K-M ;
-  skos:exactMatch OM:metreKelvin .
+  skos:exactMatch OM:metreKelvin ;
+  skos:exactMatch NERC_P06:KMTX .
 
 unit:K.m.W-1
   a owl:NamedIndividual ;
@@ -6145,7 +6240,8 @@ unit:m.s-1
   skos:exactMatch QUDT:M-PER-SEC ;
   skos:exactMatch OM:metrePerSecond-Time ;
   skos:exactMatch UO:0000094 ;
-  skos:exactMatch OBOE:MeterPerSecond .
+  skos:exactMatch OBOE:MeterPerSecond ;
+  skos:exactMatch NERC_P06:UVAA .
 
 unit:m.m-1.s-1
   a owl:NamedIndividual ;
@@ -6163,7 +6259,8 @@ unit:m.s-2
   unit:ucum_code "m.s-2" ;
   skos:exactMatch QUDT:M-PER-SEC2 ;
   skos:exactMatch OM:metrePerSecond-TimeSquared ;
-  skos:exactMatch UO:0000077 .
+  skos:exactMatch UO:0000077 ;
+  skos:exactMatch NERC_P06:MPS2 .
 
 unit:m.Ts-1
   a owl:NamedIndividual ;
@@ -6268,7 +6365,8 @@ unit:m2
   skos:exactMatch QUDT:M2 ;
   skos:exactMatch OM:squareMetre ;
   skos:exactMatch UO:0000080 ;
-  skos:exactMatch OBOE:MeterSquared .
+  skos:exactMatch OBOE:MeterSquared ;
+  skos:exactMatch NERC_P06:UMSQ .
 
 unit:d.m2
   a owl:NamedIndividual ;
@@ -6285,7 +6383,8 @@ unit:m2.g-1
   unit:SI_code "m2 g-1" ;
   unit:ucum_code "m2.g-1" ;
   skos:exactMatch QUDT:M2-PER-GM ;
-  skos:exactMatch OM:squareMetrePerGram .
+  skos:exactMatch OM:squareMetrePerGram ;
+  skos:exactMatch NERC_P06:SMPG .
 
 unit:m2.har-1
   a owl:NamedIndividual ;
@@ -6302,7 +6401,8 @@ unit:Hz.m2
   unit:SI_code "Hz m2" ;
   unit:ucum_code "Hz.m2" ;
   skos:exactMatch QUDT:M2-HZ ;
-  skos:exactMatch OM:squareMetreHertz .
+  skos:exactMatch OM:squareMetreHertz ;
+  skos:exactMatch NERC_P06:UMTB .
 
 unit:m2.Hz-1
   a owl:NamedIndividual ;
@@ -6310,7 +6410,8 @@ unit:m2.Hz-1
   IAO:0000115 "A unit which is equal to 1 square metre per 1 hertz."@en ;
   unit:SI_code "m2 Hz-1" ;
   unit:ucum_code "m2.Hz-1" ;
-  skos:exactMatch QUDT:M2-PER-HZ .
+  skos:exactMatch QUDT:M2-PER-HZ ;
+  skos:exactMatch NERC_P06:UMHZ .
 
 unit:m2.deg-1.Hz-1
   a owl:NamedIndividual ;
@@ -6318,7 +6419,8 @@ unit:m2.deg-1.Hz-1
   IAO:0000115 "A unit which is equal to 1 square metre per 1 plane angle degree by 1 hertz."@en ;
   unit:SI_code "m2 °-1 Hz-1" ;
   unit:ucum_code "m2.deg-1.Hz-1" ;
-  skos:exactMatch QUDT:M2-PER-HZ-DEG .
+  skos:exactMatch QUDT:M2-PER-HZ-DEG ;
+  skos:exactMatch NERC_P06:M2HD .
 
 unit:m2.Hz-2
   a owl:NamedIndividual ;
@@ -6334,7 +6436,9 @@ unit:Hz2.m2
   IAO:0000115 "A unit which is equal to 1 square hertz by 1 square metre."@en ;
   unit:SI_code "Hz2 m2" ;
   unit:ucum_code "Hz2.m2" ;
-  skos:exactMatch QUDT:M2-HZ2 .
+  skos:exactMatch QUDT:M2-HZ2 ;
+  skos:exactMatch NERC_P06:UMTC ;
+  skos:exactMatch NERC_P06:UMTN .
 
 unit:Hz3.m2
   a owl:NamedIndividual ;
@@ -6342,7 +6446,8 @@ unit:Hz3.m2
   IAO:0000115 "A unit which is equal to 1 cubic hertz by 1 square metre."@en ;
   unit:SI_code "Hz3 m2" ;
   unit:ucum_code "Hz3.m2" ;
-  skos:exactMatch QUDT:M2-HZ3 .
+  skos:exactMatch QUDT:M2-HZ3 ;
+  skos:exactMatch NERC_P06:UMTD .
 
 unit:Hz4.m2
   a owl:NamedIndividual ;
@@ -6350,7 +6455,8 @@ unit:Hz4.m2
   IAO:0000115 "A unit which is equal to 1 quartic hertz by 1 square metre."@en ;
   unit:SI_code "Hz4 m2" ;
   unit:ucum_code "Hz4.m2" ;
-  skos:exactMatch QUDT:M2-HZ4 .
+  skos:exactMatch QUDT:M2-HZ4 ;
+  skos:exactMatch NERC_P06:UMTE .
 
 unit:m2.J-1
   a owl:NamedIndividual ;
@@ -6440,7 +6546,8 @@ unit:m2.s
   IAO:0000115 "A unit which is equal to 1 square metre by 1 second."@en ;
   unit:SI_code "m2 s" ;
   unit:ucum_code "m2.s" ;
-  skos:exactMatch OM:squareMetreSecond-Time .
+  skos:exactMatch OM:squareMetreSecond-Time ;
+  skos:exactMatch NERC_P06:M2SX .
 
 unit:m2.s-1
   a owl:NamedIndividual ;
@@ -6449,7 +6556,8 @@ unit:m2.s-1
   unit:SI_code "m2 s-1" ;
   unit:ucum_code "m2.s-1" ;
   skos:exactMatch QUDT:M2-PER-SEC ;
-  skos:exactMatch OM:squareMetrePerSecond-Time .
+  skos:exactMatch OM:squareMetrePerSecond-Time ;
+  skos:exactMatch NERC_P06:SQMS .
 
 unit:m2.s-2
   a owl:NamedIndividual ;
@@ -6457,7 +6565,8 @@ unit:m2.s-2
   IAO:0000115 "A unit which is equal to 1 square metre per 1 square second."@en ;
   unit:SI_code "m2 s-2" ;
   unit:ucum_code "m2.s-2" ;
-  skos:exactMatch QUDT:M2-PER-SEC2 .
+  skos:exactMatch QUDT:M2-PER-SEC2 ;
+  skos:exactMatch NERC_P06:SQM2 .
 
 unit:m2.s.rad-1
   a owl:NamedIndividual ;
@@ -6465,7 +6574,8 @@ unit:m2.s.rad-1
   IAO:0000115 "A unit which is equal to 1 square metre by 1 second per 1 radian."@en ;
   unit:SI_code "m2 s rad-1" ;
   unit:ucum_code "m2.s.rad-1" ;
-  skos:exactMatch QUDT:M2-SEC-PER-RAD .
+  skos:exactMatch QUDT:M2-SEC-PER-RAD ;
+  skos:exactMatch NERC_P06:M2RD .
 
 unit:m2.sr
   a owl:NamedIndividual ;
@@ -6508,7 +6618,8 @@ unit:m2.s-1
   unit:SI_code "m2 s-1" ;
   unit:ucum_code "m2.s-1" ;
   skos:exactMatch QUDT:M2-PER-SEC ;
-  skos:exactMatch OM:squareMetrePerSecond-Time .
+  skos:exactMatch OM:squareMetrePerSecond-Time ;
+  skos:exactMatch NERC_P06:SQMS .
 
 unit:m3
   a owl:NamedIndividual ;
@@ -6519,7 +6630,8 @@ unit:m3
   skos:exactMatch QUDT:M3 ;
   skos:exactMatch OM:cubicMetre ;
   skos:exactMatch UO:0000096 ;
-  skos:exactMatch OBOE:MeterCubed .
+  skos:exactMatch OBOE:MeterCubed ;
+  skos:exactMatch NERC_P06:MCUB .
 
 unit:m3.C-1
   a owl:NamedIndividual ;
@@ -6605,7 +6717,8 @@ unit:m3.s-1
   unit:SI_code "m3 s-1" ;
   unit:ucum_code "m3.s-1" ;
   skos:exactMatch QUDT:M3-PER-SEC ;
-  skos:exactMatch OM:cubicMetrePerSecond-Time .
+  skos:exactMatch OM:cubicMetrePerSecond-Time ;
+  skos:exactMatch NERC_P06:CMPS .
 
 unit:m3.s-2
   a owl:NamedIndividual ;
@@ -6613,7 +6726,8 @@ unit:m3.s-2
   IAO:0000115 "A unit which is equal to 1 cubic metre per 1 square second."@en ;
   unit:SI_code "m3 s-2" ;
   unit:ucum_code "m3.s-2" ;
-  skos:exactMatch QUDT:M3-PER-SEC2 .
+  skos:exactMatch QUDT:M3-PER-SEC2 ;
+  skos:exactMatch NERC_P06:MCS2 .
 
 unit:m3.kg-1
   a owl:NamedIndividual ;
@@ -6639,7 +6753,8 @@ unit:m4.s-1
   IAO:0000115 "A unit which is equal to 1 quartic metre per 1 second."@en ;
   unit:SI_code "m4 s-1" ;
   unit:ucum_code "m4.s-1" ;
-  skos:exactMatch QUDT:M4-PER-SEC .
+  skos:exactMatch QUDT:M4-PER-SEC ;
+  skos:exactMatch NERC_P06:M4S1 .
 
 unit:MA
   a owl:NamedIndividual ;
@@ -6704,7 +6819,8 @@ unit:mBq.g-1
   IAO:0000115 "A unit which is equal to 10⁻³ becquerel per 1 gram."@en ;
   unit:SI_code "mBq g-1" ;
   unit:ucum_code "mBq.g-1" ;
-  skos:exactMatch QUDT:MilliBQ-PER-GM .
+  skos:exactMatch QUDT:MilliBQ-PER-GM ;
+  skos:exactMatch NERC_P06:MBPG .
 
 unit:mBq.kg-1
   a owl:NamedIndividual ;
@@ -6712,7 +6828,8 @@ unit:mBq.kg-1
   IAO:0000115 "A unit which is equal to 10⁻³ becquerel per 10³ gram."@en ;
   unit:SI_code "mBq kg-1" ;
   unit:ucum_code "mBq.kg-1" ;
-  skos:exactMatch QUDT:MilliBQ-PER-KiloGM .
+  skos:exactMatch QUDT:MilliBQ-PER-KiloGM ;
+  skos:exactMatch NERC_P06:MBQK .
 
 unit:mBq.L-1
   a owl:NamedIndividual ;
@@ -6720,7 +6837,8 @@ unit:mBq.L-1
   IAO:0000115 "A unit which is equal to 10⁻³ becquerel per 1 litre."@en ;
   unit:SI_code "mBq L-1" ;
   unit:ucum_code "mBq.L-1" ;
-  skos:exactMatch QUDT:MilliBQ-PER-L .
+  skos:exactMatch QUDT:MilliBQ-PER-L ;
+  skos:exactMatch NERC_P06:UMBQ .
 
 unit:mBq.d-1.m-2
   a owl:NamedIndividual ;
@@ -6728,7 +6846,8 @@ unit:mBq.d-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻³ becquerel per 1 day by 1 square metre."@en ;
   unit:SI_code "mBq d-1 m-2" ;
   unit:ucum_code "mBq.d-1.m-2" ;
-  skos:exactMatch QUDT:MilliBQ-PER-M2-DAY .
+  skos:exactMatch QUDT:MilliBQ-PER-M2-DAY ;
+  skos:exactMatch NERC_P06:MBQF .
 
 unit:MC
   a owl:NamedIndividual ;
@@ -6854,7 +6973,8 @@ unit:mg.g-1
   IAO:0000115 "A unit which is equal to 10⁻³ gram per 1 gram."@en ;
   unit:SI_code "mg g-1" ;
   unit:ucum_code "mg.g-1" ;
-  skos:exactMatch QUDT:MilliGM-PER-GM .
+  skos:exactMatch QUDT:MilliGM-PER-GM ;
+  skos:exactMatch NERC_P06:MGPG .
 
 unit:mg.h-1
   a owl:NamedIndividual ;
@@ -6880,7 +7000,8 @@ unit:mg.kg-1
   unit:ucum_code "mg.kg-1" ;
   skos:exactMatch QUDT:MilliGM-PER-KiloGM ;
   skos:exactMatch OM:milligramPerKilogram ;
-  skos:exactMatch UO:0000308 .
+  skos:exactMatch UO:0000308 ;
+  skos:exactMatch NERC_P06:UMKG .
 
 unit:mg.d-1.kg-1
   a owl:NamedIndividual ;
@@ -6907,7 +7028,8 @@ unit:mg.L-1
   skos:exactMatch QUDT:MilliGM-PER-L ;
   skos:exactMatch OM:milligramPerLitre ;
   skos:exactMatch UO:0000273 ;
-  skos:exactMatch OBOE:MilligramPerLiter .
+  skos:exactMatch OBOE:MilligramPerLiter ;
+  skos:exactMatch NERC_P06:UMGL .
 
 unit:mg.m-1
   a owl:NamedIndividual ;
@@ -6924,7 +7046,8 @@ unit:mg.m-2
   unit:SI_code "mg m-2" ;
   unit:ucum_code "mg.m-2" ;
   skos:exactMatch QUDT:MilliGM-PER-M2 ;
-  skos:exactMatch UO:0000309 .
+  skos:exactMatch UO:0000309 ;
+  skos:exactMatch NERC_P06:UMMS .
 
 unit:mg.d-1.m-2
   a owl:NamedIndividual ;
@@ -6933,7 +7056,8 @@ unit:mg.d-1.m-2
   unit:SI_code "mg d-1 m-2" ;
   unit:ucum_code "mg.d-1.m-2" ;
   skos:exactMatch QUDT:MilliGM-PER-M2-DAY ;
-  skos:exactMatch OBOE:MilligramPerMeterSquaredPerDay .
+  skos:exactMatch OBOE:MilligramPerMeterSquaredPerDay ;
+  skos:exactMatch NERC_P06:UGDX .
 
 unit:mg.h-1.m-2
   a owl:NamedIndividual ;
@@ -6941,7 +7065,8 @@ unit:mg.h-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻³ gram per 1 hour by 1 square metre."@en ;
   unit:SI_code "mg h-1 m-2" ;
   unit:ucum_code "mg.h-1.m-2" ;
-  skos:exactMatch QUDT:MilliGM-PER-M2-HR .
+  skos:exactMatch QUDT:MilliGM-PER-M2-HR ;
+  skos:exactMatch NERC_P06:MGSQ .
 
 unit:Mg.m-3
   a owl:NamedIndividual ;
@@ -6958,7 +7083,8 @@ unit:mg.d-1.m-3
   unit:SI_code "mg d-1 m-3" ;
   unit:ucum_code "mg.d-1.m-3" ;
   skos:exactMatch QUDT:MilliGM-PER-M3-DAY ;
-  skos:exactMatch OBOE:MilligramPerMeterCubedPerDay .
+  skos:exactMatch OBOE:MilligramPerMeterCubedPerDay ;
+  skos:exactMatch NERC_P06:UGDC .
 
 unit:mg.h-1.m-3
   a owl:NamedIndividual ;
@@ -6966,7 +7092,8 @@ unit:mg.h-1.m-3
   IAO:0000115 "A unit which is equal to 10⁻³ gram per 1 hour by 1 cubic metre."@en ;
   unit:SI_code "mg h-1 m-3" ;
   unit:ucum_code "mg.h-1.m-3" ;
-  skos:exactMatch QUDT:MilliGM-PER-M3-HR .
+  skos:exactMatch QUDT:MilliGM-PER-M3-HR ;
+  skos:exactMatch NERC_P06:UGLH .
 
 unit:mg.L-1
   a owl:NamedIndividual ;
@@ -6977,7 +7104,8 @@ unit:mg.L-1
   skos:exactMatch QUDT:MilliGM-PER-L ;
   skos:exactMatch OM:milligramPerLitre ;
   skos:exactMatch UO:0000273 ;
-  skos:exactMatch OBOE:MilligramPerLiter .
+  skos:exactMatch OBOE:MilligramPerLiter ;
+  skos:exactMatch NERC_P06:UMGL .
 
 unit:mg.m-2
   a owl:NamedIndividual ;
@@ -6986,7 +7114,8 @@ unit:mg.m-2
   unit:SI_code "mg m-2" ;
   unit:ucum_code "mg.m-2" ;
   skos:exactMatch QUDT:MilliGM-PER-M2 ;
-  skos:exactMatch UO:0000309 .
+  skos:exactMatch UO:0000309 ;
+  skos:exactMatch NERC_P06:UMMS .
 
 unit:mg.min-1
   a owl:NamedIndividual ;
@@ -7079,7 +7208,8 @@ unit:min
   skos:exactMatch QUDT:MIN_Sidereal ;
   skos:exactMatch OM:minute-Time ;
   skos:exactMatch UO:0000031 ;
-  skos:exactMatch OBOE:Minute .
+  skos:exactMatch OBOE:Minute ;
+  skos:exactMatch NERC_P06:UMIN .
 
 unit:min-1
   a owl:NamedIndividual ;
@@ -7220,7 +7350,8 @@ unit:mL.kg-1
   unit:SI_code "mL kg-1" ;
   unit:ucum_code "mL.kg-1" ;
   skos:exactMatch QUDT:MilliL-PER-KiloGM ;
-  skos:exactMatch UO:0000198 .
+  skos:exactMatch UO:0000198 ;
+  skos:exactMatch NERC_P06:MIKG .
 
 unit:mL.L-1
   a owl:NamedIndividual ;
@@ -7230,7 +7361,8 @@ unit:mL.L-1
   unit:ucum_code "mL.L-1" ;
   skos:exactMatch QUDT:MilliL-PER-L ;
   skos:exactMatch UO:0000207 ;
-  skos:exactMatch OBOE:MilliliterPerLIter .
+  skos:exactMatch OBOE:MilliliterPerLIter ;
+  skos:exactMatch NERC_P06:UMLL .
 
 unit:mL.d-1.m-2
   a owl:NamedIndividual ;
@@ -7238,7 +7370,8 @@ unit:mL.d-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻³ litre per 1 day by 1 square metre."@en ;
   unit:SI_code "mL d-1 m-2" ;
   unit:ucum_code "mL.d-1.m-2" ;
-  skos:exactMatch QUDT:MilliL-PER-M2-DAY .
+  skos:exactMatch QUDT:MilliL-PER-M2-DAY ;
+  skos:exactMatch NERC_P06:MSMD .
 
 unit:mL.m-3
   a owl:NamedIndividual ;
@@ -7247,7 +7380,8 @@ unit:mL.m-3
   unit:SI_code "mL m-3" ;
   unit:ucum_code "mL.m-3" ;
   skos:exactMatch QUDT:MilliL-PER-M3 ;
-  skos:exactMatch UO:0000206 .
+  skos:exactMatch UO:0000206 ;
+  skos:exactMatch NERC_P06:MPM3 .
 
 unit:mL.min-1
   a owl:NamedIndividual ;
@@ -7255,7 +7389,8 @@ unit:mL.min-1
   IAO:0000115 "A unit which is equal to 10⁻³ litre per 1 minute."@en ;
   unit:SI_code "mL min-1" ;
   unit:ucum_code "mL.min-1" ;
-  skos:exactMatch QUDT:MilliL-PER-MIN .
+  skos:exactMatch QUDT:MilliL-PER-MIN ;
+  skos:exactMatch NERC_P06:CCPM .
 
 unit:mL.s-1
   a owl:NamedIndividual ;
@@ -7273,7 +7408,8 @@ unit:mL.L-1
   unit:ucum_code "mL.L-1" ;
   skos:exactMatch QUDT:MilliL-PER-L ;
   skos:exactMatch UO:0000207 ;
-  skos:exactMatch OBOE:MilliliterPerLIter .
+  skos:exactMatch OBOE:MilliliterPerLIter ;
+  skos:exactMatch NERC_P06:UMLL .
 
 unit:mL.m-3
   a owl:NamedIndividual ;
@@ -7282,7 +7418,8 @@ unit:mL.m-3
   unit:SI_code "mL m-3" ;
   unit:ucum_code "mL.m-3" ;
   skos:exactMatch QUDT:MilliL-PER-M3 ;
-  skos:exactMatch UO:0000206 .
+  skos:exactMatch UO:0000206 ;
+  skos:exactMatch NERC_P06:MPM3 .
 
 unit:Mlm
   a owl:NamedIndividual ;
@@ -7325,7 +7462,8 @@ unit:mm.d-1
   unit:ucum_code "mm.d-1" ;
   skos:exactMatch QUDT:MilliM-PER-DAY ;
   skos:exactMatch OM:millimetrePerDay ;
-  skos:exactMatch UO:0010005 .
+  skos:exactMatch UO:0010005 ;
+  skos:exactMatch NERC_P06:MMPD .
 
 unit:mm.h-1
   a owl:NamedIndividual ;
@@ -7334,7 +7472,8 @@ unit:mm.h-1
   unit:SI_code "mm h-1" ;
   unit:ucum_code "mm.h-1" ;
   skos:exactMatch QUDT:MilliM-PER-HR ;
-  skos:exactMatch OM:millimetrePerHour .
+  skos:exactMatch OM:millimetrePerHour ;
+  skos:exactMatch NERC_P06:MMPH .
 
 unit:mm.K-1
   a owl:NamedIndividual ;
@@ -7375,7 +7514,8 @@ unit:mm.min-1
   IAO:0000115 "A unit which is equal to 10⁻³ metre per 1 minute."@en ;
   unit:SI_code "mm min-1" ;
   unit:ucum_code "mm.min-1" ;
-  skos:exactMatch QUDT:MilliM-PER-MIN .
+  skos:exactMatch QUDT:MilliM-PER-MIN ;
+  skos:exactMatch NERC_P06:UMMM .
 
 unit:mm2
   a owl:NamedIndividual ;
@@ -7411,7 +7551,8 @@ unit:mm3.m-3
   IAO:0000115 "A unit which is equal to 10⁻³ cubic metre per 1 cubic metre."@en ;
   unit:SI_code "mm3 m-3" ;
   unit:ucum_code "mm3.m-3" ;
-  skos:exactMatch QUDT:MilliM3-PER-M3 .
+  skos:exactMatch QUDT:MilliM3-PER-M3 ;
+  skos:exactMatch NERC_P06:CMCM .
 
 unit:mm3.mm-3
   a owl:NamedIndividual ;
@@ -7452,7 +7593,8 @@ unit:mmol.kg-1
   unit:SI_code "mmol kg-1" ;
   unit:ucum_code "mmol.kg-1" ;
   skos:exactMatch QUDT:MilliMOL-PER-KiloGM ;
-  skos:exactMatch UO:0000069 .
+  skos:exactMatch UO:0000069 ;
+  skos:exactMatch NERC_P06:MMKG .
 
 unit:mmol.L-1
   a owl:NamedIndividual ;
@@ -7464,7 +7606,8 @@ unit:mmol.L-1
   skos:exactMatch OM:millimolar ;
   skos:exactMatch OM:millimolePerLitre ;
   skos:exactMatch UO:0000063 ;
-  skos:exactMatch OBOE:MillimolePerLiter .
+  skos:exactMatch OBOE:MillimolePerLiter ;
+  skos:exactMatch NERC_P06:MMPL .
 
 unit:Mmol.m-1
   a owl:NamedIndividual ;
@@ -7480,7 +7623,8 @@ unit:mmol.m-2
   IAO:0000115 "A unit which is equal to 10⁻³ mole per 1 square metre."@en ;
   unit:SI_code "mmol m-2" ;
   unit:ucum_code "mmol.m-2" ;
-  skos:exactMatch QUDT:MilliMOL-PER-M2 .
+  skos:exactMatch QUDT:MilliMOL-PER-M2 ;
+  skos:exactMatch NERC_P06:MMSM .
 
 unit:mmol.d-1.m-2
   a owl:NamedIndividual ;
@@ -7488,7 +7632,8 @@ unit:mmol.d-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻³ mole per 1 day by 1 square metre."@en ;
   unit:SI_code "mmol d-1 m-2" ;
   unit:ucum_code "mmol.d-1.m-2" ;
-  skos:exactMatch QUDT:MilliMOL-PER-M2-DAY .
+  skos:exactMatch QUDT:MilliMOL-PER-M2-DAY ;
+  skos:exactMatch NERC_P06:UMDX .
 
 unit:mmol.m-3
   a owl:NamedIndividual ;
@@ -7497,7 +7642,8 @@ unit:mmol.m-3
   unit:SI_code "mmol m-3" ;
   unit:ucum_code "mmol.m-3" ;
   skos:exactMatch QUDT:MilliMOL-PER-M3 ;
-  skos:exactMatch OBOE:MillimolePerMeterCubed .
+  skos:exactMatch OBOE:MillimolePerMeterCubed ;
+  skos:exactMatch NERC_P06:MMCM .
 
 unit:mmol.d-1.m-3
   a owl:NamedIndividual ;
@@ -7505,7 +7651,8 @@ unit:mmol.d-1.m-3
   IAO:0000115 "A unit which is equal to 10⁻³ mole per 1 day by 1 cubic metre."@en ;
   unit:SI_code "mmol d-1 m-3" ;
   unit:ucum_code "mmol.d-1.m-3" ;
-  skos:exactMatch QUDT:MilliMOL-PER-M3-DAY .
+  skos:exactMatch QUDT:MilliMOL-PER-M3-DAY ;
+  skos:exactMatch NERC_P06:MCMD .
 
 unit:mmol.mol-1
   a owl:NamedIndividual ;
@@ -7513,7 +7660,8 @@ unit:mmol.mol-1
   IAO:0000115 "A unit which is equal to 10⁻³ mole per 1 mole."@en ;
   unit:SI_code "mmol mol-1" ;
   unit:ucum_code "mmol.mol-1" ;
-  skos:exactMatch QUDT:MilliMOL-PER-MOL .
+  skos:exactMatch QUDT:MilliMOL-PER-MOL ;
+  skos:exactMatch NERC_P06:MMOM .
 
 unit:mmol.L-1
   a owl:NamedIndividual ;
@@ -7525,7 +7673,8 @@ unit:mmol.L-1
   skos:exactMatch OM:millimolar ;
   skos:exactMatch OM:millimolePerLitre ;
   skos:exactMatch UO:0000063 ;
-  skos:exactMatch OBOE:MillimolePerLiter .
+  skos:exactMatch OBOE:MillimolePerLiter ;
+  skos:exactMatch NERC_P06:MMPL .
 
 unit:MN
   a owl:NamedIndividual ;
@@ -7578,7 +7727,8 @@ unit:mol
   skos:exactMatch QUDT:MOL ;
   skos:exactMatch OM:mole ;
   skos:exactMatch UO:0000013 ;
-  skos:exactMatch OBOE:Mole .
+  skos:exactMatch OBOE:Mole ;
+  skos:exactMatch NERC_P06:MOLE .
 
 unit:mol-1
   a owl:NamedIndividual ;
@@ -7706,7 +7856,8 @@ unit:mol.g-1.h-1
   IAO:0000115 "A unit which is equal to 1 mole per 1 gram by 1 hour."@en ;
   unit:SI_code "mol g-1 h-1" ;
   unit:ucum_code "mol.g-1.h-1" ;
-  skos:exactMatch QUDT:MOL-PER-GM-HR .
+  skos:exactMatch QUDT:MOL-PER-GM-HR ;
+  skos:exactMatch NERC_P06:MPGH .
 
 unit:mol.GL-1
   a owl:NamedIndividual ;
@@ -7765,7 +7916,8 @@ unit:mol.kg-1
   unit:ucum_code "mol.kg-1" ;
   skos:exactMatch QUDT:MOL-PER-KiloGM ;
   skos:exactMatch OM:molePerKilogram ;
-  skos:exactMatch UO:0000068 .
+  skos:exactMatch UO:0000068 ;
+  skos:exactMatch NERC_P06:MLKG .
 
 unit:mol.kL-1
   a owl:NamedIndividual ;
@@ -7793,7 +7945,8 @@ unit:mol.L-1
   skos:exactMatch OM:molar ;
   skos:exactMatch OM:molePerLitre ;
   skos:exactMatch UO:0000062 ;
-  skos:exactMatch OBOE:MolePerLiter .
+  skos:exactMatch OBOE:MolePerLiter ;
+  skos:exactMatch NERC_P06:MPLT .
 
 unit:mol.m-1
   a owl:NamedIndividual ;
@@ -7809,7 +7962,8 @@ unit:mol.m-2
   IAO:0000115 "A unit which is equal to 1 mole per 1 square metre."@en ;
   unit:SI_code "mol m-2" ;
   unit:ucum_code "mol.m-2" ;
-  skos:exactMatch QUDT:MOL-PER-M2 .
+  skos:exactMatch QUDT:MOL-PER-M2 ;
+  skos:exactMatch NERC_P06:MLM2 .
 
 unit:mol.m-2.s-1
   a owl:NamedIndividual ;
@@ -7817,7 +7971,8 @@ unit:mol.m-2.s-1
   IAO:0000115 "A unit which is equal to 1 mole per 1 square metre by 1 second."@en ;
   unit:SI_code "mol m-2 s-1" ;
   unit:ucum_code "mol.m-2.s-1" ;
-  skos:exactMatch QUDT:MOL-PER-M2-SEC .
+  skos:exactMatch QUDT:MOL-PER-M2-SEC ;
+  skos:exactMatch NERC_P06:M2MS .
 
 unit:mol.m-2.s-1.sr-1
   a owl:NamedIndividual ;
@@ -7825,7 +7980,8 @@ unit:mol.m-2.s-1.sr-1
   IAO:0000115 "A unit which is equal to 1 mole per 1 square metre by 1 second by 1 steradian."@en ;
   unit:SI_code "mol m-2 s-1 sr-1" ;
   unit:ucum_code "mol.m-2.s-1.sr-1" ;
-  skos:exactMatch QUDT:MOL-PER-M2-SEC-SR .
+  skos:exactMatch QUDT:MOL-PER-M2-SEC-SR ;
+  skos:exactMatch NERC_P06:M3SR .
 
 unit:mol.m-3
   a owl:NamedIndividual ;
@@ -7835,7 +7991,8 @@ unit:mol.m-3
   unit:ucum_code "mol.m-3" ;
   skos:exactMatch QUDT:MOL-PER-M3 ;
   skos:exactMatch OM:molePerCubicmetre ;
-  skos:exactMatch OBOE:MolePerMeterCubed .
+  skos:exactMatch OBOE:MolePerMeterCubed ;
+  skos:exactMatch NERC_P06:MLM3 .
 
 unit:mol.m-3.s-1
   a owl:NamedIndividual ;
@@ -7843,7 +8000,8 @@ unit:mol.m-3.s-1
   IAO:0000115 "A unit which is equal to 1 mole per 1 cubic metre by 1 second."@en ;
   unit:SI_code "mol m-3 s-1" ;
   unit:ucum_code "mol.m-3.s-1" ;
-  skos:exactMatch QUDT:MOL-PER-M3-SEC .
+  skos:exactMatch QUDT:MOL-PER-M3-SEC ;
+  skos:exactMatch NERC_P06:MM3S .
 
 unit:mol.min-1
   a owl:NamedIndividual ;
@@ -7876,7 +8034,8 @@ unit:mol.mol-1
   unit:SI_code "mol mol-1" ;
   unit:ucum_code "mol.mol-1" ;
   skos:exactMatch QUDT:MOL-PER-MOL ;
-  skos:exactMatch OM:molePerMole .
+  skos:exactMatch OM:molePerMole ;
+  skos:exactMatch NERC_P06:MPMX .
 
 unit:mol.nL-1
   a owl:NamedIndividual ;
@@ -7917,7 +8076,8 @@ unit:mol.s-1
   unit:SI_code "mol s-1" ;
   unit:ucum_code "mol.s-1" ;
   skos:exactMatch QUDT:MOL-PER-SEC ;
-  skos:exactMatch OM:molePerSecond-Time .
+  skos:exactMatch OM:molePerSecond-Time ;
+  skos:exactMatch NERC_P06:MLPS .
 
 unit:mol.TL-1
   a owl:NamedIndividual ;
@@ -8015,7 +8175,8 @@ unit:mol.kg-1
   unit:ucum_code "mol.kg-1" ;
   skos:exactMatch QUDT:MOL-PER-KiloGM ;
   skos:exactMatch OM:molePerKilogram ;
-  skos:exactMatch UO:0000068 .
+  skos:exactMatch UO:0000068 ;
+  skos:exactMatch NERC_P06:MLKG .
 
 unit:MPa
   a owl:NamedIndividual ;
@@ -8080,7 +8241,8 @@ unit:ms-1
   IAO:0000115 "A unit which is equal to the reciprocal of 10⁻³ second."@en ;
   unit:SI_code "ms-1" ;
   unit:ucum_code "ms-1" ;
-  skos:exactMatch QUDT:PER-MilliSEC .
+  skos:exactMatch QUDT:PER-MilliSEC ;
+  skos:exactMatch NERC_P06:PMSC .
 
 unit:mS.m-1
   a owl:NamedIndividual ;
@@ -8089,7 +8251,8 @@ unit:mS.m-1
   unit:SI_code "mS m-1" ;
   unit:ucum_code "mS.m-1" ;
   skos:exactMatch QUDT:MilliS-PER-M ;
-  skos:exactMatch OBOE:MillisiemensPerMeter .
+  skos:exactMatch OBOE:MillisiemensPerMeter ;
+  skos:exactMatch NERC_P06:MSPM .
 
 unit:mS.cm-1
   a owl:NamedIndividual ;
@@ -8097,7 +8260,8 @@ unit:mS.cm-1
   IAO:0000115 "A unit which is equal to 10⁻³ siemens per 10⁻² metre."@en ;
   unit:SI_code "mS cm-1" ;
   unit:ucum_code "mS.cm-1" ;
-  skos:exactMatch QUDT:MilliS-PER-CentiM .
+  skos:exactMatch QUDT:MilliS-PER-CentiM ;
+  skos:exactMatch NERC_P06:MSCM .
 
 unit:Ms2
   a owl:NamedIndividual ;
@@ -8195,7 +8359,8 @@ unit:mW.cm-2.sr-1.um-1
   IAO:0000115 "A unit which is equal to 10⁻³ watt per 10⁻² square metre by 1 steradian by 10⁻⁶ metre."@en ;
   unit:SI_code "mW cm-2 sr-1 um-1" ;
   unit:ucum_code "mW.cm-2.sr-1.um-1" ;
-  skos:exactMatch QUDT:MilliW-PER-CentiM2-MicroM-SR .
+  skos:exactMatch QUDT:MilliW-PER-CentiM2-MicroM-SR ;
+  skos:exactMatch NERC_P06:MWSR .
 
 unit:h.MW
   a owl:NamedIndividual ;
@@ -8220,7 +8385,8 @@ unit:mW.m-2.nm-1
   IAO:0000115 "A unit which is equal to 10⁻³ watt per 1 square metre by 10⁻⁹ metre."@en ;
   unit:SI_code "mW m-2 nm-1" ;
   unit:ucum_code "mW.m-2.nm-1" ;
-  skos:exactMatch QUDT:MilliW-PER-M2-NanoM .
+  skos:exactMatch QUDT:MilliW-PER-M2-NanoM ;
+  skos:exactMatch NERC_P06:MWNM .
 
 unit:mW.m-2.nm-1.sr-1
   a owl:NamedIndividual ;
@@ -8228,7 +8394,8 @@ unit:mW.m-2.nm-1.sr-1
   IAO:0000115 "A unit which is equal to 10⁻³ watt per 1 square metre by 10⁻⁹ metre by 1 steradian."@en ;
   unit:SI_code "mW m-2 nm-1 sr-1" ;
   unit:ucum_code "mW.m-2.nm-1.sr-1" ;
-  skos:exactMatch QUDT:MilliW-PER-M2-NanoM-SR .
+  skos:exactMatch QUDT:MilliW-PER-M2-NanoM-SR ;
+  skos:exactMatch NERC_P06:MWNS .
 
 unit:MWb
   a owl:NamedIndividual ;
@@ -8308,7 +8475,8 @@ unit:N.m-1
   unit:ucum_code "N.m-1" ;
   skos:exactMatch QUDT:N-PER-M ;
   skos:exactMatch OM:newtonPerMetre ;
-  skos:exactMatch UO:0000254 .
+  skos:exactMatch UO:0000254 ;
+  skos:exactMatch NERC_P06:NTPM .
 
 unit:N.m-2
   a owl:NamedIndividual ;
@@ -8317,7 +8485,8 @@ unit:N.m-2
   unit:SI_code "N m-2" ;
   unit:ucum_code "N.m-2" ;
   skos:exactMatch QUDT:N-PER-M2 ;
-  skos:exactMatch OM:newtonPerSquareMetre .
+  skos:exactMatch OM:newtonPerSquareMetre ;
+  skos:exactMatch NERC_P06:UNSM .
 
 unit:N.m-3
   a owl:NamedIndividual ;
@@ -8325,7 +8494,8 @@ unit:N.m-3
   IAO:0000115 "A unit which is equal to 1 newton per 1 cubic metre."@en ;
   unit:SI_code "N m-3" ;
   unit:ucum_code "N.m-3" ;
-  skos:exactMatch QUDT:N-PER-M3 .
+  skos:exactMatch QUDT:N-PER-M3 ;
+  skos:exactMatch NERC_P06:NCUM .
 
 unit:m.N.A-1
   a owl:NamedIndividual ;
@@ -8422,7 +8592,8 @@ unit:N.m-1
   unit:ucum_code "N.m-1" ;
   skos:exactMatch QUDT:N-PER-M ;
   skos:exactMatch OM:newtonPerMetre ;
-  skos:exactMatch UO:0000254 .
+  skos:exactMatch UO:0000254 ;
+  skos:exactMatch NERC_P06:NTPM .
 
 unit:nA
   a owl:NamedIndividual ;
@@ -8431,7 +8602,8 @@ unit:nA
   unit:SI_code "nA" ;
   unit:ucum_code "nA" ;
   skos:exactMatch QUDT:NanoA ;
-  skos:exactMatch OM:nanoampere .
+  skos:exactMatch OM:nanoampere ;
+  skos:exactMatch NERC_P06:NAMP .
 
 unit:nar
   a owl:NamedIndividual ;
@@ -8461,7 +8633,8 @@ unit:nBq.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ becquerel per 1 litre."@en ;
   unit:SI_code "nBq L-1" ;
   unit:ucum_code "nBq.L-1" ;
-  skos:exactMatch QUDT:NanoBQ-PER-L .
+  skos:exactMatch QUDT:NanoBQ-PER-L ;
+  skos:exactMatch NERC_P06:UNBQ .
 
 unit:nC
   a owl:NamedIndividual ;
@@ -8513,7 +8686,8 @@ unit:ng
   skos:exactMatch QUDT:NanoGM ;
   skos:exactMatch OM:nanogram ;
   skos:exactMatch UO:0000024 ;
-  skos:exactMatch OBOE:Nanogram .
+  skos:exactMatch OBOE:Nanogram ;
+  skos:exactMatch NERC_P06:UNPI .
 
 unit:ng.d-1
   a owl:NamedIndividual ;
@@ -8521,7 +8695,8 @@ unit:ng.d-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ gram per 1 day."@en ;
   unit:SI_code "ng d-1" ;
   unit:ucum_code "ng.d-1" ;
-  skos:exactMatch QUDT:NanoGM-PER-DAY .
+  skos:exactMatch QUDT:NanoGM-PER-DAY ;
+  skos:exactMatch NERC_P06:UNID .
 
 unit:ng.L-1
   a owl:NamedIndividual ;
@@ -8531,7 +8706,8 @@ unit:ng.L-1
   unit:ucum_code "ng.L-1" ;
   skos:exactMatch QUDT:NanoGM-PER-L ;
   skos:exactMatch OM:nanogramPerLitre ;
-  skos:exactMatch OBOE:NanogramPerLiter .
+  skos:exactMatch OBOE:NanogramPerLiter ;
+  skos:exactMatch NERC_P06:UNGL .
 
 unit:ng.m-3
   a owl:NamedIndividual ;
@@ -8564,7 +8740,8 @@ unit:ng.kg-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ gram per 10³ gram."@en ;
   unit:SI_code "ng kg-1" ;
   unit:ucum_code "ng.kg-1" ;
-  skos:exactMatch QUDT:NanoGM-PER-KiloGM .
+  skos:exactMatch QUDT:NanoGM-PER-KiloGM ;
+  skos:exactMatch NERC_P06:NGKG .
 
 unit:nGy
   a owl:NamedIndividual ;
@@ -8668,7 +8845,8 @@ unit:nm
   skos:exactMatch QUDT:NanoM ;
   skos:exactMatch OM:nanometre ;
   skos:exactMatch UO:0000018 ;
-  skos:exactMatch OBOE:Nanometer .
+  skos:exactMatch OBOE:Nanometer ;
+  skos:exactMatch NERC_P06:UXNM .
 
 unit:nm.s-1
   a owl:NamedIndividual ;
@@ -8717,7 +8895,8 @@ unit:nmol.cm-3.h-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ mole per 10⁻² cubic metre by 1 hour."@en ;
   unit:SI_code "nmol cm-3 h-1" ;
   unit:ucum_code "nmol.cm-3.h-1" ;
-  skos:exactMatch QUDT:NanoMOL-PER-CentiM3-HR .
+  skos:exactMatch QUDT:NanoMOL-PER-CentiM3-HR ;
+  skos:exactMatch NERC_P06:NMCH .
 
 unit:nmol.kg-1
   a owl:NamedIndividual ;
@@ -8726,7 +8905,8 @@ unit:nmol.kg-1
   unit:SI_code "nmol kg-1" ;
   unit:ucum_code "nmol.kg-1" ;
   skos:exactMatch QUDT:NanoMOL-PER-KiloGM ;
-  skos:exactMatch UO:0000071 .
+  skos:exactMatch UO:0000071 ;
+  skos:exactMatch NERC_P06:KGNM .
 
 unit:nmol.L-1
   a owl:NamedIndividual ;
@@ -8737,7 +8917,8 @@ unit:nmol.L-1
   skos:exactMatch OM:nanomolar ;
   skos:exactMatch OM:nanomolePerLitre ;
   skos:exactMatch UO:0000065 ;
-  skos:exactMatch OBOE:NanomolePerLiter .
+  skos:exactMatch OBOE:NanomolePerLiter ;
+  skos:exactMatch NERC_P06:UPNM .
 
 unit:nmol.d-1.L-1
   a owl:NamedIndividual ;
@@ -8745,7 +8926,8 @@ unit:nmol.d-1.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ mole per 1 day by 1 litre."@en ;
   unit:SI_code "nmol d-1 L-1" ;
   unit:ucum_code "nmol.d-1.L-1" ;
-  skos:exactMatch QUDT:NanoMOL-PER-L-DAY .
+  skos:exactMatch QUDT:NanoMOL-PER-L-DAY ;
+  skos:exactMatch NERC_P06:UNMD .
 
 unit:nmol.h-1.L-1
   a owl:NamedIndividual ;
@@ -8753,7 +8935,8 @@ unit:nmol.h-1.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ mole per 1 hour by 1 litre."@en ;
   unit:SI_code "nmol h-1 L-1" ;
   unit:ucum_code "nmol.h-1.L-1" ;
-  skos:exactMatch QUDT:NanoMOL-PER-L-HR .
+  skos:exactMatch QUDT:NanoMOL-PER-L-HR ;
+  skos:exactMatch NERC_P06:UNMH .
 
 unit:nmol.m-1
   a owl:NamedIndividual ;
@@ -8769,7 +8952,8 @@ unit:nmol.d-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻⁹ mole per 1 day by 1 square metre."@en ;
   unit:SI_code "nmol d-1 m-2" ;
   unit:ucum_code "nmol.d-1.m-2" ;
-  skos:exactMatch QUDT:NanoMOL-PER-M2-DAY .
+  skos:exactMatch QUDT:NanoMOL-PER-M2-DAY ;
+  skos:exactMatch NERC_P06:NSQD .
 
 unit:nmol.h-1.ug-1
   a owl:NamedIndividual ;
@@ -8777,7 +8961,8 @@ unit:nmol.h-1.ug-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ mole per 1 hour by 10⁻⁶ gram."@en ;
   unit:SI_code "nmol h-1 ug-1" ;
   unit:ucum_code "nmol.h-1.ug-1" ;
-  skos:exactMatch QUDT:NanoMOL-PER-MicroGM-HR .
+  skos:exactMatch QUDT:NanoMOL-PER-MicroGM-HR ;
+  skos:exactMatch NERC_P06:NMGH .
 
 unit:nmol.umol-1
   a owl:NamedIndividual ;
@@ -8785,7 +8970,8 @@ unit:nmol.umol-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ mole per 10⁻⁶ mole."@en ;
   unit:SI_code "nmol umol-1" ;
   unit:ucum_code "nmol.umol-1" ;
-  skos:exactMatch QUDT:NanoMOL-PER-MicroMOL .
+  skos:exactMatch QUDT:NanoMOL-PER-MicroMOL ;
+  skos:exactMatch NERC_P06:NMMM .
 
 unit:nmol.d-1.umol-1
   a owl:NamedIndividual ;
@@ -8793,7 +8979,8 @@ unit:nmol.d-1.umol-1
   IAO:0000115 "A unit which is equal to 10⁻⁹ mole per 1 day by 10⁻⁶ mole."@en ;
   unit:SI_code "nmol d-1 umol-1" ;
   unit:ucum_code "nmol.d-1.umol-1" ;
-  skos:exactMatch QUDT:NanoMOL-PER-MicroMOL-DAY .
+  skos:exactMatch QUDT:NanoMOL-PER-MicroMOL-DAY ;
+  skos:exactMatch NERC_P06:NMMD .
 
 unit:nN
   a owl:NamedIndividual ;
@@ -8903,7 +9090,8 @@ unit:nT
   unit:SI_code "nT" ;
   unit:ucum_code "nT" ;
   skos:exactMatch QUDT:NanoT ;
-  skos:exactMatch OM:nanotesla .
+  skos:exactMatch OM:nanotesla ;
+  skos:exactMatch NERC_P06:UMAA .
 
 unit:nDa
   a owl:NamedIndividual ;
@@ -8946,7 +9134,8 @@ unit:Ohm
   unit:SI_code "Ω" ;
   unit:ucum_code "Ohm" ;
   skos:exactMatch QUDT:OHM ;
-  skos:exactMatch OM:ohm .
+  skos:exactMatch OM:ohm ;
+  skos:exactMatch NERC_P06:UOHM .
 
 unit:m.Ohm
   a owl:NamedIndividual ;
@@ -8955,7 +9144,8 @@ unit:m.Ohm
   unit:SI_code "m Ω" ;
   unit:ucum_code "m.Ohm" ;
   skos:exactMatch QUDT:OHM-M ;
-  skos:exactMatch OM:ohmMetre .
+  skos:exactMatch OM:ohmMetre ;
+  skos:exactMatch NERC_P06:OHMM .
 
 unit:m.Ohm2.m-1
   a owl:NamedIndividual ;
@@ -8995,7 +9185,8 @@ unit:Pa-1.s-1
   unit:SI_code "Pa-1 s-1" ;
   unit:ucum_code "Pa-1.s-1" ;
   skos:exactMatch QUDT:PER-PA-SEC ;
-  skos:exactMatch OM:reciprocalPascalSecond-Time .
+  skos:exactMatch OM:reciprocalPascalSecond-Time ;
+  skos:exactMatch NERC_P06:PPPS .
 
 unit:Pa.h-1
   a owl:NamedIndividual ;
@@ -9027,7 +9218,8 @@ unit:m.Pa
   IAO:0000115 "A unit which is equal to 1 metre by 1 pascal."@en ;
   unit:SI_code "m Pa" ;
   unit:ucum_code "m.Pa" ;
-  skos:exactMatch QUDT:PA-M .
+  skos:exactMatch QUDT:PA-M ;
+  skos:exactMatch NERC_P06:PAMT .
 
 unit:m.Pa.s-1
   a owl:NamedIndividual ;
@@ -9035,7 +9227,8 @@ unit:m.Pa.s-1
   IAO:0000115 "A unit which is equal to 1 metre by 1 pascal per 1 second."@en ;
   unit:SI_code "m Pa s-1" ;
   unit:ucum_code "m.Pa.s-1" ;
-  skos:exactMatch QUDT:PA-M-PER-SEC .
+  skos:exactMatch QUDT:PA-M-PER-SEC ;
+  skos:exactMatch NERC_P06:PAMS .
 
 unit:m.Pa.s-2
   a owl:NamedIndividual ;
@@ -9043,7 +9236,8 @@ unit:m.Pa.s-2
   IAO:0000115 "A unit which is equal to 1 metre by 1 pascal per 1 square second."@en ;
   unit:SI_code "m Pa s-2" ;
   unit:ucum_code "m.Pa.s-2" ;
-  skos:exactMatch QUDT:PA-M-PER-SEC2 .
+  skos:exactMatch QUDT:PA-M-PER-SEC2 ;
+  skos:exactMatch NERC_P06:PAM2 .
 
 unit:m3.Pa.s-1
   a owl:NamedIndividual ;
@@ -9069,7 +9263,8 @@ unit:Pa.s
   unit:ucum_code "Pa.s" ;
   skos:exactMatch QUDT:PA-SEC ;
   skos:exactMatch OM:pascalSecond-Time ;
-  skos:exactMatch UO:0000257 .
+  skos:exactMatch UO:0000257 ;
+  skos:exactMatch NERC_P06:PASS .
 
 unit:Pa.s-1
   a owl:NamedIndividual ;
@@ -9077,7 +9272,8 @@ unit:Pa.s-1
   IAO:0000115 "A unit which is equal to 1 pascal per 1 second."@en ;
   unit:SI_code "Pa s-1" ;
   unit:ucum_code "Pa.s-1" ;
-  skos:exactMatch QUDT:PA-PER-SEC .
+  skos:exactMatch QUDT:PA-PER-SEC ;
+  skos:exactMatch NERC_P06:PAPS .
 
 unit:Pa.s.m-3
   a owl:NamedIndividual ;
@@ -9101,7 +9297,8 @@ unit:pA.L-1.umol-1
   IAO:0000115 "A unit which is equal to 10⁻¹² ampere per 1 litre by 10⁻⁶ mole."@en ;
   unit:SI_code "pA L-1 umol-1" ;
   unit:ucum_code "pA.L-1.umol-1" ;
-  skos:exactMatch QUDT:PicoA-PER-MicroMOL-L .
+  skos:exactMatch QUDT:PicoA-PER-MicroMOL-L ;
+  skos:exactMatch NERC_P06:UPAM .
 
 unit:Pa.m-1
   a owl:NamedIndividual ;
@@ -9109,7 +9306,8 @@ unit:Pa.m-1
   IAO:0000115 "A unit which is equal to 1 pascal per 1 metre."@en ;
   unit:SI_code "Pa m-1" ;
   unit:ucum_code "Pa.m-1" ;
-  skos:exactMatch QUDT:PA-PER-M .
+  skos:exactMatch QUDT:PA-PER-M ;
+  skos:exactMatch NERC_P06:PAPM .
 
 unit:Pa2.s
   a owl:NamedIndividual ;
@@ -9125,7 +9323,8 @@ unit:Pa2.s-2
   IAO:0000115 "A unit which is equal to 1 square pascal per 1 square second."@en ;
   unit:SI_code "Pa2 s-2" ;
   unit:ucum_code "Pa2.s-2" ;
-  skos:exactMatch QUDT:PA2-PER-SEC2 .
+  skos:exactMatch QUDT:PA2-PER-SEC2 ;
+  skos:exactMatch NERC_P06:PPS2 .
 
 unit:Par
   a owl:NamedIndividual ;
@@ -9203,7 +9402,8 @@ unit:pg.g-1
   IAO:0000115 "A unit which is equal to 10⁻¹² gram per 1 gram."@en ;
   unit:SI_code "pg g-1" ;
   unit:ucum_code "pg.g-1" ;
-  skos:exactMatch QUDT:PicoGM-PER-GM .
+  skos:exactMatch QUDT:PicoGM-PER-GM ;
+  skos:exactMatch NERC_P06:PGPG .
 
 unit:pg.kg-1
   a owl:NamedIndividual ;
@@ -9211,7 +9411,8 @@ unit:pg.kg-1
   IAO:0000115 "A unit which is equal to 10⁻¹² gram per 10³ gram."@en ;
   unit:SI_code "pg kg-1" ;
   unit:ucum_code "pg.kg-1" ;
-  skos:exactMatch QUDT:PicoGM-PER-KiloGM .
+  skos:exactMatch QUDT:PicoGM-PER-KiloGM ;
+  skos:exactMatch NERC_P06:PGKG .
 
 unit:pg.L-1
   a owl:NamedIndividual ;
@@ -9220,7 +9421,8 @@ unit:pg.L-1
   unit:SI_code "pg L-1" ;
   unit:ucum_code "pg.L-1" ;
   skos:exactMatch QUDT:PicoGM-PER-L ;
-  skos:exactMatch OM:picogramPerLitre .
+  skos:exactMatch OM:picogramPerLitre ;
+  skos:exactMatch NERC_P06:PGPL .
 
 unit:PGy
   a owl:NamedIndividual ;
@@ -9350,7 +9552,8 @@ unit:pmol.kg-1
   unit:SI_code "pmol kg-1" ;
   unit:ucum_code "pmol.kg-1" ;
   skos:exactMatch QUDT:PicoMOL-PER-KiloGM ;
-  skos:exactMatch UO:0000072 .
+  skos:exactMatch UO:0000072 ;
+  skos:exactMatch NERC_P06:KGPM .
 
 unit:pmol.L-1
   a owl:NamedIndividual ;
@@ -9361,7 +9564,8 @@ unit:pmol.L-1
   skos:exactMatch QUDT:PicoMOL-PER-L ;
   skos:exactMatch OM:picomolar ;
   skos:exactMatch OM:picomolePerLitre ;
-  skos:exactMatch UO:0000066 .
+  skos:exactMatch UO:0000066 ;
+  skos:exactMatch NERC_P06:UPML .
 
 unit:pmol.d-1.L-1
   a owl:NamedIndividual ;
@@ -9369,7 +9573,8 @@ unit:pmol.d-1.L-1
   IAO:0000115 "A unit which is equal to 10⁻¹² mole per 1 day by 1 litre."@en ;
   unit:SI_code "pmol d-1 L-1" ;
   unit:ucum_code "pmol.d-1.L-1" ;
-  skos:exactMatch QUDT:PicoMOL-PER-L-DAY .
+  skos:exactMatch QUDT:PicoMOL-PER-L-DAY ;
+  skos:exactMatch NERC_P06:PMLD .
 
 unit:pmol.h-1.L-1
   a owl:NamedIndividual ;
@@ -9377,7 +9582,8 @@ unit:pmol.h-1.L-1
   IAO:0000115 "A unit which is equal to 10⁻¹² mole per 1 hour by 1 litre."@en ;
   unit:SI_code "pmol h-1 L-1" ;
   unit:ucum_code "pmol.h-1.L-1" ;
-  skos:exactMatch QUDT:PicoMOL-PER-L-HR .
+  skos:exactMatch QUDT:PicoMOL-PER-L-HR ;
+  skos:exactMatch NERC_P06:UPMH .
 
 unit:Pmol.m-1
   a owl:NamedIndividual ;
@@ -9393,7 +9599,8 @@ unit:pmol.m-1.s-1.W-1
   IAO:0000115 "A unit which is equal to 10⁻¹² mole per 1 metre by 1 second by 1 watt."@en ;
   unit:SI_code "pmol m-1 s-1 W-1" ;
   unit:ucum_code "pmol.m-1.s-1.W-1" ;
-  skos:exactMatch QUDT:PicoMOL-PER-M-W-SEC .
+  skos:exactMatch QUDT:PicoMOL-PER-M-W-SEC ;
+  skos:exactMatch NERC_P06:UPVW .
 
 unit:pmol.d-1.m-2
   a owl:NamedIndividual ;
@@ -9401,7 +9608,8 @@ unit:pmol.d-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻¹² mole per 1 day by 1 square metre."@en ;
   unit:SI_code "pmol d-1 m-2" ;
   unit:ucum_code "pmol.d-1.m-2" ;
-  skos:exactMatch QUDT:PicoMOL-PER-M2-DAY .
+  skos:exactMatch QUDT:PicoMOL-PER-M2-DAY ;
+  skos:exactMatch NERC_P06:UPMD .
 
 unit:pmol.m-3
   a owl:NamedIndividual ;
@@ -9409,7 +9617,8 @@ unit:pmol.m-3
   IAO:0000115 "A unit which is equal to 10⁻¹² mole per 1 cubic metre."@en ;
   unit:SI_code "pmol m-3" ;
   unit:ucum_code "pmol.m-3" ;
-  skos:exactMatch QUDT:PicoMOL-PER-M3 .
+  skos:exactMatch QUDT:PicoMOL-PER-M3 ;
+  skos:exactMatch NERC_P06:UPMA .
 
 unit:pmol.m-3.s-1
   a owl:NamedIndividual ;
@@ -9417,7 +9626,8 @@ unit:pmol.m-3.s-1
   IAO:0000115 "A unit which is equal to 10⁻¹² mole per 1 cubic metre by 1 second."@en ;
   unit:SI_code "pmol m-3 s-1" ;
   unit:ucum_code "pmol.m-3.s-1" ;
-  skos:exactMatch QUDT:PicoMOL-PER-M3-SEC .
+  skos:exactMatch QUDT:PicoMOL-PER-M3-SEC ;
+  skos:exactMatch NERC_P06:UPVT .
 
 unit:PN
   a owl:NamedIndividual ;
@@ -9534,7 +9744,8 @@ unit:pW.cm-2.L-1
   IAO:0000115 "A unit which is equal to 10⁻¹² watt per 10⁻² square metre by 1 litre."@en ;
   unit:SI_code "pW cm-2 L-1" ;
   unit:ucum_code "pW.cm-2.L-1" ;
-  skos:exactMatch QUDT:PicoW-PER-CentiM2-L .
+  skos:exactMatch QUDT:PicoW-PER-CentiM2-L ;
+  skos:exactMatch NERC_P06:PWAV .
 
 unit:pW.m-2
   a owl:NamedIndividual ;
@@ -9561,7 +9772,8 @@ unit:rad
   skos:exactMatch QUDT:RAD ;
   skos:exactMatch OM:radian ;
   skos:exactMatch UO:0000123 ;
-  skos:exactMatch OBOE:Radian .
+  skos:exactMatch OBOE:Radian ;
+  skos:exactMatch NERC_P06:URAD .
 
 unit:rad.h-1
   a owl:NamedIndividual ;
@@ -9611,7 +9823,8 @@ unit:rad.s-1
   unit:ucum_code "rad.s-1" ;
   skos:exactMatch QUDT:RAD-PER-SEC ;
   skos:exactMatch OM:radianPerSecond-Time ;
-  skos:exactMatch UO:0000079 .
+  skos:exactMatch UO:0000079 ;
+  skos:exactMatch NERC_P06:RAPS .
 
 unit:rad.s-2
   a owl:NamedIndividual ;
@@ -9642,7 +9855,8 @@ unit:s
   skos:exactMatch QUDT:SEC ;
   skos:exactMatch OM:second-Time ;
   skos:exactMatch UO:0000010 ;
-  skos:exactMatch OBOE:Second .
+  skos:exactMatch OBOE:Second ;
+  skos:exactMatch NERC_P06:UTBB .
 
 unit:s-1
   a owl:NamedIndividual ;
@@ -9652,7 +9866,8 @@ unit:s-1
   unit:ucum_code "s-1" ;
   skos:exactMatch QUDT:SAMPLE-PER-SEC ;
   skos:exactMatch QUDT:PER-SEC ;
-  skos:exactMatch OM:reciprocalSecond-Time .
+  skos:exactMatch OM:reciprocalSecond-Time ;
+  skos:exactMatch NERC_P06:PRSC .
 
 unit:m-2.s-1
   a owl:NamedIndividual ;
@@ -9661,7 +9876,8 @@ unit:m-2.s-1
   unit:SI_code "m-2 s-1" ;
   unit:ucum_code "m-2.s-1" ;
   skos:exactMatch QUDT:PER-SEC-M2 ;
-  skos:exactMatch QUDT:PER-M2-SEC .
+  skos:exactMatch QUDT:PER-M2-SEC ;
+  skos:exactMatch NERC_P06:M2S2 .
 
 unit:m-2.s-1.sr-1
   a owl:NamedIndividual ;
@@ -9685,7 +9901,8 @@ unit:s-2
   IAO:0000115 "A unit which is equal to the reciprocal of 1 square second."@en ;
   unit:SI_code "s-2" ;
   unit:ucum_code "s-2" ;
-  skos:exactMatch QUDT:PER-SEC2 .
+  skos:exactMatch QUDT:PER-SEC2 ;
+  skos:exactMatch NERC_P06:UPSS .
 
 unit:A.s
   a owl:NamedIndividual ;
@@ -9718,7 +9935,8 @@ unit:s.m-1
   IAO:0000115 "A unit which is equal to 1 second per 1 metre."@en ;
   unit:SI_code "s m-1" ;
   unit:ucum_code "s.m-1" ;
-  skos:exactMatch QUDT:SEC-PER-M .
+  skos:exactMatch QUDT:SEC-PER-M ;
+  skos:exactMatch NERC_P06:SCPM .
 
 unit:s.m-2
   a owl:NamedIndividual ;
@@ -9744,7 +9962,8 @@ unit:S.m-1
   unit:ucum_code "S.m-1" ;
   skos:exactMatch QUDT:S-PER-M ;
   skos:exactMatch OM:siemensPerMetre ;
-  skos:exactMatch OBOE:SiemensPerMeter .
+  skos:exactMatch OBOE:SiemensPerMeter ;
+  skos:exactMatch NERC_P06:UECA .
 
 unit:s2
   a owl:NamedIndividual ;
@@ -9772,7 +9991,8 @@ unit:sr-1
   IAO:0000115 "A unit which is equal to the reciprocal of 1 steradian."@en ;
   unit:SI_code "sr-1" ;
   unit:ucum_code "sr-1" ;
-  skos:exactMatch QUDT:PER-SR .
+  skos:exactMatch QUDT:PER-SR ;
+  skos:exactMatch NERC_P06:PSTR .
 
 unit:m2.sr
   a owl:NamedIndividual ;
@@ -10291,7 +10511,8 @@ unit:uBq.kg-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ becquerel per 10³ gram."@en ;
   unit:SI_code "uBq kg-1" ;
   unit:ucum_code "uBq.kg-1" ;
-  skos:exactMatch QUDT:MicroBQ-PER-KiloGM .
+  skos:exactMatch QUDT:MicroBQ-PER-KiloGM ;
+  skos:exactMatch NERC_P06:UWBQ .
 
 unit:uBq.L-1
   a owl:NamedIndividual ;
@@ -10299,7 +10520,8 @@ unit:uBq.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ becquerel per 1 litre."@en ;
   unit:SI_code "uBq L-1" ;
   unit:ucum_code "uBq.L-1" ;
-  skos:exactMatch QUDT:MicroBQ-PER-L .
+  skos:exactMatch QUDT:MicroBQ-PER-L ;
+  skos:exactMatch NERC_P06:UUBQ .
 
 unit:uC
   a owl:NamedIndividual ;
@@ -10375,7 +10597,8 @@ unit:ug
   skos:exactMatch QUDT:MicroGM ;
   skos:exactMatch OM:microgram ;
   skos:exactMatch UO:0000023 ;
-  skos:exactMatch OBOE:Microgram .
+  skos:exactMatch OBOE:Microgram ;
+  skos:exactMatch NERC_P06:UGUG .
 
 unit:ug.cm-3
   a owl:NamedIndividual ;
@@ -10383,7 +10606,8 @@ unit:ug.cm-3
   IAO:0000115 "A unit which is equal to 10⁻⁶ gram per 10⁻² cubic metre."@en ;
   unit:SI_code "ug cm-3" ;
   unit:ucum_code "ug.cm-3" ;
-  skos:exactMatch OM:microgramPerCubicCentimetre .
+  skos:exactMatch OM:microgramPerCubicCentimetre ;
+  skos:exactMatch NERC_P06:XGCC .
 
 unit:g.ug
   a owl:NamedIndividual ;
@@ -10399,7 +10623,8 @@ unit:ug.g-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ gram per 1 gram."@en ;
   unit:SI_code "ug g-1" ;
   unit:ucum_code "ug.g-1" ;
-  skos:exactMatch QUDT:MicroGM-PER-GM .
+  skos:exactMatch QUDT:MicroGM-PER-GM ;
+  skos:exactMatch NERC_P06:UGGR .
 
 unit:ug.hg-1
   a owl:NamedIndividual ;
@@ -10433,7 +10658,8 @@ unit:ug.L-1
   unit:ucum_code "ug.L-1" ;
   skos:exactMatch QUDT:MicroGM-PER-L ;
   skos:exactMatch OM:microgramPerLitre ;
-  skos:exactMatch UO:0000301 .
+  skos:exactMatch UO:0000301 ;
+  skos:exactMatch NERC_P06:UGPL .
 
 unit:ug.h-1.L-1
   a owl:NamedIndividual ;
@@ -10441,7 +10667,8 @@ unit:ug.h-1.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ gram per 1 hour by 1 litre."@en ;
   unit:SI_code "ug h-1 L-1" ;
   unit:ucum_code "ug.h-1.L-1" ;
-  skos:exactMatch QUDT:MicroGM-PER-L-HR .
+  skos:exactMatch QUDT:MicroGM-PER-L-HR ;
+  skos:exactMatch NERC_P06:MGLH .
 
 unit:ug.d-1.m-2
   a owl:NamedIndividual ;
@@ -10449,7 +10676,8 @@ unit:ug.d-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻⁶ gram per 1 day by 1 square metre."@en ;
   unit:SI_code "ug d-1 m-2" ;
   unit:ucum_code "ug.d-1.m-2" ;
-  skos:exactMatch QUDT:MicroGM-PER-M2-DAY .
+  skos:exactMatch QUDT:MicroGM-PER-M2-DAY ;
+  skos:exactMatch NERC_P06:UUDX .
 
 unit:ug.m-2.s-1
   a owl:NamedIndividual ;
@@ -10466,7 +10694,8 @@ unit:ug.m-3
   unit:SI_code "ug m-3" ;
   unit:ucum_code "ug.m-3" ;
   skos:exactMatch QUDT:MicroGM-PER-M3 ;
-  skos:exactMatch OBOE:MicrogramPerMeterCubed .
+  skos:exactMatch OBOE:MicrogramPerMeterCubed ;
+  skos:exactMatch NERC_P06:MCUG .
 
 unit:ug.h-1.m-3
   a owl:NamedIndividual ;
@@ -10474,7 +10703,8 @@ unit:ug.h-1.m-3
   IAO:0000115 "A unit which is equal to 10⁻⁶ gram per 1 hour by 1 cubic metre."@en ;
   unit:SI_code "ug h-1 m-3" ;
   unit:ucum_code "ug.h-1.m-3" ;
-  skos:exactMatch QUDT:MicroGM-PER-M3-HR .
+  skos:exactMatch QUDT:MicroGM-PER-M3-HR ;
+  skos:exactMatch NERC_P06:UGM3 .
 
 unit:ug.mL-1
   a owl:NamedIndividual ;
@@ -10482,7 +10712,8 @@ unit:ug.mL-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ gram per 10⁻³ litre."@en ;
   unit:SI_code "ug mL-1" ;
   unit:ucum_code "ug.mL-1" ;
-  skos:exactMatch UO:0000274 .
+  skos:exactMatch UO:0000274 ;
+  skos:exactMatch NERC_P06:UUGS .
 
 unit:ug.kg-1
   a owl:NamedIndividual ;
@@ -10490,7 +10721,8 @@ unit:ug.kg-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ gram per 10³ gram."@en ;
   unit:SI_code "ug kg-1" ;
   unit:ucum_code "ug.kg-1" ;
-  skos:exactMatch QUDT:MicroGM-PER-KiloGM .
+  skos:exactMatch QUDT:MicroGM-PER-KiloGM ;
+  skos:exactMatch NERC_P06:UUKG .
 
 unit:ug.L-1
   a owl:NamedIndividual ;
@@ -10500,7 +10732,8 @@ unit:ug.L-1
   unit:ucum_code "ug.L-1" ;
   skos:exactMatch QUDT:MicroGM-PER-L ;
   skos:exactMatch OM:microgramPerLitre ;
-  skos:exactMatch UO:0000301 .
+  skos:exactMatch UO:0000301 ;
+  skos:exactMatch NERC_P06:UGPL .
 
 unit:uGy
   a owl:NamedIndividual ;
@@ -10602,7 +10835,8 @@ unit:uL.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ litre per 1 litre."@en ;
   unit:SI_code "uL L-1" ;
   unit:ucum_code "uL.L-1" ;
-  skos:exactMatch QUDT:MicroL-PER-L .
+  skos:exactMatch QUDT:MicroL-PER-L ;
+  skos:exactMatch NERC_P06:UUML .
 
 unit:uL.m-1
   a owl:NamedIndividual ;
@@ -10639,7 +10873,8 @@ unit:um
   skos:exactMatch OM:micron ;
   skos:exactMatch UO:0000017 ;
   skos:exactMatch OBOE:Micrometer ;
-  skos:exactMatch OBOE:Micron .
+  skos:exactMatch OBOE:Micron ;
+  skos:exactMatch NERC_P06:UMIC .
 
 unit:um.K-1
   a owl:NamedIndividual ;
@@ -10655,7 +10890,8 @@ unit:um.d-1.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ metre per 1 day by 1 litre."@en ;
   unit:SI_code "um d-1 L-1" ;
   unit:ucum_code "um.d-1.L-1" ;
-  skos:exactMatch QUDT:MicroM-PER-L-DAY .
+  skos:exactMatch QUDT:MicroM-PER-L-DAY ;
+  skos:exactMatch NERC_P06:UMMD .
 
 unit:um.s-1
   a owl:NamedIndividual ;
@@ -10682,7 +10918,8 @@ unit:um2
   skos:exactMatch QUDT:MicroM2 ;
   skos:exactMatch OM:squareMicrometre ;
   skos:exactMatch UO:0010001 ;
-  skos:exactMatch OBOE:MicrometerSquared .
+  skos:exactMatch OBOE:MicrometerSquared ;
+  skos:exactMatch NERC_P06:SQUM .
 
 unit:um2.mL-1
   a owl:NamedIndividual ;
@@ -10690,7 +10927,8 @@ unit:um2.mL-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ square metre per 10⁻³ litre."@en ;
   unit:SI_code "um2 mL-1" ;
   unit:ucum_code "um2.mL-1" ;
-  skos:exactMatch QUDT:MicroM-PER-MilliL .
+  skos:exactMatch QUDT:MicroM-PER-MilliL ;
+  skos:exactMatch NERC_P06:USUM .
 
 unit:um3
   a owl:NamedIndividual ;
@@ -10699,7 +10937,8 @@ unit:um3
   unit:SI_code "um3" ;
   unit:ucum_code "um3" ;
   skos:exactMatch QUDT:MicroM3 ;
-  skos:exactMatch OM:cubicMicrometre .
+  skos:exactMatch OM:cubicMicrometre ;
+  skos:exactMatch NERC_P06:UMCU .
 
 unit:um3.m-3
   a owl:NamedIndividual ;
@@ -10707,7 +10946,8 @@ unit:um3.m-3
   IAO:0000115 "A unit which is equal to 10⁻⁶ cubic metre per 1 cubic metre."@en ;
   unit:SI_code "um3 m-3" ;
   unit:ucum_code "um3.m-3" ;
-  skos:exactMatch QUDT:MicroM3-PER-M3 .
+  skos:exactMatch QUDT:MicroM3-PER-M3 ;
+  skos:exactMatch NERC_P06:UCCM .
 
 unit:um3.mL-1
   a owl:NamedIndividual ;
@@ -10715,7 +10955,8 @@ unit:um3.mL-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ cubic metre per 10⁻³ litre."@en ;
   unit:SI_code "um3 mL-1" ;
   unit:ucum_code "um3.mL-1" ;
-  skos:exactMatch QUDT:MicroM3-PER-MilliL .
+  skos:exactMatch QUDT:MicroM3-PER-MilliL ;
+  skos:exactMatch NERC_P06:UCUM .
 
 unit:umol
   a owl:NamedIndividual ;
@@ -10734,7 +10975,8 @@ unit:L-1.umol-1
   IAO:0000115 "A unit which is equal to the reciprocal of 1 litre by 10⁻⁶ mole."@en ;
   unit:SI_code "L-1 umol-1" ;
   unit:ucum_code "L-1.umol-1" ;
-  skos:exactMatch QUDT:PER-MicroMOL-L .
+  skos:exactMatch QUDT:PER-MicroMOL-L ;
+  skos:exactMatch NERC_P06:PUML .
 
 unit:kg.umol
   a owl:NamedIndividual ;
@@ -10752,7 +10994,8 @@ unit:umol.kg-1
   unit:ucum_code "umol.kg-1" ;
   skos:exactMatch QUDT:MicroMOL-PER-KiloGM ;
   skos:exactMatch UO:0000070 ;
-  skos:exactMatch UO:0010004 .
+  skos:exactMatch UO:0010004 ;
+  skos:exactMatch NERC_P06:KGUM .
 
 unit:L.umol
   a owl:NamedIndividual ;
@@ -10772,7 +11015,8 @@ unit:umol.L-1
   skos:exactMatch OM:micromolar ;
   skos:exactMatch OM:micromolePerLitre ;
   skos:exactMatch UO:0000064 ;
-  skos:exactMatch UO:0010003 .
+  skos:exactMatch UO:0010003 ;
+  skos:exactMatch NERC_P06:UPOX .
 
 unit:umol.h-1.L-1
   a owl:NamedIndividual ;
@@ -10780,7 +11024,8 @@ unit:umol.h-1.L-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ mole per 1 hour by 1 litre."@en ;
   unit:SI_code "umol h-1 L-1" ;
   unit:ucum_code "umol.h-1.L-1" ;
-  skos:exactMatch QUDT:MicroMOL-PER-L-HR .
+  skos:exactMatch QUDT:MicroMOL-PER-L-HR ;
+  skos:exactMatch NERC_P06:UMMH .
 
 unit:umol.m-1
   a owl:NamedIndividual ;
@@ -10796,7 +11041,8 @@ unit:umol.d-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻⁶ mole per 1 day by 1 square metre."@en ;
   unit:SI_code "umol d-1 m-2" ;
   unit:ucum_code "umol.d-1.m-2" ;
-  skos:exactMatch QUDT:MicroMOL-PER-M2-DAY .
+  skos:exactMatch QUDT:MicroMOL-PER-M2-DAY ;
+  skos:exactMatch NERC_P06:UUUD .
 
 unit:umol.h-1.m-2
   a owl:NamedIndividual ;
@@ -10804,7 +11050,8 @@ unit:umol.h-1.m-2
   IAO:0000115 "A unit which is equal to 10⁻⁶ mole per 1 hour by 1 square metre."@en ;
   unit:SI_code "umol h-1 m-2" ;
   unit:ucum_code "umol.h-1.m-2" ;
-  skos:exactMatch QUDT:MicroMOL-PER-M2-HR .
+  skos:exactMatch QUDT:MicroMOL-PER-M2-HR ;
+  skos:exactMatch NERC_P06:UMFX .
 
 unit:umol.m-2.s-1
   a owl:NamedIndividual ;
@@ -10812,7 +11059,8 @@ unit:umol.m-2.s-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ mole per 1 square metre by 1 second."@en ;
   unit:SI_code "umol m-2 s-1" ;
   unit:ucum_code "umol.m-2.s-1" ;
-  skos:exactMatch QUDT:MicroMOL-PER-M2-SEC .
+  skos:exactMatch QUDT:MicroMOL-PER-M2-SEC ;
+  skos:exactMatch NERC_P06:UM2S .
 
 unit:umol.m-3
   a owl:NamedIndividual ;
@@ -10820,7 +11068,8 @@ unit:umol.m-3
   IAO:0000115 "A unit which is equal to 10⁻⁶ mole per 1 cubic metre."@en ;
   unit:SI_code "umol m-3" ;
   unit:ucum_code "umol.m-3" ;
-  skos:exactMatch OBOE:MicromolePerMeterCubed .
+  skos:exactMatch OBOE:MicromolePerMeterCubed ;
+  skos:exactMatch NERC_P06:CMUM .
 
 unit:umol.mol-1
   a owl:NamedIndividual ;
@@ -10829,7 +11078,8 @@ unit:umol.mol-1
   unit:SI_code "umol mol-1" ;
   unit:ucum_code "umol.mol-1" ;
   skos:exactMatch QUDT:MicroMOL-PER-MOL ;
-  skos:exactMatch OM:micromolePerMole .
+  skos:exactMatch OM:micromolePerMole ;
+  skos:exactMatch NERC_P06:UMPM .
 
 unit:umol.s-1
   a owl:NamedIndividual ;
@@ -10853,7 +11103,8 @@ unit:umol.d-1.umol-1
   IAO:0000115 "A unit which is equal to 10⁻⁶ mole per 1 day by 10⁻⁶ mole."@en ;
   unit:SI_code "umol d-1 umol-1" ;
   unit:ucum_code "umol.d-1.umol-1" ;
-  skos:exactMatch QUDT:MicroMOL-PER-MicroMOL-DAY .
+  skos:exactMatch QUDT:MicroMOL-PER-MicroMOL-DAY ;
+  skos:exactMatch NERC_P06:UMUB .
 
 unit:uN
   a owl:NamedIndividual ;
@@ -10916,7 +11167,8 @@ unit:us
   skos:exactMatch QUDT:MicroSEC ;
   skos:exactMatch OM:microsecond-Time ;
   skos:exactMatch UO:0000029 ;
-  skos:exactMatch OBOE:Microsecond .
+  skos:exactMatch OBOE:Microsecond ;
+  skos:exactMatch NERC_P06:USEC .
 
 unit:uS.cm-1
   a owl:NamedIndividual ;
@@ -11030,7 +11282,8 @@ unit:V
   skos:exactMatch QUDT:V ;
   skos:exactMatch OM:volt ;
   skos:exactMatch UO:0000218 ;
-  skos:exactMatch OBOE:Volt .
+  skos:exactMatch OBOE:Volt ;
+  skos:exactMatch NERC_P06:UVLT .
 
 unit:A.V
   a owl:NamedIndividual ;
@@ -11170,7 +11423,8 @@ unit:W
   unit:ucum_code "W" ;
   skos:exactMatch QUDT:W ;
   skos:exactMatch OM:watt ;
-  skos:exactMatch UO:0000114 .
+  skos:exactMatch UO:0000114 ;
+  skos:exactMatch NERC_P06:WATT .
 
 unit:W-1
   a owl:NamedIndividual ;
@@ -11244,7 +11498,8 @@ unit:W.kg-1
   IAO:0000115 "A unit which is equal to 1 watt per 10³ gram."@en ;
   unit:SI_code "W kg-1" ;
   unit:ucum_code "W.kg-1" ;
-  skos:exactMatch QUDT:W-PER-KiloGM .
+  skos:exactMatch QUDT:W-PER-KiloGM ;
+  skos:exactMatch NERC_P06:WPKG .
 
 unit:W.m-1
   a owl:NamedIndividual ;
@@ -11252,7 +11507,8 @@ unit:W.m-1
   IAO:0000115 "A unit which is equal to 1 watt per 1 metre."@en ;
   unit:SI_code "W m-1" ;
   unit:ucum_code "W.m-1" ;
-  skos:exactMatch QUDT:W-PER-M .
+  skos:exactMatch QUDT:W-PER-M ;
+  skos:exactMatch NERC_P06:WAPM .
 
 unit:W.K-1.m-1
   a owl:NamedIndividual ;
@@ -11262,7 +11518,8 @@ unit:W.K-1.m-1
   unit:ucum_code "W.K-1.m-1" ;
   skos:exactMatch QUDT:W-PER-M-K ;
   skos:exactMatch OM:wattPerMetreKelvin ;
-  skos:exactMatch UO:0000265 .
+  skos:exactMatch UO:0000265 ;
+  skos:exactMatch NERC_P06:WAPK .
 
 unit:W.m-2
   a owl:NamedIndividual ;
@@ -11273,7 +11530,8 @@ unit:W.m-2
   skos:exactMatch QUDT:W-PER-M2 ;
   skos:exactMatch OM:wattPerSquareMetre ;
   skos:exactMatch UO:0000155 ;
-  skos:exactMatch OBOE:WattPerMeterSquared .
+  skos:exactMatch OBOE:WattPerMeterSquared ;
+  skos:exactMatch NERC_P06:UFAA .
 
 unit:W.Hz-1.m-2
   a owl:NamedIndividual ;
@@ -11307,7 +11565,8 @@ unit:W.m-2.nm-1
   unit:SI_code "W m-2 nm-1" ;
   unit:ucum_code "W.m-2.nm-1" ;
   skos:exactMatch QUDT:W-PER-M2-NanoM ;
-  skos:exactMatch OM:wattPerSquareMetreNanometre .
+  skos:exactMatch OM:wattPerSquareMetreNanometre ;
+  skos:exactMatch NERC_P06:UWNM .
 
 unit:W.m-2.nm-1.sr-1
   a owl:NamedIndividual ;
@@ -11315,7 +11574,8 @@ unit:W.m-2.nm-1.sr-1
   IAO:0000115 "A unit which is equal to 1 watt per 1 square metre by 10⁻⁹ metre by 1 steradian."@en ;
   unit:SI_code "W m-2 nm-1 sr-1" ;
   unit:ucum_code "W.m-2.nm-1.sr-1" ;
-  skos:exactMatch QUDT:W-PER-M2-NanoM-SR .
+  skos:exactMatch QUDT:W-PER-M2-NanoM-SR ;
+  skos:exactMatch NERC_P06:UWNS .
 
 unit:W.m-2.Pa-1
   a owl:NamedIndividual ;
@@ -11351,7 +11611,8 @@ unit:W.m-3
   unit:SI_code "W m-3" ;
   unit:ucum_code "W.m-3" ;
   skos:exactMatch QUDT:W-PER-M3 ;
-  skos:exactMatch OM:wattPerCubicmetre .
+  skos:exactMatch OM:wattPerCubicmetre ;
+  skos:exactMatch NERC_P06:UWCM .
 
 unit:m2.W
   a owl:NamedIndividual ;
