@@ -8,17 +8,11 @@ Leverages the SI brochure 9th edition: https://www.bipm.org/utils/common/pdf/si-
 Run:
 
 Test
-./nc_name.py -d data/test/test1.csv -o output/test/test1.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
-./nc_name.py -d data/test/test2.csv -o output/test/test2.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
+./nc_name.py -d data/test/test1.csv -o output/test/test1.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
+./nc_name.py -d data/test/test2.csv -o output/test/test2.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
-./nc_name.py -d data/production/working_pooled_unit_codes.csv -o output/production/working_output.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
-
-
-./nc_name.py -d data/production/units_lists/metric_units.csv -o output/production/working_output.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
-./nc_name.py -d data/production/units_lists/metric_units_prefixes_crossed.csv -o output/production/working_output.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
-./nc_name.py -d data/production/units_lists/first_pass_ucum_combined_units.csv -o output/production/working_output.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv
-
+./nc_name.py -d data/production/working_pooled_unit_codes.csv -o output/production/working_output.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 
 """
 
@@ -42,6 +36,7 @@ prefix_dict_list = [
     {'prefix': 'OM:', 'namespace': 'http://www.ontology-of-units-of-measure.org/resource/om-2/'},
     {'prefix': 'QUDT:', 'namespace': 'http://qudt.org/vocab/unit/'},
     {'prefix': 'OBOE:', 'namespace': 'http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#'},
+    {'prefix': 'NERC_P06:', 'namespace': 'http://vocab.nerc.ac.uk/collection/P06/current/'},
     {'prefix': 'skos:', 'namespace': 'http://www.w3.org/2004/02/skos/core#'}
 ]
 
@@ -120,6 +115,14 @@ def get_args():
     parser.add_argument(
         '-u4',
         '--ucum4',
+        help='UCUM mapping keys',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-u5',
+        '--ucum5',
         help='UCUM mapping keys',
         metavar='str',
         type=str,
@@ -600,10 +603,13 @@ def format_si_ttl(iri, label, si_code, ucum_code, definition_en, mapping_list):
     om_regex = r"(http://www.ontology-of-units-of-measure.org/resource/om-2/)(.*)"
     uo_regex = r"(http://purl.obolibrary.org/obo/UO_)(.*)"
     oboe_regex = r"(http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#)(.*)"
+    nerc_regex = r"(http://vocab.nerc.ac.uk/collection/P06/current/)(.*)(/)"
+
     qudt_list = []
     om_list = []
     uo_list = []
     oboe_list = []
+    nerc_list = []
 
     for m in mapping_list:
         if re.search(qudt_regex, m):
@@ -626,6 +632,11 @@ def format_si_ttl(iri, label, si_code, ucum_code, definition_en, mapping_list):
             oboe_id = match.group(2)
             oboe_id = 'OBOE:' + oboe_id
             oboe_list.append(oboe_id)
+        if re.search(nerc_regex, m):
+            match = re.search(nerc_regex, m)
+            nerc_id = match.group(2)
+            nerc_id = 'NERC_P06:' + nerc_id
+            nerc_list.append(nerc_id)
 
     iri = '{}{}\n'.format('unit:', iri)
     return_str = ''
@@ -654,6 +665,8 @@ def format_si_ttl(iri, label, si_code, ucum_code, definition_en, mapping_list):
     [return_list.append('  {}exactMatch {}'.format('skos:', x)) for x in uo_list if uo_list]
 
     [return_list.append('  {}exactMatch {}'.format('skos:', x)) for x in oboe_list if oboe_list]
+
+    [return_list.append('  {}exactMatch {}'.format('skos:', x)) for x in nerc_list if nerc_list]
 
     # [return_list.append('  {}ucum_code "{}"'.format('unit:', u)) for u in ucum_list]
 
@@ -688,6 +701,7 @@ def main():
     qudt_ucum = args.ucum2
     uo_ucum = args.ucum3
     oboe_ucum = args.ucum4
+    nerc_ucum = args.ucum5
 
     # Read in SI units
     SI_list = []
@@ -771,14 +785,20 @@ def main():
         for row in reader:
             oboe_ucum_list.append(row)
 
+    nerc_ucum_list = []
+    # open and save input file as list of dictionaries
+    with open(nerc_ucum, mode='r', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            nerc_ucum_list.append(row)
+
     # Join all the input ontology to UCUM mappings into single list of dict
-    ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list
+    ontology_mapping_list = om_ucum_list + qudt_ucum_list + uo_ucum_list + oboe_ucum_list + nerc_ucum_list
 
     valid_SI_input_list = []
 
     # # breakup input list one term at a time
     for u in input_list:
-    # for u in test_list:
         try:
             tree = si_grammar.parse(u)
             #result = transformer().transform(tree)
