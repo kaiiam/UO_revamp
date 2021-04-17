@@ -1488,7 +1488,7 @@ unit:daA
 
 unit:daar
   a owl:NamedIndividual ;
-  rdfs:label "decaare"@en ;
+  rdfs:label "decare"@en ;
   IAO:0000115 "A unit which is equal to 10¹ are."@en ;
   unit:SI_code "daa" ;
   unit:ucum_code "daar" ;
@@ -3827,7 +3827,7 @@ unit:hA
 
 unit:har
   a owl:NamedIndividual ;
-  rdfs:label "hectoare"@en ;
+  rdfs:label "hectare"@en ;
   IAO:0000115 "A unit which is equal to 10² are."@en ;
   unit:SI_code "ha" ;
   unit:ucum_code "har" ;
@@ -3839,7 +3839,7 @@ unit:har
 
 unit:d.har
   a owl:NamedIndividual ;
-  rdfs:label "day hectoare"@en ;
+  rdfs:label "day hectare"@en ;
   IAO:0000115 "A unit which is equal to 1 day by 10² are."@en ;
   unit:SI_code "d ha" ;
   unit:ucum_code "d.har" ;
@@ -4879,7 +4879,7 @@ unit:kg.h-1
 
 unit:kg.har-1
   a owl:NamedIndividual ;
-  rdfs:label "kilogram per hectoare"@en ;
+  rdfs:label "kilogram per hectare"@en ;
   IAO:0000115 "A unit which is equal to 10³ gram per 10² are."@en ;
   unit:SI_code "kg ha-1" ;
   unit:ucum_code "kg.har-1" ;
@@ -4889,7 +4889,7 @@ unit:kg.har-1
 
 unit:kg.d-1.har-1
   a owl:NamedIndividual ;
-  rdfs:label "kilogram per day hectoare"@en ;
+  rdfs:label "kilogram per day hectare"@en ;
   IAO:0000115 "A unit which is equal to 10³ gram per 1 day by 10² are."@en ;
   unit:SI_code "kg d-1 ha-1" ;
   unit:ucum_code "kg.d-1.har-1" ;
@@ -6388,7 +6388,7 @@ unit:m2.g-1
 
 unit:m2.har-1
   a owl:NamedIndividual ;
-  rdfs:label "square metre per hectoare"@en ;
+  rdfs:label "square metre per hectare"@en ;
   IAO:0000115 "A unit which is equal to 1 square metre per 10² are."@en ;
   unit:SI_code "m2 ha-1" ;
   unit:ucum_code "m2.har-1" ;
@@ -10059,7 +10059,7 @@ unit:t.d-1
 
 unit:t.har-1
   a owl:NamedIndividual ;
-  rdfs:label "tonne per hectoare"@en ;
+  rdfs:label "tonne per hectare"@en ;
   IAO:0000115 "A unit which is equal to 1 tonne per 10² are."@en ;
   unit:SI_code "t ha-1" ;
   unit:ucum_code "t.har-1" ;
