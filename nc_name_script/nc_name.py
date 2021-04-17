@@ -10,6 +10,7 @@ Run:
 Test
 ./nc_name.py -d data/test/test1.csv -o output/test/test1.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 ./nc_name.py -d data/test/test2.csv -o output/test/test2.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
+./nc_name.py -d data/test/test3.csv -o output/test/test3.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
 ./nc_name.py -d data/production/working_pooled_unit_codes.csv -o output/production/working_output.ttl -s input_mappings/SI/metric_labels.csv -p input_mappings/SI/prefixes.csv -e input_mappings/SI/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
@@ -384,13 +385,26 @@ def gen_label_parts(result, SI_unit_label_dict, prefix_dict, exponents_dict, lab
     """
     Create labels from units and prefixes
     TODO add special case for unit = are to print hectare instead of hectoare etc
-    deci might be the only exception
+    Have a temporary workaround for hectare and decare but open question if are should
+    be crossable with all prefixes see https://github.com/kaiiam/UO_revamp/issues/6
     """
+
+    unit = get_value(result['unit'], SI_unit_label_dict)
+
     if get_value(result['prefix'], prefix_dict) is not None:
         prefix = get_value(result['prefix'], prefix_dict)
     else:
         prefix = ''
-    unit = get_value(result['unit'], SI_unit_label_dict)
+
+    if unit == 'are':
+        prefix = get_value(result['prefix'], prefix_dict)
+        if prefix == None:
+            prefix = ''
+        if prefix == 'hecto':
+            prefix = 'hect'
+        if prefix == 'deca':
+            prefix = 'dec'
+
     power = str(result['exponent'])
     power = power.replace('-', '')
     power = get_value(power, exponents_dict)
@@ -867,19 +881,14 @@ def main():
         # print(u, numerator_list, denominator_list)
 
         # # Generate canonical nc_name code
-        # print(u, '->', canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list))
-        si_nc_name_iri = canonical_nc_iri(numerator_list=numerator_list,denominator_list=denominator_list)
+        si_nc_name_iri = canonical_nc_iri(numerator_list=numerator_list, denominator_list=denominator_list)
 
         # # Generate canonical term label
-        # print(u, '->', canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en'))
         label = canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en')
 
         # Generate canonical english definition
-        # ucum_unit_def_en_dict
-        # TODO/WORKING
         definition_en = canonical_en_definition(numerator_list=numerator_list, denominator_list=denominator_list,
                                                 unit_def_dict=ucum_unit_def_en_dict, prefix_numbers_dict=prefix_numbers_dict, ucum_unit_label_en_dict=ucum_unit_label_en_dict, exponents_en_dict=exponents_en_dict, label_lan='label_en')
-        #print(definition_en)
 
         # Generate canonical SI code e.g. `Pa s`
         # First pass complete, Later can fix superscript issue with fstrings TODO
