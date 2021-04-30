@@ -32,7 +32,7 @@ prefix_dict_list = [
     {'prefix': 'xsd:', 'namespace': 'http://www.w3.org/2001/XMLSchema#'},
     {'prefix': 'owl:', 'namespace': 'http://www.w3.org/2002/07/owl#'},
     {'prefix': 'IAO:', 'namespace': 'http://purl.obolibrary.org/obo/IAO_'},
-    {'prefix': 'unit:', 'namespace': 'http://purl.obolibrary.org/obo/unit_'},
+    {'prefix': 'unit:', 'namespace': 'https://w3id.org/units/unit_'},
     {'prefix': 'UO:', 'namespace': 'http://purl.obolibrary.org/obo/UO_'},
     {'prefix': 'OM:', 'namespace': 'http://www.ontology-of-units-of-measure.org/resource/om-2/'},
     {'prefix': 'QUDT:', 'namespace': 'http://qudt.org/vocab/unit/'},
