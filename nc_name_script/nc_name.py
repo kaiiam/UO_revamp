@@ -25,6 +25,7 @@ import collections.abc
 import re
 from lark import Lark, Tree, Transformer
 from itertools import permutations
+from urllib import parse
 
 prefix_dict_list = [
     {'prefix': 'rdf:', 'namespace': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
@@ -32,7 +33,7 @@ prefix_dict_list = [
     {'prefix': 'xsd:', 'namespace': 'http://www.w3.org/2001/XMLSchema#'},
     {'prefix': 'owl:', 'namespace': 'http://www.w3.org/2002/07/owl#'},
     {'prefix': 'IAO:', 'namespace': 'http://purl.obolibrary.org/obo/IAO_'},
-    {'prefix': 'unit:', 'namespace': 'https://w3id.org/units/unit_'},
+    {'prefix': 'unit:', 'namespace': 'https://w3id.org/units/'},
     {'prefix': 'UO:', 'namespace': 'http://purl.obolibrary.org/obo/UO_'},
     {'prefix': 'OM:', 'namespace': 'http://www.ontology-of-units-of-measure.org/resource/om-2/'},
     {'prefix': 'QUDT:', 'namespace': 'http://qudt.org/vocab/unit/'},
@@ -652,7 +653,7 @@ def format_si_ttl(iri, label, si_code, ucum_code, definition_en, mapping_list):
             nerc_id = 'NERC_P06:' + nerc_id
             nerc_list.append(nerc_id)
 
-    iri = '{}{}\n'.format('unit:', iri)
+    iri = '{}{}\n'.format('unit:', parse.quote(iri))
     return_str = ''
     return_str += iri
     return_list = []
@@ -905,6 +906,8 @@ def main():
         #print(mapping_list)
 
         # Format ttl for SI parser results
+        # We can alternatively pass ucum_code instead of si_nc_name_iri
+        # as iri to circumvent NC name mapping
         print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code, ucum_code=ucum_code, definition_en=definition_en, mapping_list=mapping_list), file=f)
 
 
