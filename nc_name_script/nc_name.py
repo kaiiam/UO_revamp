@@ -239,6 +239,20 @@ class transformer(Transformer):
           "unit": args[:],
         }
 
+    def CONVENTIONAL_BRACKETS(self, args):
+        #print(args[:])
+        return {
+          "type": "conventional",
+          "unit": args[:],
+        }
+
+    def CONVENTIONAL_MIXED_BRACKETS(self, args):
+        #print(args[:])
+        return {
+          "type": "conventional",
+          "unit": args[:],
+        }
+
     def EXCEPTION(self, args):
         #print(args[:])
         return {
@@ -265,6 +279,8 @@ simple_unit: METRIC
             | PREFIX? METRIC
             | NON_PRE_METRIC
             | CONVENTIONAL
+            | CONVENTIONAL_BRACKETS
+            | CONVENTIONAL_MIXED_BRACKETS
             | EXCEPTION
 annotatable: simple_unit exponent
            | simple_unit
@@ -276,14 +292,15 @@ start: "/" term | term
 OPERATOR: /\.|\//
 PREFIX: "Y" | "Z" | "E" | "P"| "T" | "G" | "M" | "k" | "h" | "da" | "d" | "c" | "m" | "u" | "n" | "p" | "f" | "a" | "z" | "y"
 METRIC: "ar" | "A"| "Bq" | "B" | "cd" | "C" |  "eV" | "F" | "Gy" | "g" | "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "L" | "mol" |  "m" | "Np" | "N" | "Ohm" | "Pa" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "u" | "V" | "Wb" | "W" | "''" 
-NON_PRE_METRIC: "AU" | "Cel" | "deg" | "d" | "h" | "min" | "'"
-CONVENTIONAL: "[acr_br]" | "[acr_us]" | "[Amb'a'1'U]" | "[anti'Xa'U]" | "[APL'U]" | "[arb'U]" | "[AU]"
+NON_PRE_METRIC: "AU" | "Cel" | "deg" | "d" | "h" | "min" | "'" 
+CONVENTIONAL: "%" | "a_g" | "a_j" | "a_t" | "Ao" | "atm" | "att" | "a" | "bar" | "Bd" | "Bi" | "bit_s" | "bit" | "By" | "b" | "cal_IT" | "cal_m" | "cal_th" | "cal" | "Ci" | "circ" | "dyn" | "eq" | "erg" | "g%" | "Gal" | "Gb" | "gf" | "gon" | "G" | "Ky" | "Lmb" |  "mho" | "mo_g" | "mo_j" | "mo_s" | "mo" | "Mx" | "Oe" | "osm" | "pc" | "ph" | "P" | "RAD" | "REM" | "R" | "sb" | "sph" | "St" | "st" | "tex" | "U" | "wk"
+CONVENTIONAL_BRACKETS: "[acr_br]" | "[acr_us]" | "[Amb'a'1'U]" | "[anti'Xa'U]" | "[APL'U]" | "[arb'U]" | "[AU]" | "[BAU]" | "[bbl_us]" | "[bdsk'U]" | "[beth'U]" | "[bf_i]" | "[Btu_39]" | "[Btu_59]" | "[Btu_60]" | "[Btu_IT]" | "[Btu_m]" | "[Btu_th]" | "[Btu]" | "[bu_br]" | "[bu_us]" | "[c]" | "[Cal]" | "[car_Au]" | "[car_m]" | "[CCID_50]" | "[cft_i]" | "[CFU]" | "[ch_br]" | "[ch_us]" | "[Ch]" | "[cicero]" | "[cin_i]" | "[cml_i]" | "[cr_i]" | "[crd_us]" | "[cup_m]" | "[cup_us]" | "[cyd_i]" | "[D'ag'U]" | "[degF]" | "[degR]" | "[degRe]" | "[den]" | "[didot]" | "[diop]" | "[dpt_us]" | "[dqt_us]" | "[dr_ap]" | "[dr_av]" | "[drp]" | "[dye'U]" | "[e]" | "[EID_50]" | "[ELU]" | "[eps_0]" | "[EU]" | "[fdr_br]" | "[fdr_us]" | "[FEU]" | "[FFU]" | "[foz_br]" | "[foz_m]" | "[foz_us]" | "[ft_br]" | "[ft_i]" | "[ft_us]" | "[fth_br]" | "[fth_i]" | "[fth_us]" | "[fur_us]" | "[G]" | "[g]" | "[gal_br]" | "[gal_us]" | "[gal_wi]" | "[gil_br]" | "[gil_us]" | "[GPL'U]" | "[gr]" | "[h]" | "[hd_i]" | "[hnsf'U]" | "[hp_C]" | "[hp_M]" | "[hp_Q]" | "[hp_X]" | "[hp'_C]" | "[hp'_M]" | "[hp'_Q]" | "[hp'_X]" | "[HP]" | "[HPF]" | "[in_br]" | "[in_i'H2O]" | "[in_i'Hg]" | "[in_i]" | "[in_us]" | "[IR]" | "[IU]" | "[iU]" | "[k]" | "[ka'U]" | "[kn_br]" | "[kn_i]" | "[knk'U]" | "[kp_C]" | "[kp_M]" | "[kp_Q]" | "[kp_X]" | "[lb_ap]" | "[lb_av]" | "[lb_tr]" | "[lbf_av]" | "[lcwt_av]" | "[Lf]" | "[ligne]" | "[lk_br]" | "[lk_us]" | "[lne]" | "[LPF]" | "[lton_av]" | "[ly]" | "[m_e]" | "[m_p]" |  "[mclg'U]" | "[mesh_i]" | "[MET]" | "[mi_br]" | "[mi_i]" | "[mi_us]" | "[mil_i]" | "[mil_us]" | "[min_br]" | "[min_us]" | "[MPL'U]" | "[mu_0]" | "[nmi_br]" | "[nmi_i]" | "[oz_ap]" | "[oz_av]" | "[oz_m]" | "[oz_tr]" | "[p'diop]" | "[pc_br]" | "[pca_pr]" | "[pca]" | "[PFU]" | "[pH]" | "[pi]" | "[pied]" | "[pk_br]" | "[pk_us]" | "[pnt_pr]" | "[pnt]" | "[PNU]" | "[pouce]" | "[ppb]" | "[ppm]" | "[ppth]" | "[pptr]" | "[PRU]" | "[psi]" | "[pt_br]" | "[pt_us]" | "[pwt_tr]" | "[qt_br]" | "[qt_us]" | "[rch_us]" | "[rd_br]" | "[rd_us]" | "[rlk_us]" | "[S]" | "[sc_ap]" | "[sct]" | "[scwt_av]" | "[sft_i]" | "[sin_i]" | "[smgy'U]" | "[smi_us]" | "[smoot]" | "[srd_us]" | "[ston_av]" | "[stone_av]" | "[syd_i]" | "[tb'U]" | "[tbs_m]" | "[tbs_us]" | "[TCID_50]" | "[todd'U]" | "[tsp_m]" | "[tsp_us]" | "[twp]" | "[USP'U]" | "[wood'U]" | "[yd_br]" | "[yd_i]" | "[yd_us]"
+CONVENTIONAL_MIXED_BRACKETS: "%[slope]" | "B[10.nV]" | "B[kW]" | "B[mV]" | "B[SPL]" | "B[uV]" | "B[V]" | "B[W]" | "cal_[15]" | "cal_[20]" | "m[H2O]" | "m[Hg]" 
 EXCEPTION: "dar"
 %ignore " "           // Disregard spaces in text
 ''')
 # Note the rules need to be in order if we have  "m" | "mol" then mol won't be found
-
-# CONVENTIONAL: "[acr_br]" | "[acr_us]" | "[Amb'a'1'U]" | "[anti'Xa'U]" | "[APL'U]" | "[arb'U]" | "[AU]" | "[BAU]" | "[bbl_us]" | "[bdsk'U]" | "[beth'U]" | "[bf_i]" | "[Btu_39]" | "[Btu_59]" | "[Btu_60]" | "[Btu_IT]" | "[Btu_m]" | "[Btu_th]" | "[Btu]" | "[bu_br]" | "[bu_us]" | "[c]" | "[Cal]" | "[car_Au]" | "[car_m]" | "[CCID_50]" | "[cft_i]" | "[CFU]" | "[ch_br]" | "[ch_us]" | "[Ch]" | "[cicero]" | "[cin_i]" | "[cml_i]" | "[cr_i]" | "[crd_us]" | "[cup_m]" | "[cup_us]" | "[cyd_i]" | "[D'ag'U]" | "[degF]" | "[degR]" | "[degRe]" | "[den]" | "[didot]" | "[diop]" | "[dpt_us]" | "[dqt_us]" | "[dr_ap]" | "[dr_av]" | "[drp]" | "[dye'U]" | "[e]" | "[EID_50]" | "[ELU]" | "[eps_0]" | "[EU]" | "[fdr_br]" | "[fdr_us]" | "[FEU]" | "[FFU]" | "[foz_br]" | "[foz_m]" | "[foz_us]" | "[ft_br]" | "[ft_i]" | "[ft_us]" | "[fth_br]" | "[fth_i]" | "[fth_us]" | "[fur_us]" | "[G]" | "[g]" | "[gal_br]" | "[gal_us]" | "[gal_wi]" | "[gil_br]" | "[gil_us]" | "[GPL'U]" | "[gr]" | "[h]" | "[hd_i]" | "[hnsf'U]" | "[hp_C]" | "[hp_M]" | "[hp_Q]" | "[hp_X]" | "[hp'_C]" | "[hp'_M]" | "[hp'_Q]" | "[hp'_X]" | "[HP]" | "[HPF]" | "[in_br]" | "[in_i'H2O]" | "[in_i'Hg]" | "[in_i]" | "[in_us]" | "[IR]" | "[IU]" | "[iU]" | "[k]" | "[ka'U]" | "[kn_br]" | "[kn_i]" | "[knk'U]" | "[kp_C]" | "[kp_M]" | "[kp_Q]" | "[kp_X]" | "[lb_ap]" | "[lb_av]" | "[lb_tr]" | "[lbf_av]" | "[lcwt_av]" | "[Lf]" | "[ligne]" | "[lk_br]" | "[lk_us]" | "[lne]" | "[LPF]" | "[lton_av]" | "[ly]" | "[m_e]" | "[m_p]" | "[m/s2/Hz^(1/2)]" | "[mclg'U]" | "[mesh_i]" | "[MET]" | "[mi_br]" | "[mi_i]" | "[mi_us]" | "[mil_i]" | "[mil_us]" | "[min_br]" | "[min_us]" | "[MPL'U]" | "[mu_0]" | "[nmi_br]" | "[nmi_i]" | "[oz_ap]" | "[oz_av]" | "[oz_m]" | "[oz_tr]" | "[p'diop]" | "[pc_br]" | "[pca_pr]" | "[pca]" | "[PFU]" | "[pH]" | "[pi]" | "[pied]" | "[pk_br]" | "[pk_us]" | "[pnt_pr]" | "[pnt]" | "[PNU]" | "[pouce]" | "[ppb]" | "[ppm]" | "[ppth]" | "[pptr]" | "[PRU]" | "[psi]" | "[pt_br]" | "[pt_us]" | "[pwt_tr]" | "[qt_br]" | "[qt_us]" | "[rch_us]" | "[rd_br]" | "[rd_us]" | "[rlk_us]" | "[S]" | "[sc_ap]" | "[sct]" | "[scwt_av]" | "[sft_i]" | "[sin_i]" | "[smgy'U]" | "[smi_us]" | "[smoot]" | "[srd_us]" | "[ston_av]" | "[stone_av]" | "[syd_i]" | "[tb'U]" | "[tbs_m]" | "[tbs_us]" | "[TCID_50]" | "[todd'U]" | "[tsp_m]" | "[tsp_us]" | "[twp]" | "[USP'U]" | "[wood'U]" | "[yd_br]" | "[yd_i]" | "[yd_us]" | "%" | "%[slope]" | "10*" | "10^" | "a_g" | "a_j" | "a_t" | "Ao" | "atm" | "att" | "a" | "B[10.nV]" | "B[kW]" | "B[mV]" | "B[SPL]" | "B[uV]" | "B[V]" | "B[W]" | "bar" | "Bd" | "Bi" | "bit" | "bit_s" | "By" | "b" | "cal" | "cal_[15]" | "cal_[20]" | "cal_IT" | "cal_m" | "cal_th" | "Ci" | "circ" | "dyn" | "eq" | "erg" | "g%" | "G" | "Gal" | "Gb" | "gf" | "gon" | "Ky" | "Lmb" | "m[H2O]" | "m[Hg]" | "mho" | "mo" | "mo_g" | "mo_j" | "mo_s" | "Mx" | "Oe" | "osm" | "pc" | "ph" | "P" | "RAD" | "REM" | "R" | "sb" | "sph" | "St" | "st" | "tex" | "U" | "wk"
+# removed conventional UCUM codes:  "10*" | "10^" | "[m/s2/Hz^(1/2)]" #TODO as as grammar
 
 # --------------------------------------------------
 def flatten(x):
