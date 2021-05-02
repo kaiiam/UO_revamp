@@ -908,7 +908,7 @@ def main():
         # Format ttl for SI parser results
         # We can alternatively pass ucum_code instead of si_nc_name_iri
         # as iri to circumvent NC name mapping
-        print(format_si_ttl(iri=si_nc_name_iri, label=label, si_code=si_code, ucum_code=ucum_code, definition_en=definition_en, mapping_list=mapping_list), file=f)
+        print(format_si_ttl(iri=ucum_code, label=label, si_code=si_code, ucum_code=ucum_code, definition_en=definition_en, mapping_list=mapping_list), file=f)
 
 
         # --------------------------------------------------
