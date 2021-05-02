@@ -11,6 +11,8 @@ Test
 ./nc_name.py -d data/test/test1.csv -o output/test/test1.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 ./nc_name.py -d data/test/test2.csv -o output/test/test2.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 ./nc_name.py -d data/test/test3.csv -o output/test/test3.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
+./nc_name.py -d data/test/test4.csv -o output/test/test4.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
+./nc_name.py -d data/test/test5.csv -o output/test/test5.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 
 UCUM list from QUDT OM UO and OBOE
 ./nc_name.py -d data/production/working_pooled_unit_codes.csv -o output/production/working_output.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
@@ -230,6 +232,13 @@ class transformer(Transformer):
           "unit": args[:],
         }
 
+    def CONVENTIONAL(self, args):
+        #print(args[:])
+        return {
+          "type": "conventional",
+          "unit": args[:],
+        }
+
     def EXCEPTION(self, args):
         #print(args[:])
         return {
@@ -255,6 +264,7 @@ exponent: SIGN digits | digits
 simple_unit: METRIC
             | PREFIX? METRIC
             | NON_PRE_METRIC
+            | CONVENTIONAL
             | EXCEPTION
 annotatable: simple_unit exponent
            | simple_unit
@@ -267,11 +277,13 @@ OPERATOR: /\.|\//
 PREFIX: "Y" | "Z" | "E" | "P"| "T" | "G" | "M" | "k" | "h" | "da" | "d" | "c" | "m" | "u" | "n" | "p" | "f" | "a" | "z" | "y"
 METRIC: "ar" | "A"| "Bq" | "B" | "cd" | "C" |  "eV" | "F" | "Gy" | "g" | "Hz" | "H" | "J"| "kat" | "K" | "lm" | "lx" | "L" | "mol" |  "m" | "Np" | "N" | "Ohm" | "Pa" | "rad" | "Sv" | "sr" | "s" | "S" | "T" | "t"| "u" | "V" | "Wb" | "W" | "''" 
 NON_PRE_METRIC: "AU" | "Cel" | "deg" | "d" | "h" | "min" | "'"
+CONVENTIONAL: "[acr_br]" | "[acr_us]" | "[Amb'a'1'U]" | "[anti'Xa'U]" | "[APL'U]" | "[arb'U]" | "[AU]"
 EXCEPTION: "dar"
 %ignore " "           // Disregard spaces in text
 ''')
 # Note the rules need to be in order if we have  "m" | "mol" then mol won't be found
 
+# CONVENTIONAL: "[acr_br]" | "[acr_us]" | "[Amb'a'1'U]" | "[anti'Xa'U]" | "[APL'U]" | "[arb'U]" | "[AU]" | "[BAU]" | "[bbl_us]" | "[bdsk'U]" | "[beth'U]" | "[bf_i]" | "[Btu_39]" | "[Btu_59]" | "[Btu_60]" | "[Btu_IT]" | "[Btu_m]" | "[Btu_th]" | "[Btu]" | "[bu_br]" | "[bu_us]" | "[c]" | "[Cal]" | "[car_Au]" | "[car_m]" | "[CCID_50]" | "[cft_i]" | "[CFU]" | "[ch_br]" | "[ch_us]" | "[Ch]" | "[cicero]" | "[cin_i]" | "[cml_i]" | "[cr_i]" | "[crd_us]" | "[cup_m]" | "[cup_us]" | "[cyd_i]" | "[D'ag'U]" | "[degF]" | "[degR]" | "[degRe]" | "[den]" | "[didot]" | "[diop]" | "[dpt_us]" | "[dqt_us]" | "[dr_ap]" | "[dr_av]" | "[drp]" | "[dye'U]" | "[e]" | "[EID_50]" | "[ELU]" | "[eps_0]" | "[EU]" | "[fdr_br]" | "[fdr_us]" | "[FEU]" | "[FFU]" | "[foz_br]" | "[foz_m]" | "[foz_us]" | "[ft_br]" | "[ft_i]" | "[ft_us]" | "[fth_br]" | "[fth_i]" | "[fth_us]" | "[fur_us]" | "[G]" | "[g]" | "[gal_br]" | "[gal_us]" | "[gal_wi]" | "[gil_br]" | "[gil_us]" | "[GPL'U]" | "[gr]" | "[h]" | "[hd_i]" | "[hnsf'U]" | "[hp_C]" | "[hp_M]" | "[hp_Q]" | "[hp_X]" | "[hp'_C]" | "[hp'_M]" | "[hp'_Q]" | "[hp'_X]" | "[HP]" | "[HPF]" | "[in_br]" | "[in_i'H2O]" | "[in_i'Hg]" | "[in_i]" | "[in_us]" | "[IR]" | "[IU]" | "[iU]" | "[k]" | "[ka'U]" | "[kn_br]" | "[kn_i]" | "[knk'U]" | "[kp_C]" | "[kp_M]" | "[kp_Q]" | "[kp_X]" | "[lb_ap]" | "[lb_av]" | "[lb_tr]" | "[lbf_av]" | "[lcwt_av]" | "[Lf]" | "[ligne]" | "[lk_br]" | "[lk_us]" | "[lne]" | "[LPF]" | "[lton_av]" | "[ly]" | "[m_e]" | "[m_p]" | "[m/s2/Hz^(1/2)]" | "[mclg'U]" | "[mesh_i]" | "[MET]" | "[mi_br]" | "[mi_i]" | "[mi_us]" | "[mil_i]" | "[mil_us]" | "[min_br]" | "[min_us]" | "[MPL'U]" | "[mu_0]" | "[nmi_br]" | "[nmi_i]" | "[oz_ap]" | "[oz_av]" | "[oz_m]" | "[oz_tr]" | "[p'diop]" | "[pc_br]" | "[pca_pr]" | "[pca]" | "[PFU]" | "[pH]" | "[pi]" | "[pied]" | "[pk_br]" | "[pk_us]" | "[pnt_pr]" | "[pnt]" | "[PNU]" | "[pouce]" | "[ppb]" | "[ppm]" | "[ppth]" | "[pptr]" | "[PRU]" | "[psi]" | "[pt_br]" | "[pt_us]" | "[pwt_tr]" | "[qt_br]" | "[qt_us]" | "[rch_us]" | "[rd_br]" | "[rd_us]" | "[rlk_us]" | "[S]" | "[sc_ap]" | "[sct]" | "[scwt_av]" | "[sft_i]" | "[sin_i]" | "[smgy'U]" | "[smi_us]" | "[smoot]" | "[srd_us]" | "[ston_av]" | "[stone_av]" | "[syd_i]" | "[tb'U]" | "[tbs_m]" | "[tbs_us]" | "[TCID_50]" | "[todd'U]" | "[tsp_m]" | "[tsp_us]" | "[twp]" | "[USP'U]" | "[wood'U]" | "[yd_br]" | "[yd_i]" | "[yd_us]" | "%" | "%[slope]" | "10*" | "10^" | "a_g" | "a_j" | "a_t" | "Ao" | "atm" | "att" | "a" | "B[10.nV]" | "B[kW]" | "B[mV]" | "B[SPL]" | "B[uV]" | "B[V]" | "B[W]" | "bar" | "Bd" | "Bi" | "bit" | "bit_s" | "By" | "b" | "cal" | "cal_[15]" | "cal_[20]" | "cal_IT" | "cal_m" | "cal_th" | "Ci" | "circ" | "dyn" | "eq" | "erg" | "g%" | "G" | "Gal" | "Gb" | "gf" | "gon" | "Ky" | "Lmb" | "m[H2O]" | "m[Hg]" | "mho" | "mo" | "mo_g" | "mo_j" | "mo_s" | "Mx" | "Oe" | "osm" | "pc" | "ph" | "P" | "RAD" | "REM" | "R" | "sb" | "sph" | "St" | "st" | "tex" | "U" | "wk"
 
 # --------------------------------------------------
 def flatten(x):
@@ -537,12 +549,16 @@ def canonical_si_code(numerator_list, denominator_list):
     # print(f'{str}\N{SUPERSCRIPT MINUS}\N{SUPERSCRIPT SEVEN}')
     return_lst = []
     for n in numerator_list:
-        if str(n['exponent']) == '1':
-            return_lst.append(n['si_code'])
+        if 'si_code' in n:
+            if str(n['exponent']) == '1':
+                return_lst.append(n['si_code'])
+            else:
+                return_lst.append(n['si_code'] + str(n['exponent']))
         else:
-            return_lst.append(n['si_code'] + str(n['exponent']))
+            return None
     for n in denominator_list:
-        return_lst.append(n['si_code'] + str(n['exponent']))
+        if 'si_code' in n:
+            return_lst.append(n['si_code'] + str(n['exponent']))
     return ' '.join(return_lst)
 
 
@@ -829,20 +845,29 @@ def main():
         for r in res_flat:
             pre_process_unit_list(r, u, new_dict_list)
 
+        # Determine type SI vs conventional
+        # to optionally Add SI codes in next step
+        # TODO could probably do this better
+        type_list = []
+        for r in new_dict_list:
+            type_list.append(r['type'])
+
         # Add codes to dict:
         for r in new_dict_list:
-            # create the SI code from prefix and unit
-            gen_symbol_code(result=r, mapping_dict=ucum_si_units_dict, code_str='si_code')
+            # Optionally Add SI codes
+            if 'conventional' not in type_list:
+                # create the SI code from prefix and unit
+                gen_symbol_code(result=r, mapping_dict=ucum_si_units_dict, code_str='si_code')
+
             # create the UCUM codes from prefix and unit
             code = r['prefix'] + r['unit']
             r.update({'ucum_code': code})
-
         # print(u, new_dict_list)
 
         # Function to generate list of UCUM codes from results dict list
         # Permute Possible UCUM strings
         UCUM_SI_list = gen_si_ucum_list(dict_list=new_dict_list)
-        #print(UCUM_SI_list)
+        # print(UCUM_SI_list)
 
         # Function to create labels from units and prefixes
         # pass in desired language SI unit, prefix and exponents dicts + label_lan
