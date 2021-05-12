@@ -196,7 +196,7 @@ unit:AU
 
 unit:Ao
   a owl:NamedIndividual ;
-  rdfs:label "Ångström"@en ;
+  rdfs:label "Angstrom"@en ;
   unit:ucum_code "Ao" ;
   skos:exactMatch QUDT:ANGSTROM ;
   skos:exactMatch OM:angstrom ;
@@ -205,15 +205,15 @@ unit:Ao
 
 unit:Ao-1
   a owl:NamedIndividual ;
-  rdfs:label "reciprocal Ångström"@en ;
-  IAO:0000115 "A unit which is equal to the reciprocal of 1 Ångström."@en ;
+  rdfs:label "reciprocal Angstrom"@en ;
+  IAO:0000115 "A unit which is equal to the reciprocal of 1 Angstrom."@en ;
   unit:ucum_code "Ao-1" ;
   skos:exactMatch QUDT:PER-ANGSTROM .
 
 unit:Ao2
   a owl:NamedIndividual ;
-  rdfs:label "square Ångström"@en ;
-  IAO:0000115 "A unit which is equal to 1 square Ångström."@en ;
+  rdfs:label "square Angstrom"@en ;
+  IAO:0000115 "A unit which is equal to 1 square Angstrom."@en ;
   unit:ucum_code "Ao2" ;
   skos:exactMatch UO:0000324 .
 
@@ -645,7 +645,7 @@ unit:Cel.s-1
 
 unit:Ci
   a owl:NamedIndividual ;
-  rdfs:label "Curie"@en ;
+  rdfs:label "curie"@en ;
   unit:ucum_code "Ci" ;
   skos:exactMatch QUDT:Ci ;
   skos:exactMatch OM:curie ;
@@ -653,8 +653,8 @@ unit:Ci
 
 unit:Ci.L-1
   a owl:NamedIndividual ;
-  rdfs:label "Curie per litre"@en ;
-  IAO:0000115 "A unit which is equal to 1 Curie per 1 litre."@en ;
+  rdfs:label "curie per litre"@en ;
+  IAO:0000115 "A unit which is equal to 1 curie per 1 litre."@en ;
   unit:ucum_code "Ci.L-1" ;
   skos:exactMatch UO:0000320 .
 
@@ -2874,7 +2874,7 @@ unit:m.Ohm2.m-1
 
 unit:P
   a owl:NamedIndividual ;
-  rdfs:label "Poise"@en ;
+  rdfs:label "poise"@en ;
   unit:ucum_code "P" ;
   skos:exactMatch QUDT:POISE ;
   skos:exactMatch OM:poise ;
@@ -2889,15 +2889,15 @@ unit:P%27%27
 
 unit:P.bar-1
   a owl:NamedIndividual ;
-  rdfs:label "Poise per bar"@en ;
-  IAO:0000115 "A unit which is equal to 1 Poise per 1 bar."@en ;
+  rdfs:label "poise per bar"@en ;
+  IAO:0000115 "A unit which is equal to 1 poise per 1 bar."@en ;
   unit:ucum_code "P.bar-1" ;
   skos:exactMatch QUDT:POISE-PER-BAR .
 
 unit:P.s.m-1
   a owl:NamedIndividual ;
-  rdfs:label "Poise second per metre"@en ;
-  IAO:0000115 "A unit which is equal to 1 Poise by 1 second per 1 metre."@en ;
+  rdfs:label "poise second per metre"@en ;
+  IAO:0000115 "A unit which is equal to 1 poise by 1 second per 1 metre."@en ;
   unit:ucum_code "P.s.m-1" ;
   skos:exactMatch QUDT:PA-SEC-PER-M .
 
@@ -3398,7 +3398,7 @@ unit:Pu
 
 unit:R
   a owl:NamedIndividual ;
-  rdfs:label "Roentgen"@en ;
+  rdfs:label "roentgen"@en ;
   unit:ucum_code "R" ;
   skos:exactMatch QUDT:R ;
   skos:exactMatch OM:röntgen ;
@@ -4088,15 +4088,15 @@ unit:W.K-1
 
 unit:W.%5Bsft_i%5D-1
   a owl:NamedIndividual ;
-  rdfs:label "watt per square foot"@en ;
-  IAO:0000115 "A unit which is equal to 1 watt per 1 square foot."@en ;
+  rdfs:label "watt per international square foot"@en ;
+  IAO:0000115 "A unit which is equal to 1 watt per 1 international square foot."@en ;
   unit:ucum_code "W.[sft_i]-1" ;
   skos:exactMatch QUDT:W-PER-FT2 .
 
 unit:W.%5Bsin_i%5D-1
   a owl:NamedIndividual ;
-  rdfs:label "watt per square inch"@en ;
-  IAO:0000115 "A unit which is equal to 1 watt per 1 square inch."@en ;
+  rdfs:label "watt per international square inch"@en ;
+  IAO:0000115 "A unit which is equal to 1 watt per 1 international square inch."@en ;
   unit:ucum_code "W.[sin_i]-1" ;
   skos:exactMatch QUDT:W-PER-IN2 .
 
@@ -4948,7 +4948,7 @@ unit:%5BAU%5D
 
 unit:%5BAmb%27a%271%27U%5D
   a owl:NamedIndividual ;
-  rdfs:label "allergen unit for Ambrosia artemisiifolia"@en ;
+  rdfs:label "Ambrosia artemisiifolia allergen unit"@en ;
   unit:ucum_code "[Amb'a'1'U]" .
 
 unit:%5BBAU%5D
@@ -5007,7 +5007,7 @@ unit:%5BCCID_50%5D
 
 unit:%5BCFU%5D
   a owl:NamedIndividual ;
-  rdfs:label "colony forming units"@en ;
+  rdfs:label "colony forming unit"@en ;
   unit:ucum_code "[CFU]" ;
   skos:exactMatch QUDT:CFU ;
   skos:exactMatch OM:colonyFormingUnit ;
@@ -5015,24 +5015,24 @@ unit:%5BCFU%5D
 
 unit:%5BCal%5D
   a owl:NamedIndividual ;
-  rdfs:label "nutrition label Calories"@en ;
+  rdfs:label "large calorie"@en ;
   unit:ucum_code "[Cal]" ;
   skos:exactMatch QUDT:KiloCAL_TH .
 
 unit:%5BCh%5D
   a owl:NamedIndividual ;
-  rdfs:label "French (catheter gauge)"@en ;
+  rdfs:label "Charrière"@en ;
   unit:ucum_code "[Ch]" ;
   skos:exactMatch QUDT:GAUGE_FR .
 
 unit:%5BD%27ag%27U%5D
   a owl:NamedIndividual ;
-  rdfs:label "D-antigen unit (polio)"@en ;
+  rdfs:label "D-antigen unit"@en ;
   unit:ucum_code "[D'ag'U]" .
 
 unit:%5BEID_50%5D
   a owl:NamedIndividual ;
-  rdfs:label "50% embryo infectious dose"@en ;
+  rdfs:label "50% embryo infectious dose unit"@en ;
   unit:ucum_code "[EID_50]" .
 
 unit:%5BELU%5D
@@ -5042,17 +5042,17 @@ unit:%5BELU%5D
 
 unit:%5BEU%5D
   a owl:NamedIndividual ;
-  rdfs:label "Ehrlich units (urobilinogen)"@en ;
+  rdfs:label "Ehrlich unit"@en ;
   unit:ucum_code "[EU]" .
 
 unit:%5BFEU%5D
   a owl:NamedIndividual ;
-  rdfs:label "fibrinogen equivalent units"@en ;
+  rdfs:label "fibrinogen equivalent unit"@en ;
   unit:ucum_code "[FEU]" .
 
 unit:%5BFFU%5D
   a owl:NamedIndividual ;
-  rdfs:label "focus forming units (cells)"@en ;
+  rdfs:label "focus forming units"@en ;
   unit:ucum_code "[FFU]" .
 
 unit:%5BGPL%27U%5D
@@ -5067,30 +5067,30 @@ unit:%5BG%5D
 
 unit:%5BHPF%5D
   a owl:NamedIndividual ;
-  rdfs:label "high power field (microscope)"@en ;
+  rdfs:label "high power field"@en ;
   unit:ucum_code "[HPF]" .
 
 unit:%5BHP%5D
   a owl:NamedIndividual ;
-  rdfs:label "horsepower - mechanical"@en ;
+  rdfs:label "horsepower"@en ;
   unit:ucum_code "[HP]" ;
   skos:exactMatch QUDT:HP ;
   skos:exactMatch OM:horsepower-British .
 
 unit:%5BIR%5D
   a owl:NamedIndividual ;
-  rdfs:label "index of reactivity (allergen)"@en ;
+  rdfs:label "index of allergen reactivity"@en ;
   unit:ucum_code "[IR]" .
 
 unit:%5BIU%5D
   a owl:NamedIndividual ;
-  rdfs:label "international unit - arbitrary"@en ;
+  rdfs:label "arbitrary international unit"@en ;
   unit:ucum_code "[IU]" ;
   skos:exactMatch QUDT:IU .
 
 unit:%5BLPF%5D
   a owl:NamedIndividual ;
-  rdfs:label "low power field (microscope)"@en ;
+  rdfs:label "low power field"@en ;
   unit:ucum_code "[LPF]" .
 
 unit:%5BLf%5D
@@ -5110,12 +5110,12 @@ unit:%5BMPL%27U%5D
 
 unit:%5BPFU%5D
   a owl:NamedIndividual ;
-  rdfs:label "plaque forming units"@en ;
+  rdfs:label "plaque forming unit"@en ;
   unit:ucum_code "[PFU]" .
 
 unit:%5BPNU%5D
   a owl:NamedIndividual ;
-  rdfs:label "protein nitrogen unit (allergen testing)"@en ;
+  rdfs:label "protein nitrogen unit"@en ;
   unit:ucum_code "[PNU]" .
 
 unit:%5BPRU%5D
@@ -5130,7 +5130,7 @@ unit:%5BS%5D
 
 unit:%5BTCID_50%5D
   a owl:NamedIndividual ;
-  rdfs:label "50% tissue culture infectious dose"@en ;
+  rdfs:label "50% tissue culture infectious dose unit"@en ;
   unit:ucum_code "[TCID_50]" .
 
 unit:%5BUSP%27U%5D
@@ -5140,7 +5140,7 @@ unit:%5BUSP%27U%5D
 
 unit:%5Bacr_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "acre"@en ;
+  rdfs:label "British acre"@en ;
   unit:ucum_code "[acr_br]" ;
   skos:exactMatch QUDT:AC ;
   skos:exactMatch OM:acre-International ;
@@ -5149,7 +5149,7 @@ unit:%5Bacr_br%5D
 
 unit:%5Bacr_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "acre - US"@en ;
+  rdfs:label "US customary acre"@en ;
   unit:ucum_code "[acr_us]" ;
   skos:exactMatch OM:acre-USSurvey .
 
@@ -5165,7 +5165,7 @@ unit:%5Barb%27U%5D
 
 unit:%5Bbbl_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "barrel - US"@en ;
+  rdfs:label "US barrel"@en ;
   unit:ucum_code "[bbl_us]" ;
   skos:exactMatch QUDT:BBL ;
   skos:exactMatch QUDT:BBL_US ;
@@ -5189,13 +5189,13 @@ unit:%5Bbf_i%5D
 
 unit:%5Bbu_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "bushel - British"@en ;
+  rdfs:label "British bushel"@en ;
   unit:ucum_code "[bu_br]" ;
   skos:exactMatch QUDT:BU_UK .
 
 unit:%5Bbu_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "bushel - US"@en ;
+  rdfs:label "US bushel"@en ;
   unit:ucum_code "[bu_us]" ;
   skos:exactMatch QUDT:BU_US ;
   skos:exactMatch OM:bushel-US ;
@@ -5208,7 +5208,7 @@ unit:%5Bc%5D
 
 unit:%5Bcar_Au%5D
   a owl:NamedIndividual ;
-  rdfs:label "carat of gold alloys"@en ;
+  rdfs:label "gold alloys carat"@en ;
   unit:ucum_code "[car_Au]" .
 
 unit:%5Bcar_m%5D
@@ -5226,14 +5226,14 @@ unit:%5Bcft_i%5D
 
 unit:%5Bch_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "Gunter's chain - British"@en ;
+  rdfs:label "British Gunter's chain"@en ;
   unit:ucum_code "[ch_br]" ;
   skos:exactMatch QUDT:CH ;
   skos:exactMatch UO:0010015 .
 
 unit:%5Bch_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "Gunter's chain - US"@en ;
+  rdfs:label "US Gunter's chain"@en ;
   unit:ucum_code "[ch_us]" ;
   skos:exactMatch OM:chain ;
   skos:exactMatch UO:0010015 .
@@ -5266,19 +5266,19 @@ unit:%5Bcr_i%5D
 
 unit:%5Bcrd_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "cord - US"@en ;
+  rdfs:label "US cord"@en ;
   unit:ucum_code "[crd_us]" ;
   skos:exactMatch QUDT:CORD .
 
 unit:%5Bcup_m%5D
   a owl:NamedIndividual ;
-  rdfs:label "cup - US legal"@en ;
+  rdfs:label "US legal cup"@en ;
   unit:ucum_code "[cup_m]" ;
   skos:exactMatch OM:cup .
 
 unit:%5Bcup_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "cup - US customary"@en ;
+  rdfs:label "US customary cup"@en ;
   unit:ucum_code "[cup_us]" ;
   skos:exactMatch QUDT:CUP ;
   skos:exactMatch QUDT:CUP_US ;
@@ -5287,13 +5287,13 @@ unit:%5Bcup_us%5D
 
 unit:%5Bcyd_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "cubic yard"@en ;
+  rdfs:label "cubic international yard"@en ;
   unit:ucum_code "[cyd_i]" ;
   skos:exactMatch QUDT:YD3 .
 
 unit:%5BdegF%5D
   a owl:NamedIndividual ;
-  rdfs:label "degrees Fahrenheit"@en ;
+  rdfs:label "degree Fahrenheit"@en ;
   unit:ucum_code "[degF]" ;
   skos:exactMatch QUDT:DEG_F ;
   skos:exactMatch OM:degreeFahrenheit ;
@@ -5303,20 +5303,20 @@ unit:%5BdegF%5D
 
 unit:%5BdegR%5D
   a owl:NamedIndividual ;
-  rdfs:label "degrees Rankine"@en ;
+  rdfs:label "degree Rankine"@en ;
   unit:ucum_code "[degR]" ;
   skos:exactMatch QUDT:DEG_R ;
   skos:exactMatch OM:degreeRankine .
 
 unit:%5BdegRe%5D
   a owl:NamedIndividual ;
-  rdfs:label "degrees Réaumur"@en ;
+  rdfs:label "degree Réaumur"@en ;
   unit:ucum_code "[degRe]" ;
   skos:exactMatch OM:degreeReaumur .
 
 unit:%5Bden%5D
   a owl:NamedIndividual ;
-  rdfs:label "Denier (linear mass density)"@en ;
+  rdfs:label "denier"@en ;
   unit:ucum_code "[den]" ;
   skos:exactMatch QUDT:Denier .
 
@@ -5328,39 +5328,39 @@ unit:%5Bdidot%5D
 
 unit:%5Bdiop%5D
   a owl:NamedIndividual ;
-  rdfs:label "diopter (lens)"@en ;
+  rdfs:label "diopter"@en ;
   unit:ucum_code "[diop]" ;
   skos:exactMatch QUDT:DIOPTER .
 
 unit:%5Bdpt_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "dry pint - US"@en ;
+  rdfs:label "US dry pint"@en ;
   unit:ucum_code "[dpt_us]" ;
   skos:exactMatch QUDT:PINT_US_DRY ;
   skos:exactMatch OM:dryPint-US .
 
 unit:%5Bdqt_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "dry quart - US"@en ;
+  rdfs:label "US dry quart"@en ;
   unit:ucum_code "[dqt_us]" ;
   skos:exactMatch QUDT:QT_US_DRY ;
   skos:exactMatch OM:dryQuart-US .
 
 unit:%5Bdr_ap%5D
   a owl:NamedIndividual ;
-  rdfs:label "dram - apothecary"@en ;
+  rdfs:label "drachm"@en ;
   unit:ucum_code "[dr_ap]" ;
   skos:exactMatch QUDT:DRAM_UK .
 
 unit:%5Bdr_av%5D
   a owl:NamedIndividual ;
-  rdfs:label "Dram mass unit"@en ;
+  rdfs:label "dram mass unit"@en ;
   unit:ucum_code "[dr_av]" ;
   skos:exactMatch QUDT:DRAM_US .
 
 unit:%5Bdrp%5D
   a owl:NamedIndividual ;
-  rdfs:label "drop - metric (1/20 mL)"@en ;
+  rdfs:label "drop"@en ;
   unit:ucum_code "[drp]" ;
   skos:exactMatch OM:drop .
 
@@ -5378,23 +5378,23 @@ unit:%5Be%5D
 
 unit:%5Beps_0%5D
   a owl:NamedIndividual ;
-  rdfs:label "permittivity of vacuum - electric"@en ;
+  rdfs:label "permittivity of vacuum"@en ;
   unit:ucum_code "[eps_0]" ;
   skos:exactMatch QUDT:PERMITTIVITY_REL .
 
 unit:%5Bfdr_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "fluid dram - British"@en ;
+  rdfs:label "British fluid dram"@en ;
   unit:ucum_code "[fdr_br]" .
 
 unit:%5Bfdr_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "fluid dram - US"@en ;
+  rdfs:label "US fluid dram"@en ;
   unit:ucum_code "[fdr_us]" .
 
 unit:%5Bfoz_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "fluid ounce - British"@en ;
+  rdfs:label "British fluid ounce"@en ;
   unit:ucum_code "[foz_br]" ;
   skos:exactMatch QUDT:OZ_VOL_UK ;
   skos:exactMatch OM:fluidOunce-Imperial ;
@@ -5402,24 +5402,24 @@ unit:%5Bfoz_br%5D
 
 unit:%5Bfoz_m%5D
   a owl:NamedIndividual ;
-  rdfs:label "fluid ounce - metric"@en ;
+  rdfs:label "metric fluid ounce"@en ;
   unit:ucum_code "[foz_m]" .
 
 unit:%5Bfoz_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "fluid ounce - US"@en ;
+  rdfs:label "US fluid ounce"@en ;
   unit:ucum_code "[foz_us]" ;
   skos:exactMatch QUDT:OZ_VOL_US ;
   skos:exactMatch OM:fluidOunce-US .
 
 unit:%5Bft_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "foot - British"@en ;
+  rdfs:label "British foot"@en ;
   unit:ucum_code "[ft_br]" .
 
 unit:%5Bft_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "foot"@en ;
+  rdfs:label "international foot"@en ;
   unit:ucum_code "[ft_i]" ;
   skos:exactMatch QUDT:FT ;
   skos:exactMatch OM:foot-International ;
@@ -5428,19 +5428,19 @@ unit:%5Bft_i%5D
 
 unit:%5Bft_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "foot - US"@en ;
+  rdfs:label "US foot"@en ;
   unit:ucum_code "[ft_us]" ;
   skos:exactMatch QUDT:FT_US ;
   skos:exactMatch OM:foot-USSurvey .
 
 unit:%5Bfth_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "fathom - British"@en ;
+  rdfs:label "British fathom"@en ;
   unit:ucum_code "[fth_br]" .
 
 unit:%5Bfth_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "fathom"@en ;
+  rdfs:label "international fathom"@en ;
   unit:ucum_code "[fth_i]" ;
   skos:exactMatch QUDT:FATH ;
   skos:exactMatch UO:0010020 ;
@@ -5448,13 +5448,13 @@ unit:%5Bfth_i%5D
 
 unit:%5Bfth_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "fathom - US"@en ;
+  rdfs:label "US fathom"@en ;
   unit:ucum_code "[fth_us]" ;
   skos:exactMatch OM:fathom-USSurvey .
 
 unit:%5Bfur_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "furlong - US"@en ;
+  rdfs:label "US furlong"@en ;
   unit:ucum_code "[fur_us]" ;
   skos:exactMatch QUDT:FUR ;
   skos:exactMatch UO:0010016 .
@@ -5467,7 +5467,7 @@ unit:%5Bg%5D
 
 unit:%5Bgal_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "gallon- British"@en ;
+  rdfs:label "British gallon"@en ;
   unit:ucum_code "[gal_br]" ;
   skos:exactMatch QUDT:GAL_IMP ;
   skos:exactMatch QUDT:GAL_UK ;
@@ -5476,7 +5476,7 @@ unit:%5Bgal_br%5D
 
 unit:%5Bgal_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "gallon - US"@en ;
+  rdfs:label "US gallon"@en ;
   unit:ucum_code "[gal_us]" ;
   skos:exactMatch QUDT:GAL_US ;
   skos:exactMatch OM:gallon-US ;
@@ -5484,14 +5484,14 @@ unit:%5Bgal_us%5D
 
 unit:%5Bgal_wi%5D
   a owl:NamedIndividual ;
-  rdfs:label "gallon - historical"@en ;
+  rdfs:label "historical gallon"@en ;
   unit:ucum_code "[gal_wi]" ;
   skos:exactMatch QUDT:GAL_US_DRY ;
   skos:exactMatch OM:dryGallon-US .
 
 unit:%5Bgil_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "gill - British"@en ;
+  rdfs:label "British gill"@en ;
   unit:ucum_code "[gil_br]" ;
   skos:exactMatch QUDT:GI_UK ;
   skos:exactMatch OM:gill-Imperial ;
@@ -5499,7 +5499,7 @@ unit:%5Bgil_br%5D
 
 unit:%5Bgil_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "gill - US"@en ;
+  rdfs:label "US gill"@en ;
   unit:ucum_code "[gil_us]" ;
   skos:exactMatch QUDT:GI_US ;
   skos:exactMatch OM:gill-US .
@@ -5569,14 +5569,14 @@ unit:%5Bhp_X%5D
 
 unit:%5BiU%5D
   a owl:NamedIndividual ;
-  rdfs:label "international unit - arbitrary"@en ;
+  rdfs:label "arbitrary international unit"@en ;
   unit:ucum_code "[iU]" ;
   skos:exactMatch QUDT:IU ;
   skos:exactMatch OM:InternationalUnit .
 
 unit:%5Bin_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "inch - British"@en ;
+  rdfs:label "British inch"@en ;
   unit:ucum_code "[in_br]" .
 
 unit:%5Bin_i%27H2O%5D
@@ -5602,7 +5602,7 @@ unit:%5Bin_i%5D
 
 unit:%5Bin_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "inch - US"@en ;
+  rdfs:label "US inch"@en ;
   unit:ucum_code "[in_us]" .
 
 unit:%5Bk%5D
@@ -5617,12 +5617,12 @@ unit:%5Bka%27U%5D
 
 unit:%5Bkn_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "knot - British"@en ;
+  rdfs:label "British knot"@en ;
   unit:ucum_code "[kn_br]" .
 
 unit:%5Bkn_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "knot"@en ;
+  rdfs:label "international knot"@en ;
   unit:ucum_code "[kn_i]" ;
   skos:exactMatch QUDT:KN ;
   skos:exactMatch OM:knot-International ;
@@ -5656,13 +5656,13 @@ unit:%5Bkp_X%5D
 
 unit:%5Blb_ap%5D
   a owl:NamedIndividual ;
-  rdfs:label "pound - apothecary"@en ;
+  rdfs:label "apothecary pound"@en ;
   unit:ucum_code "[lb_ap]" ;
   skos:exactMatch OM:poundApothecaries .
 
 unit:%5Blb_av%5D
   a owl:NamedIndividual ;
-  rdfs:label "pound"@en ;
+  rdfs:label "international pound"@en ;
   unit:ucum_code "[lb_av]" ;
   skos:exactMatch QUDT:LB ;
   skos:exactMatch OM:poundAvoirdupois ;
@@ -5671,13 +5671,13 @@ unit:%5Blb_av%5D
 
 unit:%5Blb_tr%5D
   a owl:NamedIndividual ;
-  rdfs:label "pound - troy"@en ;
+  rdfs:label "troy pound"@en ;
   unit:ucum_code "[lb_tr]" ;
   skos:exactMatch QUDT:LB_T .
 
 unit:%5Blbf_av%5D
   a owl:NamedIndividual ;
-  rdfs:label "pound force - US"@en ;
+  rdfs:label "US pound force"@en ;
   unit:ucum_code "[lbf_av]" ;
   skos:exactMatch QUDT:LB_F ;
   skos:exactMatch OM:pound-Force .
@@ -5692,27 +5692,27 @@ unit:%5Blcwt_av%5D
 
 unit:%5Bligne%5D
   a owl:NamedIndividual ;
-  rdfs:label "ligne"@en ;
+  rdfs:label "French line"@en ;
   unit:ucum_code "[ligne]" .
 
 unit:%5Blk_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "link for Gunter's chain - British"@en ;
+  rdfs:label "British link for Gunter's chain"@en ;
   unit:ucum_code "[lk_br]" .
 
 unit:%5Blk_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "link for Gunter's chain - US"@en ;
+  rdfs:label "US link for Gunter's chain"@en ;
   unit:ucum_code "[lk_us]" .
 
 unit:%5Blne%5D
   a owl:NamedIndividual ;
-  rdfs:label "line"@en ;
+  rdfs:label "British line"@en ;
   unit:ucum_code "[lne]" .
 
 unit:%5Blton_av%5D
   a owl:NamedIndividual ;
-  rdfs:label "long ton - British"@en ;
+  rdfs:label "British ton"@en ;
   unit:ucum_code "[lton_av]" ;
   skos:exactMatch QUDT:TON_LONG ;
   skos:exactMatch QUDT:TON_UK ;
@@ -5748,12 +5748,12 @@ unit:%5Bmesh_i%5D
 
 unit:%5Bmi_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "mile - British"@en ;
+  rdfs:label "British mile"@en ;
   unit:ucum_code "[mi_br]" .
 
 unit:%5Bmi_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "mile"@en ;
+  rdfs:label "international mile"@en ;
   unit:ucum_code "[mi_i]" ;
   skos:exactMatch QUDT:MI ;
   skos:exactMatch OM:mile-Statute ;
@@ -5761,7 +5761,7 @@ unit:%5Bmi_i%5D
 
 unit:%5Bmi_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "mile - US"@en ;
+  rdfs:label "US mile"@en ;
   unit:ucum_code "[mi_us]" ;
   skos:exactMatch QUDT:MI_US ;
   skos:exactMatch OM:mile-USSurvey ;
@@ -5769,7 +5769,7 @@ unit:%5Bmi_us%5D
 
 unit:%5Bmil_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "mil"@en ;
+  rdfs:label "international mil"@en ;
   unit:ucum_code "[mil_i]" ;
   skos:exactMatch QUDT:MilLength ;
   skos:exactMatch OM:mil-Length ;
@@ -5777,28 +5777,28 @@ unit:%5Bmil_i%5D
 
 unit:%5Bmil_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "mil - US"@en ;
+  rdfs:label "US mil"@en ;
   unit:ucum_code "[mil_us]" .
 
 unit:%5Bmin_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "minim - British"@en ;
+  rdfs:label "British minim"@en ;
   unit:ucum_code "[min_br]" .
 
 unit:%5Bmin_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "minim - US"@en ;
+  rdfs:label "US minim"@en ;
   unit:ucum_code "[min_us]" .
 
 unit:%5Bmu_0%5D
   a owl:NamedIndividual ;
-  rdfs:label "permeability of vacuum - magnetic"@en ;
+  rdfs:label "permeability of free space"@en ;
   unit:ucum_code "[mu_0]" ;
   skos:exactMatch QUDT:PERMEABILITY_EM_REL .
 
 unit:%5Bnmi_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "nautical mile - British"@en ;
+  rdfs:label "British nautical mile"@en ;
   unit:ucum_code "[nmi_br]" .
 
 unit:%5Bnmi_i%5D
@@ -5812,13 +5812,13 @@ unit:%5Bnmi_i%5D
 
 unit:%5Boz_ap%5D
   a owl:NamedIndividual ;
-  rdfs:label "ounce - apothecary"@en ;
+  rdfs:label "apothecary ounce"@en ;
   unit:ucum_code "[oz_ap]" ;
   skos:exactMatch OM:ounceApothecaries .
 
 unit:%5Boz_av%5D
   a owl:NamedIndividual ;
-  rdfs:label "ounce"@en ;
+  rdfs:label "international ounce"@en ;
   unit:ucum_code "[oz_av]" ;
   skos:exactMatch QUDT:OZ ;
   skos:exactMatch OM:ounceAvoirdupois ;
@@ -5826,18 +5826,18 @@ unit:%5Boz_av%5D
 
 unit:%5Boz_m%5D
   a owl:NamedIndividual ;
-  rdfs:label "ounce - metric"@en ;
+  rdfs:label "metric ounce"@en ;
   unit:ucum_code "[oz_m]" .
 
 unit:%5Boz_tr%5D
   a owl:NamedIndividual ;
-  rdfs:label "ounce - troy"@en ;
+  rdfs:label "troy ounce"@en ;
   unit:ucum_code "[oz_tr]" ;
   skos:exactMatch QUDT:OZ_TROY .
 
 unit:%5Bp%27diop%5D
   a owl:NamedIndividual ;
-  rdfs:label "prism diopter (magnifying power)"@en ;
+  rdfs:label "prism diopter"@en ;
   unit:ucum_code "[p'diop]" .
 
 unit:%5BpH%5D
@@ -5850,19 +5850,19 @@ unit:%5BpH%5D
 
 unit:%5Bpc_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "pace - British"@en ;
+  rdfs:label "British pace"@en ;
   unit:ucum_code "[pc_br]" .
 
 unit:%5Bpca%5D
   a owl:NamedIndividual ;
-  rdfs:label "pica (typography)"@en ;
+  rdfs:label "pica"@en ;
   unit:ucum_code "[pca]" ;
   skos:exactMatch QUDT:PCA ;
   skos:exactMatch OM:pica-ATA .
 
 unit:%5Bpca_pr%5D
   a owl:NamedIndividual ;
-  rdfs:label "Printer's pica (typography)"@en ;
+  rdfs:label "Printer's pica"@en ;
   unit:ucum_code "[pca_pr]" .
 
 unit:%5Bpi%5D
@@ -5877,27 +5877,27 @@ unit:%5Bpied%5D
 
 unit:%5Bpk_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "peck - British"@en ;
+  rdfs:label "British peck"@en ;
   unit:ucum_code "[pk_br]" ;
   skos:exactMatch QUDT:PK_UK .
 
 unit:%5Bpk_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "peck - US"@en ;
+  rdfs:label "US peck"@en ;
   unit:ucum_code "[pk_us]" ;
   skos:exactMatch QUDT:PK_US_DRY ;
   skos:exactMatch OM:peck-US .
 
 unit:%5Bpnt%5D
   a owl:NamedIndividual ;
-  rdfs:label "point (typography)"@en ;
+  rdfs:label "point"@en ;
   unit:ucum_code "[pnt]" ;
   skos:exactMatch QUDT:PT ;
   skos:exactMatch OM:point-ATA .
 
 unit:%5Bpnt_pr%5D
   a owl:NamedIndividual ;
-  rdfs:label "Printer's point (typography)"@en ;
+  rdfs:label "Printer's point"@en ;
   unit:ucum_code "[pnt_pr]" ;
   skos:exactMatch OM:point-Postscript .
 
@@ -5949,7 +5949,7 @@ unit:%5Bpsi%5D
 
 unit:%5Bpt_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "pint - British"@en ;
+  rdfs:label "British pint"@en ;
   unit:ucum_code "[pt_br]" ;
   skos:exactMatch QUDT:PINT_UK ;
   skos:exactMatch QUDT:PINT ;
@@ -5958,7 +5958,7 @@ unit:%5Bpt_br%5D
 
 unit:%5Bpt_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "pint - US"@en ;
+  rdfs:label "US pint"@en ;
   unit:ucum_code "[pt_us]" ;
   skos:exactMatch QUDT:PINT_US ;
   skos:exactMatch OM:liquidPint-US ;
@@ -5966,7 +5966,7 @@ unit:%5Bpt_us%5D
 
 unit:%5Bpwt_tr%5D
   a owl:NamedIndividual ;
-  rdfs:label "pennyweight - troy"@en ;
+  rdfs:label "troy pennyweight"@en ;
   unit:ucum_code "[pwt_tr]" ;
   skos:exactMatch QUDT:Pennyweight ;
   skos:exactMatch QUDT:DWT ;
@@ -5974,7 +5974,7 @@ unit:%5Bpwt_tr%5D
 
 unit:%5Bqt_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "quart - British"@en ;
+  rdfs:label "British quart"@en ;
   unit:ucum_code "[qt_br]" ;
   skos:exactMatch QUDT:QT_UK ;
   skos:exactMatch OM:quart-Imperial ;
@@ -5982,7 +5982,7 @@ unit:%5Bqt_br%5D
 
 unit:%5Bqt_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "quart - US"@en ;
+  rdfs:label "US quart"@en ;
   unit:ucum_code "[qt_us]" ;
   skos:exactMatch QUDT:QT_US ;
   skos:exactMatch OM:liquidQuart-US ;
@@ -5990,24 +5990,24 @@ unit:%5Bqt_us%5D
 
 unit:%5Brch_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "Ramden's chain - US"@en ;
+  rdfs:label "US Ramden's chain"@en ;
   unit:ucum_code "[rch_us]" .
 
 unit:%5Brd_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "rod - British"@en ;
+  rdfs:label "British rod"@en ;
   unit:ucum_code "[rd_br]" ;
   skos:exactMatch QUDT:ROD .
 
 unit:%5Brd_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "rod - US"@en ;
+  rdfs:label "US rod"@en ;
   unit:ucum_code "[rd_us]" ;
   skos:exactMatch OM:rod-US .
 
 unit:%5Brlk_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "link for Ramden's chain - US"@en ;
+  rdfs:label "US link for Ramden's chain"@en ;
   unit:ucum_code "[rlk_us]" .
 
 unit:%5Bsc_ap%5D
@@ -6030,13 +6030,13 @@ unit:%5Bscwt_av%5D
 
 unit:%5Bsft_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "square foot"@en ;
+  rdfs:label "international square foot"@en ;
   unit:ucum_code "[sft_i]" ;
   skos:exactMatch QUDT:FT2 .
 
 unit:%5Bsin_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "square inch"@en ;
+  rdfs:label "international square inch"@en ;
   unit:ucum_code "[sin_i]" ;
   skos:exactMatch QUDT:IN2 .
 
@@ -6047,7 +6047,7 @@ unit:%5Bsmgy%27U%5D
 
 unit:%5Bsmi_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "square mile - US"@en ;
+  rdfs:label "US square mile"@en ;
   unit:ucum_code "[smi_us]" ;
   skos:exactMatch QUDT:MI2 .
 
@@ -6058,12 +6058,12 @@ unit:%5Bsmoot%5D
 
 unit:%5Bsrd_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "square rod - US"@en ;
+  rdfs:label "US square rod"@en ;
   unit:ucum_code "[srd_us]" .
 
 unit:%5Bston_av%5D
   a owl:NamedIndividual ;
-  rdfs:label "short ton - US"@en ;
+  rdfs:label "US short ton"@en ;
   unit:ucum_code "[ston_av]" ;
   skos:exactMatch QUDT:TON_US ;
   skos:exactMatch QUDT:TON_SHORT ;
@@ -6072,14 +6072,14 @@ unit:%5Bston_av%5D
 
 unit:%5Bstone_av%5D
   a owl:NamedIndividual ;
-  rdfs:label "stone - British"@en ;
+  rdfs:label "British stone"@en ;
   unit:ucum_code "[stone_av]" ;
   skos:exactMatch QUDT:Stone_UK ;
   skos:exactMatch UO:0010035 .
 
 unit:%5Bsyd_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "square yard"@en ;
+  rdfs:label "square international yard"@en ;
   unit:ucum_code "[syd_i]" ;
   skos:exactMatch QUDT:YD2 .
 
@@ -6090,12 +6090,12 @@ unit:%5Btb%27U%5D
 
 unit:%5Btbs_m%5D
   a owl:NamedIndividual ;
-  rdfs:label "tablespoon - metric"@en ;
+  rdfs:label "metric tablespoon"@en ;
   unit:ucum_code "[tbs_m]" .
 
 unit:%5Btbs_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "tablespoon - US"@en ;
+  rdfs:label "US tablespoon"@en ;
   unit:ucum_code "[tbs_us]" ;
   skos:exactMatch QUDT:TBSP ;
   skos:exactMatch OM:tablespoon-US ;
@@ -6108,12 +6108,12 @@ unit:%5Btodd%27U%5D
 
 unit:%5Btsp_m%5D
   a owl:NamedIndividual ;
-  rdfs:label "teaspoon - metric"@en ;
+  rdfs:label "metric teaspoon"@en ;
   unit:ucum_code "[tsp_m]" .
 
 unit:%5Btsp_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "teaspoon - US"@en ;
+  rdfs:label "US teaspoon"@en ;
   unit:ucum_code "[tsp_us]" ;
   skos:exactMatch QUDT:TSP ;
   skos:exactMatch OM:teaspoon-US ;
@@ -6131,12 +6131,12 @@ unit:%5Bwood%27U%5D
 
 unit:%5Byd_br%5D
   a owl:NamedIndividual ;
-  rdfs:label "yard - British"@en ;
+  rdfs:label "British yard"@en ;
   unit:ucum_code "[yd_br]" .
 
 unit:%5Byd_i%5D
   a owl:NamedIndividual ;
-  rdfs:label "yard"@en ;
+  rdfs:label "international yard"@en ;
   unit:ucum_code "[yd_i]" ;
   skos:exactMatch QUDT:YD ;
   skos:exactMatch OM:yard-International ;
@@ -6145,7 +6145,7 @@ unit:%5Byd_i%5D
 
 unit:%5Byd_us%5D
   a owl:NamedIndividual ;
-  rdfs:label "yard - US"@en ;
+  rdfs:label "US yard"@en ;
   unit:ucum_code "[yd_us]" .
 
 unit:a
@@ -6645,7 +6645,7 @@ unit:bit.s-1
 
 unit:bit_s
   a owl:NamedIndividual ;
-  rdfs:label "bit - logarithmic"@en ;
+  rdfs:label "logarithmic bit"@en ;
   unit:ucum_code "bit_s" .
 
 unit:c%27%27
@@ -7052,7 +7052,7 @@ unit:cg.L-1
 
 unit:circ
   a owl:NamedIndividual ;
-  rdfs:label "circle - plane angle"@en ;
+  rdfs:label "plane angle circle"@en ;
   unit:ucum_code "circ" .
 
 unit:ckat
@@ -9229,8 +9229,8 @@ unit:h%27%27
 
 unit:%5Bsft_i%5D.h
   a owl:NamedIndividual ;
-  rdfs:label "square foot hour"@en ;
-  IAO:0000115 "A unit which is equal to 1 square foot by 1 hour."@en ;
+  rdfs:label "international square foot hour"@en ;
+  IAO:0000115 "A unit which is equal to 1 international square foot by 1 hour."@en ;
   unit:ucum_code "[sft_i].h" ;
   skos:exactMatch QUDT:HR-FT2 .
 
@@ -14399,8 +14399,8 @@ unit:A.s
 
 unit:%5Bsft_i%5D.s
   a owl:NamedIndividual ;
-  rdfs:label "square foot second"@en ;
-  IAO:0000115 "A unit which is equal to 1 square foot by 1 second."@en ;
+  rdfs:label "international square foot second"@en ;
+  IAO:0000115 "A unit which is equal to 1 international square foot by 1 second."@en ;
   unit:ucum_code "[sft_i].s" ;
   skos:exactMatch QUDT:SEC-FT2 .
 
@@ -14448,7 +14448,7 @@ unit:sb
 
 unit:sph
   a owl:NamedIndividual ;
-  rdfs:label "spere - solid angle"@en ;
+  rdfs:label "solid angle spere"@en ;
   unit:ucum_code "sph" .
 
 unit:sr
