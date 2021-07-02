@@ -13,6 +13,8 @@ Test
 ./nc_name.py -d data/test/test3.csv -o output/test/test3.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 ./nc_name.py -d data/test/test4.csv -o output/test/test4.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 ./nc_name.py -d data/test/test5.csv -o output/test/test5.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
+./nc_name.py -d data/test/test6.csv -o output/test/test6.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
+
 
 UCUM list from QUDT OM UO and OBOE
 ./nc_name.py -d data/production/working_pooled_unit_codes.csv -o output/production/working_output.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
@@ -377,8 +379,11 @@ def gen_symbol_code(result, mapping_dict, code_str):
     Add code_str based on prefix and unit
     """
     unit = get_value(result['unit'], mapping_dict)
-    code = result['prefix'] + unit
-    result.update({code_str: code})
+    try:
+        code = result['prefix'] + unit
+        result.update({code_str: code})
+    except:
+        print(f"No SI code for '{result}'")
 
 
 # --------------------------------------------------
@@ -900,9 +905,12 @@ def main():
         # print(u, 'num:', numerator_list, 'denom:', denominator_list)
 
         # # Sort in canonical alphabetical order
-        numerator_list = sorted(numerator_list, key=lambda k: (k['ucum_code'].casefold(), k))
-        denominator_list = sorted(denominator_list, key=lambda k: (k['ucum_code'].casefold(), k))
-        # print(u, numerator_list, denominator_list)
+        try:
+            numerator_list = sorted(numerator_list, key=lambda k: (k['ucum_code'].casefold(), k))
+            denominator_list = sorted(denominator_list, key=lambda k: (k['ucum_code'].casefold(), k))
+            # print(u, numerator_list, denominator_list)
+        except:
+            print(f"Could not process '{u}' at sorting step")
 
         # # Generate canonical term label
         label = canonical_nc_label(numerator_list=numerator_list, denominator_list=denominator_list, label_lan='label_en')
