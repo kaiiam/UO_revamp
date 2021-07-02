@@ -16,7 +16,7 @@ Test
 ./nc_name.py -d data/test/test6.csv -o output/test/test6.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 
 
-UCUM list from QUDT OM UO and OBOE
+UCUM list from QUDT OM UO OBOE and NERC
 ./nc_name.py -d data/production/working_pooled_unit_codes.csv -o output/production/working_output.ttl -s input_mappings/input_dicts/input_ucum_dict.csv -p input_mappings/input_dicts/prefixes.csv -e input_mappings/input_dicts/exponents.csv -u1 input_mappings/UCUM/om_ucum_mapping.csv -u2 input_mappings/UCUM/qudt_ucum_mapping.csv -u3 input_mappings/UCUM/uo_ucum_mapping.csv -u4 input_mappings/UCUM/oboe_ucum_mapping.csv -u5 input_mappings/UCUM/nerc_p06_ucum_mapping.csv
 
 """
